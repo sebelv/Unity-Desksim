@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Track>
+
+<TrackElementListXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>0.0, 0.0, 0.0</StartVertexXML>
+    <EndVertexXML>0.0, 0.0, 1500.0</EndVertexXML>
+  </StraightTrackXML>
+
+  <SwitchTrackXML>
+    <IdXML>sv1hbe</IdXML>
+    <InfoXML>null</InfoXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>0.0, 0.0, 1500.0</StartVertexXML>
+    <AvvikVenstreXML>true</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>0.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+    <SwitchLocalButtonXML>false</SwitchLocalButtonXML>
+>  </SwitchTrackXML>
+
+  <SwitchTrackXML>
+    <IdXML>sv2hbe</IdXML>
+    <InfoXML>null</InfoXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>-0.0, 0.0, 2300.0</StartVertexXML>
+    <AvvikVenstreXML>false</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>180.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+    <SwitchLocalButtonXML>false</SwitchLocalButtonXML>
+>  </SwitchTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>0.0, 0.0, 1540.2924</StartVertexXML>
+    <EndVertexXML>-3.5224705E-6, 0.0, 2259.7075</EndVertexXML>
+  </StraightTrackXML>
+
+  <CurveTrackXML>
+    <IdXML>null</IdXML>
+    <InfoXML>null</InfoXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>5.000004, 0.0, 1580.3403</StartVertexXML>
+    <AvvikVenstreXML>true</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>180.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+    <SwitchLocalButtonXML>false</SwitchLocalButtonXML>
+>  </CurveTrackXML>
+
+  <CurveTrackXML>
+    <IdXML>null</IdXML>
+    <InfoXML>null</InfoXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>4.999996, 0.0, 2219.6597</StartVertexXML>
+    <AvvikVenstreXML>false</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>0.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+    <SwitchLocalButtonXML>false</SwitchLocalButtonXML>
+>  </CurveTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>5.000004, 0.0, 1580.3403</StartVertexXML>
+    <EndVertexXML>4.999996, 0.0, 2219.6597</EndVertexXML>
+  </StraightTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>-0.0, 0.0, 2300.0</StartVertexXML>
+    <EndVertexXML>-0.0, 0.0, 4500.0</EndVertexXML>
+  </StraightTrackXML>
+
+</TrackElementListXML>

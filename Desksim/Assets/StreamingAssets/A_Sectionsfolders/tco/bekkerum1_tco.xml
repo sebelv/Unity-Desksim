@@ -1,0 +1,2675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackConnectedObjects>
+
+<TrackConnectedObjectListXML>
+
+  <PlanovergangXML>
+    <IdXML>plo1</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 3056.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <BreddeXML>11.0</BreddeXML>
+    <ConnectedSignalsIdXML>plosign_1_bru, plosign_2_bru</ConnectedSignalsIdXML>
+    <ConnectedBlokkskilleIdXML>no content</ConnectedBlokkskilleIdXML>
+  </PlanovergangXML>
+  <PloParalellSporAktvPktXML>
+    <IdXML>plo1_aktv_pkt</IdXML>
+    <InfoXML>plo1</InfoXML>
+    <StartVertexXML>-5.0, 0.0, 3056.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </PloParalellSporAktvPktXML>
+  <NoPloSignAc3dXML>
+    <IdXML>plosign_1_bru</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 3050.0</StartVertexXML>
+    <OffsetVertexXML>-2.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>noplosign.ac</FileNameXML>
+  </NoPloSignAc3dXML>
+  <NoPloSignAc3dXML>
+    <IdXML>plosign_2_bru</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 3062.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>noplosign.ac</FileNameXML>
+  </NoPloSignAc3dXML>
+  <OperableTracksideObjectXML>
+    <IdXML>slas_lokstall</IdXML>
+    <InfoXML>keycode:1_slasnum:3</InfoXML>
+    <StartVertexXML>5.0, 0.0, 2760.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </OperableTracksideObjectXML>
+  <SporsperreXML>
+    <IdXML>ssperre1</IdXML>
+    <InfoXML>keycode:1_keycode2:2</InfoXML>
+    <StartVertexXML>5.0, 0.0, 2769.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <TypeXML>2</TypeXML>
+  </SporsperreXML>
+  <OperableTracksideObjectXML>
+    <IdXML>slas_folldal</IdXML>
+    <InfoXML>keycode:7_slasnum:4</InfoXML>
+    <StartVertexXML>-10.0, 0.0, 2894.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </OperableTracksideObjectXML>
+  <SporsperreXML>
+    <IdXML>ssperre2</IdXML>
+    <InfoXML>keycode:7_keycode2:8</InfoXML>
+    <StartVertexXML>-10.0, 0.0, 2895.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <TypeXML>2</TypeXML>
+  </SporsperreXML>
+  <OperableTracksideObjectXML>
+    <IdXML>slas_kanon</IdXML>
+    <InfoXML>keycode:9_slasnum:5</InfoXML>
+    <StartVertexXML>-15.0, 0.0, 2820.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </OperableTracksideObjectXML>
+  <SporsperreXML>
+    <IdXML>ssperre3</IdXML>
+    <InfoXML>keycode:9_keycode2:10</InfoXML>
+    <StartVertexXML>-15.0, 0.0, 2807.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <TypeXML>2</TypeXML>
+  </SporsperreXML>
+  <NoFSONHSAc3dXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-0.31, 0.0, 1676.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, -0.4, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>nofsonhs.ac</FileNameXML>
+  </NoFSONHSAc3dXML>
+  <NoHS3Ac3dXML>
+    <IdXML>a521brm</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-0.59, 0.0, 1676.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>nohs.ac</FileNameXML>
+    <SignalFlashingXML>true</SignalFlashingXML>
+  </NoHS3Ac3dXML>
+  <NoFSAc3dXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-0.28, 0.0, 780.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>nofs.ac</FileNameXML>
+  </NoFSAc3dXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.43, 0.0, 780.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 1.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>ring_enkel.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <NoDvergXML>
+    <IdXML>r3brm</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.54, 0.0, 2149.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>dverg.ac</FileNameXML>
+  </NoDvergXML>
+  <NoHS3Ac3dXML>
+    <IdXML>m524brm</IdXML>
+    <InfoXML>svbak</InfoXML>
+    <StartVertexXML>-0.13, 0.0, 2150.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>nohs.ac</FileNameXML>
+    <SignalFlashingXML>false</SignalFlashingXML>
+  </NoHS3Ac3dXML>
+  <NoDvergXML>
+    <IdXML>r10brm</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-0.3, 0.0, 2240.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>dverg.ac</FileNameXML>
+  </NoDvergXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.31, 0.0, 2239.7</StartVertexXML>
+    <OffsetVertexXML>2.85, -0.1, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>r10brm.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <NoDvergXML>
+    <IdXML>r12brm</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>1.9, 0.0, 2200.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>dverg.ac</FileNameXML>
+  </NoDvergXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>2.32, 0.0, 2199.7</StartVertexXML>
+    <OffsetVertexXML>2.85, -0.1, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>r12brm.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-5.02, 0.0, 2289.7</StartVertexXML>
+    <OffsetVertexXML>2.35, -0.1, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>r8brm.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <NoDvergXML>
+    <IdXML>r8brm</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-5.06, 0.0, 2290.0</StartVertexXML>
+    <OffsetVertexXML>2.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>dverg.ac</FileNameXML>
+  </NoDvergXML>
+  <NoDvergXML>
+    <IdXML>r6brm</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-10.4, 0.0, 2319.0</StartVertexXML>
+    <OffsetVertexXML>2.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>dverg.ac</FileNameXML>
+  </NoDvergXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-10.31, 0.0, 2318.7</StartVertexXML>
+    <OffsetVertexXML>2.35, -0.1, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>r6brm.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-10.69, 0.0, 2476.3</StartVertexXML>
+    <OffsetVertexXML>-2.85, -0.1, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>r13brm.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <NoDvergXML>
+    <IdXML>r13brm</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-10.0, 0.0, 2476.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>dverg.ac</FileNameXML>
+  </NoDvergXML>
+  <NoDvergXML>
+    <IdXML>r5brm</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.2, 0.0, 2590.0</StartVertexXML>
+    <OffsetVertexXML>-2.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>dverg.ac</FileNameXML>
+  </NoDvergXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-0.17, 0.0, 2590.3</StartVertexXML>
+    <OffsetVertexXML>-2.35, -0.1, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>r5brm.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>5.0, 0.0, 2590.3</StartVertexXML>
+    <OffsetVertexXML>-2.35, -0.1, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>r7brm.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <NoDvergXML>
+    <IdXML>r7brm</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>5.0, 0.0, 2590.0</StartVertexXML>
+    <OffsetVertexXML>-2.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>dverg.ac</FileNameXML>
+  </NoDvergXML>
+  <NoDvergXML>
+    <IdXML>r17brm</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-10.0, 0.0, 2818.0</StartVertexXML>
+    <OffsetVertexXML>-4.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>dverg.ac</FileNameXML>
+  </NoDvergXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-10.0, 0.0, 2818.3</StartVertexXML>
+    <OffsetVertexXML>-3.85, -0.1, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>r17brm.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-4.91, 0.0, 2820.3</StartVertexXML>
+    <OffsetVertexXML>-2.35, -0.1, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>r15brm.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <NoDvergXML>
+    <IdXML>r15brm</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-4.9, 0.0, 2820.0</StartVertexXML>
+    <OffsetVertexXML>-2.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>dverg.ac</FileNameXML>
+  </NoDvergXML>
+  <NoDvergXML>
+    <IdXML>r11brm</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.21, 0.0, 3035.0</StartVertexXML>
+    <OffsetVertexXML>-2.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>dverg.ac</FileNameXML>
+  </NoDvergXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-0.25, 0.0, 3035.3</StartVertexXML>
+    <OffsetVertexXML>-2.35, -0.1, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>r11brm.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <NoDvergXML>
+    <IdXML>r9brm</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-5.59, 0.0, 3045.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>dverg.ac</FileNameXML>
+  </NoDvergXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-4.7, 0.0, 3045.3</StartVertexXML>
+    <OffsetVertexXML>-2.85, -0.1, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>r9brm.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <NoHS3Ac3dXML>
+    <IdXML>l523brm</IdXML>
+    <InfoXML>svbak</InfoXML>
+    <StartVertexXML>0.43, 0.0, 3150.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>nohs.ac</FileNameXML>
+    <SignalFlashingXML>false</SignalFlashingXML>
+  </NoHS3Ac3dXML>
+  <NoDvergXML>
+    <IdXML>r2brm</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-0.1, 0.0, 3151.0</StartVertexXML>
+    <OffsetVertexXML>2.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>dverg.ac</FileNameXML>
+  </NoDvergXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.09, 0.0, 3150.7</StartVertexXML>
+    <OffsetVertexXML>2.35, -0.1, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>r2brm.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <NoHS3Ac3dXML>
+    <IdXML>b522brm</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.16, 0.0, 3366.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>nohs.ac</FileNameXML>
+    <SignalFlashingXML>true</SignalFlashingXML>
+  </NoHS3Ac3dXML>
+  <NoFSONHSAc3dXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.18, 0.0, 3366.0</StartVertexXML>
+    <OffsetVertexXML>3.0, -0.4, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>nofsonhs.ac</FileNameXML>
+  </NoFSONHSAc3dXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.22, 0.0, 3366.0</StartVertexXML>
+    <OffsetVertexXML>3.0, -0.35, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>ring_dobbel.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <NoFSAc3dXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.02, 0.0, 4180.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>nofs.ac</FileNameXML>
+  </NoFSAc3dXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-0.0, 0.0, 4180.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 1.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>ring_enkel.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <NoDvergXML>
+    <IdXML>r14brm</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-5.0, 0.0, 2881.0</StartVertexXML>
+    <OffsetVertexXML>2.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>dverg.ac</FileNameXML>
+  </NoDvergXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-4.75, 0.0, 2880.7</StartVertexXML>
+    <OffsetVertexXML>2.35, -0.1, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>r14brm.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-0.06, 0.0, 2646.7</StartVertexXML>
+    <OffsetVertexXML>2.85, -0.1, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>r4brm.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <NoDvergXML>
+    <IdXML>r4brm</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-0.1, 0.0, 2647.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>dverg.ac</FileNameXML>
+  </NoDvergXML>
+  <NoHS3Ac3dXML>
+    <IdXML>5206brm</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-10.36, 0.0, 2151.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>nohs.ac</FileNameXML>
+    <SignalFlashingXML>false</SignalFlashingXML>
+  </NoHS3Ac3dXML>
+  <NoDvergXML>
+    <IdXML>r1brm</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-10.36, 0.0, 2150.5</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>dverg.ac</FileNameXML>
+  </NoDvergXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-10.21, 0.0, 2150.8</StartVertexXML>
+    <OffsetVertexXML>-2.85, -0.1, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>r1brm.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <StoppBukkXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>10.0, 0.0, 2940.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML></FileNameXML>
+  </StoppBukkXML>
+  <StoppBukkXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-22.6, 0.0, 2585.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </StoppBukkXML>
+  <StoppBukkXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-115.0, 0.0, 2510.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </StoppBukkXML>
+  <StoppBukkXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>20.44, 0.0, 2940.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </StoppBukkXML>
+  <StoppBukkXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>37.9, 0.0, 2943.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </StoppBukkXML>
+  <StoppBukkXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>46.56, 0.0, 2943.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </StoppBukkXML>
+  <StoppBukkXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>30.97, 0.0, 2425.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </StoppBukkXML>
+  <StoppBukkXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-69.68, 0.0, 2565.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </StoppBukkXML>
+  <StoppBukkXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-91.66, 0.0, 2485.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </StoppBukkXML>
+  <StoppBukkXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-102.98, 0.0, 2604.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </StoppBukkXML>
+  <StoppBukkXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-105.0, 0.0, 2610.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </StoppBukkXML>
+  <StoppBukkXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-113.46, 0.0, 2604.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </StoppBukkXML>
+  <OperableTracksideObjectXML>
+    <IdXML>slas_kanon2</IdXML>
+    <InfoXML>keycode:11_slasnum:6</InfoXML>
+    <StartVertexXML>-15.0, 0.0, 2518.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </OperableTracksideObjectXML>
+  <SporsperreXML>
+    <IdXML>ssperre4</IdXML>
+    <InfoXML>keycode:11_keycode2:12</InfoXML>
+    <StartVertexXML>-15.0, 0.0, 2520.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <TypeXML>0</TypeXML>
+  </SporsperreXML>
+  <OperableTracksideObjectXML>
+    <IdXML>slas_platform</IdXML>
+    <InfoXML>keycode:3_slasnum:2</InfoXML>
+    <StartVertexXML>10.0, 0.0, 2583.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </OperableTracksideObjectXML>
+  <SporsperreXML>
+    <IdXML>ssperre5</IdXML>
+    <InfoXML>keycode:3_keycode2:4</InfoXML>
+    <StartVertexXML>10.0, 0.0, 2583.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <TypeXML>0</TypeXML>
+  </SporsperreXML>
+  <OperableTracksideObjectXML>
+    <IdXML>slas_platform2</IdXML>
+    <InfoXML>keycode:5_slasnum:1</InfoXML>
+    <StartVertexXML>10.0, 0.0, 2220.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </OperableTracksideObjectXML>
+  <SporsperreXML>
+    <IdXML>ssperre6</IdXML>
+    <InfoXML>keycode:5_keycode2:6</InfoXML>
+    <StartVertexXML>10.0, 0.0, 2221.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <TypeXML>2</TypeXML>
+  </SporsperreXML>
+  <BlokkSkilleXML>
+    <IdXML>bs_plo_1</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-0.06, 0.0, 3065.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>blokkskille.ac</FileNameXML>
+  </BlokkSkilleXML>
+  <BlokkSkilleXML>
+    <IdXML>bs_plo_2</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-5.06, 0.0, 3065.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>blokkskille.ac</FileNameXML>
+  </BlokkSkilleXML>
+  <BlokkSkilleXML>
+    <IdXML>bs1</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-2.79, 0.0, 2222.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>blokkskille.ac</FileNameXML>
+  </BlokkSkilleXML>
+  <BlokkSkilleXML>
+    <IdXML>bs2</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-5.47, 0.0, 2210.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>blokkskille.ac</FileNameXML>
+  </BlokkSkilleXML>
+  <BlokkSkilleXML>
+    <IdXML>bs4</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-12.0, 0.0, 2814.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>blokkskille.ac</FileNameXML>
+  </BlokkSkilleXML>
+  <BlokkSkilleXML>
+    <IdXML>bs_sp5_nord</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>8.35, 0.0, 2584.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>blokkskille.ac</FileNameXML>
+  </BlokkSkilleXML>
+  <BlokkSkilleXML>
+    <IdXML>bs_sp5_sor</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>8.57, 0.0, 2220.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>blokkskille.ac</FileNameXML>
+  </BlokkSkilleXML>
+  <SporsperreXML>
+    <IdXML>ssperre_sidespor1_rigel_connectedobject:'sv_sidespor1_lodd_rigel'</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-10.0, 0.0, 4550.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <TypeXML>0</TypeXML>
+  </SporsperreXML>
+  <OperableTracksideObjectXML>
+    <IdXML>rigel_sidespor1_connectedobject:'sperre_sidespor1_rigel'</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-10.0, 0.0, 4540.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </OperableTracksideObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.11, 0.0, 4538.7</StartVertexXML>
+    <OffsetVertexXML>-6.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>sidespor_venstad.j3o</FileNameXML>
+  </TrackConnectedObjectXML>
+  <NoKmXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>haspole</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1000.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>0</DirectionXML>
+    <FileNameXML>km0.ac</FileNameXML>
+    <KmTextXML>157,0</KmTextXML>
+  </NoKmXML>
+  <NoKmXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>haspole</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1500.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>0</DirectionXML>
+    <FileNameXML>km0.ac</FileNameXML>
+    <KmTextXML>157,5</KmTextXML>
+  </NoKmXML>
+  <NoKmXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>haspole</InfoXML>
+    <StartVertexXML>0.0, 0.0, 3600.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>0</DirectionXML>
+    <FileNameXML>km0.ac</FileNameXML>
+    <KmTextXML>160,0</KmTextXML>
+  </NoKmXML>
+  <NoKmXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>haspole</InfoXML>
+    <StartVertexXML>0.0, 0.0, 4100.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>0</DirectionXML>
+    <FileNameXML>km0.ac</FileNameXML>
+    <KmTextXML>160,5</KmTextXML>
+  </NoKmXML>
+  <NoHS3Ac3dXML>
+    <IdXML>a621nhs</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.47, 0.0, 5800.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>nohs.ac</FileNameXML>
+    <SignalFlashingXML>true</SignalFlashingXML>
+  </NoHS3Ac3dXML>
+  <NoFSONHSAc3dXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.27, 0.0, 5800.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>nofsonhs.ac</FileNameXML>
+  </NoFSONHSAc3dXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.69, 0.0, 5800.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>ring_dobbel.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <NoHS3Ac3dXML>
+    <IdXML>l631nhs</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.03, 0.0, 6540.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>nohs.ac</FileNameXML>
+    <SignalFlashingXML>false</SignalFlashingXML>
+  </NoHS3Ac3dXML>
+  <NoHS2Ac3dXML>
+    <IdXML>n631nhs</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>4.91, 0.0, 6540.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>nofs.ac</FileNameXML>
+    <SignalFlashingXML>false</SignalFlashingXML>
+  </NoHS2Ac3dXML>
+  <NoHS3Ac3dXML>
+    <IdXML>b622nhs</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.47, 0.0, 6800.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>nohs.ac</FileNameXML>
+    <SignalFlashingXML>true</SignalFlashingXML>
+  </NoHS3Ac3dXML>
+  <NoFSONHSAc3dXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.27, 0.0, 6800.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>nofsonhs.ac</FileNameXML>
+  </NoFSONHSAc3dXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.69, 0.0, 6800.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>ring_dobbel.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <NoHS3Ac3dXML>
+    <IdXML>m632nhs</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.03, 0.0, 6060.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>nohs.ac</FileNameXML>
+    <SignalFlashingXML>false</SignalFlashingXML>
+  </NoHS3Ac3dXML>
+  <NoHS2Ac3dXML>
+    <IdXML>o632nhs</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>4.91, 0.0, 6060.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>nofs.ac</FileNameXML>
+    <SignalFlashingXML>false</SignalFlashingXML>
+  </NoHS2Ac3dXML>
+  <NoFSAc3dXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.0, 0.0, 7800.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>nofs.ac</FileNameXML>
+  </NoFSAc3dXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.14, 0.0, 7800.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>ring_enkel.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <NoFSAc3dXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.92, 0.0, 4800.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>nofs.ac</FileNameXML>
+  </NoFSAc3dXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.6, 0.0, 4800.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>ring_enkel.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <NoKmXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>haspole</InfoXML>
+    <StartVertexXML>0.0, 0.0, 4600.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>0</DirectionXML>
+    <FileNameXML>km0.ac</FileNameXML>
+    <KmTextXML>161,0</KmTextXML>
+  </NoKmXML>
+  <NoKmXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>haspole</InfoXML>
+    <StartVertexXML>0.0, 0.0, 6100.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>0</DirectionXML>
+    <FileNameXML>km0.ac</FileNameXML>
+    <KmTextXML>162,5</KmTextXML>
+  </NoKmXML>
+  <NoKmXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>haspole</InfoXML>
+    <StartVertexXML>0.0, 0.0, 5600.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>0</DirectionXML>
+    <FileNameXML>km0.ac</FileNameXML>
+    <KmTextXML>162,0</KmTextXML>
+  </NoKmXML>
+  <NoKmXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>haspole</InfoXML>
+    <StartVertexXML>0.0, 0.0, 6600.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>0</DirectionXML>
+    <FileNameXML>km0.ac</FileNameXML>
+    <KmTextXML>163,0</KmTextXML>
+  </NoKmXML>
+  <NoKmXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>haspole</InfoXML>
+    <StartVertexXML>0.0, 0.0, 7100.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>0</DirectionXML>
+    <FileNameXML>km0.ac</FileNameXML>
+    <KmTextXML>163,5</KmTextXML>
+  </NoKmXML>
+  <NoKmXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>haspole</InfoXML>
+    <StartVertexXML>0.0, 0.0, 7600.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>0</DirectionXML>
+    <FileNameXML>km0.ac</FileNameXML>
+    <KmTextXML>164,0</KmTextXML>
+  </NoKmXML>
+  <StoppBukkXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-11.67, 0.0, 4871.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </StoppBukkXML>
+  <BlokkSkilleXML>
+    <IdXML>bs3</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-7.45, 0.0, 2261.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>blokkskille.ac</FileNameXML>
+  </BlokkSkilleXML>
+  <BlokkSkilleXML>
+    <IdXML>bs_lok</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>3.03, 0.0, 2759.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>blokkskille.ac</FileNameXML>
+  </BlokkSkilleXML>
+  <BlokkSkilleXML>
+    <IdXML>bs_kanon2</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-12.94, 0.0, 2512.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>blokkskille.ac</FileNameXML>
+  </BlokkSkilleXML>
+  <BlokkSkilleXML>
+    <IdXML>bs_folldal</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-8.49, 0.0, 2900.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>blokkskille.ac</FileNameXML>
+  </BlokkSkilleXML>
+  <BlokkSkilleXML>
+    <IdXML>bs_venstad</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-2.52, 0.0, 4532.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>blokkskille.ac</FileNameXML>
+  </BlokkSkilleXML>
+  <SporNummerMarkorXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>vismodel</InfoXML>
+    <StartVertexXML>-10.0, 0.0, 2363.0</StartVertexXML>
+    <OffsetVertexXML>-5.0, 1.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <SporXML>1</SporXML>
+  </SporNummerMarkorXML>
+  <SporNummerMarkorXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-5.0, 0.0, 2450.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 1.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <SporXML>2</SporXML>
+  </SporNummerMarkorXML>
+  <SporNummerMarkorXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>vismodel</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2320.0</StartVertexXML>
+    <OffsetVertexXML>4.45, 1.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <SporXML>3</SporXML>
+  </SporNummerMarkorXML>
+  <SporNummerMarkorXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>vismodel</InfoXML>
+    <StartVertexXML>10.0, 0.0, 2320.0</StartVertexXML>
+    <OffsetVertexXML>-4.35, 1.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <SporXML>4</SporXML>
+  </SporNummerMarkorXML>
+  <NoHSkiftXML>
+    <IdXML>zm</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.61, 0.0, 5999.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>hskiftesignal.ac</FileNameXML>
+  </NoHSkiftXML>
+  <NoHSkiftXML>
+    <IdXML>zl</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.01, 0.0, 6601.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>hskiftesignal.ac</FileNameXML>
+  </NoHSkiftXML>
+  <NoHSkiftXML>
+    <IdXML>zm632</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.67, 0.0, 6060.0</StartVertexXML>
+    <OffsetVertexXML>-2.7, -1.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>hskiftesignal2.ac</FileNameXML>
+  </NoHSkiftXML>
+  <NoHSkiftXML>
+    <IdXML>zl631</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.36, 0.0, 6540.0</StartVertexXML>
+    <OffsetVertexXML>-3.3, -1.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>hskiftesignal2.ac</FileNameXML>
+  </NoHSkiftXML>
+  <OperableTracksideObjectXML>
+    <IdXML>slas1nhs</IdXML>
+    <InfoXML>keycode:13_slasnum:1</InfoXML>
+    <StartVertexXML>12.0, 0.0, 6180.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </OperableTracksideObjectXML>
+  <SporsperreXML>
+    <IdXML>ssperre1nhs</IdXML>
+    <InfoXML>keycode:13_keycode2:14</InfoXML>
+    <StartVertexXML>12.0, 0.0, 6182.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <TypeXML>2</TypeXML>
+  </SporsperreXML>
+  <StoppBukkXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>10.41, 0.0, 6395.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </StoppBukkXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.0, 0.0, 1675.8</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>72B.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.09, 0.0, 1675.8</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.05, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>forsik_kj_31.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.27, 0.0, 1676.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, -1.2, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>ring_enkel.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.0, 0.0, 1676.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, -0.6, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>ring_enkel.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <NoHastXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.25, 0.0, 2130.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>hastopp2.ac</FileNameXML>
+    <SpeedTextXML>7</SpeedTextXML>
+  </NoHastXML>
+  <NoHastXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-8.08, 0.0, 2138.72</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>hastopp.ac</FileNameXML>
+    <SpeedTextXML>7</SpeedTextXML>
+  </NoHastXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.01, 0.0, 2150.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 1.8, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>72A.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <NoTogspSignAc3dXML>
+    <IdXML>3lredhast</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2723.0</StartVertexXML>
+    <OffsetVertexXML>-2.4, -1.5, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>notogspsign.ac</FileNameXML>
+  </NoTogspSignAc3dXML>
+  <NoTogspSignAc3dXML>
+    <IdXML>2l</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-5.0, 0.0, 2723.0</StartVertexXML>
+    <OffsetVertexXML>-2.3, -1.5, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>notogspsign.ac</FileNameXML>
+  </NoTogspSignAc3dXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.0, 0.0, 2230.0</StartVertexXML>
+    <OffsetVertexXML>3.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>lysmast.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.08, 0.0, 2290.0</StartVertexXML>
+    <OffsetVertexXML>4.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>lysmast.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.08, 0.0, 2320.0</StartVertexXML>
+    <OffsetVertexXML>4.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>lysmast.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.08, 0.0, 2350.0</StartVertexXML>
+    <OffsetVertexXML>4.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>lysmast.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.08, 0.0, 2380.0</StartVertexXML>
+    <OffsetVertexXML>4.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>lysmast.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>        </InfoXML>
+    <StartVertexXML>-0.08, 0.0, 2410.0</StartVertexXML>
+    <OffsetVertexXML>4.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>lysmast.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.08, 0.0, 2440.0</StartVertexXML>
+    <OffsetVertexXML>4.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>lysmast.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.08, 0.0, 2470.0</StartVertexXML>
+    <OffsetVertexXML>4.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>lysmast.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.08, 0.0, 2500.0</StartVertexXML>
+    <OffsetVertexXML>4.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>lysmast.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.03, 0.0, 2567.0</StartVertexXML>
+    <OffsetVertexXML>4.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>lysmast.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.23, 0.0, 2646.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>lysmast.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.12, 0.0, 3150.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 2.63, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>72A.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.41, 0.0, 2836.0</StartVertexXML>
+    <OffsetVertexXML>5.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>lysmast.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <NoHastXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.51, 0.0, 3180.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>hastopp.ac</FileNameXML>
+    <SpeedTextXML> 12</SpeedTextXML>
+  </NoHastXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.26, 0.0, 3366.2</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>72B.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.01, 0.0, 3366.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>forsik_kj_31.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <NoHastXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.44, 0.0, 3680.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>hastned.ac</FileNameXML>
+    <SpeedTextXML> 7</SpeedTextXML>
+  </NoHastXML>
+  <TrackConnectedObjectXML>
+    <IdXML>2L</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-5.0, 0.0, 2567.0</StartVertexXML>
+    <OffsetVertexXML>-2.5, -1.5, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>notogspsign.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <NoTogspSignAc3dXML>
+    <IdXML></IdXML>
+    <InfoXML>3L</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2567.0</StartVertexXML>
+    <OffsetVertexXML>3.0, -1.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>notogspsign.ac</FileNameXML>
+  </NoTogspSignAc3dXML>
+  <NoTogspSignAc3dXML>
+    <IdXML></IdXML>
+    <InfoXML>4L</InfoXML>
+    <StartVertexXML>5.0, 0.0, 2567.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, -0.5, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>notogspsign.ac</FileNameXML>
+  </NoTogspSignAc3dXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.01, 0.0, 2567.3</StartVertexXML>
+    <OffsetVertexXML>3.15, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>3l.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.2, 0.0, 2149.3</StartVertexXML>
+    <OffsetVertexXML>-2.85, -0.1, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>r3brm.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>7.83, 0.0, 2567.3</StartVertexXML>
+    <OffsetVertexXML>-2.85, -0.2, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>4l.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-5.45, 0.0, 2567.3</StartVertexXML>
+    <OffsetVertexXML>-2.35, -0.4, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>2l.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.21, 0.0, 2723.3</StartVertexXML>
+    <OffsetVertexXML>-2.25, -0.4, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>3l.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-5.2, 0.0, 2723.3</StartVertexXML>
+    <OffsetVertexXML>-2.15, -0.4, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>2l.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.3, 0.0, 2995.0</StartVertexXML>
+    <OffsetVertexXML>4.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>orient_plo.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.21, 0.0, 3050.0</StartVertexXML>
+    <OffsetVertexXML>-2.5, -0.5, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>w1.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>3</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.14, 0.0, 3062.0</StartVertexXML>
+    <OffsetVertexXML>3.0, -0.5, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>w2.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>3</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.31, 0.0, 3365.93</StartVertexXML>
+    <OffsetVertexXML>2.85, 0.2, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>b.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.0, 0.0, 1676.06</StartVertexXML>
+    <OffsetVertexXML>-2.85, 0.2, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>a.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.29, 0.0, 1676.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 1.72, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>a521brm.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>6</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-9.76, 0.0, 2151.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 1.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>5206brm.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>6</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.17, 0.0, 2150.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 1.2, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>m524brm.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>6</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>1.1, 0.0, 3150.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.8, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>l523brm.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>6</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.22, 0.0, 3366.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 1.7, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>b522brm.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>6</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.13, 0.0, 4180.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 1.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>b522brm.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>6</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.57, 0.0, 780.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 1.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>a521brm.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>6</TypeXML>
+  </IdBoardXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-9.97, 0.0, 2150.0</StartVertexXML>
+    <OffsetVertexXML>-6.0, -1.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>betongmur_kort.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-10.73, 0.0, 2212.12</StartVertexXML>
+    <OffsetVertexXML>-5.7, 1.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>gjerde2.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.0, 0.0, 2545.0</StartVertexXML>
+    <OffsetVertexXML>-30.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>warehouse9.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-10.69, 0.0, 2351.0</StartVertexXML>
+    <OffsetVertexXML>-18.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>grunnmur_stor.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.0, 0.0, 2878.0</StartVertexXML>
+    <OffsetVertexXML>-2.3, -1.2, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>notogspsign.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <NoTogspSignAc3dXML>
+    <IdXML>1-2l2</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-5.4, 0.0, 2878.5</StartVertexXML>
+    <OffsetVertexXML>-3.0, -1.5, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>notogspsign.ac</FileNameXML>
+  </NoTogspSignAc3dXML>
+  <NoTogspSignAc3dXML>
+    <IdXML>3l2redhast</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2878.0</StartVertexXML>
+    <OffsetVertexXML>-2.3, -1.2, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>notogspsign.ac</FileNameXML>
+  </NoTogspSignAc3dXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.34, 0.0, 2878.3</StartVertexXML>
+    <OffsetVertexXML>-2.15, -0.2, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>3l.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-5.43, 0.0, 2878.75</StartVertexXML>
+    <OffsetVertexXML>-2.9, -0.4, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>1-2l.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>36.7, 0.0, 2235.0</StartVertexXML>
+    <OffsetVertexXML>36.7, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>gjerde_550.ac</FileNameXML>
+    <AllVerticesTransformXML>true</AllVerticesTransformXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>2.42, 0.0, 2398.0</StartVertexXML>
+    <OffsetVertexXML>4.4, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>platform_midt_200.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-5.0, 0.0, 2361.0</StartVertexXML>
+    <OffsetVertexXML>2.5, -1.5, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>togveislutt_stolpe.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-5.0, 0.0, 2365.0</StartVertexXML>
+    <OffsetVertexXML>2.5, -1.5, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>togveislutt_stolpe.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.09, 0.0, 2361.0</StartVertexXML>
+    <OffsetVertexXML>-2.5, 0.85, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>pil_hogre.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <NoTogspSignAc3dXML>
+    <IdXML>1m_5206</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-10.0, 0.0, 2319.0</StartVertexXML>
+    <OffsetVertexXML>-2.5, -1.2, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>notogspsign.ac</FileNameXML>
+  </NoTogspSignAc3dXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-10.14, 0.0, 2318.7</StartVertexXML>
+    <OffsetVertexXML>-2.65, -0.1, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>1m_5206.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <NoTogspSignAc3dXML>
+    <IdXML>2m_5206</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-4.93, 0.0, 2476.0</StartVertexXML>
+    <OffsetVertexXML>2.5, -1.5, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>notogspsign.ac</FileNameXML>
+  </NoTogspSignAc3dXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-4.97, 0.0, 2475.7</StartVertexXML>
+    <OffsetVertexXML>2.35, -0.4, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>2m_5206.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <BaliseXML>
+    <IdXML>sig_fsa521b</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.06, 0.0, 779.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>9, 4, 4</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>sig_fsa521a</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.04, 0.0, 776.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>23: 4, 14, 0</KodeXML>
+    <KodeXML>24: 4, 14, 5</KodeXML>
+    <KodeXML>25: 4, 14, 12</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>sig_a521b</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.19, 0.0, 1675.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>4,4,4</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>sig_a521a</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.43, 0.0, 1672.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>20:4, 0, 14</KodeXML>
+    <KodeXML>21,23:4, 5, 0</KodeXML>
+    <KodeXML>21,24:4, 5, 1</KodeXML>
+    <KodeXML>22,23:4, 12, 0</KodeXML>
+    <KodeXML>22,25:4, 12, 12</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.01, 0.0, 1662.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>9, 2,12</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>svg_aa</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.06, 0.0, 1659.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>20: 6, 0, 8</KodeXML>
+    <KodeXML>21: 6, 0, 8</KodeXML>
+    <KodeXML>22: 6, 0, 14</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>rep_3la</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.0, 0.0, 2647.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>20:4,14, 0</KodeXML>
+    <KodeXML>21:4,14,12</KodeXML>
+    <KodeXML>22:4,14,12</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>rep_3lb</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.1, 0.0, 2650.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>9, 2, 12</KodeXML>
+  </BaliseXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.21, 0.0, 2645.7</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>atcskilt_rephast.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.01, 0.0, 2645.7</StartVertexXML>
+    <OffsetVertexXML>3.0, 2.45, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>pil_hogre.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <BaliseXML>
+    <IdXML>sig_l523a</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.02, 0.0, 3146.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>20:4, 0, 14</KodeXML>
+    <KodeXML>21:4, 12, 14</KodeXML>
+    <KodeXML>22:4, 12, 14</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>sig_l523b</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.03, 0.0, 3149.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>9,6,5</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.23, 0.0, 4799.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>9,4,12</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.08, 0.0, 4796.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>23: 4, 14, 0</KodeXML>
+    <KodeXML>24: 4, 14, 5</KodeXML>
+    <KodeXML>25: 4, 14, 12</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>sig_a621a</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.16, 0.0, 5796.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>20: 4, 0, 0</KodeXML>
+    <KodeXML>21,23: 4, 5, 0</KodeXML>
+    <KodeXML>21,24: 4, 5, 1</KodeXML>
+    <KodeXML>22,23: 4, 12, 0</KodeXML>
+    <KodeXML>22,25: 4, 12, 12</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>sig_a621b</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.05, 0.0, 5799.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>9,4,1</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.04, 0.0, 5786.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>9,1,3</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.02, 0.0, 5783.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>20: 6, 0, 8</KodeXML>
+    <KodeXML>21: 6, 0, 8</KodeXML>
+    <KodeXML>22: 6, 0, 14</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>sig_l631a</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.0, 0.0, 6536.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>20:4, 0, 14</KodeXML>
+    <KodeXML>22:4, 12, 14</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>sig_l631b</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.11, 0.0, 6539.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>9, 12, 12</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>sig_n631b</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>4.39, 0.0, 6539.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>9, 12, 12</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>sig_n631a</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>4.43, 0.0, 6536.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>20:4, 0, 14</KodeXML>
+    <KodeXML>21:4, 12, 14</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>sig_fsb622a</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.4, 0.0, 7804.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>4, 12, 12</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>sig_fsb622b</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.03, 0.0, 7801.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>9, 4,12</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.36, 0.0, 6801.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>9,4,2</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.07, 0.0, 6804.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>20: 4, 0, 0</KodeXML>
+    <KodeXML>21,23: 4, 5, 0</KodeXML>
+    <KodeXML>21,24: 4, 5, 1</KodeXML>
+    <KodeXML>22,23: 4, 12, 0</KodeXML>
+    <KodeXML>22,25: 4, 12, 12</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>svg_b622b</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.05, 0.0, 6814.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>9,1,3</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>svg_b622a</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.02, 0.0, 6817.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>20: 6, 0, 8</KodeXML>
+    <KodeXML>21: 6, 0, 8</KodeXML>
+    <KodeXML>22: 6, 0, 14</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>sig_m632b</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.12, 0.0, 6061.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>9,6,10</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>sig_m632a</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.06, 0.0, 6064.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>20:4, 0, 14</KodeXML>
+    <KodeXML>22:4, 12, 14</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>sig_o632a</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>4.59, 0.0, 6064.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>20:4, 0, 14</KodeXML>
+    <KodeXML>21:4, 12, 14</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>sig_o632a</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>4.22, 0.0, 6061.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>9,6,10</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>sig_fsb522b</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.21, 0.0, 4181.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>9,4,4</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>sig_fsb522a</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.21, 0.0, 4184.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>23: 4, 14, 0</KodeXML>
+    <KodeXML>24: 4, 14, 5</KodeXML>
+    <KodeXML>25: 4, 14, 12</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>sig_b522b</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.12, 0.0, 3367.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>9,4,14</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>sig_b522a</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.15, 0.0, 3370.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>20:4, 0, 0</KodeXML>
+    <KodeXML>21,23:4, 5, 0</KodeXML>
+    <KodeXML>21,24:4, 5, 1</KodeXML>
+    <KodeXML>22,23:4, 12, 0</KodeXML>
+    <KodeXML>22,25:4, 12, 12</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>svg_b522b</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.17, 0.0, 3377.29</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>9,1,4</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>svg_b522a</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.0, 0.0, 3379.69</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>20: 6, 0, 8</KodeXML>
+    <KodeXML>21: 6, 0, 8</KodeXML>
+    <KodeXML>22: 6, 0, 14</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>sig_m524a</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.07, 0.0, 2154.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>20:4, 0, 14</KodeXML>
+    <KodeXML>21:4, 12, 14</KodeXML>
+    <KodeXML>22:4, 12, 14</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>sig_m524b</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.17, 0.0, 2151.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>9,12,12</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>sig_5206a</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-9.28, 0.0, 2152.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>9,12,12</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>sig_5206a</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-9.26, 0.0, 2155.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>20:4, 0, 14</KodeXML>
+    <KodeXML>21:4, 12, 14</KodeXML>
+    <KodeXML>22:4, 12, 14</KodeXML>
+  </BaliseXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.06, 0.0, 6060.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>m632nhs.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>6</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>5.03, 0.0, 6060.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>o632nhs.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>6</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.34, 0.0, 6800.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>b622nhs.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>6</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.85, 0.0, 7800.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>b622nhs.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>6</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.51, 0.0, 4800.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>a621nhs.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>6</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.39, 0.0, 5800.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>a621nhs.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>6</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.06, 0.0, 6540.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>l631nhs.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>6</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>4.57, 0.0, 6540.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>n631nhs.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>6</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.26, 0.0, 6601.1</StartVertexXML>
+    <OffsetVertexXML>3.15, 2.35, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>zl.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.2, 0.0, 5998.9</StartVertexXML>
+    <OffsetVertexXML>2.85, 2.35, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>idboard2.ac</FileNameXML>
+    <Line1XML>zm.png</Line1XML>
+    <Line2XML></Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>5</TypeXML>
+  </IdBoardXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.16, 0.0, 1550.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.34, 0.0, 2000.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-12.54, 0.0, 2080.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-10.27, 0.0, 2153.5</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-9.88, 0.0, 2318.5</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <BlokkSkilleXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-10.19, 0.0, 2255.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>blokkskille.ac</FileNameXML>
+  </BlokkSkilleXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-5.11, 0.0, 2258.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.07, 0.0, 2390.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-5.37, 0.0, 2390.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-9.79, 0.0, 2390.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>9.06, 0.0, 2390.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-10.17, 0.0, 2477.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.01, 0.0, 2690.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-5.19, 0.0, 2879.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-4.797917, 0.0, 2980.9084</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.0, 0.0, 3144.5</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.28, 0.0, 3270.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.43, 0.0, 4100.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <BlokkSkilleXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.31, 0.0, 4480.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>blokkskille.ac</FileNameXML>
+  </BlokkSkilleXML>
+  <BlokkSkilleXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.11, 0.0, 4533.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>blokkskille.ac</FileNameXML>
+  </BlokkSkilleXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.02, 0.0, 4490.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.6, 0.0, 5190.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.0, 0.0, 5960.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>5.14, 0.0, 6135.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <BlokkSkilleXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>7.81, 0.0, 6180.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>blokkskille.ac</FileNameXML>
+  </BlokkSkilleXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.06, 0.0, 6340.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.04, 0.0, 6650.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.12, 0.0, 7880.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <NoDvergXML>
+    <IdXML>fiktiv_r_a521</IdXML>
+    <InfoXML>fiktiv</InfoXML>
+    <StartVertexXML>0.15, 0.0, 1730.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </NoDvergXML>
+  <NoDvergXML>
+    <IdXML>fiktiv_r_b522</IdXML>
+    <InfoXML>fiktiv</InfoXML>
+    <StartVertexXML>0.12, 0.0, 3310.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </NoDvergXML>
+  <NoDvergXML>
+    <IdXML>fiktiv_r_c</IdXML>
+    <InfoXML>fiktiv</InfoXML>
+    <StartVertexXML>-49.7, 0.0, 2000.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </NoDvergXML>
+  <BlokkTellerXML>
+    <IdXML>bt1</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.0, 0.0, 2157.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <SikringskomponentXML>
+    <IdXML>Slas5_Kanon</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-10.0, 0.0, 2840.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <SkifteOmrade1KomponenterIdXML>slas_kanon, slas_kanon2</SkifteOmrade1KomponenterIdXML>
+  </SikringskomponentXML>
+  <SikringskomponentXML>
+    <IdXML>Slas1og2_Sp5og6</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>20.0, 0.0, 2430.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <SkifteOmrade1KomponenterIdXML>slas_platform, slas_platform2</SkifteOmrade1KomponenterIdXML>
+  </SikringskomponentXML>
+  <SikringskomponentXML>
+    <IdXML>Slas3_Lokstall</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>10.0, 0.0, 2765.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <SkifteOmrade1KomponenterIdXML>slas_lokstall</SkifteOmrade1KomponenterIdXML>
+  </SikringskomponentXML>
+  <SikringskomponentXML>
+    <IdXML>Slas4_Folldal</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-10.0, 0.0, 2900.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <SkifteOmrade1KomponenterIdXML>slas_folldal</SkifteOmrade1KomponenterIdXML>
+  </SikringskomponentXML>
+  <SikringskomponentXML>
+    <IdXML>Slas1_Nedhus</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>10.0, 0.0, 6200.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <SkifteOmrade1KomponenterIdXML>slas1nhs, zm, zl, zm632, zl631, sv1nhs, sv2nhs</SkifteOmrade1KomponenterIdXML>
+  </SikringskomponentXML>
+  <SikringskomponentXML>
+    <IdXML>SiSp_Venstad</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-10.0, 0.0, 4550.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <SkifteOmrade1KomponenterIdXML>rigel_sidespor1_connectedobject:'sperre_sidespor1_rigel'</SkifteOmrade1KomponenterIdXML>
+  </SikringskomponentXML>
+  <NoHSFiktivXML>
+    <IdXML>hs_r5brm_fiktiv</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.0, 0.0, 2580.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>nohs.ac</FileNameXML>
+    <SignalFlashingXML>false</SignalFlashingXML>
+  </NoHSFiktivXML>
+  <NoHSFiktivXML>
+    <IdXML>hs_r7brm_fiktiv</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>5.0, 0.0, 2580.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>nohs.ac</FileNameXML>
+    <SignalFlashingXML>false</SignalFlashingXML>
+  </NoHSFiktivXML>
+  <NoHSFiktivXML>
+    <IdXML>hs_r9brm_fiktiv</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-5.15, 0.0, 3044.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>nohs.ac</FileNameXML>
+    <SignalFlashingXML>false</SignalFlashingXML>
+  </NoHSFiktivXML>
+  <NoHSFiktivXML>
+    <IdXML>hs_r11brm_fiktiv</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.0, 0.0, 3034.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>nohs.ac</FileNameXML>
+    <SignalFlashingXML>false</SignalFlashingXML>
+  </NoHSFiktivXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.11, 0.0, 3055.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-5.21, 0.0, 3055.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <SikringskomponentXML>
+    <IdXML>Nord_brm</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.0, 0.0, 2960.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <SkifteOmrade1KomponenterIdXML>r11brm, sv2brm, r9brm, r2brm, r14brm, r17brm, r15brm, sv6brm</SkifteOmrade1KomponenterIdXML>
+  </SikringskomponentXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.07, 0.0, 2646.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+  <NoHSFiktivXML>
+    <IdXML>hs_r6brm_fiktiv</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-10.0, 0.0, 2320.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>nohs.ac</FileNameXML>
+    <SignalFlashingXML>false</SignalFlashingXML>
+  </NoHSFiktivXML>
+  <NoHSFiktivXML>
+    <IdXML>hs_r8brm_fiktiv</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-5.06, 0.0, 2291.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>nohs.ac</FileNameXML>
+    <SignalFlashingXML>false</SignalFlashingXML>
+  </NoHSFiktivXML>
+  <NoHSFiktivXML>
+    <IdXML>hs_r10brm_fiktiv</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.04, 0.0, 2241.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>nohs.ac</FileNameXML>
+    <SignalFlashingXML>false</SignalFlashingXML>
+  </NoHSFiktivXML>
+  <NoHSFiktivXML>
+    <IdXML>hs_r12brm_fiktiv</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>8.67, 0.0, 2239.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>nohs.ac</FileNameXML>
+    <SignalFlashingXML>false</SignalFlashingXML>
+  </NoHSFiktivXML>
+  <SporNummerMarkorXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.0, 0.0, 6300.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 1.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <SporXML>1</SporXML>
+  </SporNummerMarkorXML>
+  <SporNummerMarkorXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>5.0, 0.0, 6300.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 1.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <SporXML>2</SporXML>
+  </SporNummerMarkorXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-14.0, 0.0, 2380.0</StartVertexXML>
+    <OffsetVertexXML>-14.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>platform_right_180.ac</FileNameXML>
+    <AllVerticesTransformXML>true</AllVerticesTransformXML>
+  </TrackConnectedObjectXML>
+  <BlokkTellerXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-6.85, 0.0, 2258.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </BlokkTellerXML>
+</TrackConnectedObjectListXML>

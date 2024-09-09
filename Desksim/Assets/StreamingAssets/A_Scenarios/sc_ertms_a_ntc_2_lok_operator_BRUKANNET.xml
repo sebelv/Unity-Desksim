@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <BrukAnnetScenarioXML>sc_ertms_a_ntc_2_togsett_operator</BrukAnnetScenarioXML>        
+     
+    <TogXML>
+        <IdXML>101</IdXML>
+        <ModelXML>zacns</ModelXML>
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>1550</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1800;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkobbelopphengmotkm=ja;luftkranmedkm=ja;last=vekt:40</InfoXML>  
+    </TogXML> 
+    
+   
+    <TogXML>
+        <IdXML>102</IdXML>
+        <ModelXML>zacns</ModelXML>
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1800;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja;last=vekt:40</InfoXML>  
+    </TogXML>  
+    
+    <TogXML>
+        <IdXML>103</IdXML>
+        <ModelXML>zacns</ModelXML>
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1800;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja;last=vekt:40</InfoXML>  
+    </TogXML>  
+    
+    <TogXML>
+        <IdXML>104</IdXML>
+        <ModelXML>zacns</ModelXML>
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1800;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja;last=vekt:40</InfoXML>  
+    </TogXML>           
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>di4</ModelXML> <!-- di4 -->
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <StartModusXML>24</StartModusXML>   <!-- 24 -->      
+        <InfoXML>kobbelopphengmedkm=ja;kobbelopphengmotkm=ja;luftkobbelopphengmedkm=ja;luftkranmotkm=ja</InfoXML>
+    </TogXML>            
+
+</ScenarioXML>

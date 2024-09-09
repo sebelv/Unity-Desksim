@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->  
+<!--
+    <SectionXML>
+        <NameXML>nitkatman1</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>                
+    </SectionXML>
+         
+         
+    <SectionXML>
+        <NameXML>spurvstad0</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>      
+         
+    
+      <SectionXML>
+          <NameXML>spurvstad1</NameXML>
+          <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+      </SectionXML>
+    -->
+    <SectionXML>
+        <NameXML>ospim1ni</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+  
+    <SectionXML>
+        <NameXML>gaffelberg1ni</NameXML>
+    </SectionXML>      
+    
+
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>ospim1ni</StartSeksjonXML>
+        <StartposXML>2391</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>14</StartModusXML>   
+        <InfoXML></InfoXML> 
+    </TogXML>            
+	
+    <StartTimeXML>13:28</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML>    
+
+    <!-- EN HENDELSE MED ET OBJEKT LANGS SPORET DEFINERES I EN ScenarioEvent -->
+    <!-- I EN ScenarioEvent DEFINERES ScenarioTriggers OG ScenarioActions-->
+    <!-- DERSOM BARE ScenarioActions ER DEFINERT UTFØRES DISSE MED EN GANG SCENARIET STARTER-->
+    <ScenarioEventXML>
+        <!-- Ospim -->
+        <ScenarioActionStateChangerXML>
+            <IdXML>115osp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>125osp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>l03osp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+		
+        <!-- Gaffelberg -->
+        <ScenarioActionStateChangerXML>
+            <IdXML>a01glb</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+                
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1497_sec:gaffelberg1ni</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>                   
+    </ScenarioEventXML>
+
+</ScenarioXML>

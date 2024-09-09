@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Track>
+
+<TrackElementListXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>0.0, 0.0, 0.0</StartVertexXML>
+    <EndVertexXML>0.0, 0.0, 150.0</EndVertexXML>
+  </StraightTrackXML>
+
+  <KryssTrackXML>
+    <IdXML>null</IdXML>
+    <InfoXML>null</InfoXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>0.0, 0.0, 150.0</StartVertexXML>
+    <AvvikVenstreXML>false</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>0.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+    <SwitchLocalButtonXML>true</SwitchLocalButtonXML>
+>  </KryssTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>0.0, 0.0, 179.3427</StartVertexXML>
+    <EndVertexXML>0.0, 0.0, 400.0</EndVertexXML>
+  </StraightTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>2.5, 0.0, 139.1701</StartVertexXML>
+    <EndVertexXML>1.4315796, 0.0, 150.07</EndVertexXML>
+  </StraightTrackXML>
+
+  <CurveTrackXML>
+    <IdXML>null</IdXML>
+    <InfoXML>null</InfoXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>5.0, 0.0, 99.0</StartVertexXML>
+    <AvvikVenstreXML>false</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>0.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+    <SwitchLocalButtonXML>false</SwitchLocalButtonXML>
+>  </CurveTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>5.0, 0.0, 0.0</StartVertexXML>
+    <EndVertexXML>5.0, 0.0, 99.0</EndVertexXML>
+  </StraightTrackXML>
+
+  <CurveTrackXML>
+    <IdXML>null</IdXML>
+    <InfoXML>null</InfoXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>-6.062173, 0.0, 241.0</StartVertexXML>
+    <AvvikVenstreXML>false</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>180.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+    <SwitchLocalButtonXML>false</SwitchLocalButtonXML>
+>  </CurveTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>-1.4315796, 0.0, 179.27269</StartVertexXML>
+    <EndVertexXML>-3.5621765, 0.0, 200.8299</EndVertexXML>
+  </StraightTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>-6.062173, 0.0, 241.0</StartVertexXML>
+    <EndVertexXML>-6.062173, 0.0, 400.0</EndVertexXML>
+  </StraightTrackXML>
+
+</TrackElementListXML>

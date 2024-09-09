@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,240,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+    <!-- 
+    -->
+    <SectionXML>
+        <NameXML>nitkatman1</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML>
+        
+    <SectionXML>
+        <NameXML>spurvstad0</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>        
+ 
+    <SectionXML>
+        <NameXML>spurvstad1</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+  
+    <SectionXML>
+        <NameXML>ospim1</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+  
+    <SectionXML>
+        <NameXML>gaffelberg1</NameXML>
+    </SectionXML>
+
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>gaffelberg1</StartSeksjonXML>
+        <StartposXML>1840</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>9</StartModusXML>        
+        <InfoXML></InfoXML> 
+    </TogXML>                   
+        
+    <TogXML>
+        <IdXML>200</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>spurvstad1</StartSeksjonXML>
+        <StartposXML>1160</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>   
+ 
+    <StartTimeXML>14:12</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+    
+    <PersonStartPosisjonXML>forerrom1_sittende</PersonStartPosisjonXML>
+
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>	<!--10-->				
+        </ScenarioTriggerTimeXML>
+    
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/nVelkommen til kjøring på ERTMS/nDette er en innføring i det som skjer i DMI/nførerpanelet</MessageXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML> 
+
+    <!-- EN HENDELSE MED ET OBJEKT LANGS SPORET DEFINERES I EN ScenarioEvent -->
+    <!-- I EN ScenarioEvent DEFINERES ScenarioTriggers OG ScenarioActions-->
+    <!-- DERSOM BARE ScenarioActions ER DEFINERT UTFØRES DISSE MED EN GANG SCENARIET STARTER-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+        <ScenarioActionStateChangerXML> <!-- DEN VANLIGESTE ScenarioAction ER ScenarioActionStateChanger-->
+            <IdXML>26glb</IdXML>		<!-- OPPGI NØYAKTIG ID TIL OBJEKTET SOM SKAL ENDRE STATE-->
+            <StateXML>1</StateXML>	    <!-- OPPGI NY STATE -->
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML> 
+            <IdXML>06glb</IdXML>	    
+            <StateXML>1</StateXML>		
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>m04glb</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>b02osp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>36osp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>06osp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>m04osp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+	
+    <!-- MELDING I DMI--> 		
+    <ScenarioEventXML>				
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>5</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+	
+        <ScenarioActionMessageXML>										<!-- MELDING I DMI -->
+            <IdXML>100</IdXML>											<!-- TOG ID -->
+            <MessageXML>Velkommen til kjøring på/nERTMS</MessageXML>	<!-- MELDING /n = NY LINJE -->
+            <AckTypeXML>0</AckTypeXML>									<!-- SE KLASSEN TextMessage I PAKKEN dmi_subclasses FOR KODENE TIL AckType og ImportanceType -->
+            <ImportanceTypeXML>0</ImportanceTypeXML>
+            <MessageIdXML>101</MessageIdXML>							<!-- FAST MELDINGER HAR EN ID. SETT TIL 101 VED GENERELL MELDING -->
+        </ScenarioActionMessageXML>
+    </ScenarioEventXML>
+	
+    <!-- FJERN MELDING I DMI--> 		
+    <ScenarioEventXML>				
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>20</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+	
+        <ScenarioActionMessageXML>										<!-- MELDING I DMI -->
+            <IdXML>100</IdXML>											<!-- TOG ID -->
+            <MessageXML>remove</MessageXML>								<!-- MELDING remove FOR Å FJERNE  -->
+            <MessageIdXML>101</MessageIdXML>							<!-- ID TIL MELDING SOM SKAL FJERNES -->
+        </ScenarioActionMessageXML>
+    </ScenarioEventXML>
+	
+    <!-- DEKAKTIVER AUTOTOG --> 
+    <ScenarioEventXML>
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	 <!-- AUTOTOG KOMMANDO "removeupdate"-->
+            <IdXML>200</IdXML>						 <!-- DENNE KOMMANDOEN BETYR AT DETTE AUTOTOGET KOBLES BORT FRA POSISJONSOPPDATERINGSSYKLUSEN I PROGRAMMET-->
+        </ScenarioActionAutoTrainCommandXML>		 <!-- TOGET VIL STOPPE OG PROGRAMMET VIL SLUTTE Å BRUKE RESSURSER PÅ Å OPPDATERE TOGETS POSISJON-->
+    </ScenarioEventXML>
+
+
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>  					
+            <IdXML>100</IdXML>		  					
+            <SectionNameXML>gaffelberg1</SectionNameXML>
+            <StartVertexXML>0,0,1150</StartVertexXML> 	<!-- SAMME TRIGGER SOM VED AKTOVERING... -->
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>w02</IdXML>
+            <StateXML>3</StateXML>						<!-- HER SKAL PLO VIRKE SOM NORMALT OG STATE SETTES TIL 2 -->
+        </ScenarioActionStateChangerXML>        
+		
+        <ScenarioTriggerTimeXML>				
+            <SecondsXML>15</SecondsXML>				    <!-- ... MEN MED TIDSFORSINKELSE -->
+        </ScenarioTriggerTimeXML>
+		
+        <ScenarioActionStateChangerXML>
+            <IdXML>w02</IdXML>
+            <StateXML>2</StateXML>						<!-- HER SKAL PLO VIRKE SOM NORMALT OG STATE SETTES TIL 2 -->
+        </ScenarioActionStateChangerXML>			
+														
+        <ScenarioActionStateChangerXML>
+            <IdXML>plo1</IdXML>						    <!-- BOMMENE KAN ENTEN OGSÅ SETTES HER ELLER BLI SATT VED SCENARIESTART -->
+            <StateXML>1</StateXML>					    <!-- DEFAULT 0 = BOMMER OPPE, 1 = BOMMER NEDE -->
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+	
+    <!-- SIGNAL SATT OPP EN GITT TID ETTER AT TOGET HAR STOPPA ETTER EN GITT POSISJON-->
+    <ScenarioEventXML>		
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							<!-- ID'EN TIL TOGET SOM SKAL TRIGGE -->
+            <SectionNameXML>spurvstad1</SectionNameXML>		
+            <StartVertexXML>0,0,1800</StartVertexXML>   <!-- POSISJON FOR TRIGGING I SEKSJONEN-->
+        </ScenarioTriggerTrackPosXML>
+        <!-- NÅR FØRSTE TRIGGER I AKTIVERT HOPPER PROGRAMMET TIL DEN NESTE -->
+        <ScenarioTriggerSpeedXML>						<!-- ScenarioTriggerSpeed -->
+            <IdXML>100</IdXML>							<!-- HASTIGHETEN DET SKAL TRIGGES I FORHOLD TIL -->
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				<!-- MÅTEN DEL SKAL TRIGGES: -1 = MINDRE ENN, 0 = LIK, 1 = STØRRE ENN -->
+        </ScenarioTriggerSpeedXML>						<!-- TRIGGEREN HER AKTIVERES NÅR HASTIGHETEN ER MINDRE ENN 1 -->
+		
+        <ScenarioTriggerTimeXML>						<!-- NESTE STEG ER TIDSFORSINKELSE: DENNE STARTER NÅR ALLE (her BEGGE) TRIGGERE FORAN ER AKTIVERT -->
+            <SecondsXML>10</SecondsXML>					<!-- ANTALL SEKUNDER FORSINKELSE -->
+        </ScenarioTriggerTimeXML>
+	
+        <ScenarioActionStateChangerXML>					<!-- STATECHANGER SOM VIST LENGRE OPP -->
+            <IdXML>b02sst</IdXML>						<!-- INNKJØR-STOPPSKILT SPURVSTAD -->
+            <StateXML>1</StateXML>						<!-- SETTES TIL KJØR NÅR TOGET HAR PASSERT POS 1750, HAR STOPPET OG DET HAR GÅTT 5 SEK -->
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+	
+
+    <!-- TOGVEIEN SETTES STEGVIS OPP VIDERE -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>spurvstad1</SectionNameXML>		
+            <StartVertexXML>0,0,1800</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+														
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>						
+		
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>15</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>26sst</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+		
+        <ScenarioActionStateChangerXML>
+            <IdXML>06sst</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+	
+    <ScenarioEventXML> 
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>spurvstad1</SectionNameXML>		
+            <StartVertexXML>0,0,1800</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+														
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>						
+		
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>20</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+		
+        <ScenarioActionStateChangerXML>
+            <IdXML>m04sst</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>d622</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>                
+		
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10120_sec:nitkatman1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+                        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+                        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10300_sec:nitkatman1_type:hs2</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+
+    <!-- KJØR FRYS OPPG -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>gaffelberg1</SectionNameXML>		
+            <StartVertexXML>0,0,1120</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>			
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se nå på pkt. 3</MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+	
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ospim1</SectionNameXML>		
+            <StartVertexXML>0,0,4790</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>			
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se nå på pkt. 4</MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ospim1</SectionNameXML>		
+            <StartVertexXML>0,0,3740</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>			
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se nå på pkt. 5</MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>spurvstad1</SectionNameXML>		
+            <StartVertexXML>0,0,2230</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>			
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se nå på pkt. 6</MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>spurvstad0</SectionNameXML>		
+            <StartVertexXML>0,0,1390</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>			
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se nå på pkt. 7</MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+
+	
+</ScenarioXML>

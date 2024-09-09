@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.4</AmbientLightXML> <!-- 0 til 255 --> 
+
+    <!--    
+    -->
+    <SectionXML>
+        <NameXML>bekkerum1</NameXML> 
+    </SectionXML>
+
+    <TogXML>
+        <IdXML>202</IdXML>
+        <ModelXML>sdggmrsny</ModelXML>
+        <StartSeksjonXML>bekkerum1</StartSeksjonXML>
+        <StartposXML>2670</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1080;luftkoblemedkm=ja;luftkranmedkm=ja;kobbelopphengmotkm=ja;luftkobbelopphengmotkm=ja;nummer=1129;last=container_rema_rear;sluttsignalmot=ja</InfoXML>  
+    </TogXML>   
+
+    <TogXML>
+        <IdXML>203</IdXML>
+        <ModelXML>sdggmrsny</ModelXML>
+        <StartSeksjonXML>bekkerum1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1080;luftkoblemedkm=ja;luftkranmedkm=ja;kobbelopphengmotkm=ja;luftkranmotkm=ja;nummer=2473;last=container_rema_rear</InfoXML> 
+    </TogXML>   
+
+    <TogXML>
+        <IdXML>204</IdXML>
+        <ModelXML>sdggmrsny</ModelXML>
+        <StartSeksjonXML>bekkerum1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1080;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja;last=container_rema_rear</InfoXML> 
+    </TogXML>           
+      
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>t44ny</ModelXML>
+        <StartSeksjonXML>bekkerum1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <StartModusXML>104</StartModusXML>        
+        <InfoXML>kobbelopphengmedkm=ja;kobbelopphengmotkm=ja;luftkobbelopphengmedkm=ja;luftkranmotkm=ja</InfoXML> 
+        <PersonOffsetVectorXML>20, 0.0, -5.0</PersonOffsetVectorXML>
+        <PersonRotationXML>0</PersonRotationXML>          
+    </TogXML>
+	
+    <StartTimeXML>16:30</StartTimeXML> 
+    
+    <BremseskoStativXML>
+        <SectionNameXML>bekkerum1</SectionNameXML>
+        <StartVertexXML>-40.0, 0.0, 2650</StartVertexXML>
+        <OffsetVertexXML>-5, 0, 0</OffsetVertexXML>    
+        <TypeXML>1</TypeXML>    
+        <IdXML></IdXML>
+        <DirectionXML>1</DirectionXML>
+    </BremseskoStativXML>  
+    
+    <BremseskoStativXML>
+        <SectionNameXML>bekkerum1</SectionNameXML>
+        <StartVertexXML>40.0, 0.0, 2400</StartVertexXML>
+        <OffsetVertexXML>5, 0, 0</OffsetVertexXML>      
+        <IdXML></IdXML>
+        <DirectionXML>1</DirectionXML>
+    </BremseskoStativXML>                       
+
+	
+</ScenarioXML>

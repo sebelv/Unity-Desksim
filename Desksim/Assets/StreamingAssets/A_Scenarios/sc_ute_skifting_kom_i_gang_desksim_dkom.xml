@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+
+    <!--    
+    -->
+    <SectionXML>
+        <NameXML>hakafjell1</NameXML> 
+    </SectionXML>
+
+    <TogXML>
+        <IdXML>202</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>hakafjell1</StartSeksjonXML>
+        <StartposXML>1680</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>hl=5.0;kobbelopphengmotkm=ja;kobbelopphengmedkm=ja;luftkobbelopphengmotkm=ja;luftkobbelopphengmedkm=ja;</InfoXML>  
+    </TogXML>      
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>t44</ModelXML>
+        <StartSeksjonXML>hakafjell1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>104</StartModusXML>        
+        <InfoXML>kobbelopphengmotkm=ja;kobbelopphengmedkm=ja;luftkobbelopphengmotkm=ja;luftkobbelopphengmedkm=ja;</InfoXML> 
+        <PersonOffsetVectorXML>-6.5, 0.0, -14.0</PersonOffsetVectorXML> <!-- -6.5 -->
+        <PersonRotationXML>45</PersonRotationXML>         
+    </TogXML>    
+	
+    <StartTimeXML>16:30</StartTimeXML> 
+	
+    <ScenarioInfoCarryOnXML>
+        <ImageXML>komigang/Lysbilde1.PNG</ImageXML>
+        <ImageXML>komigang/Lysbilde2.PNG</ImageXML>
+        <ImageXML>komigang/Lysbilde3.PNG</ImageXML>   
+        <ImageXML>komigang/Lysbilde4.PNG</ImageXML>
+        <ImageXML>komigang/Lysbilde5.PNG</ImageXML> 
+        <ImageXML>komigang/Lysbilde6.PNG</ImageXML>
+        <ImageXML>komigang/Lysbilde7.PNG</ImageXML>                             
+    </ScenarioInfoCarryOnXML>    
+	
+</ScenarioXML>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackConnectedObjects>
+
+<TrackConnectedObjectListXML>
+
+  <NoHS3Ac3dXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.04, 0.0, 50.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>nohs.ac</FileNameXML>
+    <SignalFlashingXML>false</SignalFlashingXML>
+  </NoHS3Ac3dXML>
+  <NoHS3Ac3dXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>5.23, 0.0, 50.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>nohs.ac</FileNameXML>
+    <SignalFlashingXML>false</SignalFlashingXML>
+  </NoHS3Ac3dXML>
+  <NoHS3Ac3dXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.01, 0.0, 300.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>nohs.ac</FileNameXML>
+    <SignalFlashingXML>false</SignalFlashingXML>
+  </NoHS3Ac3dXML>
+  <NoHS3Ac3dXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-5.81, 0.0, 300.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>nohs.ac</FileNameXML>
+    <SignalFlashingXML>false</SignalFlashingXML>
+  </NoHS3Ac3dXML>
+</TrackConnectedObjectListXML>

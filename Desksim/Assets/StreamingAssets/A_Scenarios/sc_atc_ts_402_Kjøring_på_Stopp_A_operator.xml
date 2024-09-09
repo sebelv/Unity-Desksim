@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>18,150,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+
+
+    <SectionXML>
+        <NameXML>nitkatman1</NameXML>
+    </SectionXML>
+
+    <SectionXML>
+        <NameXML>storehammer0</NameXML>
+    </SectionXML>
+   
+    <SectionXML>
+        <NameXML>storehammer1</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>9820</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>104</StartModusXML>        
+        <InfoXML></InfoXML> 
+    </TogXML>     
+    
+    <TogXML>
+        <IdXML>203</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>10400</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>         
+	
+    <StartTimeXML>09:28</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+    
+    <TogNrXML>1001</TogNrXML>
+    
+    <SlideMappeXML>infoslides_scenario/400</SlideMappeXML>
+    <NettbrettFilXML>nettbrettslides_scenario/tog 1001.png</NettbrettFilXML>    
+    <SlideOffsetInfoXML>5</SlideOffsetInfoXML>
+    <SlideOffsetOppgaverXML>5</SlideOffsetOppgaverXML>
+    
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML>
+ 
+    <!-- MANGEBERG -->
+    <ScenarioEventXML> 
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde1.PNG</MessageXML>
+        </ScenarioActionFreezeXML> 
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>1</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Toget er på Mangeberg stasjon</MessageXML>    
+        </ScenarioActionFreezeXML> 
+   
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10100_sec:nitkatman1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>   
+        
+
+     
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>1</SecondsXML>					
+        </ScenarioTriggerTimeXML>  
+                       
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>203</IdXML>		
+            <SpeedXML>-30</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>   
+    
+        <!-- togvei ut og fjern autotog mangeberg-->
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>203</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>		
+            <StartVertexXML>-5,0,9950</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>      
+       
+        <ScenarioActionStateChangerXML> <!-- feil -->
+            <IdXML>pos:10100_sec:nitkatman1</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>   
+               
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML> 
+                           
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10030_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>      
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:595_sec:storehammer1_type:dv</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>        
+   
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>10</SecondsXML>					
+        </ScenarioTriggerTimeXML>    
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	
+            <IdXML>203</IdXML>	        
+        </ScenarioActionAutoTrainCommandXML>
+    </ScenarioEventXML>                
+
+    <!-- STOREHAMMER1 -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>storehammer0</SectionNameXML>		
+            <StartVertexXML>0,0,850</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>   
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>    
+        
+        <ScenarioActionSendTogradioChatXML>
+            <MeldingXML>Stoppet foran A 701 SHR</MeldingXML>
+        </ScenarioActionSendTogradioChatXML>    
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>storehammer1</SectionNameXML>		
+            <StartVertexXML>0,0,750</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>   
+   
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>    
+         
+        <ScenarioActionSendTogradioChatXML>
+            <MeldingXML>Stoppet foran 723 SHR</MeldingXML>
+        </ScenarioActionSendTogradioChatXML>   
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1230_sec:storehammer1_type:hs3_x:0</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+		
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1230_sec:storehammer1_type:dv_x:0</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+         
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>storehammer1</SectionNameXML>		
+            <StartVertexXML>0,0,1800</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>         
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde2.PNG</MessageXML>
+        </ScenarioActionFreezeXML>
+        
+    </ScenarioEventXML>
+
+</ScenarioXML>
+

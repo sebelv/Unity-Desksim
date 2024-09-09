@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+
+  <!--   
+  -->
+	<SectionXML>
+		<NameXML>nitkatman1</NameXML>
+	</SectionXML>
+     
+  <SectionXML>
+          <NameXML>storehammer0</NameXML>
+  </SectionXML>
+
+	<SectionXML>
+		<NameXML>storehammer1</NameXML>
+                <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+	</SectionXML>
+    
+	<SectionXML>
+		<NameXML>revestua1</NameXML>
+                <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+	</SectionXML>
+ 
+
+	<SectionXML>
+		<NameXML>hakafjell1</NameXML>
+                <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+	</SectionXML>
+  <!--      
+	<SectionXML>
+		<NameXML>GRS</NameXML>
+               <EndPointNextStartPointIndexXML>4</EndPointNextStartPointIndexXML> 
+	</SectionXML>
+  
+	<SectionXML>
+		<NameXML>UFJS1</NameXML>
+	</SectionXML>
+             
+	<SectionXML>
+		<NameXML>UFJS2</NameXML>
+	</SectionXML>
+ 
+    -->
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>1680</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>104</StartModusXML>        
+        <InfoXML></InfoXML> 
+    </TogXML>               
+        
+    <TogXML>
+        <IdXML>200</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>revestua1</StartSeksjonXML>
+        <StartposXML>3050</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>    
+        
+    <TogXML>
+        <IdXML>300</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>hakafjell1</StartSeksjonXML>
+        <StartposXML>2350</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>     
+	
+    <StartTimeXML>17:37</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+    
+    <TogNrXML>315</TogNrXML>
+	
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML>
+    
+    <SlideMappeXML>infoslides_scenario/infrastruktur1</SlideMappeXML>
+    <SlideOffsetInfoXML>142</SlideOffsetInfoXML>
+    <SlideOffsetOppgaverXML>164</SlideOffsetOppgaverXML>
+    <NettbrettFilXML>nettbrettslides_scenario/tog 315.png</NettbrettFilXML>     
+    <!-- NITTEBERG -->
+
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>		
+        </ScenarioTriggerTimeXML>			
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde1.PNG
+            </MessageXML>
+        </ScenarioActionFreezeXML>				
+    
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>		
+        </ScenarioTriggerTimeXML>			
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde2.PNG oppg1=true oppg2=true oppg3=true oppg4=true oppg5=true oppg6=true
+            </MessageXML>
+        </ScenarioActionFreezeXML>			
+    </ScenarioEventXML>
+
+
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>10</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+		
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1753_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>	
+	
+    <!-- KATTDORP -->
+    <!-- frys 2 forsignal-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>	
+            <StartVertexXML>0,0,3315</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+    
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde3.PNG oppg1=true oppg2=false oppg3=true oppg4=true oppg5=false
+            </MessageXML>
+        </ScenarioActionFreezeXML>	  	
+    </ScenarioEventXML>
+  
+    <!-- frys 3 hovedsignal-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>	
+            <StartVertexXML>0,0,3500</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>		
+    
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>	
+    
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde4.PNG oppg1=false oppg2=true oppg3=true oppg4=false oppg5=true
+            </MessageXML>
+        </ScenarioActionFreezeXML>
+    
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>	    
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4130_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+    
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde5.PNG oppg1=false oppg2=true oppg3=false oppg4=true oppg5=false oppg6=true
+            </MessageXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML>
+
+    <!-- spv'er og utkj Kattdorp -->
+    <ScenarioEventXML>	
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4330_sec:nitkatman1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+		
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4830_sec:nitkatman1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+		
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4758_sec:nitkatman1_type:hs2</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>	
+  
+    <!-- frys km skilt-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>	
+            <StartVertexXML>0,0,5985</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde6.PNG oppg1=true oppg2=true oppg3=false oppg4=true
+            </MessageXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML>
+	
+    <!-- VESTLI BP-->
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:7240_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>	
+	
+    <!-- Frys holdeplass-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>	
+            <StartVertexXML>0,0,7880</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>		
+    
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde7.PNG oppg1=false oppg2=true oppg3=true oppg4=false
+            </MessageXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML>
+
+    <!-- MANGEBERG-->
+    <!-- frys forsignal-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>	
+            <StartVertexXML>0,0,8475</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde8.PNG oppg1=true oppg2=true oppg3=false oppg4=true
+            </MessageXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML>
+    <!-- BU -->
+    <ScenarioBasedAc3dTCOXML>
+        <StartVertexXML>0.0, 0.0, 8399</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>2.5, 0.0, 0.0</OffsetVertexXML>
+        <DirectionXML>1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <ModelFileXML>atcskilt_noatc.ac</ModelFileXML>
+    </ScenarioBasedAc3dTCOXML>
+  
+    <BaliseScenarioBasedXML>										
+        <SectionIndexXML>0</SectionIndexXML>
+        <StartVertexXML>0.0, 0.0, 8400</StartVertexXML>
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <KodeXML>5, 4, 11</KodeXML>
+    </BaliseScenarioBasedXML>
+
+    <BaliseScenarioBasedXML>										
+        <SectionIndexXML>0</SectionIndexXML>
+        <StartVertexXML>0.0, 0.0, 8403</StartVertexXML>
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <KodeXML>5, 5, 11</KodeXML>
+    </BaliseScenarioBasedXML>
+    <!-- SU ved storehammer0 -->   
+    <ScenarioBasedAc3dTCOXML>
+        <StartVertexXML>0.0, 0.0, 100</StartVertexXML>
+        <SectionNameXML>storehammer0</SectionNameXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>-2.5, 0.0, 0.0</OffsetVertexXML>
+        <DirectionXML>1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <ModelFileXML>atcskilt_datc.ac</ModelFileXML>
+    </ScenarioBasedAc3dTCOXML>
+  
+    <BaliseScenarioBasedXML>										
+        <SectionNameXML>storehammer0</SectionNameXML>
+        <StartVertexXML>0.0, 0.0, 100</StartVertexXML>
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <KodeXML>5, 5, 11</KodeXML>
+    </BaliseScenarioBasedXML>
+
+    <BaliseScenarioBasedXML>										
+        <SectionNameXML>storehammer0</SectionNameXML>
+        <StartVertexXML>0.0, 0.0, 103</StartVertexXML>
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <KodeXML>5, 4, 11</KodeXML>
+    </BaliseScenarioBasedXML>
+  
+    <!-- ugyldig, avst 2 og slokt forsign innkj Mangeb--> 
+    <ScenarioBasedAc3dTCOXML>
+        <StartVertexXML>0.0, 0.0, 8489.9</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>-3.0, 0.5, 0.0</OffsetVertexXML>
+        <DirectionXML>1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <ModelFileXML>ugyl_merke.ac</ModelFileXML>
+    </ScenarioBasedAc3dTCOXML>
+  
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:8490_sec:nitkatman1</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>	
+  
+    <ScenarioBasedAc3dTCOXML>
+        <StartVertexXML>0.0, 0.0, 8485</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+        <DirectionXML>1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <ModelFileXML>avst2.ac</ModelFileXML>
+    </ScenarioBasedAc3dTCOXML>
+  
+    <!-- midl innkj Mangeb-->
+    <NoMidlSignXML>
+        <StartVertexXML>0.0, 0.0, 9485</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>3.0, -2.0, 0.0</OffsetVertexXML>
+        <DirectionXML>1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+    </NoMidlSignXML>
+  
+    <ScenarioBasedAc3dTCOXML>
+        <StartVertexXML>0.0, 0.0, 9485</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>3.0, -1.5, 0.0</OffsetVertexXML>
+        <DirectionXML>1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <ModelFileXML>ring_dobbel.ac</ModelFileXML>
+    </ScenarioBasedAc3dTCOXML>
+ 
+    <IdBoardScenarioBasedXML>
+        <SectionName>nitkatman1</SectionName>
+        <StartVertexXML>0.0, 0.0, 9484.9</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>3.0, 0.85, 0.0</OffsetVertexXML>
+        <DirectionXML>1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <Line1XML>    A</Line1XML>
+        <Line2XML>  601</Line2XML>
+        <Line3XML>  MGE</Line3XML>
+        <TypeXML>0</TypeXML>
+    </IdBoardScenarioBasedXML>
+  
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:9485_sec:nitkatman1</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>	
+	
+    <!-- frys og innkj og utkj slokt-->
+    <ScenarioBasedAc3dTCOXML>
+        <StartVertexXML>0.0, 0.0, 9489.8</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>-3.0, 1.5, 0.0</OffsetVertexXML>
+        <DirectionXML>1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <ModelFileXML>ugyl_merke.ac</ModelFileXML>
+    </ScenarioBasedAc3dTCOXML>
+  
+    <!-- frys innkj-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>	
+            <StartVertexXML>0,0,9475</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde9.PNG oppg1=true oppg2=false oppg3=false oppg4=true oppg5=true oppg6=true
+            </MessageXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML>
+  
+    <ScenarioEventXML>  
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:9490_sec:nitkatman1</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10030_sec:nitkatman1</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>                                        						
+    </ScenarioEventXML>
+  
+    <ScenarioBasedAc3dTCOXML>
+        <StartVertexXML>0.0, 0.0, 10029.9</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>3.0, 0.5, 0.0</OffsetVertexXML>
+        <DirectionXML>1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <ModelFileXML>ugyl_merke.ac</ModelFileXML>
+    </ScenarioBasedAc3dTCOXML>
+  
+    <ScenarioBasedAc3dTCOXML>
+        <StartVertexXML>-5.0, 0.0, 10029.9</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>-2.8, 0.5, 0.0</OffsetVertexXML>
+        <DirectionXML>1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <ModelFileXML>ugyl_merke.ac</ModelFileXML>
+    </ScenarioBasedAc3dTCOXML>
+  
+    <!-- midl utkj Mangeberg-->
+    <!-- frys utkj-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>	
+            <StartVertexXML>0,0,10023</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde10.PNG oppg1=true oppg2=true oppg3=false oppg4=true oppg5=true oppg6=false
+            </MessageXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML>
+  
+    <NoMidlSignXML>
+        <StartVertexXML>0.0, 0.0, 10085</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>-2.5, -2.0, 0.0</OffsetVertexXML>
+        <DirectionXML>1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+    </NoMidlSignXML>
+ 
+    <IdBoardScenarioBasedXML>
+        <SectionName>nitkatman1</SectionName>
+        <StartVertexXML>0.0, 0.0, 10084.9</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>-2.5, 0.85, 0.0</OffsetVertexXML>
+        <DirectionXML>1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <Line1XML>    L</Line1XML>
+        <Line2XML>  603</Line2XML>
+        <Line3XML>  MGE</Line3XML>
+        <TypeXML>0</TypeXML>
+    </IdBoardScenarioBasedXML>
+
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10085_sec:nitkatman1</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>	
+  
+    <!-- txp -->
+    <WorkerAc3dXML>
+        <IdXML>txpMANGEBERG</IdXML>
+        <SectionNameXML>nitkatman1</SectionNameXML>
+        <StartVertexXML>0, 0, 9840</StartVertexXML> 	
+        <OffsetVertexXML>4.5, 0.0, 0.0</OffsetVertexXML>
+        <FileNameXML>TXPhilser.ac</FileNameXML>
+        <DirectionXML>1</DirectionXML>						
+    </WorkerAc3dXML>
+  
+    <!-- STOREHAMMER_EX -->
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>a701</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+
+    <!-- STOREHAMMER1 -->
+    <!-- frys ved indre hs-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>storehammer1</SectionNameXML>	
+            <StartVertexXML>0,0,865</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde11.PNG oppg1=false oppg2=true oppg3=true oppg4=false
+            </MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+  
+    <!-- signaler gjennom storeh-->
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:595_sec:storehammer1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:595_sec:storehammer1_type:dv</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:880_sec:storehammer1_type:hs3_x:0</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:880_sec:storehammer1_type:dv_x:0</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1026_sec:storehammer1_type:dv_x:0</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>		
+	
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>storehammer1</SectionNameXML>	
+            <StartVertexXML>0,0,1535</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde12.PNG oppg1=true oppg2=false oppg3=true oppg4=false
+            </MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+	
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1230_sec:storehammer1_type:hs3_x:0</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+		
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1230_sec:storehammer1_type:dv_x:0</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+  
+    <!-- REVESTUA -->
+    <!-- frys stigning-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>revestua1</SectionNameXML>	
+            <StartVertexXML>0,0,990</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde13.PNG oppg1=false oppg2=true oppg3=true oppg4=false oppg5=true
+            </MessageXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML>
+  
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>revestua1</SectionNameXML>	
+            <StartVertexXML>0,0,2000</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+
+        <ScenarioActionFreezeXML>						
+            <MessageXML> Fortsett innkjøring, /n men stopp ved plattform/n slik at du ser togsporsignalet</MessageXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML>
+  
+    <ScenarioEventXML>    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1890_sec:revestua1_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2090_sec:revestua1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2427_sec:revestua1</IdXML>
+            <StateXML>55</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+
+    <!-- start kryss tog--> 
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>revestua1</SectionNameXML>	
+            <StartVertexXML>10,0,2300</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+	
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>	
+    
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde14.PNG oppg1=false oppg2=true oppg3=false oppg4=true
+            </MessageXML>
+        </ScenarioActionFreezeXML>
+	
+        <!--  OBS: TESTVERDI KRYSSINGSLÅSING -->
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>5</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2429_sec:revestua1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+		
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2427_sec:revestua1</IdXML>
+            <StateXML>56</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>200</IdXML>		
+            <SpeedXML>-60</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>
+    </ScenarioEventXML>
+	
+    <!-- veksel og ut --> 
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>200</IdXML>							
+            <SectionNameXML>revestua1</SectionNameXML>		
+            <StartVertexXML>0,0,2500</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2590_sec:revestua1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+		
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>3</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2480_sec:revestua1_type:hs2_x:10.0</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>	    
+
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde15.PNG oppg1=false oppg2=true oppg3=true oppg4=true oppg5=false
+            </MessageXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML>
+
+    <!-- stopp kryss tog--> 				
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>200</IdXML>							
+            <SectionNameXML>revestua1</SectionNameXML>		
+            <StartVertexXML>0,0,2200</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+		
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	
+            <IdXML>200</IdXML>		
+        </ScenarioActionAutoTrainCommandXML>
+    </ScenarioEventXML>
+  
+    <!-- frys innkobl plo-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>revestua1</SectionNameXML>	
+            <StartVertexXML>0,0,3630</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde16.PNG oppg1=false oppg2=true oppg3=true
+            </MessageXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML>
+  
+    <!-- frys forsig plo-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>revestua1</SectionNameXML>	
+            <StartVertexXML>0,0,4630</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde17.PNG oppg1=true oppg2=false oppg3=true oppg4=true oppg5=true oppg6=true
+            </MessageXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML>
+
+    <!-- HAKAFJELL -->
+    <ScenarioEventXML>
+        <!-- plo sign-->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:160_sec:hakafjell1</IdXML>
+            <StateXML>56</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <!-- plo -->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:170_sec:hakafjell1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+  
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>hakafjell1</SectionNameXML>	
+            <StartVertexXML>0,0,1130</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde18.PNG oppg1=true oppg2=false oppg3=true oppg4=false oppg5=true
+            </MessageXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML>
+  
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>hakafjell1</SectionNameXML>	
+            <StartVertexXML>0,0,1400</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+
+        <ScenarioActionFreezeXML>						
+            <MessageXML> Fortsett innkjøring, /n men stopp ved plattform/n slik at du ser rep. signalet</MessageXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML>
+  
+    <!-- signaler--> 
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1150_sec:hakafjell1_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1500_sec:hakafjell1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+
+    <!-- start kryss tog--> 
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>hakafjell1</SectionNameXML>	
+            <StartVertexXML>5,0,1800</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+	
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>	
+    
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde19.PNG oppg1=true oppg2=false oppg3=true oppg4=false
+            </MessageXML>
+        </ScenarioActionFreezeXML>
+	
+        <!--  OBS: TESTVERDI KRYSSINGSLÅSING -->
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>10</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+		
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>300</IdXML>		
+            <SpeedXML>-60</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>
+
+
+    </ScenarioEventXML>
+	
+    <!-- veksel og ut --> 
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>300</IdXML>							
+            <SectionNameXML>hakafjell1</SectionNameXML>		
+            <StartVertexXML>0,0,1950</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2060_sec:hakafjell1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+
+    <!-- signal ut --> 
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>300</IdXML>							
+            <SectionNameXML>hakafjell1</SectionNameXML>		
+            <StartVertexXML>0,0,1950</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+		
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>3</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1990_sec:hakafjell1_type:hs2</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+    
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde20.PNG oppg1=true oppg2=true oppg3=false oppg4=true
+            </MessageXML>
+        </ScenarioActionFreezeXML>
+    
+    </ScenarioEventXML>
+
+    <!-- stopp kryss tog--> 				
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>300</IdXML>							
+            <SectionNameXML>hakafjell1</SectionNameXML>		
+            <StartVertexXML>0,0,1675</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+		
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	
+            <IdXML>300</IdXML>		
+        </ScenarioActionAutoTrainCommandXML>
+    </ScenarioEventXML>
+
+    <!-- frys tekninsk stolpe-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>hakafjell1</SectionNameXML>	
+            <StartVertexXML>0,0,3390</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde21.PNG oppg1=true oppg2=true
+            </MessageXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML>
+
+
+  
+    <!-- frys oppsummering-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>hakafjell1</SectionNameXML>	
+            <StartVertexXML>0,0,3900</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde22.PNG
+            </MessageXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML>
+
+</ScenarioXML>
+

@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,90,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+    <!--
+           <SectionXML>
+                   <NameXML>atcbortflkrysbanen1</NameXML>
+       <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>            
+           </SectionXML>
+    
+    <SectionXML>
+        <NameXML>atcbortflkrysbanen2</NameXML>
+        <EndPointNextStartPointIndexXML>3</EndPointNextStartPointIndexXML>
+    </SectionXML>
+    -->
+  
+    <SectionXML>
+        <NameXML>atcbortflkrysbanen3</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+  
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>atcbortflkrysbanen3</StartSeksjonXML>
+        <StartposXML>10300</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>103</StartModusXML>        
+        <InfoXML></InfoXML> 
+    </TogXML>   
+	
+    <StartTimeXML>12:00</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+    <TogNrXML>3103</TogNrXML>   
+    <NettbrettFilXML>nettbrettslides_scenario/tog 3103.png</NettbrettFilXML>  
+    
+    <PersonStartPosisjonXML>forerrom1_sittende</PersonStartPosisjonXML>      
+    
+    <SlideMappeXML>infoslides_scenario/300</SlideMappeXML>
+    <SlideOffsetInfoXML>164</SlideOffsetInfoXML>
+    <SlideOffsetOppgaverXML>164</SlideOffsetOppgaverXML>       
+
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>4</SecondsXML>
+        </ScenarioTriggerTimeXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10230_sec:atcbortflkrysbanen3_type:dv_x:0</IdXML>
+            <StateXML>45</StateXML>	
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10080_sec:atcbortflkrysbanen3_type:hs3</IdXML>
+            <StateXML>22</StateXML>	
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:6420_sec:atcbortflkrysbanen3_type:dv_x:0</IdXML>
+            <StateXML>45</StateXML>	
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:7000_sec:atcbortflkrysbanen3_type:hs3</IdXML>
+            <StateXML>22</StateXML>	
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:6220_sec:atcbortflkrysbanen3_type:hs3</IdXML>
+            <StateXML>22</StateXML>	
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3200_sec:atcbortflkrysbanen3_type:hs3</IdXML>
+            <StateXML>22</StateXML>	
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2270_sec:atcbortflkrysbanen3_type:hs3</IdXML>
+            <StateXML>22</StateXML>	
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+    
+    <!-- FRYS 1 ved oppstart-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde1.PNG
+            </MessageXML> 
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+        
+    <!-- FRYS 2 forkl HL-->    
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>				
+            <IdXML>100</IdXML>							
+            <StartVertexXML>0,0,9000</StartVertexXML>
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>
+        </ScenarioTriggerTrackPosXML>
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde2.PNG
+            </MessageXML> 
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+    
+    <!-- FRYS 3 BF 1 oppstår-->    
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>				
+            <IdXML>100</IdXML>							
+            <StartVertexXML>0,0,8550</StartVertexXML>
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>
+        </ScenarioTriggerTrackPosXML>
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde3.PNG oppg1=false oppg2=false oppg3=true oppg4=false oppg5=true oppg6=true
+            </MessageXML> 
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+    
+    <!-- FRYS 4 BF 1 oppfølg-->    
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>				
+            <IdXML>100</IdXML>							
+            <StartVertexXML>0,0,8530</StartVertexXML>
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>
+        </ScenarioTriggerTrackPosXML>
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde4.PNG
+            </MessageXML> 
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+    
+    <!-- FRYS 5 BF 1 tilbakestill-->    
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>				
+            <IdXML>100</IdXML>							
+            <StartVertexXML>0,0,7100</StartVertexXML>
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>
+        </ScenarioTriggerTrackPosXML>
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde5.PNG
+            </MessageXML> 
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+    
+    <!-- FRYS 6 BF 2 oppstår-->    
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>				
+            <IdXML>100</IdXML>							
+            <StartVertexXML>0,0,6050</StartVertexXML>
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>
+        </ScenarioTriggerTrackPosXML>
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde6.PNG oppg1=true oppg2=true oppg3=true oppg4=true
+            </MessageXML> 
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+    
+    <!-- FRYS 7 BF 2 stopp-->    
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>				
+            <IdXML>100</IdXML>							
+            <StartVertexXML>0,0,6030</StartVertexXML>
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>
+        </ScenarioTriggerTrackPosXML>
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde7.PNG
+            </MessageXML> 
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+    
+    <!-- FRYS 8 BF 2 har stoppet og FRYS 9 2 sek etter-->    
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>				
+            <IdXML>100</IdXML>							
+            <StartVertexXML>0,0,6130</StartVertexXML>
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde8.PNG oppg1=true oppg2=false oppg3=true
+            </MessageXML> 
+        </ScenarioActionFreezeXML>	
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde9.PNG
+            </MessageXML> 
+        </ScenarioActionFreezeXML>                       					
+    </ScenarioEventXML>
+    
+    <!-- FRYS 10 BF 2 hastighet-->    
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>				
+            <IdXML>100</IdXML>							
+            <StartVertexXML>0,0,4200</StartVertexXML>
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>
+        </ScenarioTriggerTrackPosXML>
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde10.PNG oppg1=false oppg2=true oppg3=false oppg4=false
+            </MessageXML> 
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+    
+    <!-- FRYS 11 BF 2 hastighet oppfølg-->    
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>				
+            <IdXML>100</IdXML>							
+            <StartVertexXML>0,0,4180</StartVertexXML>
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>
+        </ScenarioTriggerTrackPosXML>
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde11.PNG
+            </MessageXML> 
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+    
+    <!-- FRYS 12 BF 2 hastighet-->    
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>				
+            <IdXML>100</IdXML>							
+            <StartVertexXML>0,0,2200</StartVertexXML>
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>
+        </ScenarioTriggerTrackPosXML>
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde12.PNG oppg1=false oppg2=true oppg3=true oppg4=true
+            </MessageXML> 
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+    
+    <!-- FRYS 13 sammenlignfeil har stoppet og FRYS 14 10 sek etter-->    
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>				
+            <IdXML>100</IdXML>							
+            <StartVertexXML>0,0,2200</StartVertexXML>
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde13.PNG
+            </MessageXML> 
+        </ScenarioActionFreezeXML>	
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>10</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde14.PNG oppg1=false oppg2=false oppg3=false oppg4=true oppg5=false oppg6=true</MessageXML> 
+        </ScenarioActionFreezeXML>                       					
+    </ScenarioEventXML>
+    
+    <!-- FRYS 15 avslutt-->    
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>				
+            <IdXML>100</IdXML>							
+            <StartVertexXML>0,0,1200</StartVertexXML>
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>
+        </ScenarioTriggerTrackPosXML>
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde15.PNG</MessageXML> 
+            <AvsluttScenarioXML>true</AvsluttScenarioXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+    
+    <!-- BF1 -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>
+            <IdXML>100</IdXML>
+            <StartVertexXML>0,0,8600</StartVertexXML>
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>
+        </ScenarioTriggerTrackPosXML>	
+
+        <ScenarioActionSystemXML> 		
+            <IdXML>100</IdXML>			
+            <StateXML>1</StateXML>
+            <KodeXML>19:2:9:15:12:18</KodeXML>
+        </ScenarioActionSystemXML>		
+    </ScenarioEventXML>
+    
+    <!-- BF2 -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>
+            <IdXML>100</IdXML>
+            <StartVertexXML>0,0,6200</StartVertexXML>
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>
+        </ScenarioTriggerTrackPosXML>	
+
+        <ScenarioActionSystemXML> 		
+            <IdXML>100</IdXML>			
+            <StateXML>2</StateXML>
+            <KodeXML>4:1:9:15:12:18</KodeXML>
+        </ScenarioActionSystemXML>		
+    </ScenarioEventXML>
+        
+    <!-- SAMMENLIGNINGSFEIL-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>10</SecondsXML>
+        </ScenarioTriggerTimeXML>
+	
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>bam5105jvt</IdXML>
+            <MessageXML>4,0,14</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>	
+    </ScenarioEventXML>
+
+</ScenarioXML>
+

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+
+  <!--   
+
+	<SectionXML>
+		<NameXML>nitkatman</NameXML>
+	</SectionXML>
+     
+  <SectionXML>
+          <NameXML>storehammer1_ex</NameXML>
+  </SectionXML>
+  -->
+	<SectionXML>
+		<NameXML>storehammer1</NameXML>
+                <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+	</SectionXML>
+    
+	<SectionXML>
+		<NameXML>revestua1</NameXML>
+                <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+	</SectionXML>
+ 
+  <!--
+	<SectionXML>
+		<NameXML>hakafjell1</NameXML>
+                <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+	</SectionXML>
+      
+	<SectionXML>
+		<NameXML>GRS</NameXML>
+               <EndPointNextStartPointIndexXML>4</EndPointNextStartPointIndexXML> 
+	</SectionXML>
+  
+	<SectionXML>
+		<NameXML>UFJS1</NameXML>
+	</SectionXML>
+             
+	<SectionXML>
+		<NameXML>UFJS2</NameXML>
+	</SectionXML>
+ 
+    -->
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>storehammer1</StartSeksjonXML>
+        <StartposXML>800</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>104</StartModusXML>        
+        <InfoXML></InfoXML> 
+    </TogXML>    
+	
+    <StartTimeXML>15:50</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+    <TogNrXML>1002</TogNrXML>
+    
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML>     
+	
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>	<!--10-->				
+        </ScenarioTriggerTimeXML> 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:880_sec:storehammer1_type:dv_x:0</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>1</SecondsXML>					
+        </ScenarioTriggerTimeXML>         
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:880_sec:storehammer1_type:hs3_x:0</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>  
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>1</SecondsXML>			
+        </ScenarioTriggerTimeXML>        
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1026_sec:storehammer1_type:dv_x:0</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1230_sec:storehammer1_type:dv_x:0</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>         
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1230_sec:storehammer1_type:hs3_x:0</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>                                                                                  
+		
+                
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2090_sec:revestua1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+                        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1890_sec:revestua1_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>        
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2427_sec:revestua1</IdXML>
+            <StateXML>55</StateXML>
+        </ScenarioActionStateChangerXML>         
+    </ScenarioEventXML>
+    
+<!-- Avslutt ved at toget stoppes korrekt-->
+    <ScenarioEventXML>
+      
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>revestua1</SectionNameXML>	
+            <StartVertexXML>10,0,2300</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>		
+    
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>	
+   
+        <ScenarioActionFreezeXML>						
+            <MessageXML>stop_nifty</MessageXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML>     
+    
+    <!-- Avslutt ved at toget passerer stopp / eoa-->
+    <ScenarioEventXML>
+      
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>revestua1</SectionNameXML>	
+            <StartVertexXML>10,0,2430</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>			
+   
+        <ScenarioActionFreezeXML>						
+            <MessageXML>stop_nifty:text_sluttpunkt</MessageXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML>             
+             			
+		
+
+	
+</ScenarioXML>
+

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+
+    <!--    
+ 
+    
+    <SectionXML>
+        <NameXML>revestua1</NameXML> 
+    </SectionXML>
+        -->  
+<!-- 
+-->
+    <SectionXML>
+        <NameXML>storehammer1</NameXML> 
+    </SectionXML>
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>t44</ModelXML>
+        <StartSeksjonXML>storehammer1</StartSeksjonXML>
+        <StartposXML>200</StartposXML>
+        <StartposSideveisXML>70</StartposSideveisXML>
+        <StartModusXML>104</StartModusXML>        
+        <InfoXML>kobbelopphengmedkm=ja;kobbelopphengmotkm=ja;luftkobbelopphengmotkm=ja;</InfoXML> 
+        <PersonOffsetVectorXML>8.0, 0.0, 0.0</PersonOffsetVectorXML>
+        <PersonRotationXML>40</PersonRotationXML>           
+    </TogXML>   
+    
+    <TogXML>
+        <IdXML>202</IdXML>
+        <ModelXML>sdggmrs</ModelXML>
+        <StartSeksjonXML>storehammer1</StartSeksjonXML>
+        <StartposXML>150</StartposXML>
+        <StartposSideveisXML>65</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1080;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkobbelopphengmotkm=ja;luftkranmedkm=ja;last=container_blue_rear</InfoXML>  
+    </TogXML>    
+    
+    <TogXML>
+        <IdXML>203</IdXML>
+        <ModelXML>sdggmrs</ModelXML>
+        <StartSeksjonXML>storehammer1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>65</StartposSideveisXML>
+        <InfoXML>hl=5.0;kobbelopphengmedkm=ja;luftkobbelopphengmedkm=ja;kobbelopphengmotkm=ja;luftkranmotkm=ja;last=container_blue_front</InfoXML>  
+    </TogXML>    
+    
+    <TogXML>
+        <IdXML>301</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>storehammer1</StartSeksjonXML>
+        <StartposXML>110</StartposXML>
+        <StartposSideveisXML>60</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1080;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkobbelopphengmotkm=ja;luftkranmedkm=ja;last=container_red_front</InfoXML>  
+    </TogXML>    
+    
+    <TogXML>
+        <IdXML>302</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>storehammer1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>60</StartposSideveisXML>
+        <InfoXML>hl=5.0;kobbelopphengmedkm=ja;luftkobbelopphengmedkm=ja;kobbelopphengmotkm=ja;luftkranmotkm=ja;last=container_red_front</InfoXML>  
+    </TogXML>            
+           
+    <StartTimeXML>16:30</StartTimeXML> 
+    
+    <ScenarioInfo3dXML>
+        <SectionNameXML>storehammer1</SectionNameXML>
+        <StartVertexXML>70.0, 0.0, 203</StartVertexXML>
+        <OffsetVertexXML>9, 0, 0</OffsetVertexXML>     
+        <FrameTypeXML>stativ</FrameTypeXML>             
+        <ImageXML>vognertiltog/Lysbilde1.PNG</ImageXML>
+        <ImageSizeXML>1</ImageSizeXML>
+        <ImageOffsetXML>0,0,0</ImageOffsetXML>        
+        <ImageCorrectAnswersXML></ImageCorrectAnswersXML>        
+        <IdXML></IdXML>
+        <DirectionXML>1</DirectionXML>
+    </ScenarioInfo3dXML>     
+
+    <ScenarioInfo3dXML>
+        <SectionNameXML>storehammer1</SectionNameXML>
+        <StartVertexXML>65.0, 0.0, 173</StartVertexXML>
+        <OffsetVertexXML>2, 1, 0</OffsetVertexXML>                     
+        <ImageXML>vognertiltog/Lysbilde2.PNG</ImageXML>
+        <ImageSizeXML>0.5</ImageSizeXML>
+        <ImageOffsetXML>0,0,0</ImageOffsetXML>        
+        <ImageCorrectAnswersXML></ImageCorrectAnswersXML>        
+        <IdXML></IdXML>
+        <DirectionXML>-1</DirectionXML>
+    </ScenarioInfo3dXML>         
+   
+    <ScenarioEventXML>
+
+        
+        <!-- slå av stigning fall for scenariet som foregår inne på Storehammer-->     
+        <ScenarioActionAdvancedBrakeSystemXML>
+            <CommandXML>f_incline_decline_off</CommandXML>
+        </ScenarioActionAdvancedBrakeSystemXML>    
+             
+                                                                                
+        
+    </ScenarioEventXML>            
+	
+	
+</ScenarioXML>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+
+    <SectionXML>
+        <NameXML>nitkatman1</NameXML>
+        <StartVertexXML>0, 0, 0</StartVertexXML>
+    </SectionXML>
+
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>1640</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>104</StartModusXML>        
+        <InfoXML></InfoXML> 
+    </TogXML>
+	
+    <StartTimeXML>16:30</StartTimeXML> 
+    <TogNrXML>1002</TogNrXML>
+    
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML>
+	
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>l403</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+	
+        
+    <!-- slokte signaler Kattdorp-->    
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4130_sec:nitkatman1</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4758_sec:nitkatman1</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>   
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3330_sec:nitkatman1</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>                     
+    </ScenarioEventXML>   
+    
+    <!-- ugyldig -->
+    <ScenarioBasedAc3dTCOXML>
+        <StartVertexXML>0.0, 0.0, 3329.9</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>-3.0, 0.8, 0.0</OffsetVertexXML>
+        <DirectionXML>1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <ModelFileXML>ugyl_merke.ac</ModelFileXML>
+    </ScenarioBasedAc3dTCOXML>            
+    
+    <ScenarioBasedAc3dTCOXML>
+        <StartVertexXML>0.0, 0.0, 4129.9</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>-3.0, 1.4f, 0.0</OffsetVertexXML>
+        <DirectionXML>1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <ModelFileXML>ugyl_merke.ac</ModelFileXML>
+    </ScenarioBasedAc3dTCOXML>   
+    
+    <ScenarioBasedAc3dTCOXML>
+        <StartVertexXML>0.0, 0.0, 4757.9</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>-3.0, 0.8, 0.0</OffsetVertexXML>
+        <DirectionXML>1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <ModelFileXML>ugyl_merke.ac</ModelFileXML>
+    </ScenarioBasedAc3dTCOXML>   
+    
+    <ScenarioBasedAc3dTCOXML>
+        <StartVertexXML>5.0, 0.0, 4757.9</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>3.0, 0.8, 0.0</OffsetVertexXML>
+        <DirectionXML>1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <ModelFileXML>ugyl_merke.ac</ModelFileXML>
+    </ScenarioBasedAc3dTCOXML>                                                                                                                                                                                                 
+
+
+    <ScenarioBasedAc3dTCOXML>
+        <StartVertexXML>0.0, 0.0, 4400.1</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>-3.0, 0.8, 0.0</OffsetVertexXML>
+        <DirectionXML>-1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <ModelFileXML>ugyl_merke.ac</ModelFileXML>
+    </ScenarioBasedAc3dTCOXML>   
+    
+    <ScenarioBasedAc3dTCOXML>
+        <StartVertexXML>5.0, 0.0, 4400.1</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>3.0, 0.8, 0.0</OffsetVertexXML>
+        <DirectionXML>-1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <ModelFileXML>ugyl_merke.ac</ModelFileXML>
+    </ScenarioBasedAc3dTCOXML>  
+    
+    <ScenarioBasedAc3dTCOXML>
+        <StartVertexXML>0.0, 0.0, 5030.1</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>3.0, 1.4f, 0.0</OffsetVertexXML>
+        <DirectionXML>-1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <ModelFileXML>ugyl_merke.ac</ModelFileXML>
+    </ScenarioBasedAc3dTCOXML>  
+    
+    <ScenarioBasedAc3dTCOXML>
+        <StartVertexXML>0.0, 0.0, 6030.1</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>3.0, 1.4f, 0.0</OffsetVertexXML>
+        <DirectionXML>-1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <ModelFileXML>ugyl_merke.ac</ModelFileXML>
+    </ScenarioBasedAc3dTCOXML>    
+    
+<!-- BU -->
+    <ScenarioBasedAc3dTCOXML>
+        <StartVertexXML>0.0, 0.0, 3225</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>2.5, 0.0, 0.0</OffsetVertexXML>
+        <DirectionXML>1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <ModelFileXML>atcskilt_noatc.ac</ModelFileXML>
+    </ScenarioBasedAc3dTCOXML>
+
+    <BaliseScenarioBasedXML>										
+        <SectionIndexXML>0</SectionIndexXML>
+        <StartVertexXML>0.0, 0.0, 3225</StartVertexXML>
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <KodeXML>5, 4, 11</KodeXML>
+    </BaliseScenarioBasedXML>
+
+    <BaliseScenarioBasedXML>										
+        <SectionIndexXML>0</SectionIndexXML>
+        <StartVertexXML>0.0, 0.0, 3228</StartVertexXML>
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <KodeXML>5, 5, 11</KodeXML>
+    </BaliseScenarioBasedXML>   
+      
+<!-- SU ved storehammer0 -->   
+    <ScenarioBasedAc3dTCOXML>
+        <StartVertexXML>0.0, 0.0, 6075</StartVertexXML>
+        <SectionNameXML>nitkatman1</SectionNameXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>-2.5, 0.0, 0.0</OffsetVertexXML>
+        <DirectionXML>1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <ModelFileXML>atcskilt_datc.ac</ModelFileXML>
+    </ScenarioBasedAc3dTCOXML>
+  
+    <BaliseScenarioBasedXML>										
+        <SectionNameXML>nitkatman1</SectionNameXML>
+        <StartVertexXML>0.0, 0.0, 6075</StartVertexXML>
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <KodeXML>5, 5, 11</KodeXML>
+    </BaliseScenarioBasedXML>
+
+    <BaliseScenarioBasedXML>										
+        <SectionNameXML>nitkatman1</SectionNameXML>
+        <StartVertexXML>0.0, 0.0, 6078</StartVertexXML>
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <KodeXML>5, 4, 11</KodeXML>
+    </BaliseScenarioBasedXML>     
+        
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>a551</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>	
+
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>sv1khu</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>sv2khu</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+	
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>a601</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+	
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionIndexXML>0</SectionIndexXML>		
+            <StartVertexXML>5,0,4500</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>		
+		
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>						
+		
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>5</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>n503</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>					
+	
+</ScenarioXML>

@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,220,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+ 
+ 
+    <SectionXML>
+        <NameXML>ertms87sek1al</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>    
+
+    <SectionXML>
+        <NameXML>ertms87sek2grindvoll</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>  
+  
+    <SectionXML>
+        <NameXML>ertms87sek3galleberg</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML>         
+
+ <SectionXML>
+     <NameXML>ertms87sek4holmestrand</NameXML>
+     <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+ </SectionXML>   
+   <!--  
+   <SectionXML>
+       <NameXML>ertms87sek5tonsberg</NameXML>
+       <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+   </SectionXML>      
+  
+    <SectionXML>
+        <NameXML>ertms87sek6sokna</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML>   
+  
+<SectionXML>
+   <NameXML>ertms87sek7gulsvik</NameXML>
+   <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+</SectionXML>                                  
+    -->  
+     
+    <SlideMappeXML>infoslides_scenario/ertms</SlideMappeXML>
+    <NettbrettFilXML></NettbrettFilXML>  
+    <SlideOffsetInfoXML>58</SlideOffsetInfoXML>
+    <SlideOffsetOppgaverXML>70</SlideOffsetOppgaverXML>   
+    <TogNrXML>1200</TogNrXML>    
+    <StartTimeXML>16:28</StartTimeXML>                    
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML>      
+          
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>ertms87sek1al</StartSeksjonXML>
+        <StartposXML>930</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <StartModusXML>10</StartModusXML>        
+        <InfoXML>intet</InfoXML> 
+    </TogXML>   
+ 
+  <TogXML>
+        <IdXML>200</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>ertms87sek1al</StartSeksjonXML>
+        <StartposXML>2890</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>
+    <!--  ut fra Gulsvik     -->
+    <ScenarioEventXML>        	  
+   
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>				
+        </ScenarioTriggerTimeXML> 
+
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde1.PNG</MessageXML>
+        </ScenarioActionFreezeXML>    
+                            
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2643_sec:ertms87sek1al</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>   
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>				
+        </ScenarioTriggerTimeXML>                
+                     
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>				
+        </ScenarioTriggerTimeXML> 
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde2.PNG oppg1=true oppg2=true oppg3=false oppg4=true oppg5=false oppg6=false oppg7=false
+</MessageXML>
+        </ScenarioActionFreezeXML>    
+            
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1000_sec:ertms87sek1al_type:ertmsstopp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>   
+     
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek1al</SectionNameXML>		
+            <StartVertexXML>0,0,1750</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>   
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>     
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>				
+        </ScenarioTriggerTimeXML>      	  
+
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde3.PNG oppg1=true oppg2=false oppg3=false oppg4=false
+</MessageXML>
+        </ScenarioActionFreezeXML>   
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>				
+        </ScenarioTriggerTimeXML> 
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1865_sec:ertms87sek1al</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML> 
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>				
+        </ScenarioTriggerTimeXML>        
+                              
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1862_sec:ertms87sek1al_type:ertmsstopp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>   
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1863_sec:ertms87sek1al_type:dv</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>
+                
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2065_sec:ertms87sek1al_type:dv</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>   
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek1al</SectionNameXML>		
+            <StartVertexXML>5,0,2050</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>        
+        
+         <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde4.PNG oppg1=true oppg2=false
+</MessageXML>
+        </ScenarioActionFreezeXML>                
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek1al</SectionNameXML>		
+            <StartVertexXML>5,0,2350</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>   
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>     
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>				
+        </ScenarioTriggerTimeXML>
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde5.PNG oppg1=true oppg2=false oppg3=false oppg4=true oppg5=true oppg6=true oppg7=true
+</MessageXML>
+        </ScenarioActionFreezeXML>
+        
+         <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>				
+        </ScenarioTriggerTimeXML>                                    	  
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2473_sec:ertms87sek1al_type:ertmsstopp_x:5</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>    
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2474_sec:ertms87sek1al_type:dv_x:5</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>     
+      
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek1al</SectionNameXML>		
+            <StartVertexXML>5,0,2490</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>   
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>     
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>
+        </ScenarioTriggerTimeXML>
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde6.PNG oppg1=false oppg2=true oppg3=false oppg4=false oppg5=true
+            </MessageXML>
+        </ScenarioActionFreezeXML>              	 
+
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>200</IdXML>		
+            <SpeedXML>-30</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>   
+
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>200</IdXML>							
+            <SectionNameXML>ertms87sek1al</SectionNameXML>		
+            <StartVertexXML>10,0,2450</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>  
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	
+            <IdXML>200</IdXML>	  
+        </ScenarioActionAutoTrainCommandXML> 
+                    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2607_sec:ertms87sek1al</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>     
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2539_sec:ertms87sek1al_type:dv_x:5</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>      
+                
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2728_sec:ertms87sek1al_type:dv_x:0</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>  
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2538_sec:ertms87sek1al_type:ertmsstopp_x:5</IdXML>
+            <SerieSluttPosXML>3224</SerieSluttPosXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>    
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek1al</SectionNameXML>		
+            <StartVertexXML>0,0,2900</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>   
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde7.PNG oppg1=false oppg2=false oppg3=true
+</MessageXML>
+        </ScenarioActionFreezeXML>                  
+       
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek1al</SectionNameXML>		
+            <StartVertexXML>0,0,3060</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>     
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde8.PNG oppg1=true oppg2=true oppg3=false oppg4=true oppg5=false oppg6=true oppg7=true
+</MessageXML>
+        </ScenarioActionFreezeXML>     
+                
+           <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek1al</SectionNameXML>		
+            <StartVertexXML>0,0,3205</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>  
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde9.PNG oppg1=true oppg2=true oppg3=true
+</MessageXML>
+        </ScenarioActionFreezeXML>                      
+                        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek2grindvoll</SectionNameXML>		
+            <StartVertexXML>0,0,4200</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>     
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>    
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde10.PNG oppg1=true
+</MessageXML>
+        </ScenarioActionFreezeXML>                 
+                         
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1413_sec:ertms87sek4holmestrand</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>   
+                      
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>
+        </ScenarioTriggerTimeXML>       
+                      
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4319_sec:ertms87sek2grindvoll_type:ertmsstopp</IdXML>
+            <SerieSluttPosXML>1410</SerieSluttPosXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>     
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek3galleberg</SectionNameXML>		
+            <StartVertexXML>0,0,4150</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>     
+                               
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde11.PNG oppg1=true oppg2=true oppg3=true oppg4=true oppg5=true
+</MessageXML>
+        </ScenarioActionFreezeXML>         
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek3galleberg</SectionNameXML>		
+            <StartVertexXML>0,0,5200</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>   
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde12.PNG</MessageXML>
+        </ScenarioActionFreezeXML>      
+
+    </ScenarioEventXML>      
+        
+        
+      
+    <!--  ut fra Gulsvik     -->
+   <!--  <ScenarioEventXML>        	  
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde1.PNG</MessageXML>
+        </ScenarioActionFreezeXML>        
+                          
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:925_sec:ertms87sek7gulsvik</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>   
+                            
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:11426_sec:ertms87sek6sokna</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML> 
+                   
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>				
+        </ScenarioTriggerTimeXML>         
+            
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1100_x:5_sec:ertms87sek7gulsvik_type:ertmsstopp</IdXML>
+            <SerieSluttPosXML>11826</SerieSluttPosXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>   
+                     	 
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde2.PNG</MessageXML>
+        </ScenarioActionFreezeXML>       
+    </ScenarioEventXML>   
+                   
+    <ScenarioEventXML>    
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek7gulsvik</SectionNameXML>		
+            <StartVertexXML>5,0,1050</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde3.PNG</MessageXML>
+        </ScenarioActionFreezeXML>
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek7gulsvik</SectionNameXML>		
+            <StartVertexXML>0,0,550</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde4.PNG
+            </MessageXML>
+        </ScenarioActionFreezeXML>  
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek7gulsvik</SectionNameXML>		
+            <StartVertexXML>0,0,400</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde5.PNG</MessageXML>
+        </ScenarioActionFreezeXML>     
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek7gulsvik</SectionNameXML>		
+            <StartVertexXML>0,0,200</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde6.PNG</MessageXML>
+        </ScenarioActionFreezeXML>  
+              
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek6sokna</SectionNameXML>		
+            <StartVertexXML>0,0,26600</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde7.PNG</MessageXML>
+        </ScenarioActionFreezeXML>  
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>				
+        </ScenarioTriggerTimeXML>      
+            
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde8.PNG</MessageXML>
+        </ScenarioActionFreezeXML>   
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek6sokna</SectionNameXML>		
+            <StartVertexXML>0,0,18750</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde9.PNG</MessageXML>
+        </ScenarioActionFreezeXML>    
+         
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek6sokna</SectionNameXML>		
+            <StartVertexXML>0,0,12500</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde10.PNG</MessageXML>
+        </ScenarioActionFreezeXML>    
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek6sokna</SectionNameXML>		
+            <StartVertexXML>-5,0,11250</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde11.PNG</MessageXML>
+        </ScenarioActionFreezeXML>    
+                        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>				
+        </ScenarioTriggerTimeXML>      
+            
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde12.PNG</MessageXML>
+        </ScenarioActionFreezeXML>          
+                       
+    </ScenarioEventXML> --> 
+</ScenarioXML>

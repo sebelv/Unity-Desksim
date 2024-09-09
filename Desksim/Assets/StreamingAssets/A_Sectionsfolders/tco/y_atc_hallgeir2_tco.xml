@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackConnectedObjects>
+
+<TrackConnectedObjectListXML>
+
+  <BaliseXML>
+    <IdXML>defaultid</IdXML>
+    <StartVertexXML>0.1, 0.0, 150.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>20: 4, 1, 14</KodeXML>
+    <KodeXML>22: 4, 12,14</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>defaultid</IdXML>
+    <StartVertexXML>0.15, 0.0, 153.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>9,4,4</KodeXML>
+  </BaliseXML>
+  <NoHS3Ac3dXML>
+    <IdXML>defaultid</IdXML>
+    <StartVertexXML>0.18, 0.0, 156.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>nohs.ac</FileNameXML>
+    <SignalFlashingXML>false</SignalFlashingXML>
+  </NoHS3Ac3dXML>
+  <BaliseXML>
+    <IdXML>defaultid</IdXML>
+    <StartVertexXML>0.19, 0.0, 200.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>7,1,0</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>defaultid</IdXML>
+    <StartVertexXML>-0.07, 0.0, 203.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>7, 14, 14</KodeXML>
+  </BaliseXML>
+</TrackConnectedObjectListXML>

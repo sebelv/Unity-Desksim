@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,215,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+
+    <!--    
+    -->
+    <SectionXML>
+        <NameXML>bekkerum1</NameXML> 
+    </SectionXML>
+
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>t44</ModelXML>
+        <StartSeksjonXML>bekkerum1</StartSeksjonXML>
+        <StartposXML>2900</StartposXML>
+        <StartposSideveisXML>30</StartposSideveisXML>            
+        <StartModusXML>103</StartModusXML>        
+        <InfoXML>kobbelopphengmotkm=ja;kobbelopphengmedkm=ja;luftkobbelopphengmotkm=ja;luftkobbelopphengmedkm=ja;</InfoXML> 
+        <PersonOffsetVectorXML>20, 0.0, -5.0</PersonOffsetVectorXML>
+        <PersonRotationXML>-90</PersonRotationXML>        
+    </TogXML>    
+	
+    <TogXML>
+        <IdXML>204</IdXML>
+        <ModelXML>zacns</ModelXML>
+        <StartSeksjonXML>bekkerum1</StartSeksjonXML>
+        <StartposXML>2270</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1080;luftkoblemedkm=ja;luftkranmedkm=ja;kobbelopphengmotkm=ja;luftkobbelopphengmotkm=ja;handbrems=ja</InfoXML>  
+    </TogXML>        
+    
+    <TogXML>
+        <IdXML>203</IdXML>
+        <ModelXML>zacns</ModelXML>
+        <StartSeksjonXML>bekkerum1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1080;luftkoblemedkm=ja;luftkranmedkm=ja;kobbelopphengmotkm=ja;luftkranmotkm=ja;</InfoXML>  
+    </TogXML>         
+    
+    <TogXML>
+        <IdXML>202</IdXML>
+        <ModelXML>zacns</ModelXML>
+        <StartSeksjonXML>bekkerum1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <InfoXML>hl=5.0;kobbelopphengmedkm=ja;luftkobbelopphengmedkm=ja;luftkranmotkm=ja;kobbelopphengmotkm=ja;</InfoXML>  
+    </TogXML>                                        
+        
+    <StartTimeXML>16:30</StartTimeXML> 
+	
+</ScenarioXML>

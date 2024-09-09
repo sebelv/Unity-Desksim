@@ -1,0 +1,1386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackConnectedObjects>
+
+<TrackConnectedObjectListXML>
+
+  <ErtmsSeksjonLinePosOffsetXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-0.0, 0.0, 1.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>0</DirectionXML>
+    <FileNameXML>no content</FileNameXML>
+    <LinePosOffsetXML>20564.0</LinePosOffsetXML>
+  </ErtmsSeksjonLinePosOffsetXML>
+  <ErtmsStoppXML>
+    <IdXML>a01glb</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1249.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>marker_left.ac</FileNameXML>
+    <LinePosXML>21813.0</LinePosXML>
+    <NetIdXML>41</NetIdXML>
+    <TypeXML>0</TypeXML>
+    <ModeXML>0</ModeXML>
+    <VisuellVariantXML>no content</VisuellVariantXML>
+    <ReleaseSpeedXML>40.0</ReleaseSpeedXML>
+    <OnStopFunctionXML>0</OnStopFunctionXML>
+  </ErtmsStoppXML>
+
+  <IdBoardXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1248.9</StartVertexXML>
+    <OffsetVertexXML>-3.0, 1.4, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>no content</FileNameXML>
+    <Line1XML>    A</Line1XML>
+    <Line2XML>   01</Line2XML>
+    <Line3XML>  GLB</Line3XML>
+    <TypeXML>no content</TypeXML>
+  </IdBoardXML>
+  <ErtmsStoppXML>
+    <IdXML>m04glb</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1401.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>marker_left.ac</FileNameXML>
+    <LinePosXML>21965.0</LinePosXML>
+    <NetIdXML>52</NetIdXML>
+    <TypeXML>0</TypeXML>
+    <ModeXML>0</ModeXML>
+    <VisuellVariantXML>no content</VisuellVariantXML>
+    <ReleaseSpeedXML>40.0</ReleaseSpeedXML>
+    <OnStopFunctionXML>0</OnStopFunctionXML>
+  </ErtmsStoppXML>
+
+  <IdBoardXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1401.1</StartVertexXML>
+    <OffsetVertexXML>3.0, 1.4, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>no content</FileNameXML>
+    <Line1XML>    M</Line1XML>
+    <Line2XML>   04</Line2XML>
+    <Line3XML>  GLB</Line3XML>
+    <TypeXML>no content</TypeXML>
+  </IdBoardXML>
+  <ErtmsStoppXML>
+    <IdXML>05glb</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>4.5480485E-15, 0.0, 1990.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>marker_left.ac</FileNameXML>
+    <LinePosXML>22554.0</LinePosXML>
+    <NetIdXML>45</NetIdXML>
+    <TypeXML>0</TypeXML>
+    <ModeXML>0</ModeXML>
+    <VisuellVariantXML>no content</VisuellVariantXML>
+    <ReleaseSpeedXML>40.0</ReleaseSpeedXML>
+    <OnStopFunctionXML>1</OnStopFunctionXML>
+  </ErtmsStoppXML>
+
+  <IdBoardXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>4.546748E-15, 0.0, 1989.9</StartVertexXML>
+    <OffsetVertexXML>-3.0, 1.3, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>no content</FileNameXML>
+    <Line1XML>   05</Line1XML>
+    <Line2XML> GLB</Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>no content</TypeXML>
+  </IdBoardXML>
+  <ErtmsStoppXML>
+    <IdXML>25glb</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>3.897784E-15, 0.0, 1940.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>marker_left.ac</FileNameXML>
+    <LinePosXML>22504.0</LinePosXML>
+    <NetIdXML>43</NetIdXML>
+    <TypeXML>0</TypeXML>
+    <ModeXML>0</ModeXML>
+    <VisuellVariantXML>no content</VisuellVariantXML>
+    <ReleaseSpeedXML>20.0</ReleaseSpeedXML>
+    <OnStopFunctionXML>0</OnStopFunctionXML>
+  </ErtmsStoppXML>
+
+  <IdBoardXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>3.8964833E-15, 0.0, 1939.9</StartVertexXML>
+    <OffsetVertexXML>-3.0, 1.3, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>no content</FileNameXML>
+    <Line1XML>   25</Line1XML>
+    <Line2XML>  GLB</Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>no content</TypeXML>
+  </IdBoardXML>
+  <ErtmsStoppXML>
+    <IdXML>35glb</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>5.0, 0.0, 1940.0</StartVertexXML>
+    <OffsetVertexXML>-2.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>marker_left.ac</FileNameXML>
+    <LinePosXML>22504.0</LinePosXML>
+    <NetIdXML>49</NetIdXML>
+    <TypeXML>0</TypeXML>
+    <ModeXML>0</ModeXML>
+    <VisuellVariantXML>no content</VisuellVariantXML>
+    <ReleaseSpeedXML>20.0</ReleaseSpeedXML>
+    <OnStopFunctionXML>0</OnStopFunctionXML>
+  </ErtmsStoppXML>
+
+  <IdBoardXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>5.0, 0.0, 1939.9</StartVertexXML>
+    <OffsetVertexXML>-2.5, 1.3, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>no content</FileNameXML>
+    <Line1XML>    35</Line1XML>
+    <Line2XML>  GLB</Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>no content</TypeXML>
+  </IdBoardXML>
+  <ErtmsStoppXML>
+    <IdXML>15glb</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>4.81908, 0.0, 1990.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>marker_right.ac</FileNameXML>
+    <LinePosXML>22554.0</LinePosXML>
+    <NetIdXML>51</NetIdXML>
+    <TypeXML>1</TypeXML>
+    <ModeXML>0</ModeXML>
+    <VisuellVariantXML>no content</VisuellVariantXML>
+    <ReleaseSpeedXML>40.0</ReleaseSpeedXML>
+    <OnStopFunctionXML>1</OnStopFunctionXML>
+  </ErtmsStoppXML>
+
+  <IdBoardXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>4.823249, 0.0, 1989.9</StartVertexXML>
+    <OffsetVertexXML>3.0, 1.3, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>no content</FileNameXML>
+    <Line1XML>    15</Line1XML>
+    <Line2XML>  GLB</Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>no content</TypeXML>
+  </IdBoardXML>
+  <ErtmsStoppXML>
+    <IdXML>06glb</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>3.8635518E-16, 0.0, 1670.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>marker_right.ac</FileNameXML>
+    <LinePosXML>22234.0</LinePosXML>
+    <NetIdXML>42</NetIdXML>
+    <TypeXML>1</TypeXML>
+    <ModeXML>0</ModeXML>
+    <VisuellVariantXML>no content</VisuellVariantXML>
+    <ReleaseSpeedXML>40.0</ReleaseSpeedXML>
+    <OnStopFunctionXML>1</OnStopFunctionXML>
+  </ErtmsStoppXML>
+
+  <IdBoardXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>3.876557E-16, 0.0, 1670.1</StartVertexXML>
+    <OffsetVertexXML>-3.0, 1.3, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>no content</FileNameXML>
+    <Line1XML>    06</Line1XML>
+    <Line2XML>  GLB</Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>no content</TypeXML>
+  </IdBoardXML>
+  <ErtmsStoppXML>
+    <IdXML>16glb</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>4.81908, 0.0, 1670.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>marker_left.ac</FileNameXML>
+    <LinePosXML>22234.0</LinePosXML>
+    <NetIdXML>50</NetIdXML>
+    <TypeXML>0</TypeXML>
+    <ModeXML>0</ModeXML>
+    <VisuellVariantXML>no content</VisuellVariantXML>
+    <ReleaseSpeedXML>40.0</ReleaseSpeedXML>
+    <OnStopFunctionXML>1</OnStopFunctionXML>
+  </ErtmsStoppXML>
+
+  <IdBoardXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>4.823249, 0.0, 1670.1</StartVertexXML>
+    <OffsetVertexXML>3.0, 1.3, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>no content</FileNameXML>
+    <Line1XML>   16</Line1XML>
+    <Line2XML> GLB</Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>no content</TypeXML>
+  </IdBoardXML>
+  <ErtmsStoppXML>
+    <IdXML>26glb</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>1.0366198E-15, 0.0, 1720.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>marker_right.ac</FileNameXML>
+    <LinePosXML>22284.0</LinePosXML>
+    <NetIdXML>44</NetIdXML>
+    <TypeXML>1</TypeXML>
+    <ModeXML>0</ModeXML>
+    <VisuellVariantXML>no content</VisuellVariantXML>
+    <ReleaseSpeedXML>20.0</ReleaseSpeedXML>
+    <OnStopFunctionXML>0</OnStopFunctionXML>
+  </ErtmsStoppXML>
+
+  <IdBoardXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>1.0379203E-15, 0.0, 1720.1</StartVertexXML>
+    <OffsetVertexXML>-3.0, 1.3, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>no content</FileNameXML>
+    <Line1XML>    26</Line1XML>
+    <Line2XML>  GLB</Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>no content</TypeXML>
+  </IdBoardXML>
+  <ErtmsStoppXML>
+    <IdXML>36glb</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>5.0, 0.0, 1720.0</StartVertexXML>
+    <OffsetVertexXML>-2.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>marker_right.ac</FileNameXML>
+    <LinePosXML>22284.0</LinePosXML>
+    <NetIdXML>48</NetIdXML>
+    <TypeXML>1</TypeXML>
+    <ModeXML>0</ModeXML>
+    <VisuellVariantXML>no content</VisuellVariantXML>
+    <ReleaseSpeedXML>20.0</ReleaseSpeedXML>
+    <OnStopFunctionXML>0</OnStopFunctionXML>
+  </ErtmsStoppXML>
+
+  <IdBoardXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>5.0, 0.0, 1720.1</StartVertexXML>
+    <OffsetVertexXML>-2.5, 1.3, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>no content</FileNameXML>
+    <Line1XML>   36</Line1XML>
+    <Line2XML>  GLB</Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>no content</TypeXML>
+  </IdBoardXML>
+  <ErtmsStoppXML>
+    <IdXML>b02glb</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2410.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>marker_left.ac</FileNameXML>
+    <LinePosXML>22974.0</LinePosXML>
+    <NetIdXML>46</NetIdXML>
+    <TypeXML>0</TypeXML>
+    <ModeXML>0</ModeXML>
+    <VisuellVariantXML>no content</VisuellVariantXML>
+    <ReleaseSpeedXML>40.0</ReleaseSpeedXML>
+    <OnStopFunctionXML>0</OnStopFunctionXML>
+  </ErtmsStoppXML>
+
+  <IdBoardXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2410.1</StartVertexXML>
+    <OffsetVertexXML>3.0, 1.3, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>no content</FileNameXML>
+    <Line1XML>    B</Line1XML>
+    <Line2XML>   02</Line2XML>
+    <Line3XML>  GLB</Line3XML>
+    <TypeXML>no content</TypeXML>
+  </IdBoardXML>
+  <ErtmsStoppXML>
+    <IdXML>l03glb</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2260.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>marker_left.ac</FileNameXML>
+    <LinePosXML>22824.0</LinePosXML>
+    <NetIdXML>47</NetIdXML>
+    <TypeXML>0</TypeXML>
+    <ModeXML>0</ModeXML>
+    <VisuellVariantXML>no content</VisuellVariantXML>
+    <ReleaseSpeedXML>40.0</ReleaseSpeedXML>
+    <OnStopFunctionXML>0</OnStopFunctionXML>
+  </ErtmsStoppXML>
+
+  <IdBoardXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2259.9</StartVertexXML>
+    <OffsetVertexXML>-3.0, 1.3, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>no content</FileNameXML>
+    <Line1XML>    L</Line1XML>
+    <Line2XML>   03</Line2XML>
+    <Line3XML>  GLB</Line3XML>
+    <TypeXML>no content</TypeXML>
+  </IdBoardXML>
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1239.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>21803.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>12</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1242.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>21806.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>0</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 845.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>0</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>21409.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>0</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 848.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>0</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>21412.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>0</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1410.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>21974.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>0</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1413.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>21977.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>12</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2250.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>22814.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>12</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2253.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>22817.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>0</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>1.1666727E-15, 0.0, 1730.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>22294.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>0</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>1.2056885E-15, 0.0, 1733.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>22297.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>0</MessageXML>
+  </EuroBaliseXML>
+
+  <ErtmsSpeedXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>20565.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <TargetSpeedKmhXML>90.0</TargetSpeedKmhXML>
+  </ErtmsSpeedXML>
+
+  <ErtmsSpeedXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 4325.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>24889.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <TargetSpeedKmhXML>115.0</TargetSpeedKmhXML>
+  </ErtmsSpeedXML>
+
+  <ErtmsGradientXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>20566.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <GradientXML>-3.0</GradientXML>
+  </ErtmsGradientXML>
+
+  <ErtmsGradientXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 4324.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>24888.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <GradientXML>0.0</GradientXML>
+  </ErtmsGradientXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>5.0, 0.0, 1730.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>22294.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>0</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>5.0, 0.0, 1733.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>22297.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>0</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>3.767731E-15, 0.0, 1930.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>22494.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>0</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>3.806747E-15, 0.0, 1933.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>22497.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>0</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>5.0, 0.0, 1930.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>22494.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>0</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>5.0, 0.0, 1933.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>22497.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>0</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2420.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>22984.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>0</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2423.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>22987.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>12</MessageXML>
+  </EuroBaliseXML>
+
+  <ErtmsSpeedXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 840.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>21404.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <TargetSpeedKmhXML>70.0</TargetSpeedKmhXML>
+  </ErtmsSpeedXML>
+
+  <ErtmsSpeedXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 841.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>21405.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <TargetSpeedKmhXML>90.0</TargetSpeedKmhXML>
+  </ErtmsSpeedXML>
+
+  <ErtmsSpeedXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1260.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>21824.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <TargetSpeedKmhXML>100.0</TargetSpeedKmhXML>
+  </ErtmsSpeedXML>
+
+  <ErtmsSpeedXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1261.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>21825.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <TargetSpeedKmhXML>70.0</TargetSpeedKmhXML>
+  </ErtmsSpeedXML>
+
+  <ErtmsSpeedXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2210.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>22774.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <TargetSpeedKmhXML>65.0</TargetSpeedKmhXML>
+  </ErtmsSpeedXML>
+
+  <ErtmsSpeedXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2211.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>22775.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <TargetSpeedKmhXML>100.0</TargetSpeedKmhXML>
+  </ErtmsSpeedXML>
+
+  <ErtmsSpeedXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2470.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>23034.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <TargetSpeedKmhXML>130.0</TargetSpeedKmhXML>
+  </ErtmsSpeedXML>
+
+  <ErtmsSpeedXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2471.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>23035.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <TargetSpeedKmhXML>65.0</TargetSpeedKmhXML>
+  </ErtmsSpeedXML>
+
+  <ErtmsSpeedXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 3450.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>24014.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <TargetSpeedKmhXML>115.0</TargetSpeedKmhXML>
+  </ErtmsSpeedXML>
+
+  <ErtmsSpeedXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 3451.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>24015.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <TargetSpeedKmhXML>130.0</TargetSpeedKmhXML>
+  </ErtmsSpeedXML>
+
+  <ErtmsGradientXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 450.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>21014.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <GradientXML>2.0</GradientXML>
+  </ErtmsGradientXML>
+
+  <ErtmsGradientXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 451.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>21015.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <GradientXML>3.0</GradientXML>
+  </ErtmsGradientXML>
+
+  <ErtmsGradientXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1450.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>22014.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <GradientXML>0.0</GradientXML>
+  </ErtmsGradientXML>
+
+  <ErtmsGradientXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1451.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>22015.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <GradientXML>-2.0</GradientXML>
+  </ErtmsGradientXML>
+
+  <ErtmsGradientXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2620.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>23184.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <GradientXML>6.0</GradientXML>
+  </ErtmsGradientXML>
+
+  <ErtmsGradientXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2621.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>23185.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <GradientXML>-2.0</GradientXML>
+  </ErtmsGradientXML>
+
+  <ErtmsGradientXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 3950.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>24514.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <GradientXML>2.0</GradientXML>
+  </ErtmsGradientXML>
+
+  <ErtmsGradientXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 3951.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>24515.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <GradientXML>-6.0</GradientXML>
+  </ErtmsGradientXML>
+
+  <ErtmsSpeedXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.041671492, 0.0, 1605.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>22169.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <TargetSpeedKmhXML>40.0</TargetSpeedKmhXML>
+  </ErtmsSpeedXML>
+
+  <ErtmsSpeedXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.041671492, 0.0, 2055.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>22619.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <TargetSpeedKmhXML>40.0</TargetSpeedKmhXML>
+  </ErtmsSpeedXML>
+
+  <ErtmsSpeedXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1599.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>22163.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <TargetSpeedKmhXML>100.0</TargetSpeedKmhXML>
+  </ErtmsSpeedXML>
+
+  <ErtmsSpeedXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2061.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>22625.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <TargetSpeedKmhXML>100.0</TargetSpeedKmhXML>
+  </ErtmsSpeedXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>4.4179955E-15, 0.0, 1980.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>22544.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>0</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>4.9971633, 0.0, 1980.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>22544.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>0</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>4.9721627, 0.0, 1983.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>22547.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>0</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>5.164081E-16, 0.0, 1680.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>22244.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>0</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>5.5542396E-16, 0.0, 1683.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>22247.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>0</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>4.9971633, 0.0, 1680.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>22244.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>0</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>5.0, 0.0, 1683.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>22247.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>0</MessageXML>
+  </EuroBaliseXML>
+
+  <IdBoardXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 250.1</StartVertexXML>
+    <OffsetVertexXML>3.0, 2.35, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>no content</FileNameXML>
+    <Line1XML>  W2</Line1XML>
+    <Line2XML>km 20,80</Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>no content</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 229.9</StartVertexXML>
+    <OffsetVertexXML>-3.0, 2.35, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>no content</FileNameXML>
+    <Line1XML>  W1</Line1XML>
+    <Line2XML>km 20,80</Line2XML>
+    <Line3XML></Line3XML>
+    <TypeXML>no content</TypeXML>
+  </IdBoardXML>
+  <ErtmsStoppXML>
+    <IdXML>a01ulv</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 4300.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>marker_left.ac</FileNameXML>
+    <LinePosXML>24864.0</LinePosXML>
+    <NetIdXML>37</NetIdXML>
+    <TypeXML>0</TypeXML>
+    <ModeXML>0</ModeXML>
+    <VisuellVariantXML>no content</VisuellVariantXML>
+    <ReleaseSpeedXML>40.0</ReleaseSpeedXML>
+    <OnStopFunctionXML>0</OnStopFunctionXML>
+  </ErtmsStoppXML>
+
+  <ErtmsStoppXML>
+    <IdXML>b02ulv</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 4100.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>marker_left.ac</FileNameXML>
+    <LinePosXML>24664.0</LinePosXML>
+    <NetIdXML>38</NetIdXML>
+    <TypeXML>0</TypeXML>
+    <ModeXML>0</ModeXML>
+    <VisuellVariantXML>no content</VisuellVariantXML>
+    <ReleaseSpeedXML>40.0</ReleaseSpeedXML>
+    <OnStopFunctionXML>0</OnStopFunctionXML>
+  </ErtmsStoppXML>
+
+  <IdBoardXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 4299.9</StartVertexXML>
+    <OffsetVertexXML>-3.0, 1.35, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>no content</FileNameXML>
+    <Line1XML>    A</Line1XML>
+    <Line2XML>   01</Line2XML>
+    <Line3XML>  ULV</Line3XML>
+    <TypeXML>no content</TypeXML>
+  </IdBoardXML>
+  <IdBoardXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 4100.1</StartVertexXML>
+    <OffsetVertexXML>3.0, 1.35, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>no content</FileNameXML>
+    <Line1XML>    B</Line1XML>
+    <Line2XML>   02</Line2XML>
+    <Line3XML>  ULV</Line3XML>
+    <TypeXML>no content</TypeXML>
+  </IdBoardXML>
+  <TrackConnectedObjectXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>9.0, 0.0, 1830.0</StartVertexXML>
+    <OffsetVertexXML>9.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>0</DirectionXML>
+    <FileNameXML>platform_left_310.ac</FileNameXML>
+    <AllVerticesTransformXML>true</AllVerticesTransformXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1330.0</StartVertexXML>
+    <OffsetVertexXML>0.0, -6.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>bruelement.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1300.0</StartVertexXML>
+    <OffsetVertexXML>0.0, -6.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>bruelement.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1415.0</StartVertexXML>
+    <OffsetVertexXML>3.0, -3.9, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>pole1.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1249.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, -3.5, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>pole1.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1237.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, -3.9, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>pole1.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1401.0</StartVertexXML>
+    <OffsetVertexXML>3.0, -3.5, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>pole1.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <ErtmsGradientXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2200.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>22764.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <GradientXML>-2.0</GradientXML>
+  </ErtmsGradientXML>
+
+  <ErtmsGradientXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2201.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>22765.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <GradientXML>0.0</GradientXML>
+  </ErtmsGradientXML>
+
+  <ErtmsGradientXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 3100.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>23664.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <GradientXML>0.0</GradientXML>
+  </ErtmsGradientXML>
+
+  <ErtmsGradientXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 3101.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>23665.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <GradientXML>2.0</GradientXML>
+  </ErtmsGradientXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1129.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>21693.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>10</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1132.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>21696.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>0</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1500.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>0</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>22064.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>13</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2160.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>0</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>22724.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>13</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2530.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>0</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>23094.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>0</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2533.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>0</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>23097.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>10</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 4290.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>24854.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>0</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 4293.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>24857.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>10</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 4107.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>0</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>24671.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>10</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 4110.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>0</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>24674.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>0</MessageXML>
+  </EuroBaliseXML>
+
+  <EuroBaliseXML>
+    <IdXML>no content</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>4.4570116E-15, 0.0, 1983.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>eurobalise.j3o</FileNameXML>
+    <LinePosXML>22547.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <MessageXML>0</MessageXML>
+  </EuroBaliseXML>
+
+  <TrackConnectedObjectXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1237.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>stolpe_skiftegrense.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1415.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>stolpe_skiftegrense.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2248.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>stolpe_skiftegrense.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML></IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 2425.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>stolpe_skiftegrense.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 1330.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>bru9.ac</FileNameXML>
+    <AllVerticesTransformXML>true</AllVerticesTransformXML>
+  </TrackConnectedObjectXML>
+  <WaterXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-0.71, 0.0, 1360.0</StartVertexXML>
+    <OffsetVertexXML>-100.0, -5.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <XSizeXML>200.0</XSizeXML>
+    <ZSizeXML>60.0</ZSizeXML>
+  </WaterXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>20.0, 0.0, 180.0</StartVertexXML>
+    <OffsetVertexXML>20.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>road_300.ac</FileNameXML>
+    <AllVerticesTransformXML>true</AllVerticesTransformXML>
+    <AllVerticesTerrainXML>true</AllVerticesTerrainXML>
+  </TrackConnectedObjectXML>
+  <ErtmsPloXML>
+    <IdXML>w01</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.1, 0.0, 230.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>ertms_plo.ac</FileNameXML>
+    <LinePosXML>20794.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <TypeXML>0</TypeXML>
+  </ErtmsPloXML>
+
+  <ErtmsPloXML>
+    <IdXML>w02</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-0.2, 0.0, 250.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>ertms_plo.ac</FileNameXML>
+    <LinePosXML>20814.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <TypeXML>0</TypeXML>
+  </ErtmsPloXML>
+
+  <PloAc3dXML>
+    <IdXML>plo1</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>-0.56, 0.0, 245.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.1, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>plo_bommer_nede.ac</FileNameXML>
+  </PloAc3dXML>
+
+  <ErtmsGradientXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.04, 0.0, 4320.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <LinePosXML>0.0</LinePosXML>
+    <NetIdXML>0</NetIdXML>
+    <GradientXML>0.0</GradientXML>
+  </ErtmsGradientXML>
+
+</TrackConnectedObjectListXML>

@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+
+  <!--   
+
+	<SectionXML>
+		<NameXML>nitkatman</NameXML>
+	</SectionXML>
+   
+  <SectionXML>
+          <NameXML>storehammer1_ex</NameXML>
+  </SectionXML>
+  -->
+	<SectionXML>
+		<NameXML>storehammer1</NameXML>
+                <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+	</SectionXML>
+     
+	<SectionXML>
+		<NameXML>revestua1</NameXML>
+                <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+	</SectionXML>
+ 
+ 
+	<SectionXML>
+		<NameXML>hakafjell1</NameXML>
+                <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+	</SectionXML>
+      
+	<SectionXML>
+		<NameXML>GRS</NameXML>
+               <EndPointNextStartPointIndexXML>3</EndPointNextStartPointIndexXML> 
+	</SectionXML>
+ 
+	<SectionXML>
+		<NameXML>UFJS1</NameXML>
+	</SectionXML>
+   <!--              
+	<SectionXML>
+		<NameXML>UFJS2</NameXML>
+	</SectionXML>
+ 
+-->
+        
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>hakafjell1</StartSeksjonXML>
+        <StartposXML>1920</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <StartModusXML>104</StartModusXML>        
+        <InfoXML></InfoXML> 
+    </TogXML>     
+          
+    <TogXML>
+        <IdXML>202</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>GRS</StartSeksjonXML>
+        <StartposXML>3100</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>         
+	
+	<StartTimeXML>12:00</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+        
+        <TogNrXML>313</TogNrXML>
+        
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML>
+    
+    <SlideMappeXML>infoslides_scenario/100</SlideMappeXML>
+    <SlideOffsetInfoXML>28</SlideOffsetInfoXML>
+    <SlideOffsetOppgaverXML>28</SlideOffsetOppgaverXML>
+    <NettbrettFilXML>nettbrettslides_scenario/tog 313.png</NettbrettFilXML>
+    
+    
+	<!-- HAKAFJELL -->
+	<!-- signaler--> 
+	<ScenarioEventXML>
+		<!-- plo sign-->
+		<ScenarioActionStateChangerXML>
+			<IdXML>pos:160_sec:hakafjell1</IdXML>
+			<StateXML>56</StateXML>
+		</ScenarioActionStateChangerXML>
+
+		<!-- plo -->
+		<ScenarioActionStateChangerXML>
+			<IdXML>pos:170_sec:hakafjell1</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+		
+		<ScenarioActionStateChangerXML>
+			<IdXML>pos:1150_sec:hakafjell1_type:hs3</IdXML>
+			<StateXML>21</StateXML>
+		</ScenarioActionStateChangerXML>
+
+		<ScenarioActionStateChangerXML>
+			<IdXML>pos:1500_sec:hakafjell1_type:sw</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+	</ScenarioEventXML>
+	
+	    <!-- Frys ved Ut HS--> 
+	<ScenarioEventXML>
+
+		
+                
+    	<ScenarioTriggerTimeXML>						
+			<SecondsXML>1</SecondsXML>					
+		</ScenarioTriggerTimeXML>	
+	            
+            		<ScenarioActionStateChangerXML>
+			<IdXML>pos:2060_sec:hakafjell1_type:sw</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>	
+                
+                		<ScenarioActionStateChangerXML>
+			<IdXML>pos:1990_sec:hakafjell1_type:hs2</IdXML>
+			<StateXML>21</StateXML>
+		</ScenarioActionStateChangerXML>
+                
+		<ScenarioActionFreezeXML>						
+			<MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde1.PNG oppg1=false oppg2=true oppg3=false oppg4=true oppg5=true
+      </MessageXML>
+		</ScenarioActionFreezeXML>						
+	</ScenarioEventXML>
+	
+	
+	<!-- HUNDERBEKKEN -->
+	<ScenarioEventXML>
+		<ScenarioTriggerTrackPosXML>		
+			<IdXML>100</IdXML>							
+			<SectionNameXML>hakafjell1</SectionNameXML>	
+			<StartVertexXML>0,0,3670</StartVertexXML>
+		</ScenarioTriggerTrackPosXML>				
+		
+		<ScenarioActionFreezeXML>						
+			<MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde2.PNG oppg1=false oppg2=true oppg3=true oppg4=true oppg5=false
+      </MessageXML>
+		</ScenarioActionFreezeXML>						
+	</ScenarioEventXML>
+  
+	<!-- GRS -->
+    <!-- innkjør -->
+  <ScenarioEventXML>
+		<ScenarioTriggerTrackPosXML>		
+			<IdXML>100</IdXML>							
+			<SectionNameXML>GRS</SectionNameXML>	
+			<StartVertexXML>0,0,700</StartVertexXML>
+		</ScenarioTriggerTrackPosXML>	
+
+		<ScenarioActionStateChangerXML>
+			<IdXML>pos:1801_sec:GRS_type:hs3</IdXML>
+			<StateXML>22</StateXML>
+		</ScenarioActionStateChangerXML>
+    
+		<ScenarioActionStateChangerXML>
+			<IdXML>pos:2000_sec:GRS_type:dv</IdXML>
+			<StateXML>45</StateXML>
+		</ScenarioActionStateChangerXML>
+	</ScenarioEventXML>  
+    
+    
+      <!-- spv motsatt-->
+  <ScenarioEventXML>  
+   	<ScenarioTriggerTimeXML>						
+			<SecondsXML>4</SecondsXML>					
+		</ScenarioTriggerTimeXML>
+    
+		<ScenarioActionStateChangerXML>
+			<IdXML>pos:2719.6_sec:GRS_type:sw</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+    
+		<ScenarioActionStateChangerXML>
+			<IdXML>pos:2800_sec:GRS_type:sw</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+	</ScenarioEventXML>    
+    
+    
+	<ScenarioEventXML>
+		<ScenarioTriggerTrackPosXML>		
+			<IdXML>100</IdXML>							
+			<SectionNameXML>GRS</SectionNameXML>	
+			<StartVertexXML>0,0,500</StartVertexXML>
+		</ScenarioTriggerTrackPosXML>				
+		
+		<ScenarioActionFreezeXML>						
+			<MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde3.PNG oppg1=false oppg2=true oppg3=true oppg4=false oppg5=false
+      </MessageXML>
+		</ScenarioActionFreezeXML>						
+	</ScenarioEventXML>
+
+  <ScenarioEventXML>
+		<ScenarioTriggerTrackPosXML>		
+			<IdXML>100</IdXML>							
+			<SectionNameXML>GRS</SectionNameXML>	
+			<StartVertexXML>0,0,1965</StartVertexXML>
+		</ScenarioTriggerTrackPosXML>				
+		
+		<ScenarioActionFreezeXML>						
+			<MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde4.PNG oppg1=false oppg2=true oppg3=true oppg4=false oppg5=true oppg6=false oppg7=true
+      </MessageXML>
+		</ScenarioActionFreezeXML>						
+	</ScenarioEventXML>  
+  
+  <ScenarioEventXML>
+		<ScenarioTriggerTrackPosXML>		
+			<IdXML>100</IdXML>							
+			<SectionNameXML>GRS</SectionNameXML>	
+			<StartVertexXML>0,0,2100</StartVertexXML>
+		</ScenarioTriggerTrackPosXML>				
+		
+		<ScenarioActionFreezeXML>						
+			<MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde5.PNG oppg1=true oppg2=false oppg3=false oppg4=true oppg5=true oppg6=true
+      </MessageXML>
+		</ScenarioActionFreezeXML>						
+	</ScenarioEventXML>  
+  
+  	<!-- txp lbs -->
+	<WorkerAc3dXML>
+		<IdXML>txpLBS</IdXML>
+		<SectionNameXML>GRS</SectionNameXML>
+    	<StartVertexXML>0, 0, 2360.0</StartVertexXML> 	
+    	<OffsetVertexXML>-4.5, 0.0, 0.0</OffsetVertexXML>
+    	<FileNameXML>TXPhilser.ac</FileNameXML>   	
+    	<FileNameXML>TXP.ac</FileNameXML> 
+    	<FileNameXML>TXP12A.ac</FileNameXML> 						
+     	<DirectionXML>1</DirectionXML>						
+	</WorkerAc3dXML>
+
+    <!-- flytt txp til tog -->
+    <ScenarioEventXML>	
+	    <ScenarioTriggerTrackPosXML>		
+			<IdXML>100</IdXML>							
+			<SectionNameXML>GRS</SectionNameXML>	
+			<StartVertexXML>0,0,2100</StartVertexXML>
+		</ScenarioTriggerTrackPosXML>		
+		
+		<ScenarioTriggerSpeedXML>						
+			<IdXML>100</IdXML>							
+			<SpeedXML>1</SpeedXML>
+			<OperatorXML>-1</OperatorXML>				
+		</ScenarioTriggerSpeedXML>
+  
+ 		<ScenarioTriggerTimeXML>						
+			<SecondsXML>10</SecondsXML>					
+		</ScenarioTriggerTimeXML>
+	
+		<ScenarioActionStateChangerXML>
+			<IdXML>txpLBS</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+		
+  	<ScenarioActionFollowSimTrainXML>
+			<IdXML>txpLBS</IdXML>
+			<OffsetVertexXML>-4.5,0,10</OffsetVertexXML>
+		</ScenarioActionFollowSimTrainXML>
+    
+
+    
+		<ScenarioTriggerTimeXML>						
+			<SecondsXML>4</SecondsXML>					
+		</ScenarioTriggerTimeXML>
+    
+    <ScenarioActionAutoTrainCommandXML> 	
+			<CommandXML>speed</CommandXML>	
+			<IdXML>202</IdXML>		
+			<SpeedXML>-40</SpeedXML>
+		</ScenarioActionAutoTrainCommandXML>
+	</ScenarioEventXML>	
+  
+  <ScenarioEventXML>	
+	  <ScenarioTriggerTrackPosXML>		
+			<IdXML>202</IdXML>							
+			<SectionNameXML>GRS</SectionNameXML>	
+			<StartVertexXML>10,0,2450</StartVertexXML>
+		</ScenarioTriggerTrackPosXML>	
+
+    <ScenarioActionAutoTrainCommandXML> 	
+			<CommandXML>speed</CommandXML>	
+			<IdXML>202</IdXML>		
+			<SpeedXML>0</SpeedXML>
+		</ScenarioActionAutoTrainCommandXML>
+    
+		<ScenarioActionStateChangerXML>
+			<IdXML>pos:2719.6_sec:GRS_type:sw</IdXML>
+			<StateXML>0</StateXML>
+		</ScenarioActionStateChangerXML>
+    
+		<ScenarioActionStateChangerXML>
+			<IdXML>pos:2800_sec:GRS_type:sw</IdXML>
+			<StateXML>0</StateXML>
+		</ScenarioActionStateChangerXML>
+
+		<ScenarioTriggerTimeXML>						
+			<SecondsXML>4</SecondsXML>					
+		</ScenarioTriggerTimeXML>
+
+		<ScenarioActionStateChangerXML>
+			<IdXML>pos:2715_sec:GRS_x:0_type:dv</IdXML>
+			<StateXML>45</StateXML>
+		</ScenarioActionStateChangerXML>
+
+		<ScenarioActionStateChangerXML>
+			<IdXML>pos:2810_sec:GRS_x:0_type:hs3</IdXML>
+			<StateXML>22</StateXML>
+		</ScenarioActionStateChangerXML>
+    
+   	<ScenarioTriggerTimeXML>						
+			<SecondsXML>2</SecondsXML>					
+		</ScenarioTriggerTimeXML>
+    
+		<ScenarioActionStateChangerXML>
+			<IdXML>txpLBS</IdXML>
+			<StateXML>2</StateXML>
+		</ScenarioActionStateChangerXML>
+    
+  </ScenarioEventXML>		
+  
+	<!-- TANNSKOG -->
+    <!-- innkjør -->
+  <ScenarioEventXML>
+ 		<ScenarioTriggerTimeXML>						
+			<SecondsXML>4</SecondsXML>					
+		</ScenarioTriggerTimeXML>
+
+		<ScenarioActionStateChangerXML>
+			<IdXML>pos:1800_sec:UFJS1_type:hs3</IdXML>
+			<StateXML>22</StateXML>
+		</ScenarioActionStateChangerXML>
+    
+		<ScenarioActionStateChangerXML>
+			<IdXML>pos:1995_sec:UFJS1_type:dv</IdXML>
+			<StateXML>45</StateXML>
+		</ScenarioActionStateChangerXML>
+    
+		<ScenarioActionStateChangerXML>
+			<IdXML>pos:2300_sec:UFJS1</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+
+		<ScenarioActionStateChangerXML>
+			<IdXML>pos:2420_sec:UFJS1_type:dv_x:0</IdXML>
+			<StateXML>45</StateXML>
+		</ScenarioActionStateChangerXML>
+
+		<ScenarioActionStateChangerXML>
+			<IdXML>pos:2510_sec:UFJS1_type:hs3</IdXML>
+			<StateXML>22</StateXML>
+		</ScenarioActionStateChangerXML>
+	</ScenarioEventXML>  
+  
+    <!-- frys txp -->
+  <ScenarioEventXML>
+	  <ScenarioTriggerTrackPosXML>		
+			<IdXML>100</IdXML>							
+			<SectionNameXML>UFJS1</SectionNameXML>	
+			<StartVertexXML>0,0,2190</StartVertexXML>
+		</ScenarioTriggerTrackPosXML>	
+
+		<ScenarioActionFreezeXML>						
+			<MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde6.PNG oppg1=true oppg2=false oppg3=true oppg4=false oppg5=true oppg6=true oppg7=true oppg8=true
+      </MessageXML>
+		</ScenarioActionFreezeXML>	
+  </ScenarioEventXML>
+  
+    	<!-- txp tnk -->
+	<WorkerAc3dXML>
+		<IdXML>txpTNK</IdXML>
+		<SectionNameXML>UFJS1</SectionNameXML>
+    	<StartVertexXML>0, 0, 2205.0</StartVertexXML> 	
+    	<OffsetVertexXML>-4.5, 0.0, 0.0</OffsetVertexXML>
+    	<FileNameXML>TXPhilser.ac</FileNameXML>
+     	<DirectionXML>1</DirectionXML>						
+	</WorkerAc3dXML>
+
+	<!-- FURU -->
+    <!-- innkjør -->
+  <ScenarioEventXML>
+    <ScenarioActionStateChangerXML>
+			<IdXML>pos:5300_sec:UFJS1_type:hs2</IdXML>
+			<StateXML>0</StateXML>
+		</ScenarioActionStateChangerXML>
+  </ScenarioEventXML>
+  
+  <!-- frys enkelt innkjør -->
+  <ScenarioEventXML>
+	  <ScenarioTriggerTrackPosXML>		
+			<IdXML>100</IdXML>							
+			<SectionNameXML>UFJS1</SectionNameXML>	
+			<StartVertexXML>0,0,5290</StartVertexXML>
+		</ScenarioTriggerTrackPosXML>	
+
+		<ScenarioActionFreezeXML>						
+			<MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde7.PNG oppg1=true oppg2=true oppg3=false oppg4=true oppg5=true oppg6=true oppg7=false oppg8=true
+      </MessageXML>
+		</ScenarioActionFreezeXML>	
+  </ScenarioEventXML>
+  
+  <ScenarioEventXML>
+	  <ScenarioTriggerTrackPosXML>		
+			<IdXML>100</IdXML>							
+			<SectionNameXML>UFJS1</SectionNameXML>	
+			<StartVertexXML>0,0,5640</StartVertexXML>
+		</ScenarioTriggerTrackPosXML>	
+
+		<ScenarioActionFreezeXML>						
+			<MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde8.PNG oppg1=true oppg2=true oppg3=true oppg4=false oppg5=true oppg6=true oppg7=true oppg8=true
+      </MessageXML>
+		</ScenarioActionFreezeXML>	
+  </ScenarioEventXML>
+
+	<!-- ESPELUND SP -->  
+    <!-- frys sidespor -->
+  <ScenarioEventXML>
+	  <ScenarioTriggerTrackPosXML>		
+			<IdXML>100</IdXML>							
+			<SectionNameXML>UFJS1</SectionNameXML>	
+			<StartVertexXML>0,0,7420</StartVertexXML>
+		</ScenarioTriggerTrackPosXML>	
+
+		<ScenarioActionFreezeXML>						
+			<MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde9.PNG oppg1=true oppg2=false
+      </MessageXML>
+		</ScenarioActionFreezeXML>	
+  </ScenarioEventXML>
+  
+	<!-- TANNVERK -->  
+  <!-- innkjør utkjør -->
+  <ScenarioEventXML>
+      <ScenarioActionStateChangerXML>
+          <IdXML>pos:9300_sec:UFJS1_type:hs3</IdXML>
+          <StateXML>22</StateXML>
+      </ScenarioActionStateChangerXML>
+      <ScenarioActionStateChangerXML>
+          <IdXML>pos:10010_sec:UFJS1_type:hs3</IdXML>
+          <StateXML>22</StateXML>
+      </ScenarioActionStateChangerXML>
+  </ScenarioEventXML>
+  <!-- frys forsig -->
+  <ScenarioEventXML>
+      <ScenarioTriggerTrackPosXML>		
+          <IdXML>100</IdXML>							
+          <SectionNameXML>UFJS1</SectionNameXML>	
+          <StartVertexXML>0,0,8480</StartVertexXML>
+      </ScenarioTriggerTrackPosXML>	
+
+      <ScenarioActionFreezeXML>						
+          <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde10.PNG oppg1=true oppg2=false oppg3=false oppg4=true oppg5=false oppg6=true oppg7=false oppg8=false
+          </MessageXML>
+      </ScenarioActionFreezeXML>	
+  </ScenarioEventXML>
+
+  <ScenarioEventXML>
+      <ScenarioTriggerTrackPosXML>		
+          <IdXML>100</IdXML>							
+          <SectionNameXML>UFJS1</SectionNameXML>	
+          <StartVertexXML>0,0,9750</StartVertexXML>
+      </ScenarioTriggerTrackPosXML>	
+
+      <ScenarioActionFreezeXML>						
+          <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde11.PNG
+          </MessageXML>
+          <AvsluttScenarioXML>true</AvsluttScenarioXML>
+      </ScenarioActionFreezeXML>	
+  </ScenarioEventXML>
+</ScenarioXML>
+

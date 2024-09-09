@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+  <!--   
+
+	<SectionXML>
+		<NameXML>nitkatman</NameXML>
+	</SectionXML>
+  
+   
+  <SectionXML>
+          <NameXML>storehammer_ex</NameXML>
+  </SectionXML>
+
+	<SectionXML>
+		<NameXML>storehammer</NameXML>
+                <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+	</SectionXML>
+     -->  
+	<SectionXML>
+		<NameXML>revestua</NameXML>
+	</SectionXML>
+ 
+  <!-- 
+	<SectionXML>
+		<NameXML>hakafjell</NameXML>
+                <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+	</SectionXML>
+      
+	<SectionXML>
+		<NameXML>GRS</NameXML>
+               <EndPointNextStartPointIndexXML>4</EndPointNextStartPointIndexXML> 
+	</SectionXML>
+   
+	<SectionXML>
+		<NameXML>UFJS1</NameXML>
+	</SectionXML>
+             
+	<SectionXML>
+		<NameXML>UFJS2</NameXML>
+	</SectionXML>
+ 
+-->
+	
+<!-- TOGET VI KJØRER MÅ DEFINERES -->
+	<ErtmsTrain1XML>
+	 	<IdXML>100</IdXML> <!-- TOGETS ID: TRIGGER OG ACTIONS SOM SKAL KNYTTES TIL TOGET BENYTTER DENNE ID'EN -->
+	 	<StartModeXML>0</StartModeXML> <!-- VAR 104 PROVER 0 FRA 26.04.19 STARTMODE: LISTE OVER STARTMODES I SIMULATORDOK -->
+	    <StartPosXML>100</StartPosXML> <!-- STARTPOS: STARTPOS TIL TOGET INNENFOR SEKSJONEN -->
+	    <StartSectionXML>0</StartSectionXML> <!-- STARTSEKSJON: FRA 0 OG I REKKEFØLGE I FORHOLD TIL SEKSJONENE OPPGITT ØVERST I SCENARIOFILA -->
+	 	<StartVertexXML>0.0, 0.0, 0.0</StartVertexXML> <!-- STARTVERTEX: X VERDI KAN BRUKES TIL Å STARTPOSISJONERE TOGET I AVVIK-->
+	</ErtmsTrain1XML>
+	
+	<StartTimeXML>12:00</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+	
+
+
+	
+</ScenarioXML>
+

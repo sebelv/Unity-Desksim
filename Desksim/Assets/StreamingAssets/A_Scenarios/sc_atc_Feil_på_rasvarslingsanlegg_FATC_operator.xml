@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,130,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+    
+    <SectionXML>
+        <NameXML>atcbortflkrysbanen3</NameXML>
+        <StartVertexXML>0, 0, 0</StartVertexXML>
+    </SectionXML>    
+    
+    <SectionXML>
+        <NameXML>heggeberg</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>        
+
+    <SectionXML>
+        <NameXML>nitkatman1</NameXML>
+        <StartVertexXML>0, 0, 0</StartVertexXML>
+    </SectionXML> 
+
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>185</ModelXML>
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>1320</StartposXML> 
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>103</StartModusXML>      
+        <InfoXML>kobbelopphengmotkm=ja;kobbelopphengmedkm=ja;luftkobbelopphengmotkm=ja;luftkranmedkm=ja</InfoXML> 
+    </TogXML>    
+    
+    <TogXML>
+        <IdXML>101</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemotkm=ja;skrumotkm=-1440;luftkoblemotkm=ja;kobbelopphengmedkm=ja;luftkranmotkm=ja;last=vekt:900_maksbremskn:700_lengde:550</InfoXML>  
+    </TogXML>     
+
+    <StartTimeXML>15:48</StartTimeXML> 
+    
+    <PersonStartPosisjonXML>forerrom1_sittende</PersonStartPosisjonXML> 
+    <TogNrXML>44002</TogNrXML>
+    
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>			
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1297_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>  
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2500_sec:heggeberg_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>      
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1570_sec:heggeberg_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>                                       
+        
+        <!-- sett feil på rasvarslingsanlegg -->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:201_sec:heggeberg</IdXML>
+            <StateXML>1</StateXML> 
+        </ScenarioActionStateChangerXML>                 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10800_sec:atcbortflkrysbanen3_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>         
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>				
+        </ScenarioTriggerTimeXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:11100_sec:atcbortflkrysbanen3_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>                                                                                                                                                        
+    </ScenarioEventXML>
+    
+    <!-- Chat meldinger -->
+     <ScenarioEventXML>	  
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>		
+            <StartVertexXML>0,0,1290</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+
+        <ScenarioActionSendTogradioChatXML>
+            <MeldingXML>Passert utkjør Nitteberg</MeldingXML>
+        </ScenarioActionSendTogradioChatXML>        
+    </ScenarioEventXML>	 
+    
+     <ScenarioEventXML>	  
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>heggeberg</SectionNameXML>		
+            <StartVertexXML>0,0,1565</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+
+        <ScenarioActionSendTogradioChatXML>
+            <MeldingXML>Passert utkjør Heggeberg</MeldingXML>
+        </ScenarioActionSendTogradioChatXML>        
+    </ScenarioEventXML>	           
+    
+     <ScenarioEventXML>	  
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>heggeberg</SectionNameXML>		
+            <StartVertexXML>0,0,500</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>   
+                   
+        <ScenarioActionSendTogradioChatXML>
+            <MeldingXML>Stoppet foran rasvarslingsstolpe</MeldingXML>
+        </ScenarioActionSendTogradioChatXML>        
+    </ScenarioEventXML>	           
+    
+</ScenarioXML>

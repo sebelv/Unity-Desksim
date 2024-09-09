@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,220,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+ 
+    <!-- 
+    <SectionXML>
+        <NameXML>ertms87sek1al</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>    
+  
+    <SectionXML>
+        <NameXML>ertms87sek2grindvoll</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>  
+    
+    <SectionXML>
+        <NameXML>ertms87sek3galleberg</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML>         
+
+<SectionXML>
+    <NameXML>ertms87sek4holmestrand</NameXML>
+    <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+</SectionXML>   
+    -->  
+    <SectionXML>
+        <NameXML>ertms87sek5tonsberg</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML>      
+  
+    <SectionXML>
+        <NameXML>ertms87sek6sokna</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML>   
+  
+    <SectionXML>
+        <NameXML>ertms87sek7gulsvik</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>                                  
+ 
+    <!-- <SlideMappeXML>infoslides_scenario/ertms</SlideMappeXML>
+      <NettbrettFilXML>nettbrettslides_scenario/tog 10.png</NettbrettFilXML>    
+    <SlideOffsetInfoXML>2</SlideOffsetInfoXML>
+    <SlideOffsetOppgaverXML>2</SlideOffsetOppgaverXML>                       -->
+    -->             
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>ertms87sek6sokna</StartSeksjonXML>
+        <StartposXML>10750</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <StartModusXML>11</StartModusXML>        
+        <InfoXML>intet</InfoXML> 
+    </TogXML>   
+ 
+    <SlideMappeXML>infoslides_scenario/ertms</SlideMappeXML>
+    <NettbrettFilXML>nettbrettslides_scenario/tog 1203.png</NettbrettFilXML> 
+    <SlideOffsetInfoXML>18</SlideOffsetInfoXML>
+    <SlideOffsetOppgaverXML>21</SlideOffsetOppgaverXML>       
+    <TogNrXML>1203</TogNrXML>    
+    <StartTimeXML>14:14</StartTimeXML>
+    <PersonStartPosisjonXML>forerrom1_sittende</PersonStartPosisjonXML> 
+        
+    <ScenarioEventXML>
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde1.PNG
+            </MessageXML>
+        </ScenarioActionFreezeXML>  
+                              
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>				
+        </ScenarioTriggerTimeXML>	
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde2.PNG oppg1=true oppg2=true oppg3=true oppg4=false oppg5=false oppg6=true oppg7=true oppg8=false
+            </MessageXML> 
+        </ScenarioActionFreezeXML>	 
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10556_sec:ertms87sek6sokna</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML> 
+                
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>				
+        </ScenarioTriggerTimeXML>	
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10681_sec:ertms87sek6sokna_type:ertmsstopp_x:-5</IdXML>
+            <SerieSluttPosXML>1993</SerieSluttPosXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML> 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2401_sec:ertms87sek5tonsberg_type:dv</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML> 
+    </ScenarioEventXML>
+
+</ScenarioXML>

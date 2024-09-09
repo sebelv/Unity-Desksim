@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,220,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+     
+    <SectionXML>
+        <NameXML>ertms87sek1al</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>       
+    
+    <SectionXML>
+        <NameXML>ertms87sek2grindvoll</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>  
+      
+    <SectionXML>
+        <NameXML>ertms87sek3galleberg</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML>                   
+
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>185</ModelXML>
+        <StartSeksjonXML>ertms87sek3galleberg</StartSeksjonXML>
+        <StartposXML>300</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <StartModusXML>9</StartModusXML>   <!--11 -->
+        <PersonOffsetVectorXML>-5.5, 0.0, 0.0</PersonOffsetVectorXML>
+        <PersonRotationXML>-100</PersonRotationXML>                 
+        <InfoXML>kobbelopphengmedkm=ja;luftkranmedkm=ja;kobbelopphengmotkm=ja;luftkobbelopphengmotkm=ja;</InfoXML> 
+    </TogXML>   
+    
+    <TogXML>
+        <IdXML>101</IdXML>
+        <ModelXML>sdggmrs</ModelXML>
+        <StartSeksjonXML>ertms87sek3galleberg</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemotkm=ja;skrumotkm=-1440;luftkoblemotkm=ja;kobbelopphengmedkm=ja;luftkranmotkm=ja;luftkranmedkm=ja;last=container_blue_front, container_blue_rear</InfoXML>  
+    </TogXML>  
+    
+    <TogXML>
+        <IdXML>102</IdXML>
+        <ModelXML>sdggmrs</ModelXML>
+        <StartSeksjonXML>ertms87sek3galleberg</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemotkm=ja;skrumotkm=-1440;luftkoblemotkm=ja;kobbelopphengmedkm=ja;luftkranmotkm=ja;luftkobbelopphengmedkm=ja;last=container_blue_front, container_blue_rear</InfoXML>  
+    </TogXML>    
+    
+    <AltDefaultTogdataXML>
+        <AltTogdataSystemIndexXML>1</AltTogdataSystemIndexXML>
+        <AltDefaultBremseprosentXML>82</AltDefaultBremseprosentXML>
+        <AltDefaultSthXML>100</AltDefaultSthXML>
+        <AltDefaultLengdeXML>89</AltDefaultLengdeXML>
+    </AltDefaultTogdataXML>          
+
+    <TogNrXML>12302</TogNrXML>        	
+        
+    <StartTimeXML>16:30</StartTimeXML> 
+    
+    <PersonStartPosisjonXML>forerrom1_sittende</PersonStartPosisjonXML>     
+
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:9392_sec:ertms87sek2grindvoll_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>      
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2643_sec:ertms87sek1al_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>   
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2607_sec:ertms87sek1al_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>                        
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>   
+                
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:267_sec:ertms87sek3galleberg_x:5</IdXML>
+            <StateXML>1</StateXML>
+            <SerieSluttPosXML>2807</SerieSluttPosXML>
+        </ScenarioActionStateChangerXML>   
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2806_sec:ertms87sek1al_type:dv</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2646_sec:ertms87sek1al_type:dv</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+    </ScenarioEventXML>
+    
+    <!-- teleport galleberg - sløvika bp -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek3galleberg</SectionNameXML>	
+            <StartVertexXML>5,0,100</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML> OBS: Øvelsen fortsetter nå noen km lengre/n framme/n Trykk fortsett for teleportering</MessageXML>
+            <TeleportStartXML>start</TeleportStartXML>
+        </ScenarioActionFreezeXML>
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek2grindvoll</SectionNameXML>	
+            <StartVertexXML>0,0,5300</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML> Øvelsen fortsetter/n Toget befinner seg nå ca 1000m/n før Sløvika blokkpost /n Trykk fortsett </MessageXML>
+            <TeleportSluttXML>60</TeleportSluttXML>
+        </ScenarioActionFreezeXML>	                                                        						
+    </ScenarioEventXML>     
+        
+
+</ScenarioXML>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,130,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+    
+    <SectionXML>
+        <NameXML>atcbortflkrysbanen3</NameXML>
+        <StartVertexXML>0, 0, 0</StartVertexXML>
+    </SectionXML>    
+    
+    <SectionXML>
+        <NameXML>heggeberg</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>        
+
+    <SectionXML>
+        <NameXML>nitkatman1</NameXML>
+        <StartVertexXML>0, 0, 0</StartVertexXML>
+    </SectionXML> 
+
+
+    <TogXML>
+        <IdXML>101</IdXML>
+        <ModelXML>sdggmrs</ModelXML>
+        <StartSeksjonXML>atcbortflkrysbanen3</StartSeksjonXML>
+        <StartposXML>10450</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1440;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkobbelopphengmotkm=ja;luftkranmedkm=ja;last=container_blue_front</InfoXML>  
+    </TogXML> 
+    
+    <TogXML>
+        <IdXML>102</IdXML>
+        <ModelXML>sdggmrs</ModelXML>
+        <StartSeksjonXML>atcbortflkrysbanen3</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1440;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja;last=container_blue_rear</InfoXML>  
+    </TogXML>     
+    
+    <TogXML>
+        <IdXML>102</IdXML>
+        <ModelXML>sdggmrs</ModelXML>
+        <StartSeksjonXML>atcbortflkrysbanen3</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1440;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja;last=container_blue_front</InfoXML>  
+    </TogXML>     
+
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>185</ModelXML>
+        <StartSeksjonXML>atcbortflkrysbanen3</StartSeksjonXML>
+        <StartposXML>-1</StartposXML> <!-- -1 -->
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <StartModusXML>104</StartModusXML>      <!--8 -->  
+        <InfoXML>kobbelopphengmedkm=ja;kobbelopphengmotkm=ja;luftkobbelopphengmedkm=ja;luftkranmotkm=ja</InfoXML> 
+    </TogXML>
+        
+    <StartTimeXML>14:58</StartTimeXML> 
+    
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML> 
+    <TogNrXML>44001</TogNrXML>
+    
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>	<!--10-->				
+        </ScenarioTriggerTimeXML>			
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10800_sec:atcbortflkrysbanen3_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>	<!--10-->				
+        </ScenarioTriggerTimeXML>        
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10580_sec:atcbortflkrysbanen3_x:-5</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>         
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10720_sec:atcbortflkrysbanen3_type:hs2</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>        
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1300_sec:heggeberg_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>       
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2230_sec:heggeberg_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML> 
+        
+        <!-- sett feil på plo -->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3692_sec:heggeberg</IdXML>
+            <StateXML>2</StateXML> 
+        </ScenarioActionStateChangerXML>       
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:979_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>                                                                                                                                                                   
+    </ScenarioEventXML>
+     
+    <!-- Chat meldinger -->
+     <ScenarioEventXML>	  
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>		
+            <StartVertexXML>-5,0,10720</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+
+        <ScenarioActionSendTogradioChatXML>
+            <MeldingXML>Passert utkjør Gregorsand</MeldingXML>
+        </ScenarioActionSendTogradioChatXML>        
+    </ScenarioEventXML>	    
+    
+     <ScenarioEventXML>	  
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>heggeberg</SectionNameXML>		
+            <StartVertexXML>0,0,2230</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+
+        <ScenarioActionSendTogradioChatXML>
+            <MeldingXML>Passert utkjør Heggeberg</MeldingXML>
+        </ScenarioActionSendTogradioChatXML>        
+    </ScenarioEventXML>	   
+    
+     <ScenarioEventXML>	  
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>heggeberg</SectionNameXML>		
+            <StartVertexXML>0,0,3500</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>   
+                   
+        <ScenarioActionSendTogradioChatXML>
+            <MeldingXML>Stoppet foran planovergangen</MeldingXML>
+        </ScenarioActionSendTogradioChatXML>        
+    </ScenarioEventXML>	       
+    
+</ScenarioXML>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,220,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+ 
+    <SectionXML>
+        <NameXML>nitkatman1</NameXML>
+    </SectionXML>
+      
+    <SectionXML>
+        <NameXML>storehammer0</NameXML>
+    </SectionXML>  
+      
+    <SectionXML>
+        <NameXML>storehammer1</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>        
+
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>storehammer1</StartSeksjonXML>
+        <StartposXML>800</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <StartModusXML>19</StartModusXML>        <!-- 19-->
+        <InfoXML></InfoXML> 
+    </TogXML>   
+
+    <TogXML>
+        <IdXML>200</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>9400</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>    
+
+    <StartTimeXML>16:30</StartTimeXML> 
+    <TogNrXML>1701</TogNrXML>
+    
+    <PersonStartPosisjonXML>forerrom1_sittende</PersonStartPosisjonXML>             
+    
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>60</SecondsXML>	<!-- 60 -->				
+        </ScenarioTriggerTimeXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:600_sec:storehammer1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML> 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10100_sec:nitkatman1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>         
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>        
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:668_sec:storehammer1_type:hs2</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:668_sec:storehammer1_type:dv_x:5</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>   
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>5</SecondsXML>					
+        </ScenarioTriggerTimeXML>            
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:15_sec:storehammer1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>       
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10300_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>                                      
+    </ScenarioEventXML>    
+    
+    <!-- start kryssende tog -->
+    <ScenarioEventXML>    
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>	
+            <StartVertexXML>-5,0,9900</StartVertexXML> <!-- innenfor middel-->
+        </ScenarioTriggerTrackPosXML>				
+	
+        <!--
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>    
+        -->
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>20</SecondsXML> <!-- kryssingslåsingstid -->					
+        </ScenarioTriggerTimeXML>         
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>200</IdXML>		
+            <SpeedXML>40</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>        
+    </ScenarioEventXML>
+    
+    <!-- kryssende tog trigger videre fra Mangeberg -->
+    <ScenarioEventXML>    
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>200</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>	
+            <StartVertexXML>0,0,9880</StartVertexXML> <!-- innenfor middel-->
+        </ScenarioTriggerTrackPosXML>				
+	
+        <!--
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>    
+        
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>				
+        </ScenarioTriggerTimeXML>  
+        -->
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:9690_sec:nitkatman1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML> 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4830_sec:nitkatman1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>         
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML> 				
+        </ScenarioTriggerTimeXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:9760_sec:nitkatman1_type:hs2</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML> 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:7256_sec:nitkatman1</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>   
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:5030_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>                     
+                
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML> 				
+        </ScenarioTriggerTimeXML>          
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	
+            <IdXML>200</IdXML>		
+        </ScenarioActionAutoTrainCommandXML>        
+    </ScenarioEventXML>    
+    
+</ScenarioXML>

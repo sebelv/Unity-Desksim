@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+    <!--   
+    -->
+    <SectionXML>
+        <NameXML>nitkatman1</NameXML>
+    </SectionXML>
+     
+    <SectionXML>
+        <NameXML>storehammer0</NameXML>
+    </SectionXML>
+
+    <SectionXML>
+        <NameXML>storehammer1</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+  
+    <SectionXML>
+        <NameXML>revestua1</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+ 
+ 
+    <SectionXML>
+        <NameXML>hakafjell1</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+      
+    <SectionXML>
+        <NameXML>GRS</NameXML>
+        <EndPointNextStartPointIndexXML>3</EndPointNextStartPointIndexXML> 
+    </SectionXML>
+
+    <SectionXML>
+        <NameXML>UFJS1</NameXML>
+    </SectionXML>
+                
+    <SectionXML>
+        <NameXML>UFJS2</NameXML>
+    </SectionXML>
+    <!-- 
+    -->
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>1670</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <StartModusXML>104</StartModusXML>        
+        <InfoXML></InfoXML> 
+    </TogXML>                
+        
+    <TogXML>
+        <IdXML>200</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>5200</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>    	    
+    
+    <TogXML>
+        <IdXML>300</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>UFJS1</StartSeksjonXML>
+        <StartposXML>10300</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>     
+	
+    <StartTimeXML>10:00</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+    
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML>    
+    <NettbrettFilXML>nettbrettslides_scenario/tog 321.png</NettbrettFilXML>    
+	
+    <!-- NITTEBERG -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>	<!--10-->				
+        </ScenarioTriggerTimeXML>			
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se spørsmål 1</MessageXML>
+        </ScenarioActionFreezeXML>			
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1829.7_sec:nitkatman1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>3</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+		
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1753_sec:nitkatman1_type:hs2</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+  
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>	
+            <StartVertexXML>-5.0,0,1730</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se spørsmål 2</MessageXML>
+        </ScenarioActionFreezeXML>	
+    </ScenarioEventXML>	
+
+	
+    <!-- KATTDORP -->
+    <!-- signaler -->
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4330_sec:nitkatman1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4130_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>	
+  
+    <!-- frys innkj -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>	
+            <StartVertexXML>0,0,4115</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se spørsmål 3</MessageXML>
+        </ScenarioActionFreezeXML>	
+    </ScenarioEventXML>   
+  
+    <!-- frys ut når stoppa og sett igang kryssing-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>	
+            <StartVertexXML>5.0,0,4500</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>		
+    
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>			
+    
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se spørsmål 4</MessageXML>
+        </ScenarioActionFreezeXML>		
+    
+        <!--  OBS: TESTVERDI KRYSSINGSLÅSING -->
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>5</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+    
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>200</IdXML>		
+            <SpeedXML>-60</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>	
+    </ScenarioEventXML>
+
+    <!-- veksel og ut --> 
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>200</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>		
+            <StartVertexXML>0,0,4600</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4830_sec:nitkatman1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+		
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>3</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4758_sec:nitkatman1_type:hs2</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <!-- stopp kryss tog--> 				    
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	
+            <IdXML>200</IdXML>		
+        </ScenarioActionAutoTrainCommandXML>
+    </ScenarioEventXML>  
+  
+
+    <!-- VESTLI BP-->
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:7240_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>	
+	
+    <!-- frys bp -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>	
+            <StartVertexXML>0,0,7225</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se spørsmål 5</MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+
+    <!-- MANGEBERG-->
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:9490_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10030_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>                                        						
+    </ScenarioEventXML>
+  
+    <!-- frys atc nodstopp -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>	
+            <StartVertexXML>0,0,9890</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se spørsmål 6</MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+
+    <!-- STOREHAMMER_EX -->
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>a701</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+
+    <!-- STOREHAMMER1 -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>storehammer1</SectionNameXML>	
+            <StartVertexXML>0,0,580</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se spørsmål 7</MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+	
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:595_sec:storehammer1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:595_sec:storehammer1_type:dv</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:880_sec:storehammer1_type:hs3_x:0</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:880_sec:storehammer1_type:dv_x:0</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1026_sec:storehammer1_type:dv_x:0</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1230_sec:storehammer1_type:hs3_x:0</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+		
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1230_sec:storehammer1_type:dv_x:0</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+  
+    <!-- frys ras-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>storehammer1</SectionNameXML>	
+            <StartVertexXML>0,0,1535</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se spørsmål 8</MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+  
+    <!-- REVESTUA -->
+    <!-- frys hast ned pluss-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>revestua1</SectionNameXML>	
+            <StartVertexXML>0,0,65</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>		
+    
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se spørsmål 9</MessageXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML>
+  
+    <!-- gjennomkjør -->
+    <ScenarioEventXML>    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1890_sec:revestua1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2525_sec:revestua1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2429_sec:revestua1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+  
+    <!-- frys plo skilt-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>revestua1</SectionNameXML>	
+            <StartVertexXML>0,0,4630</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se spørsmål 10</MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+  
+    <!-- HAKAFJELL -->
+    <!-- signaler gjennomkjør --> 
+    <ScenarioEventXML>
+        <!-- plo før hakafjell1-->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:170_sec:hakafjell1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1150_sec:hakafjell1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1990_sec:hakafjell1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+   
+    <!-- frys orient hp-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>hakafjell1</SectionNameXML>	
+            <StartVertexXML>0,0,3190</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se spørsmål 11</MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+  
+    <!-- LURBÅS -->
+    <!-- txp lbs -->
+    <WorkerAc3dXML>
+        <IdXML>txpLBS</IdXML>
+        <SectionNameXML>GRS</SectionNameXML>
+        <StartVertexXML>0, 0, 2360.0</StartVertexXML> 	
+        <OffsetVertexXML>-4.5, 0.0, 0.0</OffsetVertexXML>
+        <FileNameXML>TXPhilser.ac</FileNameXML>
+        <FileNameXML>TXP12a.ac</FileNameXML>    									
+        <DirectionXML>1</DirectionXML>						
+    </WorkerAc3dXML>
+  
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1801_sec:GRS_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2000_sec:GRS_type:dv</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+  
+    <!-- Frys ved R1 Lurbås Frys 12-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>GRS</SectionNameXML>	
+            <StartVertexXML>0,0,1985</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>		
+    
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se spørsmål 12</MessageXML>
+        </ScenarioActionFreezeXML>	
+    </ScenarioEventXML>
+    
+    <!-- sekvens flytt tx, signal, kjtill-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>GRS</SectionNameXML>	
+            <StartVertexXML>0,0,2000</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>		
+	
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>
+    
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se spørsmål 13</MessageXML>
+        </ScenarioActionFreezeXML>	
+    
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2715_sec:GRS_type:dv_x:0</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2810_sec:GRS_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+    
+        <ScenarioActionFollowSimTrainXML>
+            <IdXML>txpLBS</IdXML>
+            <OffsetVertexXML>-3.5,0,5</OffsetVertexXML>
+        </ScenarioActionFollowSimTrainXML>
+    
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>txpLBS</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+
+    <!-- TANNSKOG -->
+    <!-- frys forsig -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>UFJS1</SectionNameXML>	
+            <StartVertexXML>0,0,985</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se spørsmål 14</MessageXML>
+        </ScenarioActionFreezeXML>	
+    </ScenarioEventXML>    
+  
+    <WorkerAc3dXML>
+        <IdXML>txpTANNSKOG</IdXML>
+        <SectionNameXML>UFJS1</SectionNameXML>
+        <StartVertexXML>0, 0, 2190</StartVertexXML> 	
+        <OffsetVertexXML>-4.5, 0.0, 0.0</OffsetVertexXML>
+        <FileNameXML>TXPhilser.ac</FileNameXML>
+        <DirectionXML>1</DirectionXML>						
+    </WorkerAc3dXML>
+  
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>UFJS1</SectionNameXML>	
+            <StartVertexXML>0.0,0,1750</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>		
+    
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>			
+    
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se spørsmål 15</MessageXML>
+        </ScenarioActionFreezeXML>		
+    
+        <!--  OBS: TESTVERDI KRYSSINGSLÅSING -->
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>5</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1800_sec:UFJS1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1995_sec:UFJS1_type:dv</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2300_sec:UFJS1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2420_sec:UFJS1_type:dv_x:0</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2510_sec:UFJS1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+  
+    <!-- FURU -->
+    <WorkerAc3dXML>
+        <IdXML>txpFURU</IdXML>
+        <SectionNameXML>UFJS1</SectionNameXML>
+        <StartVertexXML>0, 0, 5580.0</StartVertexXML> 	
+        <OffsetVertexXML>-4.5, 0.0, 0.0</OffsetVertexXML>
+        <FileNameXML>TXP3A.ac</FileNameXML>   									
+        <DirectionXML>1</DirectionXML>						
+    </WorkerAc3dXML>
+    
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:5300_sec:UFJS1_type:hs2</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+  
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>UFJS1</SectionNameXML>	
+            <StartVertexXML>0,0,5560</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>		
+    
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se spørsmål 16</MessageXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML>
+  
+    <!-- TANNVERK -->
+    <!-- frys innkj -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>UFJS1</SectionNameXML>	
+            <StartVertexXML>0,0,9285</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se spørsmål 17</MessageXML>
+        </ScenarioActionFreezeXML>	
+    </ScenarioEventXML>  
+  
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:9300_sec:UFJS1_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:9500_sec:UFJS1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+  
+    <WorkerAc3dXML>
+        <IdXML>txpTVK</IdXML>
+        <SectionNameXML>UFJS1</SectionNameXML>
+        <StartVertexXML>0, 0, 9650.0</StartVertexXML> 	
+        <OffsetVertexXML>9.5, 0.0, 0.0</OffsetVertexXML>
+        <FileNameXML>TXPhilser.ac</FileNameXML>   									
+        <DirectionXML>1</DirectionXML>						
+    </WorkerAc3dXML>  
+  
+    <!-- frys ut når stoppa og sett igang kryssing-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>UFJS1</SectionNameXML>	
+            <StartVertexXML>5.0,0,9600</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>		
+    
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>			
+    
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se spørsmål 18</MessageXML>
+        </ScenarioActionFreezeXML>		
+    
+        <!--  OBS: TESTVERDI KRYSSINGSLÅSING -->
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>5</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+    
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>300</IdXML>		
+            <SpeedXML>-60</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>	
+    </ScenarioEventXML>
+
+    <!-- veksel og ut --> 
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>300</IdXML>							
+            <SectionNameXML>UFJS1</SectionNameXML>		
+            <StartVertexXML>0,0,9900</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10000_sec:UFJS1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+		
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>3</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10010_sec:UFJS1_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>4</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+    
+        <ScenarioActionFreezeXML>						
+            <MessageXML> TXP ringer deg og sier:/n "Tog 3-2-1 kjøretillatelse"/n/n Trykk FORTSETT</MessageXML>
+        </ScenarioActionFreezeXML>	
+
+        <!-- stopp kryss tog--> 				    
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	
+            <IdXML>300</IdXML>		
+        </ScenarioActionAutoTrainCommandXML>
+    </ScenarioEventXML>  
+
+    <!-- BLÅFOSS -->
+    <!-- plo -->
+    <ScenarioEventXML>  
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:650_sec:UFJS2</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <!-- enk innkj -->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1300_sec:UFJS2</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>  
+  
+    <!-- frys avst 2-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>UFJS2</SectionNameXML>	
+            <StartVertexXML>0,0,490</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>		
+    
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se spørsmål 19</MessageXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML>
+  
+    <!-- frys enk innkj-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>UFJS2</SectionNameXML>	
+            <StartVertexXML>0,0,1285</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>		
+    
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se spørsmål 20</MessageXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML>
+  
+    <!-- frys sikthast-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>UFJS2</SectionNameXML>	
+            <StartVertexXML>0,0,2000</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>		
+    
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se spørsmål 21</MessageXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML>
+  
+    <!-- BJORFJELL -->
+    <!-- frys innkj-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>UFJS2</SectionNameXML>	
+            <StartVertexXML>0,0,2790</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>		
+    
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se spørsmål 22</MessageXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML>
+  
+    <ScenarioEventXML>  
+        <!-- innkj -->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2800_sec:UFJS2_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <!-- forsik kj -->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2800_sec:UFJS2_type:forsik</IdXML>
+            <StateXML>32</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <!-- slokt forsignal -->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2800_sec:UFJS2_type:fs</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <!-- dv -->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2980_sec:UFJS2_type:dv</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <!-- spv -->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2994.5_sec:UFJS2_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML> 
+  
+    <!-- frys sikthast-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>UFJS2</SectionNameXML>	
+            <StartVertexXML>0,0,2990</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>		
+    
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Fortsett innkjøringen til togveiens slutt./n Dette er togets endestasjon.</MessageXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML>
+  
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>UFJS2</SectionNameXML>	
+            <StartVertexXML>5.0,0,3250</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>		
+    
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>			
+    
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Se spørsmål 23/n/n Øvelsen er nå ferdig.</MessageXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML>		
+</ScenarioXML>
+

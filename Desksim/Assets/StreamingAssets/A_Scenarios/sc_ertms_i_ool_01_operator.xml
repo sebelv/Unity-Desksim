@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->  
+    
+	<SectionXML>
+		<NameXML>nitkatman1</NameXML>
+                <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>                
+	</SectionXML>
+        
+    <SectionXML>
+        <NameXML>spurvstad0</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>      
+            
+	<SectionXML>
+		<NameXML>spurvstad1</NameXML>
+    <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+	</SectionXML>
+  
+	<SectionXML>
+		<NameXML>ospim1</NameXML>
+     <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+	</SectionXML>
+  
+	<SectionXML>
+		<NameXML>gaffelberg1</NameXML>
+	</SectionXML>
+
+<!--
+	<ErtmsTrain1XML>
+	 	<IdXML>100</IdXML>
+	 	<StartModeXML>14</StartModeXML>
+	    <StartPosXML>9995</StartPosXML> 
+	    <StartSectionNameXML>sumnedkor</StartSectionNameXML>
+	 	<StartVertexXML>-5.0, 0.0, 9995.0</StartVertexXML>
+	</ErtmsTrain1XML>
+        -->
+        
+        <TogXML>
+            <IdXML>100</IdXML>
+            <ModelXML>togsett</ModelXML>
+            <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+            <StartposXML>9950</StartposXML>
+            <StartposSideveisXML>-5</StartposSideveisXML>
+            <StartModusXML>14</StartModusXML>        
+            <InfoXML></InfoXML> 
+        </TogXML>        
+        
+        <TogXML>
+            <IdXML>200</IdXML>
+            <ModelXML>togsett</ModelXML>
+            <StartSeksjonXML>spurvstad1</StartSeksjonXML>
+            <StartposXML>1100</StartposXML>
+            <StartposSideveisXML>0</StartposSideveisXML>
+            <InfoXML>dekorativt=ja</InfoXML>
+        </TogXML>         
+        
+	<StartTimeXML>16:30</StartTimeXML> 
+        
+        <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML>           
+	
+	<ScenarioEventXML>
+            <ScenarioTriggerTimeXML>						
+                <SecondsXML>1</SecondsXML>					
+            </ScenarioTriggerTimeXML>
+
+            <ScenarioActionStateChangerXML>
+                <IdXML>pos:10120_sec:nitkatman1_type:sw</IdXML>
+                <StateXML>1</StateXML>
+            </ScenarioActionStateChangerXML>
+            
+            <ScenarioActionStateChangerXML>
+                <IdXML>pos:792_sec:spurvstad0</IdXML>
+                <StateXML>1</StateXML>
+            </ScenarioActionStateChangerXML>            
+            
+		<ScenarioActionStateChangerXML>
+			<IdXML>sv2khu</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+		<ScenarioActionStateChangerXML>
+			<IdXML>sv1sst</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+		<ScenarioActionStateChangerXML>
+			<IdXML>sv2sst</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+		<ScenarioActionStateChangerXML>
+			<IdXML>35sst</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+		<ScenarioActionStateChangerXML>
+			<IdXML>15sst</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+		<ScenarioActionStateChangerXML>
+			<IdXML>a01osp</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+		<ScenarioActionStateChangerXML>
+			<IdXML>l03osp</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+		<ScenarioActionStateChangerXML>
+			<IdXML>sv1glb</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+		<ScenarioActionStateChangerXML>
+			<IdXML>a01glb</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+		<ScenarioActionStateChangerXML>
+			<IdXML>35glb</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+        </ScenarioEventXML>
+
+	<!-- KJ�R UT FRA KORTHUS 20 SEK ETTER SCENARIESTART -->
+	<ScenarioEventXML>
+		<ScenarioTriggerTimeXML>						
+			<SecondsXML>20</SecondsXML>					
+		</ScenarioTriggerTimeXML>
+
+		<ScenarioActionStateChangerXML>
+			<IdXML>n603</IdXML>
+			<StateXML>21</StateXML>
+		</ScenarioActionStateChangerXML>
+	</ScenarioEventXML>
+
+
+	<!-- KJØR INN PÅ SST (A01) 15 SEK ETTER togstopp -->
+	<ScenarioEventXML>
+		<ScenarioTriggerTrackPosXML>		
+			<IdXML>100</IdXML>							
+			<!--<SectionIndexXML>1</SectionIndexXML>-->
+                        <SectionNameXML>spurvstad1</SectionNameXML>		
+			<StartVertexXML>0,0,500</StartVertexXML>
+		</ScenarioTriggerTrackPosXML>					
+    
+		<ScenarioTriggerSpeedXML>			<!-- ScenarioTriggerSpeed -->
+			<IdXML>100</IdXML>			<!-- HASTIGHETEN DET SKAL TRIGGES I FORHOLD TIL -->
+			<SpeedXML>1</SpeedXML>
+			<OperatorXML>-1</OperatorXML>		<!-- MÅTEN DEL SKAL TRIGGES: -1 = MINDRE ENN, 0 = LIK, 1 = STØRRE ENN -->
+		</ScenarioTriggerSpeedXML>			<!-- TRIGGEREN HER AKTIVERES NÅR HASTIGHETEN ER MINDRE ENN 1 -->
+
+		<ScenarioTriggerTimeXML>						
+			<SecondsXML>15</SecondsXML>					
+		</ScenarioTriggerTimeXML>
+
+		<ScenarioActionStateChangerXML>
+			<IdXML>a01sst</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+	</ScenarioEventXML>
+
+
+	<ScenarioEventXML>
+		<ScenarioTriggerTrackPosXML>		
+			<IdXML>100</IdXML>							
+			<!--<SectionIndexXML>1</SectionIndexXML>-->
+                        <SectionNameXML>spurvstad1</SectionNameXML>			
+			<StartVertexXML>0,0,1350</StartVertexXML>
+		</ScenarioTriggerTrackPosXML>					
+
+		<ScenarioTriggerSpeedXML>			<!-- ScenarioTriggerSpeed -->
+			<IdXML>100</IdXML>			<!-- HASTIGHETEN DET SKAL TRIGGES I FORHOLD TIL -->
+			<SpeedXML>1</SpeedXML>
+			<OperatorXML>-1</OperatorXML>		<!-- MÅTEN DEL SKAL TRIGGES: -1 = MINDRE ENN, 0 = LIK, 1 = STØRRE ENN -->
+		</ScenarioTriggerSpeedXML>			<!-- TRIGGEREN HER AKTIVERES NÅR HASTIGHETEN ER MINDRE ENN 1 -->
+
+		<ScenarioTriggerTimeXML>						
+			<SecondsXML>5</SecondsXML>					
+		</ScenarioTriggerTimeXML>
+
+		
+		<ScenarioActionStateChangerXML>
+			<IdXML>l03sst</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+	</ScenarioEventXML>
+
+
+
+
+	<!-- KJØR UT FORBI 35 OSP 15 SEK ETTER togstopp -->
+	<ScenarioEventXML>
+		<ScenarioTriggerTrackPosXML>		
+			<IdXML>100</IdXML>							
+			<!--<SectionIndexXML>2</SectionIndexXML>-->
+                        <SectionNameXML>ospim1</SectionNameXML>			
+			<StartVertexXML>0,0,2200</StartVertexXML>
+		</ScenarioTriggerTrackPosXML>					
+		
+
+		<ScenarioTriggerSpeedXML>			<!-- ScenarioTriggerSpeed -->
+			<IdXML>100</IdXML>			<!-- HASTIGHETEN DET SKAL TRIGGES I FORHOLD TIL -->
+			<SpeedXML>1</SpeedXML>
+			<OperatorXML>-1</OperatorXML>		<!-- MÅTEN DEL SKAL TRIGGES: -1 = MINDRE ENN, 0 = LIK, 1 = STØRRE ENN -->
+		</ScenarioTriggerSpeedXML>			<!-- TRIGGEREN HER AKTIVERES NÅR HASTIGHETEN ER MINDRE ENN 1 -->
+
+		<ScenarioTriggerTimeXML>						
+			<SecondsXML>15</SecondsXML>					
+		</ScenarioTriggerTimeXML>
+
+		<ScenarioActionStateChangerXML>
+			<IdXML>35osp</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+		
+		<ScenarioActionStateChangerXML>
+			<IdXML>05osp</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+	</ScenarioEventXML>
+	
+  <ScenarioEventXML>
+		<ScenarioTriggerTrackPosXML>  					
+			<IdXML>100</IdXML>		  					
+			<!--<SectionIndexXML>2</SectionIndexXML>-->
+                        <SectionNameXML>ospim1</SectionNameXML>	
+			<StartVertexXML>0,0,3400</StartVertexXML> 	<!-- PLO AKTIVERES I GOD TID FØR -->
+		</ScenarioTriggerTrackPosXML>
+		
+		<ScenarioActionStateChangerXML>
+			<IdXML>w01</IdXML>
+			<StateXML>3</StateXML>						<!-- DEFAULTVERDIEN TIL PLOSKILT ER 0 SOM BETYR TSR MED 0 KMH -->
+		</ScenarioActionStateChangerXML>				<!-- 0 = TSR MED 0 KMH, 1 = TSR MED 10 KMH, 2 = TSR MED FULL HASTIGHET (INGEN TSR), 3 = TSR MED 0 KMH BOMMER AKTIVERT -->
+														<!-- HER SKAL PLO AKTIVERES OG STATE SETTES TIL 3 -->
+	</ScenarioEventXML>
+  
+	<ScenarioEventXML>
+		<ScenarioTriggerTrackPosXML>
+			<IdXML>100</IdXML>
+			<!--<SectionIndexXML>2</SectionIndexXML>-->
+                        <SectionNameXML>ospim1</SectionNameXML>	
+			<StartVertexXML>0,0,4400</StartVertexXML>
+		</ScenarioTriggerTrackPosXML>
+		
+		<ScenarioActionStateChangerXML>
+			<IdXML>w01</IdXML>
+			<StateXML>2</StateXML>
+		</ScenarioActionStateChangerXML>
+		
+		<ScenarioActionStateChangerXML>
+			<IdXML>plo1</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+	</ScenarioEventXML>
+
+
+
+</ScenarioXML>

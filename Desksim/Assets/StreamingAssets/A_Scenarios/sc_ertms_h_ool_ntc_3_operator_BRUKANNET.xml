@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <BrukAnnetScenarioXML>sc_ertms_a_ntc_3_togsett_operator</BrukAnnetScenarioXML>           
+
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>1680</StartposXML> <!-- 1680 -->
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>20</StartModusXML>   <!-- 20 -->      
+        <InfoXML>ingeninfo</InfoXML>
+    </TogXML>     
+    
+</ScenarioXML>

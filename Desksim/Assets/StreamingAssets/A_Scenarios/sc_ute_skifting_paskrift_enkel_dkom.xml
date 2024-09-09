@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+
+    <!--    
+    -->
+    <SectionXML>
+        <NameXML>hakafjell1</NameXML> 
+    </SectionXML>
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>t44</ModelXML>
+        <StartSeksjonXML>hakafjell1</StartSeksjonXML>
+        <StartposXML>1640</StartposXML>
+        <StartposSideveisXML>-10</StartposSideveisXML>
+        <StartModusXML>104</StartModusXML>        
+        <InfoXML>kobbelopphengmotkm=ja;kobbelopphengmedkm=ja;luftkobbelopphengmotkm=ja;luftkobbelopphengmedkm=ja;</InfoXML> 
+        <PersonOffsetVectorXML>-8.0, 0.0, 7.0</PersonOffsetVectorXML>
+        <PersonRotationXML>0</PersonRotationXML>           
+    </TogXML> 
+    
+    <TogXML>
+        <IdXML>201</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>hakafjell1</StartSeksjonXML>
+        <StartposXML>1660</StartposXML>
+        <StartposSideveisXML>-10</StartposSideveisXML>
+        <InfoXML>hl=5.0;kobbelopphengmotkm=ja;kobbelopphengmedkm=ja;luftkobbelopphengmotkm=ja;luftkobbelopphengmedkm=ja;handbrems=ja</InfoXML>  
+    </TogXML>  
+    
+    <TogXML>
+        <IdXML>202</IdXML>
+        <ModelXML>sdggmrs</ModelXML>
+        <StartSeksjonXML>hakafjell1</StartSeksjonXML>
+        <StartposXML>1750</StartposXML>
+        <StartposSideveisXML>-15</StartposSideveisXML>
+        <InfoXML>hl=5.0;kobbelopphengmotkm=ja;kobbelopphengmedkm=ja;luftkobbelopphengmotkm=ja;luftkobbelopphengmedkm=ja;handbrems=ja</InfoXML>  
+    </TogXML>          
+	
+    <StartTimeXML>16:30</StartTimeXML> 
+    
+    <ScenarioInfo3dXML>
+        <SectionNameXML>hakafjell1</SectionNameXML>
+        <StartVertexXML>-10.0, 0.0, 1650</StartVertexXML>
+        <OffsetVertexXML>-9, 0, 0</OffsetVertexXML>        
+        <FrameTypeXML>stativ</FrameTypeXML>        
+        <ImageXML>paskrift_enkel/Lysbilde1.PNG</ImageXML>
+        <ImageSizeXML>1</ImageSizeXML>
+        <ImageOffsetXML>0,0,0</ImageOffsetXML>        
+        <ImageCorrectAnswersXML></ImageCorrectAnswersXML>        
+        <IdXML></IdXML>
+        <DirectionXML>1</DirectionXML>
+    </ScenarioInfo3dXML>  
+    
+    <ScenarioInfo3dXML>
+        <SectionNameXML>hakafjell1</SectionNameXML>
+        <StartVertexXML>-10.0, 0.0, 1656.2</StartVertexXML>
+        <OffsetVertexXML>-1.2, 1.8, 0</OffsetVertexXML>        
+        <FrameTypeXML>arrow</FrameTypeXML>        
+        <ImageXML>paskrift_enkel/Lysbilde2.PNG</ImageXML>
+        <ImageSizeXML>1</ImageSizeXML>
+        <ImageOffsetXML>0,0,0</ImageOffsetXML>        
+        <ImageCorrectAnswersXML></ImageCorrectAnswersXML>        
+        <IdXML></IdXML>
+        <DirectionXML>1</DirectionXML>
+    </ScenarioInfo3dXML>  
+    
+    <ScenarioInfo3dXML>
+        <SectionNameXML>hakafjell1</SectionNameXML>
+        <StartVertexXML>-10.0, 0.0, 1662</StartVertexXML>
+        <OffsetVertexXML>-1.2, 1.8, 0</OffsetVertexXML>        
+        <FrameTypeXML>arrow</FrameTypeXML>        
+        <ImageXML>paskrift_enkel/Lysbilde3.PNG</ImageXML>
+        <ImageSizeXML>1</ImageSizeXML>
+        <ImageOffsetXML>0,0,0</ImageOffsetXML>        
+        <ImageCorrectAnswersXML></ImageCorrectAnswersXML>        
+        <IdXML></IdXML>
+        <DirectionXML>1</DirectionXML>
+    </ScenarioInfo3dXML>   
+    
+    <ScenarioInfo3dXML>
+        <SectionNameXML>hakafjell1</SectionNameXML>
+        <StartVertexXML>-10.0, 0.0, 1664.5</StartVertexXML>
+        <OffsetVertexXML>1.3, 1.8, 0</OffsetVertexXML>        
+        <FrameTypeXML>arrow</FrameTypeXML>        
+        <ImageXML>paskrift_enkel/Lysbilde4.PNG</ImageXML>
+        <ImageSizeXML>1</ImageSizeXML>
+        <ImageOffsetXML>0,0,0</ImageOffsetXML>        
+        <ImageCorrectAnswersXML></ImageCorrectAnswersXML>        
+        <IdXML></IdXML>
+        <DirectionXML>-1</DirectionXML>
+    </ScenarioInfo3dXML> 
+    
+    <ScenarioInfo3dXML>
+        <SectionNameXML>hakafjell1</SectionNameXML>
+        <StartVertexXML>-10.0, 0.0, 1660</StartVertexXML>
+        <OffsetVertexXML>1.3, 1.8, 0</OffsetVertexXML>        
+        <FrameTypeXML>arrow</FrameTypeXML>        
+        <ImageXML>paskrift_enkel/Lysbilde5.PNG</ImageXML>
+        <ImageSizeXML>1</ImageSizeXML>
+        <ImageOffsetXML>0,0,0</ImageOffsetXML>        
+        <ImageCorrectAnswersXML></ImageCorrectAnswersXML>        
+        <IdXML></IdXML>
+        <DirectionXML>-1</DirectionXML>
+    </ScenarioInfo3dXML>    
+    
+    <ScenarioInfo3dXML>
+        <SectionNameXML>hakafjell1</SectionNameXML>
+        <StartVertexXML>-15.0, 0.0, 1730</StartVertexXML>
+        <OffsetVertexXML>-4, 0, 0</OffsetVertexXML>        
+        <FrameTypeXML>stativ</FrameTypeXML>        
+        <ImageXML>paskrift_enkel/Lysbilde6.PNG</ImageXML>
+        <ImageSizeXML>1</ImageSizeXML>
+        <ImageOffsetXML>0,0,0</ImageOffsetXML>        
+        <ImageCorrectAnswersXML>false,false,true,true,false,true</ImageCorrectAnswersXML>        
+        <IdXML></IdXML>
+        <DirectionXML>1</DirectionXML>
+    </ScenarioInfo3dXML>                                    
+	
+</ScenarioXML>

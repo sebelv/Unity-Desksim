@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->   
+        
+	<SectionXML>
+		<NameXML>ospim1</NameXML>
+     <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+	</SectionXML>
+  
+	<SectionXML>
+		<NameXML>gaffelberg1</NameXML>
+	</SectionXML>
+
+<!-- TOGET VI KJØRER MÅ DEFINERES -->
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>gaffelberg1</StartSeksjonXML>
+        <StartposXML>1800</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>11</StartModusXML>    <!-- 11 -->    
+        <InfoXML></InfoXML> 
+    </TogXML>  
+	
+    <StartTimeXML>11:27</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+    <PersonStartPosisjonXML>forerrom1_sittende</PersonStartPosisjonXML>  
+    <TogNrXML>12003</TogNrXML>  
+
+<!-- EN HENDELSE MED ET OBJEKT LANGS SPORET DEFINERES I EN ScenarioEvent -->
+<!-- I EN ScenarioEvent DEFINERES ScenarioTriggers OG ScenarioActions-->
+<!-- DERSOM BARE ScenarioActions ER DEFINERT UTFØRES DISSE MED EN GANG SCENARIET STARTER-->
+	<ScenarioEventXML>
+		<ScenarioActionStateChangerXML> <!-- DEN VANLIGESTE ScenarioAction ER ScenarioActionStateChanger-->
+			<IdXML>26glb</IdXML>		<!-- OPPGI NØYAKTIG ID TIL OBJEKTET SOM SKAL ENDRE STATE-->
+			<StateXML>1</StateXML>	    <!-- OPPGI NY STATE-->
+		</ScenarioActionStateChangerXML>
+		<ScenarioActionStateChangerXML> <!-- ID'ENE HER HENVISER TIL ERTMS STOPPSKILT -->
+			<IdXML>06glb</IdXML>	    
+			<StateXML>1</StateXML>		<!-- STATE 0 = STOPP, 1 = KJØR I FS, 2 = KJØR I OS -->
+		</ScenarioActionStateChangerXML>
+		<ScenarioActionStateChangerXML>
+			<IdXML>m04glb</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+		<ScenarioActionStateChangerXML>
+			<IdXML>b02osp</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+		<ScenarioActionStateChangerXML>
+			<IdXML>sv2osp</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+		<ScenarioActionStateChangerXML>
+			<IdXML>sv4osp</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>	
+	</ScenarioEventXML>
+
+<!-- PLANOVERGANG SOM IKKE FUNGERER -->
+	<ScenarioEventXML>
+		<ScenarioTriggerTrackPosXML> 					<!-- POSISJONEN TIL PLO ER 250 -->
+			<IdXML>100</IdXML>
+                        <SectionNameXML>gaffelberg1</SectionNameXML>	
+			<StartVertexXML>0,0,1500</StartVertexXML>	<!-- PLO SKILTET TRIGGES TIL TSR 10 KMH NÅR TOGET HAR PASSERT POS 350 -->
+		</ScenarioTriggerTrackPosXML>
+		
+		<ScenarioActionStateChangerXML>
+			<IdXML>w02</IdXML>							<!-- PLO SKILTET MED ID w02 TRIGGES NÅR DE 3 DEFINERTE TRIGGERENE ER AKTIVERT -->
+			<StateXML>3</StateXML>						<!-- STATE 0 = TSR 0 KMH, STATE 1 = TSR 10 KMH, STATE 2 = TSR FULL HASTIGHET (INGEN TSR)-->
+		</ScenarioActionStateChangerXML>
+	</ScenarioEventXML>
+
+<!-- PLANOVERGANG SOM IKKE FUNGERER -->
+	<ScenarioEventXML>
+		<ScenarioTriggerTrackPosXML> 					<!-- POSISJONEN TIL PLO ER 250 -->
+			<IdXML>100</IdXML>
+		        <SectionNameXML>gaffelberg1</SectionNameXML>	
+			<StartVertexXML>0,0,350</StartVertexXML>	<!-- PLO SKILTET TRIGGES TIL TSR 10 KMH NÅR TOGET HAR PASSERT POS 350 -->
+		</ScenarioTriggerTrackPosXML>
+		
+		<ScenarioTriggerSpeedXML>
+			<IdXML>100</IdXML>
+			<SpeedXML>1</SpeedXML>
+			<OperatorXML>-1</OperatorXML>				<!-- OG TOGET HAR STOPPET (HAR MINDRE ENN 1 KMH)-->
+		</ScenarioTriggerSpeedXML> 						
+		
+		<ScenarioTriggerTimeXML>
+			<SecondsXML>12</SecondsXML>					<!-- OG DET HAR GÅTT 12 SEK-->
+		</ScenarioTriggerTimeXML>
+		
+		<ScenarioActionStateChangerXML>
+			<IdXML>w02</IdXML>							<!-- PLO SKILTET MED ID w02 TRIGGES NÅR DE 3 DEFINERTE TRIGGERENE ER AKTIVERT -->
+			<StateXML>1</StateXML>						<!-- STATE 0 = TSR 0 KMH, STATE 1 = TSR 10 KMH, STATE 2 = TSR FULL HASTIGHET (INGEN TSR)-->
+		</ScenarioActionStateChangerXML>
+	</ScenarioEventXML>
+	
+	<!-- Utkjøring fra Ospim -->
+	<ScenarioEventXML> 
+		<ScenarioTriggerTrackPosXML>		
+			<IdXML>100</IdXML>							
+			<SectionNameXML>ospim1</SectionNameXML>			
+			<StartVertexXML>5,0,2475</StartVertexXML>
+		</ScenarioTriggerTrackPosXML>
+														
+		<ScenarioTriggerSpeedXML>						
+			<IdXML>100</IdXML>							
+			<SpeedXML>1</SpeedXML>
+			<OperatorXML>-1</OperatorXML>				
+		</ScenarioTriggerSpeedXML>						
+		
+		<ScenarioTriggerTimeXML>						
+			<SecondsXML>20</SecondsXML>					
+		</ScenarioTriggerTimeXML>
+		
+		<ScenarioActionStateChangerXML>
+			<IdXML>16osp</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+		
+		<ScenarioActionStateChangerXML>
+			<IdXML>m04osp</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+
+		<ScenarioActionStateChangerXML>
+			<IdXML>b02sst</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+	</ScenarioEventXML>
+	
+
+</ScenarioXML>

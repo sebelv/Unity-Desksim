@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>60,150,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+    
+    <SectionXML>
+        <NameXML>nitkatman1</NameXML>
+    </SectionXML>
+    
+    <SectionXML>
+        <NameXML>storehammer0</NameXML>
+    </SectionXML>
+
+    <SectionXML>
+        <NameXML>storehammer1</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>1500</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <StartModusXML>102</StartModusXML>        
+        <InfoXML></InfoXML> 
+    </TogXML>    
+
+
+    <TogNrXML>1003</TogNrXML>
+    <StartTimeXML>13:55</StartTimeXML> 
+    
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML>
+    
+    <SlideMappeXML>infoslides_scenario/400</SlideMappeXML>
+    <SlideOffsetInfoXML>7</SlideOffsetInfoXML>
+    <SlideOffsetOppgaverXML>7</SlideOffsetOppgaverXML>    
+    <NettbrettFilXML>nettbrettslides_scenario/tog 1003.png</NettbrettFilXML>
+	
+    <!-- Nitteberg og videre -->       
+    <ScenarioEventXML>
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde1.PNG</MessageXML>
+        </ScenarioActionFreezeXML>
+
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>1</SecondsXML>					
+        </ScenarioTriggerTimeXML>        
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1870_sec:nitkatman1</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>   
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1829_sec:nitkatman1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>20</SecondsXML>			
+        </ScenarioTriggerTimeXML>    
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1753_sec:nitkatman1_type:hs2</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>		
+            <StartVertexXML>0,0,4000</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>  
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>10</SecondsXML>			
+        </ScenarioTriggerTimeXML>    
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4130_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>   
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>l503</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>     
+        <ScenarioActionStateChangerXML>
+            <IdXML>a551</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+	
+        <ScenarioActionStateChangerXML>
+            <IdXML>a601</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>            	
+             
+    <!-- ATCFEIL -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>
+            <IdXML>100</IdXML>
+            <StartVertexXML>0,0,2950</StartVertexXML>
+            <SectionIndexXML>0</SectionIndexXML>
+        </ScenarioTriggerTrackPosXML>	
+
+        <ScenarioActionSystemXML> 		
+            <IdXML>100</IdXML>			
+            <StateXML>10</StateXML>
+            <KodeXML>12:0:1:15:12:18</KodeXML>
+        </ScenarioActionSystemXML>	
+        
+        <ScenarioActionSendTogradioChatXML>
+            <MeldingXML>ATC Systemfeil, ok etter oppstart</MeldingXML>
+        </ScenarioActionSendTogradioChatXML>   	
+    </ScenarioEventXML>	
+
+    <!-- SAMMENLIGNINGSFEIL-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>
+            <IdXML>100</IdXML>
+            <StartVertexXML>0,0,7000</StartVertexXML>
+            <SectionIndexXML>0</SectionIndexXML>
+        </ScenarioTriggerTrackPosXML>	
+                
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>ba551</IdXML>
+            <MessageXML>4,0,14</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>		
+    </ScenarioEventXML>
+    
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>
+            <IdXML>100</IdXML>
+            <StartVertexXML>0,0,7250</StartVertexXML>
+            <SectionIndexXML>0</SectionIndexXML>
+        </ScenarioTriggerTrackPosXML>		
+        
+        <ScenarioActionSendTogradioChatXML>
+            <MeldingXML>Sammenlikningsfeil Vestli Bp</MeldingXML>
+        </ScenarioActionSendTogradioChatXML>   	
+    </ScenarioEventXML>    
+  
+    <!-- NODSTOPP BALISESGRUPPE-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>				
+            <IdXML>100</IdXML>							
+            <StartVertexXML>0,0,9870</StartVertexXML>
+            <SectionIndexXML>0</SectionIndexXML>
+        </ScenarioTriggerTrackPosXML>
+    
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>60</SecondsXML>
+        </ScenarioTriggerTimeXML>
+	
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>abal_nodbr_mge_1</IdXML>
+            <MessageXML>4,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>	
+
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>abal_nodbr_mge_3</IdXML>
+            <MessageXML>4,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>	
+    </ScenarioEventXML>
+
+    <!-- Sluttfase -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>
+            <IdXML>100</IdXML>
+            <StartVertexXML>0,0,9750</StartVertexXML>
+            <SectionIndexXML>0</SectionIndexXML>
+        </ScenarioTriggerTrackPosXML>	
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10030_sec:nitkatman1</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>  
+    
+        <ScenarioTriggerTrackPosXML>
+            <IdXML>100</IdXML>
+            <StartVertexXML>0,0,10250</StartVertexXML>
+            <SectionIndexXML>0</SectionIndexXML>
+        </ScenarioTriggerTrackPosXML>	
+
+        <ScenarioActionSystemXML> 		
+            <IdXML>100</IdXML>			
+            <StateXML>10</StateXML>
+            <KodeXML>12:0:1:15:12:18</KodeXML>
+        </ScenarioActionSystemXML>	      	
+      
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>        	
+            
+        <ScenarioActionSystemXML> 		
+            <IdXML>100</IdXML>			
+            <StateXML>7</StateXML>
+            <KodeXML>12:0:1:15:12:18</KodeXML>
+        </ScenarioActionSystemXML>	
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:950_sec:storehammer0</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>   
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:595_sec:storehammer1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>  
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:595_sec:storehammer1_type:dv</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>storehammer1</SectionNameXML>		
+            <StartVertexXML>0,0,650</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>  
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>   
+    
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+  
+       <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde2.PNG
+            </MessageXML> 
+        </ScenarioActionFreezeXML>
+        
+        <ScenarioActionSendTogradioChatXML>
+            <MeldingXML>Øvelsen er ferdig</MeldingXML>
+        </ScenarioActionSendTogradioChatXML>    
+        
+    </ScenarioEventXML>
+    
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>
+            <IdXML>100</IdXML>
+            <StartVertexXML>0,0,10255</StartVertexXML>
+            <SectionIndexXML>0</SectionIndexXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioActionSendTogradioChatXML>
+            <MeldingXML>ATC Systemfeil, ikke ok etter oppstart</MeldingXML>
+        </ScenarioActionSendTogradioChatXML>            
+    </ScenarioEventXML>        
+        
+    
+</ScenarioXML>

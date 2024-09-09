@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Track>
+
+<TrackElementListXML>
+
+  <KryssTrackXML>
+    <IdXML>sv1</IdXML>
+    <InfoXML>null</InfoXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>0.0, 0.0, 150.0</StartVertexXML>
+    <AvvikVenstreXML>true</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>0.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>2.0</SwitchEngineXOffsetXML>
+    <SwitchLocalButtonXML>true</SwitchLocalButtonXML>
+>  </KryssTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>-0.1443373, 0.0, 0.0</StartVertexXML>
+    <EndVertexXML>0.0, 0.0, 150.0</EndVertexXML>
+  </StraightTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>-16.144978, 0.0, 0.0</StartVertexXML>
+    <EndVertexXML>-1.4315796, 0.0, 150.07</EndVertexXML>
+  </StraightTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>0.0, 0.0, 179.3427</StartVertexXML>
+    <EndVertexXML>0.0, 0.0, 500.0</EndVertexXML>
+  </StraightTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>1.4315796, 0.0, 179.27269</StartVertexXML>
+    <EndVertexXML>11.738182, 0.0, 284.39545</EndVertexXML>
+  </StraightTrackXML>
+
+  <CurveTrackXML>
+    <IdXML>null</IdXML>
+    <InfoXML>null</InfoXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>14.238186, 0.0, 324.56555</StartVertexXML>
+    <AvvikVenstreXML>true</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>180.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+    <SwitchLocalButtonXML>false</SwitchLocalButtonXML>
+>  </CurveTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>14.238186, 0.0, 324.56555</StartVertexXML>
+    <EndVertexXML>14.23, 0.0, 428.24768</EndVertexXML>
+  </StraightTrackXML>
+
+</TrackElementListXML>

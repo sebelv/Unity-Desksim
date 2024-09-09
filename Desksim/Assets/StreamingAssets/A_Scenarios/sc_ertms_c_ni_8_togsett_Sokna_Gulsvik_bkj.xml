@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,220,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+ 
+<!-- 
+    <SectionXML>
+        <NameXML>ertms87sek1al</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>    
+    
+    <SectionXML>
+        <NameXML>ertms87sek2grindvoll</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>  
+      
+    <SectionXML>
+        <NameXML>ertms87sek3galleberg</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML>         
+
+    <SectionXML>
+        <NameXML>ertms87sek4holmestrand</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>   
+    
+    <SectionXML>
+        <NameXML>ertms87sek5tonsberg</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML>      
+    -->
+    <SectionXML>
+        <NameXML>ertms87sek6sokna</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML>   
+    
+    <SectionXML>
+        <NameXML>ertms87sek7gulsvik</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>                                  
+    <!--       -->                                   
+              
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>ertms87sek6sokna</StartSeksjonXML> <!-- ertms87sek1al -->
+        <StartposXML>11280</StartposXML><!-- 2460 -->
+        <StartposSideveisXML>-5</StartposSideveisXML> <!-- 10  --> 
+        <StartModusXML>12</StartModusXML>        
+        <InfoXML>intet</InfoXML> 
+    </TogXML>   
+    
+    
+    <StartTimeXML>16:30</StartTimeXML> 
+    
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML> 
+    
+    <!-- signaler fra Gulsvik til ytre indre Sokna -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>       
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:11426_sec:ertms87sek6sokna</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>    
+        <!--
+        <ScenarioActionSystemXML> 		
+            <IdXML>100</IdXML>			
+            <StateXML>14</StateXML>  sr dersom togvei mangler 
+        </ScenarioActionSystemXML>        
+-->
+        <ScenarioTriggerHandlingXML> 
+            <NumberXML>1</NumberXML> <!-- ertms start trykk -->
+        </ScenarioTriggerHandlingXML> 	        
+   
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>4</SecondsXML>					
+        </ScenarioTriggerTimeXML>         
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:11347_x:-5_sec:ertms87sek6sokna_type:ertmsstopp</IdXML>
+            <SerieSluttPosXML>100</SerieSluttPosXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>                          
+    </ScenarioEventXML>        
+</ScenarioXML>

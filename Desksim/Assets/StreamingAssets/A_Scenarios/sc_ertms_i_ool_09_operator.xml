@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->  
+<!--
+    <SectionXML>
+        <NameXML>nitkatman1</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>                
+    </SectionXML>
+         
+    -->      
+    <SectionXML>
+        <NameXML>spurvstad0</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>      
+         
+    
+    <SectionXML>
+        <NameXML>spurvstad1</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+
+    <SectionXML>
+        <NameXML>ospim1</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+  
+    <!--
+    <SectionXML>
+        <NameXML>gaffelberg1</NameXML>
+    </SectionXML>      
+    -->
+
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>ospim1</StartSeksjonXML><!-- ospim1 -->
+        <StartposXML>2320</StartposXML> <!-- 2310-->
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>9</StartModusXML>   
+        <InfoXML>intet</InfoXML> 
+    </TogXML> 
+    
+    <TogXML>
+        <IdXML>200</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>spurvstad1</StartSeksjonXML>
+        <StartposXML>1175</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML> 
+    </TogXML>     
+	
+    <StartTimeXML>12:48</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+    <PersonStartPosisjonXML>forerrom1_sittende</PersonStartPosisjonXML>         
+
+	<ScenarioEventXML>
+		<ScenarioActionStateChangerXML> 
+			<IdXML>36osp</IdXML>	    
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+		<ScenarioActionStateChangerXML>
+			<IdXML>06osp</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+		<ScenarioActionStateChangerXML>
+			<IdXML>m04osp</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+		<ScenarioActionStateChangerXML>
+			<IdXML>sv1sst</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>	
+		<ScenarioActionStateChangerXML>
+			<IdXML>sv2sst</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>	
+		<ScenarioActionStateChangerXML>
+			<IdXML>b02sst</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+	</ScenarioEventXML>
+
+	<ScenarioEventXML>
+		<ScenarioTriggerTrackPosXML>
+			<IdXML>100</IdXML>
+			<StartVertexXML>0,0,3000</StartVertexXML>
+                        <SectionNameXML>spurvstad1</SectionNameXML>	
+		</ScenarioTriggerTrackPosXML>	
+
+		<ScenarioActionSystemXML> 		<!-- I ScenarioActionSystemXML TAGGEN ANGIS EN STATE -->
+			<IdXML>100</IdXML>			<!-- AVHENGIG AV HVILKEN STATE SKJER ULIKE SYSTEM RELATERTE HENDELSER--> 
+			<StateXML>4</StateXML>		<!-- STATE 0 = ikke i bruk -->
+		</ScenarioActionSystemXML>		<!-- STATE 1 = ikke i bruk, men evt tenkt brukt til BF1 -->
+					<!-- STATE 2 = BF 2 -->
+										<!-- STATE 3 = ikke i bruk, men evt tenkt brukt til BF3 -->
+										<!-- STATE 4 = RBC systemnødbrems -->
+										<!-- STATE 5 = Frigi for skifting -->
+										<!-- STATE 6 = Ta bort frigiving for skifting -->
+										<!-- FLERE STATE ER IKKE DEFINERT, MEN SYSTEMFEIL MÅ NOK INN HER --> 
+                                                                                
+		<ScenarioTriggerSpeedXML>						
+			<IdXML>100</IdXML>							
+			<SpeedXML>1</SpeedXML>
+			<OperatorXML>-1</OperatorXML>				
+		</ScenarioTriggerSpeedXML>	       
+                
+		<ScenarioTriggerTimeXML>						
+			<SecondsXML>10</SecondsXML>					
+		</ScenarioTriggerTimeXML>     
+                
+	<ScenarioActionStateChangerXML>
+			<IdXML>b02sst</IdXML>
+			<StateXML>0</StateXML>
+		</ScenarioActionStateChangerXML>        
+                
+		<ScenarioTriggerTimeXML>						
+			<SecondsXML>15</SecondsXML>					
+		</ScenarioTriggerTimeXML>
+
+	<ScenarioActionStateChangerXML>
+			<IdXML>b02sst</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+        </ScenarioEventXML>                                                                                
+
+
+<!-- ÅPNE SKIFTEMODUS-->
+	<ScenarioEventXML>
+		<ScenarioTriggerTrackPosXML>
+			<IdXML>100</IdXML>
+			<StartVertexXML>5,0,1900</StartVertexXML>
+                        <SectionNameXML>spurvstad1</SectionNameXML>
+		</ScenarioTriggerTrackPosXML>	
+		
+		<ScenarioTriggerSpeedXML>
+			<IdXML>100</IdXML>
+			<SpeedXML>1</SpeedXML>
+			<OperatorXML>-1</OperatorXML>
+		</ScenarioTriggerSpeedXML>
+		
+		<ScenarioActionSystemXML>
+			<IdXML>100</IdXML>
+			<StateXML>5</StateXML>
+		</ScenarioActionSystemXML>
+	</ScenarioEventXML>
+
+
+	<!-- LEGG OVER VEKSEL NÅR TOG SIM HAR KOMMET OVER --> 
+	<ScenarioEventXML>
+		<ScenarioTriggerTrackPosXML>		 
+			<IdXML>100</IdXML>							
+                        <SectionNameXML>spurvstad1</SectionNameXML>	
+			<StartVertexXML>0,0,870</StartVertexXML>
+		</ScenarioTriggerTrackPosXML>
+
+
+	<ScenarioTriggerSpeedXML>			<!-- ScenarioTriggerSpeed -->
+			<IdXML>100</IdXML>			<!-- HASTIGHETEN DET SKAL TRIGGES I FORHOLD TIL -->
+			<SpeedXML>1</SpeedXML>
+			<OperatorXML>-1</OperatorXML>		<!-- MÅTEN DEL SKAL TRIGGES: -1 = MINDRE ENN, 0 = LIK, 1 = STØRRE ENN -->
+		</ScenarioTriggerSpeedXML>			<!-- TRIGGEREN HER AKTIVERES NÅR HASTIGHETEN ER MINDRE ENN 1 -->
+
+		<ScenarioTriggerTimeXML>						
+			<SecondsXML>4</SecondsXML>					
+		</ScenarioTriggerTimeXML>
+
+		<ScenarioActionStateChangerXML>
+			<IdXML>sv1sst</IdXML>
+			<StateXML>0</StateXML>
+		</ScenarioActionStateChangerXML>
+	</ScenarioEventXML>
+	
+	
+	<!-- KJØR FRYS OPPG -->
+	<ScenarioEventXML> <!-- Tekstboks om endebytte etter skifteoperasjon på SST-->
+		<ScenarioTriggerTrackPosXML>		
+			<IdXML>100</IdXML>							
+                        <SectionNameXML>spurvstad1</SectionNameXML>	
+			<StartVertexXML>0,0,845</StartVertexXML>
+		</ScenarioTriggerTrackPosXML>
+		
+		<ScenarioTriggerSpeedXML>						
+			<IdXML>100</IdXML>							
+			<SpeedXML>1</SpeedXML>
+			<OperatorXML>-1</OperatorXML>				
+		</ScenarioTriggerSpeedXML>			
+	
+		<ScenarioActionFreezeXML>						
+			<MessageXML>Du har nå middel bak. Vi bytter ende. /nDeaktiver førerbord. /nSporvekselen betj. med lokalomstiller.</MessageXML>
+		</ScenarioActionFreezeXML>						
+	</ScenarioEventXML>
+
+</ScenarioXML>

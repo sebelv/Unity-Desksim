@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->  
+<!--
+    <SectionXML>
+        <NameXML>nitkatman1</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>                
+    </SectionXML>
+         
+    -->      
+    <SectionXML>
+        <NameXML>spurvstad0ni</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>      
+         
+    
+    <SectionXML>
+        <NameXML>spurvstad1ni</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+
+    <SectionXML>
+        <NameXML>ospim1ni</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+  
+    <!--
+    <SectionXML>
+        <NameXML>gaffelberg1</NameXML>
+    </SectionXML>      
+    -->
+
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>ospim1ni</StartSeksjonXML><!-- ospim1 -->
+        <StartposXML>2320</StartposXML> <!-- 2310-->
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>9</StartModusXML>   
+        <InfoXML>intet</InfoXML> 
+    </TogXML> 
+    
+    <StartTimeXML>12:48</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+    <PersonStartPosisjonXML>forerrom1_sittende</PersonStartPosisjonXML>          
+
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML> 
+            <IdXML>116osp</IdXML>	    
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>126osp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>m04osp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>sv1sst</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>	
+        <ScenarioActionStateChangerXML>
+            <IdXML>sv2sst</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>	
+        <ScenarioActionStateChangerXML>
+            <IdXML>b02sst</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+
+   
+    <!-- LEGG TOGVEI VIDERE etter 30s-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>
+            <IdXML>100</IdXML>
+            <StartVertexXML>5,0,1900</StartVertexXML>
+            <!--<SectionIndexXML>1</SectionIndexXML>-->
+            <SectionNameXML>spurvstad1ni</SectionNameXML>
+        </ScenarioTriggerTrackPosXML>	
+		
+        <ScenarioTriggerSpeedXML>
+            <IdXML>100</IdXML>
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>
+        </ScenarioTriggerSpeedXML>
+
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>30</SecondsXML>
+        </ScenarioTriggerTimeXML>
+
+        <ScenarioActionStateChangerXML> 
+            <IdXML>36sst</IdXML>	    
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML> 
+            <IdXML>16sst</IdXML>	    
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+
+    <!-- LEGG OVER VEKSEL NÅR TOG SIM HAR KOMMET OVER og STILL NY TOGVEI FRA 900x PÅ SPURVSTAD --> 
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		 
+            <IdXML>100</IdXML>							
+            <!--<SectionIndexXML>1</SectionIndexXML>-->
+            <SectionNameXML>spurvstad1ni</SectionNameXML>		
+            <StartVertexXML>0,0,828</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>sv1sst</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioTriggerSpeedXML>
+            <IdXML>100</IdXML>
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>
+        </ScenarioTriggerSpeedXML>        
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>Du har trukket langt nok. /nDeaktiver førerbord. /nBytt førerrom og gjør ny SoM.</MessageXML>
+        </ScenarioActionFreezeXML>
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>8</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>9005sst</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>        
+    </ScenarioEventXML>    
+
+</ScenarioXML>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+
+    <!-- ET SCENARIE STARTER ALLTID SOM DETTE MED ScenarioXML taggen-->
+
+    <!-- Deretter listes opp alle seksjoner som skal være med i scenariet  -->
+    <!-- Normalt er det greit å ta med alle seksjoner slik som her -->
+
+    <SectionXML>
+        <NameXML>storehammer1</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>storehammer1</StartSeksjonXML>
+        <StartposXML>815</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>102</StartModusXML>        
+        <InfoXML></InfoXML> 
+    </TogXML>       
+	
+    <StartTimeXML>17:37</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+    
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML>
+        
+    <SlideMappeXML>infoslides_scenario/infrastruktur1</SlideMappeXML>
+    <SlideOffsetInfoXML>346</SlideOffsetInfoXML>
+    <SlideOffsetOppgaverXML>355</SlideOffsetOppgaverXML>    
+	
+
+    <!-- STOREHAMMER -->
+    <!-- Skiftevei UT + FRYS 1 og 2--> 
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>3</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+    
+        <!-- frys 1 --> 
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde1.PNG
+            </MessageXML> 
+        </ScenarioActionFreezeXML> 	
+    
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>5</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:880_sec:storehammer1_type:dv_x:0</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+	
+        <ScenarioActionStateChangerXML>
+            <IdXML>r13shr</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+		
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1230_sec:storehammer1_type:dv_x:0</IdXML>
+            <StateXML>44</StateXML>
+        </ScenarioActionStateChangerXML>	
+    
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>3</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+    
+        <!-- frys 2 --> 
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde2.PNG oppg1=false oppg2=true oppg3=false oppg4=false oppg5=false oppg6=false oppg7=true
+            </MessageXML> 
+        </ScenarioActionFreezeXML> 	
+    </ScenarioEventXML>
+  
+    <!-- FRYS 3 -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>storehammer1</SectionNameXML>	
+            <StartVertexXML>0,0,1020</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+	
+        <!-- frys 3 --> 
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde3.PNG oppg1=false oppg2=true oppg3=true oppg4=true
+            </MessageXML> 
+        </ScenarioActionFreezeXML> 	
+    </ScenarioEventXML>
+  
+    <!-- FRYS 4 -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>storehammer1</SectionNameXML>	
+            <StartVertexXML>0,0,1215</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+	
+        <!-- frys 4 --> 
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde4.PNG oppg1=false oppg2=false oppg3=false oppg4=true oppg5=false oppg6=true oppg7=true
+            </MessageXML> 
+        </ScenarioActionFreezeXML> 	
+    </ScenarioEventXML>
+
+    <!-- FRYS 5 -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>storehammer1</SectionNameXML>	
+            <StartVertexXML>0,0,1325</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+	
+        <!-- frys 5 --> 
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde5.PNG oppg1=true oppg2=true oppg3=false oppg4=true
+            </MessageXML> 
+        </ScenarioActionFreezeXML> 	
+    </ScenarioEventXML>
+
+    <!-- Skiftevei INN --> 
+    <ScenarioEventXML>   
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>storehammer1</SectionNameXML>	
+            <StartVertexXML>0,0,1407</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+
+
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>		    
+
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>10</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1300_sec:storehammer1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:930_sec:storehammer1_type:sw_x:5</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+					
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>3</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+          
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1301_sec:storehammer1_type:dv_x:0</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>r724shr</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+		
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:661_sec:storehammer1_type:dv_x:31.16</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>	
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:419_sec:storehammer1_type:dv_x:80</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>	
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:351_sec:storehammer1_type:dv_x:80</IdXML>
+            <StateXML>44</StateXML>
+        </ScenarioActionStateChangerXML>
+		
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>3</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+    
+        <!-- frys 6 --> 
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde6.PNG oppg1=true oppg2=true oppg3=false oppg4=true oppg5=false
+            </MessageXML> 
+        </ScenarioActionFreezeXML> 	
+    </ScenarioEventXML>	
+  
+    <!-- FRYS 7 -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>storehammer1</SectionNameXML>	
+            <StartVertexXML>60,0,435</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+	
+        <!-- frys 7 --> 
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde7.PNG oppg1=true oppg2=true oppg3=true
+            </MessageXML> 
+        </ScenarioActionFreezeXML> 
+    </ScenarioEventXML>
+  
+    <!-- FRYS 8 -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>storehammer1</SectionNameXML>	
+            <StartVertexXML>80,0,370</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+	
+        <!-- frys 8 --> 
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde8.PNG oppg1=true oppg2=true oppg3=true oppg4=true
+            </MessageXML> 
+        </ScenarioActionFreezeXML> 	
+    </ScenarioEventXML>
+  
+    <!-- FRYS 9 OPPSUMMERING -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>storehammer1</SectionNameXML>	
+            <StartVertexXML>90,0,300</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+	
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>
+    
+        <!-- frys 9 --> 
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde9.PNG
+            </MessageXML> 
+        </ScenarioActionFreezeXML> 	
+    </ScenarioEventXML>
+  
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:419_sec:storehammer1_type:dv</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>	
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:351_sec:storehammer1_type:dv</IdXML>
+            <StateXML>44</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+</ScenarioXML>
+

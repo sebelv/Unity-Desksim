@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+
+    <!-- ET SCENARIE STARTER ALLTID SOM DETTE MED ScenarioXML taggen-->
+
+    <!-- Deretter listes opp alle seksjoner som skal være med i scenariet  -->
+    <!-- Normalt er det greit å ta med alle seksjoner slik som her -->
+    <SectionXML>
+        <NameXML>atcbortflkrysbanen1</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML>
+	 
+    <SectionXML>
+        <NameXML>atcbortflkrysbanen2</NameXML>
+        <EndPointNextStartPointIndexXML>3</EndPointNextStartPointIndexXML>
+    </SectionXML>
+  
+  
+    <SectionXML>
+        <NameXML>atcbortflkrysbanen3</NameXML>
+    </SectionXML>
+        
+    <!-- -1413.3904359224184, 109.99999999999999, 7247.202919444387 -->
+    <!-- -3604.595963392716, 109.99999999999999, 12091.84954822499 -->
+
+
+    <!-- TOGET VI KJØRER MÅ DEFINERES -->
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>atcbortflkrysbanen3</StartSeksjonXML>
+        <StartposXML>3270</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>101</StartModusXML>        
+        <InfoXML></InfoXML> 
+    </TogXML>      
+    
+     
+    <TogXML>
+        <IdXML>200</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>atcbortflkrysbanen1</StartSeksjonXML>
+        <StartposXML>6350</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>
+    
+    <TogXML>
+        <IdXML>pynt1</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>atcbortflkrysbanen2</StartSeksjonXML>
+        <StartposXML>2690</StartposXML>
+        <StartposSideveisXML>-10</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>
+    <TogXML>
+        <IdXML>pynt2</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>atcbortflkrysbanen2</StartSeksjonXML>
+        <StartposXML>2690</StartposXML>
+        <StartposSideveisXML>-15</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>
+    <TogXML>
+        <IdXML>pynt3</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>atcbortflkrysbanen2</StartSeksjonXML>
+        <StartposXML>2690</StartposXML>
+        <StartposSideveisXML>-20</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>
+
+    <PersonStartPosisjonXML>forerrom1_sittende</PersonStartPosisjonXML>      
+    
+    <StartTimeXML>12:00</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+    <SlideMappeXML>infoslides_scenario/100</SlideMappeXML>
+    <SlideOffsetInfoXML>60</SlideOffsetInfoXML>
+    <SlideOffsetOppgaverXML>70</SlideOffsetOppgaverXML>      
+    
+    <ScenarioEventXML>
+                
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>1 </SecondsXML>
+        </ScenarioTriggerTimeXML>
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde1.PNG</MessageXML>   
+        </ScenarioActionFreezeXML>	
+        
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>2</SecondsXML>
+        </ScenarioTriggerTimeXML>
+            
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde2.PNG oppg1=false oppg2=true oppg3=true oppg4=true oppg5=false oppg6=true</MessageXML>  
+        </ScenarioActionFreezeXML>					
+                 
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>5</SecondsXML>
+        </ScenarioTriggerTimeXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3200_sec:atcbortflkrysbanen3_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>	
+      
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>	
+            <StartVertexXML>0,0,2400</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>	
+        
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>2</SecondsXML>
+        </ScenarioTriggerTimeXML>  
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde3.PNG oppg1=true oppg2=false oppg3=true oppg4=false</MessageXML>  
+        </ScenarioActionFreezeXML>
+        
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>5</SecondsXML>
+        </ScenarioTriggerTimeXML>  
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2270_sec:atcbortflkrysbanen3_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>  
+                  
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>	
+            <StartVertexXML>0,0,2020</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	     
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde4.PNG oppg1=true oppg2=false oppg3=true</MessageXML>  
+        </ScenarioActionFreezeXML>
+          
+<!--          Teleport?-->
+<!--      <ScenarioTriggerTimeXML>
+            <SecondsXML>2</SecondsXML>
+        </ScenarioTriggerTimeXML>      
+        
+        <ScenarioActionFreezeXML>						
+            <TeleportStartXML>start</TeleportStartXML>
+        </ScenarioActionFreezeXML>    
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen2</SectionNameXML>	
+            <StartVertexXML>0,0,4515</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+        
+        <ScenarioActionFreezeXML>			 			
+            <TeleportSluttXML>80</TeleportSluttXML>
+        </ScenarioActionFreezeXML>	                                                        						 
+                
+        -->        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen2</SectionNameXML>	
+            <StartVertexXML>0,0,4415</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde5.PNG oppg1=false oppg2=true oppg3=false oppg4=true</MessageXML>  
+        </ScenarioActionFreezeXML>    
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen2</SectionNameXML>	
+            <StartVertexXML>0,0,3500</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>
+        
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>2</SecondsXML>
+        </ScenarioTriggerTimeXML>  
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3400_sec:atcbortflkrysbanen2_type:hs3_x:5</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>         
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3092_sec:atcbortflkrysbanen2_type:dv:x:5</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>    
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3090.34_sec:atcbortflkrysbanen2_type:sw_x:5</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>  
+        
+                  
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2296_sec:atcbortflkrysbanen2_type</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>     
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2290.34_sec:atcbortflkrysbanen2_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>    
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2210_sec:atcbortflkrysbanen2_type:sw_x:5</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>   
+        
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>1</SecondsXML>
+        </ScenarioTriggerTimeXML>  
+              
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde6.PNG oppg1=true oppg2=true oppg3=true oppg4=false</MessageXML>  
+        </ScenarioActionFreezeXML>        
+
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen2</SectionNameXML>	
+            <StartVertexXML>0,0,2295</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>
+        
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>2</SecondsXML>
+        </ScenarioTriggerTimeXML>  
+              
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde7.PNG oppg1=true oppg2=true oppg3=false </MessageXML>  
+        </ScenarioActionFreezeXML>   
+        
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>5</SecondsXML>
+        </ScenarioTriggerTimeXML>  
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2200_sec:atcbortflkrysbanen2_type:dv_x:5</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>      
+        
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>1</SecondsXML>
+        </ScenarioTriggerTimeXML>  
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2200_sec:atcbortflkrysbanen2_type:hs3_x:5</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>      
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2200_sec:atcbortflkrysbanen2_type:dv_x:5</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>      
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1460_sec:atcbortflkrysbanen2_type:hs3_x:5</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>   
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1460_sec:atcbortflkrysbanen2_type:dv_x:5</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>   
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:620_sec:atcbortflkrysbanen2_type:hs3_x:5</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>  
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:7220_sec:atcbortflkrysbanen1_type:hs3_x:0</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>  
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:7220_sec:atcbortflkrysbanen1_type:fs_x:0</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>     
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:7200_sec:atcbortflkrysbanen1_type:hs3_x:5</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>   
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:7200_sec:atcbortflkrysbanen1_type:fs_x:5</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>   
+                            
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen2</SectionNameXML>	
+            <StartVertexXML>5,0,1470</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde8.PNG oppg1=true oppg2=false</MessageXML>  
+        </ScenarioActionFreezeXML>   
+        
+                	
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen1</SectionNameXML>	
+            <StartVertexXML>5,0,7300</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>200</IdXML>		
+            <SpeedXML>200</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>   
+        
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>2</SecondsXML>
+        </ScenarioTriggerTimeXML>  
+              
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde9.PNG oppg1=true oppg2=true</MessageXML>  
+        </ScenarioActionFreezeXML>  
+        
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>5</SecondsXML>
+        </ScenarioTriggerTimeXML>  
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:7220_sec:atcbortflkrysbanen1_type:hs3_x:5</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>   
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen1</SectionNameXML>	
+            <StartVertexXML>5,0,7150</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	 
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde10.PNG</MessageXML>  
+            <AvsluttScenarioXML>true</AvsluttScenarioXML> 
+        </ScenarioActionFreezeXML>     
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>200</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen1</SectionNameXML>	
+            <StartVertexXML>0,0,2200</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	
+            <IdXML>200</IdXML>	  
+        </ScenarioActionAutoTrainCommandXML> 
+        
+    </ScenarioEventXML>                
+ 
+</ScenarioXML>
+

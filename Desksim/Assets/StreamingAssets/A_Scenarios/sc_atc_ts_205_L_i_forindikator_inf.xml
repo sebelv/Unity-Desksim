@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,150,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+
+<!--    <SectionXML>
+        <NameXML>revestua1</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>-->
+ 
+ 
+    <SectionXML>
+        <NameXML>hakafjell1</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+
+	
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>hakafjell1</StartSeksjonXML>
+        <StartposXML>280</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>104</StartModusXML>        
+        <InfoXML></InfoXML> 
+    </TogXML>
+   
+    <StartTimeXML>09:17</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+    <TogNrXML>1101</TogNrXML>
+    <SlideMappeXML>infoslides_scenario/200</SlideMappeXML>
+    <NettbrettFilXML>nettbrettslides_scenario/tog 1101.png</NettbrettFilXML>    
+    <SlideOffsetInfoXML>80</SlideOffsetInfoXML>
+    <SlideOffsetOppgaverXML>80</SlideOffsetOppgaverXML>   
+    
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML>    
+	
+    <!-- INNKJ HAKAFJELL-->
+    <ScenarioEventXML>	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde1.PNG</MessageXML>
+        </ScenarioActionFreezeXML>	
+ 
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1150_sec:hakafjell1_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1500_sec:hakafjell1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde2.PNG</MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+	 
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>hakafjell1</SectionNameXML>		
+            <StartVertexXML>0,0,1100</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>			
+	
+       <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde3.PNG</MessageXML>
+        </ScenarioActionFreezeXML>					
+    </ScenarioEventXML> 
+ 
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>hakafjell1</SectionNameXML>		
+            <StartVertexXML>0,0,1170</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>		
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde4.PNG</MessageXML>
+        </ScenarioActionFreezeXML>		
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>hakafjell1</SectionNameXML>		
+            <StartVertexXML>0,0,1400</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>20</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde5.PNG</MessageXML>
+            <AvsluttScenarioXML>true</AvsluttScenarioXML>
+        </ScenarioActionFreezeXML>
+                                			
+    </ScenarioEventXML>
+
+	
+</ScenarioXML>
+

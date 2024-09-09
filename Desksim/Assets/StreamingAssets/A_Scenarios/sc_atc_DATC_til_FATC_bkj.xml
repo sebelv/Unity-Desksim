@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 1 -->
+    
+    <SectionXML>
+        <NameXML>nitkatman1</NameXML>
+        <StartVertexXML>0, 0, 0</StartVertexXML>
+    </SectionXML>
+
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>9920</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>103</StartModusXML>        
+        <InfoXML></InfoXML> 
+    </TogXML>
+	
+    <StartTimeXML>17:37</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+    <TogNrXML>1001</TogNrXML>
+    <PersonStartPosisjonXML>forerrom1_sittende</PersonStartPosisjonXML>
+
+    <!-- EN HENDELSE MED ET OBJEKT LANGS SPORET DEFINERES I EN ScenarioEvent -->
+    <!-- I EN ScenarioEvent DEFINERES ScenarioTriggers OG ScenarioActions-->
+    <!-- DERSOM BARE ScenarioActions ER DEFINERT UTFØRES DISSE MED EN GANG SCENARIET STARTER-->
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>b552</IdXML>
+            <StateXML>22</StateXML>		<!-- VED HOVEDSIGNAER/FORSIGNALER: STATE FØLGER VANLIGE SIGNALBILDENUMMER FRA REGELBOK / KARTMATERIALE -->
+        </ScenarioActionStateChangerXML>	
+        <ScenarioActionStateChangerXML>
+            <IdXML>b502</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>m504</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+
+    <!-- KJØR UT FRA KORTHUS 4 SEK ETTER SCENARIESTART -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>4</SecondsXML>
+        </ScenarioTriggerTimeXML>
+	
+        <ScenarioActionStateChangerXML>
+            <IdXML>m604</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+	
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>30</SecondsXML>
+        </ScenarioTriggerTimeXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>b402</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>  
+    
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>	
+            <StartVertexXML>0,0,1450</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>		
+    
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>        
+        
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>3</SecondsXML>
+        </ScenarioTriggerTimeXML>		
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML> Øvelsen er ferdig /n Trykk Avslutt øvelse</MessageXML>
+            <AvsluttScenarioXML>true</AvsluttScenarioXML>            
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>      
+	
+</ScenarioXML>
+

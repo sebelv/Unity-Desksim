@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,220,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+ 
+<!-- 
+    <SectionXML>
+        <NameXML>ertms87sek1al</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>    
+    
+    <SectionXML>
+        <NameXML>ertms87sek2grindvoll</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>  
+      
+    <SectionXML>
+        <NameXML>ertms87sek3galleberg</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML>         
+-->
+    <SectionXML>
+        <NameXML>ertms87sek4holmestrand</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>   
+    
+    <SectionXML>
+        <NameXML>ertms87sek5tonsberg</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML>      
+     <!--
+    <SectionXML>
+        <NameXML>ertms87sek6sokna</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML>   
+    
+ <SectionXML>
+     <NameXML>ertms87sek7gulsvik</NameXML>
+     <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+ </SectionXML>                                  
+    -->                                    
+    
+    <!-- toget vi kjorer -->
+    <TogXML>
+        <IdXML>101</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>ertms87sek4holmestrand</StartSeksjonXML>
+        <StartposXML>2030</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1800;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkobbelopphengmotkm=ja;luftkranmedkm=ja;last=container_red_front,container_red_rear</InfoXML>  
+    </TogXML> 
+    
+    <TogXML>
+        <IdXML>102</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>ertms87sek4holmestrand</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1800;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja;last=container_red_front</InfoXML>  
+    </TogXML>  
+    
+    <TogXML>
+        <IdXML>103</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>ertms87sek4holmestrand</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1800;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja;last=container_red_front,container_red_rear</InfoXML>  
+    </TogXML>  
+    
+    <TogXML>
+        <IdXML>104</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>ertms87sek4holmestrand</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1800;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja;last=container_red_front,container_red_rear</InfoXML>  
+    </TogXML>            
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>di4</ModelXML>
+        <StartSeksjonXML>ertms87sek4holmestrand</StartSeksjonXML> 
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>10</StartModusXML>        
+        <InfoXML>kobbelopphengmedkm=ja;kobbelopphengmotkm=ja;luftkobbelopphengmedkm=ja;luftkranmotkm=ja</InfoXML> 
+    </TogXML>
+    
+    <AltDefaultTogdataXML>
+        <AltTogdataSystemIndexXML>1</AltTogdataSystemIndexXML>
+        <AltDefaultBremseprosentXML>80</AltDefaultBremseprosentXML>
+        <AltDefaultSthXML>100</AltDefaultSthXML>
+        <AltDefaultLengdeXML>93</AltDefaultLengdeXML>
+    </AltDefaultTogdataXML>
+    
+    <!-- motgående holmestrand --> 
+    <TogXML>
+        <IdXML>200</IdXML>
+        <ModelXML>185</ModelXML>
+        <StartSeksjonXML>ertms87sek4holmestrand</StartSeksjonXML>
+        <StartposXML>3500</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <PersonOffsetVectorXML>-5.5, 0.0, 0.0</PersonOffsetVectorXML>
+        <PersonRotationXML>-100</PersonRotationXML>                 
+        <InfoXML>dekorativt=ja</InfoXML> 
+    </TogXML>   
+    
+    <TogXML>
+        <IdXML>201</IdXML>
+        <ModelXML>sdggmrs</ModelXML>
+        <StartSeksjonXML>ertms87sek4holmestrand</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <InfoXML>dekorativt=ja;last=container_blue_front</InfoXML>  
+    </TogXML>  
+    
+    <TogXML>
+        <IdXML>202</IdXML>
+        <ModelXML>sdggmrs</ModelXML>
+        <StartSeksjonXML>ertms87sek4holmestrand</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <InfoXML>dekorativt=ja;last=container_blue_front, container_blue_rear;sluttsignalmot=ja</InfoXML>  
+    </TogXML>                                             
+  
+    <StartTimeXML>16:30</StartTimeXML> 
+    
+    <TogNrXML>12301</TogNrXML>
+    
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML> 
+    
+    <!-- start og stopp tog imot holmestrand -->
+    <ScenarioEventXML>    				
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML> 					
+        </ScenarioTriggerTimeXML>         
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>200</IdXML>		
+            <SpeedXML>-80</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>         
+    
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>200</IdXML>							
+            <SectionNameXML>ertms87sek4holmestrand</SectionNameXML>	
+            <StartVertexXML>5,0,1900</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	                  
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	
+            <IdXML>200</IdXML>		
+        </ScenarioActionAutoTrainCommandXML>                          
+    </ScenarioEventXML>             
+    
+    <!-- signal holmestrand til indre stoppskilt tønsberg -->
+    <ScenarioEventXML>   
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML> 					
+        </ScenarioTriggerTimeXML>        
+        
+        <!-- spv -->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1536.9_x:0_sec:ertms87sek5tonsberg</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML> 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1612_x:5_sec:ertms87sek5tonsberg</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>                          
+                
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>3</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+                        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2123_x:0_sec:ertms87sek4holmestrand</IdXML>
+            <SerieSluttPosXML>2228</SerieSluttPosXML>               
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>         
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1400_sec:ertms87sek5tonsberg_type:dv_x:0</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>      
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2229_sec:ertms87sek5tonsberg_type:dv_x:5</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>  
+    
+    <!-- teleport holmestrand til tonsberg -->     
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek4holmestrand</SectionNameXML>	
+            <StartVertexXML>0,0,3000</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML> OBS: Øvelsen teleporteres nå til litt før/n Tønsberg/n Trykk fortsett for teleportering</MessageXML>
+            <TeleportStartXML>start</TeleportStartXML>
+        </ScenarioActionFreezeXML>
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek5holmestrand</SectionNameXML>	
+            <StartVertexXML>0,0,7100</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML> Øvelsen fortsetter/n Toget befinner seg litt før /n Tønsberg/n Trykk fortsett </MessageXML>
+            <TeleportSluttXML>100</TeleportSluttXML>
+        </ScenarioActionFreezeXML>	                                                        						
+    </ScenarioEventXML>                               
+      
+</ScenarioXML>

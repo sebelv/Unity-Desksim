@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,270,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+
+  <!--   
+
+	<SectionXML>
+		<NameXML>nitkatman</NameXML>
+	</SectionXML>
+  
+        <SectionXML>
+                <NameXML>storehammer0</NameXML>
+        </SectionXML>
+
+	<SectionXML>
+		<NameXML>storehammer1</NameXML>
+                <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+	</SectionXML>
+    
+	<SectionXML>
+		<NameXML>revestua1</NameXML>
+                <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+	</SectionXML>
+ 
+   -->  
+	<SectionXML>
+		<NameXML>hakafjell1</NameXML>
+                <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+	</SectionXML>
+        
+	<SectionXML>
+		<NameXML>GRS</NameXML>
+               <EndPointNextStartPointIndexXML>3</EndPointNextStartPointIndexXML> 
+	</SectionXML>
+  
+	<SectionXML>
+		<NameXML>UFJS1</NameXML>
+	</SectionXML>
+ <!--            
+	<SectionXML>
+		<NameXML>UFJS2</NameXML>
+	</SectionXML>
+ 
+    -->
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>UFJS1</StartSeksjonXML>
+        <StartposXML>2150</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>103</StartModusXML>        
+        <InfoXML></InfoXML> 
+    </TogXML>                   
+        
+    <StartTimeXML>19:58</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+    <TogNrXML>44003</TogNrXML>
+    
+    <PersonStartPosisjonXML>forerrom1_sittende</PersonStartPosisjonXML> 	 
+    
+    <!-- TXP -->
+    <WorkerAc3dXML>
+        <IdXML>txpLBS</IdXML>
+        <SectionNameXML>GRS</SectionNameXML>
+        <StartVertexXML>0, 0, 2445.0</StartVertexXML> 	
+        <OffsetVertexXML>-3.5, 0.0, 0.0</OffsetVertexXML>
+        <FileNameXML>TXPhilser.ac</FileNameXML>	
+        <!--<FileNameXML>TXP12a.ac</FileNameXML>-->							
+        <DirectionXML>-1</DirectionXML>						
+    </WorkerAc3dXML>                      
+    				
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>	<!-- 90 -->				
+        </ScenarioTriggerTimeXML>	        
+                        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2080_sec:UFJS1_type:dv_x:0</IdXML>
+            <StateXML>44</StateXML>
+        </ScenarioActionStateChangerXML> 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2060_sec:hakafjell1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>              
+
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+                
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2080_sec:UFJS1_type:dv_x:0</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>                                    
+          
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2000_sec:UFJS1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>   
+        
+        <ScenarioActionSendTogradioChatXML>
+            <MeldingXML>Utkjørhovedsignal Tannskog viser KJØR</MeldingXML>
+        </ScenarioActionSendTogradioChatXML>           
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3010_sec:GRS_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>       
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2810_sec:GRS_type:dv</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>                   
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2260_sec:hakafjell1_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>                            
+    </ScenarioEventXML>
+    
+    <!-- Øvrige chat meldinger --> 
+     <ScenarioEventXML>	  
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>GRS</SectionNameXML>		
+            <StartVertexXML>0,0,2500</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>   
+                   
+        <ScenarioActionSendTogradioChatXML>
+            <MeldingXML>Stoppet foran R10 Lurbås</MeldingXML> 
+        </ScenarioActionSendTogradioChatXML>        
+    </ScenarioEventXML>	   
+    
+     <ScenarioEventXML>	  
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>hakafjell1</SectionNameXML>		
+            <StartVertexXML>5,0,1850</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>   
+                   
+        <ScenarioActionSendTogradioChatXML>
+            <MeldingXML>Stoppet på Hakafjell</MeldingXML>
+        </ScenarioActionSendTogradioChatXML>        
+    </ScenarioEventXML>	           
+
+</ScenarioXML>
+

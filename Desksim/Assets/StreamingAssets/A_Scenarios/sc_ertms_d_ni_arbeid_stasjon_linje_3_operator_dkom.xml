@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,240,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+    <!-- 
+    
+    <SectionXML>
+        <NameXML>nitkatman1</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML>
+        
+    <SectionXML>
+        <NameXML>spurvstad0ni</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>        
+ 
+    <SectionXML>
+        <NameXML>spurvstad1ni</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+  
+    <SectionXML>
+        <NameXML>ospim1ni</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+  -->
+    <SectionXML>
+        <NameXML>gaffelberg1ni</NameXML>
+    </SectionXML>
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>di4</ModelXML>
+        <StartSeksjonXML>gaffelberg1ni</StartSeksjonXML>
+        <StartposXML>1720</StartposXML>
+        <StartposSideveisXML>-10</StartposSideveisXML>
+        <StartModusXML>11</StartModusXML>  <!-- 11 -->       
+        <InfoXML>kobbelopphengmedkm=ja;luftkranmedkm=ja;kobbelopphengmotkm=ja;luftkobbelopphengmotkm=ja;</InfoXML> 
+    </TogXML>
+    
+    <TogXML>
+        <IdXML>202</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>gaffelberg1ni</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>-10</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemotkm=ja;skrumotkm=-1080;luftkoblemotkm=ja;kobbelopphengmedkm=ja;luftkranmotkm=ja;luftkranmedkm=ja</InfoXML>  
+    </TogXML>  
+    
+    <TogXML>
+        <IdXML>204</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>gaffelberg1ni</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>-10</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemotkm=ja;skrumotkm=-1080;luftkoblemotkm=ja;kobbelopphengmedkm=ja;luftkranmotkm=ja;luftkobbelopphengmedkm=ja;</InfoXML>  
+    </TogXML>                                           
+	
+    <StartTimeXML>14:12</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+    
+    <PersonStartPosisjonXML>forerrom1_sittende</PersonStartPosisjonXML>
+
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+        
+        <ScenarioActionStateChangerXML> <!-- frigir stasjon gaffelberg -->
+            <IdXML>sikringskomponent1glb</IdXML> 
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>  
+
+        <ScenarioActionSystemXML> <!-- åpner for å gå i skifemodus -->
+            <IdXML>100</IdXML>
+            <StateXML>5</StateXML>
+        </ScenarioActionSystemXML>              
+    </ScenarioEventXML>  
+	
+</ScenarioXML>

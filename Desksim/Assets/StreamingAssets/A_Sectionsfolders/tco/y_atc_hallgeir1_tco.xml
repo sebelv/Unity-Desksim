@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackConnectedObjects>
+
+<TrackConnectedObjectListXML>
+
+  <BaliseXML>
+    <IdXML>defaultid</IdXML>
+    <StartVertexXML>-0.01, 0.0, 130.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>4, 12, 12</KodeXML>
+  </BaliseXML>
+  <BaliseXML>
+    <IdXML>defaultid</IdXML>
+    <StartVertexXML>0.02, 0.0, 133.0</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>balise.ac</FileNameXML>
+    <KodeXML>9,4, 4</KodeXML>
+  </BaliseXML>
+</TrackConnectedObjectListXML>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,210,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.4</AmbientLightXML> <!-- 0 til 255 -->
+
+    <!--    
+    -->
+    <SectionXML>
+        <NameXML>bekkerum1</NameXML> 
+    </SectionXML>
+    
+   
+    <TogXML>
+        <IdXML>202</IdXML>
+        <ModelXML>b5ny</ModelXML>
+        <StartSeksjonXML>bekkerum1</StartSeksjonXML>
+        <StartposXML>2350</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1080;luftkoblemedkm=ja;luftkranmedkm=ja;kobbelopphengmotkm=ja;luftkobbelopphengmotkm=ja;</InfoXML>
+    </TogXML>          
+
+    <TogXML>
+        <IdXML>202</IdXML>
+        <ModelXML>b5ny</ModelXML>
+        <StartSeksjonXML>bekkerum1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1080;luftkoblemedkm=ja;luftkranmedkm=ja;luftkoblemotkm=ja;luftkranmotkm=ja;</InfoXML>
+    </TogXML>
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>t44ny</ModelXML>
+        <StartSeksjonXML>bekkerum1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>104</StartModusXML>        
+        <InfoXML>kobbelopphengmedkm=ja;luftkobbelopphengmedkm=ja;luftkranmotkm=ja;kobbelopphengmedkm=ja;luftkobbelopphengmedkm=ja;</InfoXML> 
+        <PersonOffsetVectorXML>20, 0.0, -5.0</PersonOffsetVectorXML>
+        <PersonRotationXML>0</PersonRotationXML>      
+    </TogXML>                                              
+	
+    <StartTimeXML>16:30</StartTimeXML> 
+    
+    <BremseskoStativXML>
+        <SectionNameXML>bekkerum1</SectionNameXML>
+        <StartVertexXML>-40.0, 0.0, 2650</StartVertexXML>
+        <OffsetVertexXML>-5, 0, 0</OffsetVertexXML>    
+        <TypeXML>1</TypeXML>    
+        <IdXML></IdXML>
+        <DirectionXML>1</DirectionXML>
+    </BremseskoStativXML>         
+	
+    <ScenarioEventXML>
+  
+                                                                               
+    </ScenarioEventXML>
+
+	
+</ScenarioXML>

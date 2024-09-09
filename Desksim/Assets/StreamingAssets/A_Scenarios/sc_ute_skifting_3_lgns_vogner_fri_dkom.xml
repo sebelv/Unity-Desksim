@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+
+    <!--    
+    -->
+    <SectionXML>
+        <NameXML>hakafjell1</NameXML> 
+    </SectionXML>
+
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>t44</ModelXML>
+        <StartSeksjonXML>hakafjell1</StartSeksjonXML>
+        <StartposXML>1635</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>104</StartModusXML>        
+        <InfoXML>kobbelopphengmedkm=ja;luftkranmedkm=ja;kobbelopphengmotkm=ja;luftkobbelopphengmotkm=ja;</InfoXML> 
+    </TogXML>
+    
+    <TogXML>
+        <IdXML>202</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>hakafjell1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemotkm=ja;skrumotkm=-1080;luftkoblemotkm=ja;kobbelopphengmedkm=ja;luftkranmotkm=ja;luftkranmedkm=ja</InfoXML>  
+    </TogXML>  
+    
+    <TogXML>
+        <IdXML>203</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>hakafjell1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemotkm=ja;skrumotkm=-1080;luftkoblemotkm=ja;kobbelopphengmedkm=ja;luftkranmotkm=ja;luftkranmedkm=ja</InfoXML>  
+    </TogXML>     
+    
+    
+    <TogXML>
+        <IdXML>204</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>hakafjell1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemotkm=ja;skrumotkm=-1080;luftkoblemotkm=ja;kobbelopphengmedkm=ja;luftkranmotkm=ja;luftkobbelopphengmedkm=ja;</InfoXML>  
+    </TogXML>             
+        
+    <StartTimeXML>16:30</StartTimeXML> 
+    
+    <ScenarioInfo3dXML>
+        <SectionNameXML>hakafjell1</SectionNameXML>
+        <StartVertexXML>0.0, 0.0, 1665</StartVertexXML>
+        <OffsetVertexXML>-4.5, 1, 0</OffsetVertexXML>        
+        <FrameTypeXML>stativ</FrameTypeXML>        
+        <ImageXML>lgnsfri/Lysbilde2.PNG</ImageXML>
+        <ImageSizeXML>1</ImageSizeXML>
+        <ImageOffsetXML>0,0,0</ImageOffsetXML>        
+        <ImageCorrectAnswersXML></ImageCorrectAnswersXML>        
+        <IdXML></IdXML>
+        <DirectionXML>1</DirectionXML>
+    </ScenarioInfo3dXML>      
+	
+   
+	
+</ScenarioXML>

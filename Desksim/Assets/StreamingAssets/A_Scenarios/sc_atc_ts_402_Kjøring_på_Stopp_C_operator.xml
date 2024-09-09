@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+
+    <!-- ET SCENARIE STARTER ALLTID SOM DETTE MED ScenarioXML taggen-->
+
+    <!-- Deretter listes opp alle seksjoner som skal være med i scenariet  -->
+    <!-- Normalt er det greit å ta med alle seksjoner slik som her -->
+    <SectionXML>
+        <NameXML>atcbortflkrysbanen1</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML>
+	 
+    <SectionXML>
+        <NameXML>atcbortflkrysbanen2</NameXML>
+        <EndPointNextStartPointIndexXML>3</EndPointNextStartPointIndexXML>
+    </SectionXML>
+  
+  
+    <SectionXML>
+        <NameXML>atcbortflkrysbanen3</NameXML>
+    </SectionXML>
+        
+    <!-- -1413.3904359224184, 109.99999999999999, 7247.202919444387 -->
+    <!-- -3604.595963392716, 109.99999999999999, 12091.84954822499 -->
+
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>atcbortflkrysbanen1</StartSeksjonXML>
+        <StartposXML>1750</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>104</StartModusXML>        
+        <InfoXML></InfoXML> 
+    </TogXML>     
+    
+    <TogXML>
+        <IdXML>200</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>atcbortflkrysbanen1</StartSeksjonXML>
+        <StartposXML>6420</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>    
+    
+    <TogXML>
+        <IdXML>201</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>atcbortflkrysbanen1</StartSeksjonXML>
+        <StartposXML>5800</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>       
+	
+    <StartTimeXML>17:37</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML>      
+    
+    <TogNrXML>1002</TogNrXML>
+    
+    <SlideMappeXML>infoslides_scenario/400</SlideMappeXML>
+    <NettbrettFilXML>nettbrettslides_scenario/tog 1002.png</NettbrettFilXML>    
+    <SlideOffsetInfoXML>5</SlideOffsetInfoXML>
+    <SlideOffsetOppgaverXML>5</SlideOffsetOppgaverXML>                
+
+    <ScenarioEventXML>
+	
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>2</SecondsXML>
+        </ScenarioTriggerTimeXML>
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde1.PNG</MessageXML> <!-- startinfo -->
+        </ScenarioActionFreezeXML> 
+        
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>10</SecondsXML>
+        </ScenarioTriggerTimeXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1200_sec:atcbortflkrysbanen1_x:0_type:hs3</IdXML>
+            <StateXML>22</StateXML>	
+        </ScenarioActionStateChangerXML>	
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1895_sec:atcbortflkrysbanen1_x:0_type:hs3</IdXML>
+            <StateXML>22</StateXML>	
+        </ScenarioActionStateChangerXML>
+             
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>2</SecondsXML>
+        </ScenarioTriggerTimeXML>  
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3000_sec:atcbortflkrysbanen1_x:0_type:hs3</IdXML>
+            <StateXML>22</StateXML>	
+            
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4200_sec:atcbortflkrysbanen1_x:0_type:hs3</IdXML>
+            <StateXML>22</StateXML>	
+        </ScenarioActionStateChangerXML>
+            
+        <ScenarioActionStateChangerXML>
+            <IdXML>spv_1_eva</IdXML>
+            <StateXML>1</StateXML>	
+        </ScenarioActionStateChangerXML>
+				
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:5996.21_sec:atcbortflkrysbanen1_type:sw</IdXML>
+            <StateXML>1</StateXML>	
+        </ScenarioActionStateChangerXML>
+         
+        <ScenarioActionStateChangerXML>
+            <IdXML>spv_3_eva</IdXML>
+            <StateXML>1</StateXML>	
+        </ScenarioActionStateChangerXML>
+                              
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:6100_sec:atcbortflkrysbanen1_type:sw</IdXML>
+            <StateXML>1</StateXML>	
+        </ScenarioActionStateChangerXML>
+		
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:600_sec:atcbortflkrysbanen2_x:0_type:hs3</IdXML>
+            <StateXML>21</StateXML>	
+        </ScenarioActionStateChangerXML>
+		
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1350_sec:atcbortflkrysbanen2</IdXML>
+            <StateXML>1</StateXML>	
+        </ScenarioActionStateChangerXML>
+		
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1430_sec:atcbortflkrysbanen2</IdXML>
+            <StateXML>1</StateXML>	
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1440_sec:atcbortflkrysbanen2_x:5_type:hs3</IdXML>
+            <StateXML>22</StateXML>	
+        </ScenarioActionStateChangerXML>
+	
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1440_sec:atcbortflkrysbanen2_x:5_type:dv</IdXML>
+            <StateXML>45</StateXML>	
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:7200_sec:atcbortflkrysbanen1_x:0_type:hs3</IdXML>
+            <StateXML>22</StateXML>	
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	
+            <IdXML>201</IdXML>		
+        </ScenarioActionAutoTrainCommandXML>  
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	
+            <IdXML>200</IdXML>		
+        </ScenarioActionAutoTrainCommandXML>          
+                
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>200</IdXML>		
+            <SpeedXML>50</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>
+                      
+<!--                                                                               		
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>200</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen1</SectionNameXML>	
+            <StartVertexXML>5,0,6420</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	 
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	
+            <IdXML>200</IdXML>		
+        </ScenarioActionAutoTrainCommandXML>  
+-->
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen2</SectionNameXML>		
+            <StartVertexXML>5,0,1850</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>   
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>   
+        
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>1</SecondsXML>
+        </ScenarioTriggerTimeXML>  
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde2.PNG</MessageXML>
+        </ScenarioActionFreezeXML>    
+        
+    </ScenarioEventXML>	<!-- trig1-->
+    
+    <ScenarioEventXML>	
+        <ScenarioTriggerButtonXML> 
+            <NumberXML>1</NumberXML> 
+        </ScenarioTriggerButtonXML> 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>spv_3_eva</IdXML>
+            <StateXML>0</StateXML>	
+        </ScenarioActionStateChangerXML>
+    
+    </ScenarioEventXML>	
+    
+  <ScenarioEventXML>    <!-- melding til operator -->
+       
+        <ScenarioTriggerTrackPosXML>       
+            <IdXML>100</IdXML>                           
+            <SectionNameXML>atcbortflkrysbanen1</SectionNameXML>       
+            <StartVertexXML>0,0,5050</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+       
+        <ScenarioTriggerSpeedXML>                       
+            <IdXML>100</IdXML>                           
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>               
+        </ScenarioTriggerSpeedXML>  
+       
+        <ScenarioActionSendTogradioChatXML>
+            <MeldingXML>Stoppet foran A 4401 EVA</MeldingXML>
+        </ScenarioActionSendTogradioChatXML>   
+       
+        <ScenarioTriggerTrackPosXML>       
+            <IdXML>100</IdXML>                           
+            <SectionNameXML>atcbortflkrysbanen1</SectionNameXML>       
+            <StartVertexXML>-5,0,5800</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+       
+        <ScenarioTriggerSpeedXML>                       
+            <IdXML>100</IdXML>                           
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>               
+        </ScenarioTriggerSpeedXML>  
+       
+        <ScenarioActionSendTogradioChatXML>
+            <MeldingXML>Stoppet foran N 4423 EVA</MeldingXML>
+        </ScenarioActionSendTogradioChatXML>
+       
+        <ScenarioTriggerTrackPosXML>       
+            <IdXML>100</IdXML>                           
+            <SectionNameXML>atcbortflkrysbanen1</SectionNameXML>       
+            <StartVertexXML>5,0,6100</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>    
+  
+        <ScenarioActionSendTogradioChatXML>
+            <MeldingXML>OBS! Toget er på vei mot feil hovedspor</MeldingXML>
+        </ScenarioActionSendTogradioChatXML>      
+                     
+    </ScenarioEventXML>    
+</ScenarioXML>
+

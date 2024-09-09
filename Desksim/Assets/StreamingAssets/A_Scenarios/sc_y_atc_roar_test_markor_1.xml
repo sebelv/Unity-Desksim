@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+<ScenarioXML>
+  <!-- LYSSETTING -->
+  <NewLightingXML>true</NewLightingXML>
+  <SunPositionXML>45,180,0</SunPositionXML>
+  <AmbientLightXML>0.2</AmbientLightXML>
+  <!-- SEKSJON--> 
+  <SectionXML>
+    <NameXML>y_atc_roar_test_markor_1</NameXML>
+  </SectionXML>
+  <!-- TOGET VI KJØRER MÅ DEFINERES -->
+  <ErtmsTrain1XML>
+    <IdXML>100</IdXML>
+    <StartModeXML>104</StartModeXML> 
+    <StartPosXML>100</StartPosXML>
+    <StartSectionXML>0</StartSectionXML>
+    <StartVertexXML>0.0, 0.0, 0.0</StartVertexXML>
+  </ErtmsTrain1XML>
+  <StartTimeXML>12:00</StartTimeXML>
+</ScenarioXML>

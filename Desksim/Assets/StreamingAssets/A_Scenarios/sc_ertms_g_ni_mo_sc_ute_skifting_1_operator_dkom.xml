@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>40,90,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+    <!--     	 
+    <SectionXML>
+        <NameXML>nitkatman1</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML>
+        
+    <SectionXML>
+        <NameXML>spurvstad0ni</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>        
+ 
+    <SectionXML>
+        <NameXML>spurvstad1ni</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+ 
+    <SectionXML>
+        <NameXML>ospim1ni</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+  
+    <SectionXML>
+        <NameXML>gaffelberg1ni</NameXML>
+    </SectionXML>
+        
+    <SectionXML>
+        <NameXML>msj</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML>
+    -->
+ 
+    <SectionXML>
+        <NameXML>mo</NameXML>
+        <EndPointNextStartPointIndexXML>6</EndPointNextStartPointIndexXML>
+    </SectionXML>
+    
+     <!--  
+    <SectionXML>
+        <NameXML>øfj</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML> 
+    
+       -->    
+    
+    <StartTimeXML>16:30</StartTimeXML> 
+ 
+    <!--
+    <PersonStartPosisjonXML>forerrom1_sittende</PersonStartPosisjonXML> 
+    -->
+        	   
+    <!--
+    <TogXML>
+        <IdXML>101</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>mo</StartSeksjonXML>
+        <StartposXML>2900</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1800;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkobbelopphengmotkm=ja;luftkranmedkm=ja;last=container_red_mid</InfoXML>  
+    </TogXML> 
+   
+    <TogXML>
+        <IdXML>102</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>mo</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1800;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja;last=container_red_mid</InfoXML>  
+    </TogXML>      
+   
+    <TogXML>
+        <IdXML>103</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>mo</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1800;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja;last=container_red_mid</InfoXML>  
+    </TogXML>  
+   
+    <TogXML>
+        <IdXML>104</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>mo</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1800;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja;last=container_red_mid</InfoXML>  
+    </TogXML>  
+   
+    <TogXML>
+        <IdXML>105</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>mo</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1800;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja;last=container_red_mid</InfoXML>  
+    </TogXML>           
+      -->
+      
+      <!--
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>di4</ModelXML> 
+        <StartSeksjonXML>mo</StartSeksjonXML>
+        <StartposXML>3640</StartposXML> 
+        <StartposSideveisXML>20</StartposSideveisXML>
+        <StartModusXML>11</StartModusXML>      
+        <InfoXML>kobbelopphengmedkm=ja;kobbelopphengmotkm=ja;luftkobbelopphengmedkm=ja;</InfoXML> 
+    </TogXML>    
+    -->
+    
+    <TogXML>
+        <IdXML>201</IdXML>
+        <ModelXML>zacns</ModelXML>
+        <StartSeksjonXML>mo</StartSeksjonXML>
+        <StartposXML>2775</StartposXML>
+        <StartposSideveisXML>15</StartposSideveisXML>
+        <StartModusXML>11</StartModusXML>        
+        <InfoXML>kobbelopphengmotkm=ja;kobbelopphengmedkm=ja;luftkobbelopphengmotkm=ja;luftkranmedkm=ja</InfoXML>       <!-- luftkranmedkm=ja -->
+    </TogXML>
+    
+    <TogXML>
+        <IdXML>202</IdXML>
+        <ModelXML>zacns</ModelXML>
+        <StartSeksjonXML>bekkerum1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>15</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemotkm=ja;skrumotkm=-1080;luftkoblemotkm=ja;kobbelopphengmedkm=ja;luftkranmotkm=ja;luftkranmedkm=ja</InfoXML>
+    </TogXML>     
+
+    <TogXML>
+        <IdXML>203</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>bekkerum1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>15</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemotkm=ja;skrumotkm=-1080;luftkoblemotkm=ja;kobbelopphengmedkm=ja;luftkranmotkm=ja;luftkranmedkm=ja</InfoXML>
+    </TogXML> 
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>di4</ModelXML>
+        <StartSeksjonXML>bekkerum1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>15</StartposSideveisXML>
+        <StartModusXML>10</StartModusXML>          
+        <InfoXML>hl=5.0;koblemotkm=ja;skrumotkm=-1080;luftkoblemotkm=ja;kobbelopphengmedkm=ja;luftkobbelopphengmedkm=ja;luftkranmotkm=ja;last=container_red_mid</InfoXML>
+    </TogXML>
+           
+    <!-- -->
+    <AltDefaultTogdataXML>
+        <AltTogdataSystemIndexXML>1</AltTogdataSystemIndexXML>
+        <AltDefaultBremseprosentXML>80</AltDefaultBremseprosentXML>
+        <AltDefaultSthXML>100</AltDefaultSthXML>
+        <AltDefaultLengdeXML>110</AltDefaultLengdeXML>
+    </AltDefaultTogdataXML>    
+    
+    <TogNrXML>13011</TogNrXML>         
+  
+</ScenarioXML>
+

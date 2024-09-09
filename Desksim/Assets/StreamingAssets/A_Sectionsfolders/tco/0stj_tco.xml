@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackConnectedObjects>
+
+<TrackConnectedObjectListXML>
+
+  <NoHS3Ac3dXML>
+    <IdXML>a311stj</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.1, 0.0, 4950.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>nohs.ac</FileNameXML>
+    <SignalFlashingXML>false</SignalFlashingXML>
+  </NoHS3Ac3dXML>
+  <NoFSONHSAc3dXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.33, 0.0, 4950.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>nofsonhs.ac</FileNameXML>
+  </NoFSONHSAc3dXML>
+  <NoFSAc3dXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.54, 0.0, 4160.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>nofs.ac</FileNameXML>
+  </NoFSAc3dXML>
+  <NoHS2Ac3dXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>5.46, 0.0, 6100.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>nofs.ac</FileNameXML>
+    <SignalFlashingXML>false</SignalFlashingXML>
+  </NoHS2Ac3dXML>
+  <NoHS3Ac3dXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.26, 0.0, 6100.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>nohs.ac</FileNameXML>
+    <SignalFlashingXML>false</SignalFlashingXML>
+  </NoHS3Ac3dXML>
+  <NoHS2Ac3dXML>
+    <IdXML>m314stj</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.17, 0.0, 5450.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.8, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>noakhs.ac</FileNameXML>
+    <SignalFlashingXML>false</SignalFlashingXML>
+  </NoHS2Ac3dXML>
+  <NoHS2Ac3dXML>
+    <IdXML>o314stj</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>5.21, 0.0, 5450.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.8, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>noakfs.ac</FileNameXML>
+    <SignalFlashingXML>false</SignalFlashingXML>
+  </NoHS2Ac3dXML>
+  <NoHS2Ac3dXML>
+    <IdXML>s314stj</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-6.9, 0.0, 5450.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.8, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>noakfs.ac</FileNameXML>
+    <SignalFlashingXML>false</SignalFlashingXML>
+  </NoHS2Ac3dXML>
+  <NoHS3Ac3dXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.06, 0.0, 6355.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>nohs.ac</FileNameXML>
+    <SignalFlashingXML>true</SignalFlashingXML>
+  </NoHS3Ac3dXML>
+  <NoFSONHSAc3dXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.09, 0.0, 6355.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>nofsonhs.ac</FileNameXML>
+  </NoFSONHSAc3dXML>
+  <NoFSAc3dXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.52, 0.0, 7220.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>nofs.ac</FileNameXML>
+  </NoFSAc3dXML>
+  <NoHS3Ac3dXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.36, 0.0, 11780.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>nohs.ac</FileNameXML>
+    <SignalFlashingXML>true</SignalFlashingXML>
+  </NoHS3Ac3dXML>
+  <NoFSONHSAc3dXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.24, 0.0, 11780.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>nofsonhs.ac</FileNameXML>
+  </NoFSONHSAc3dXML>
+  <NoHastXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.26, 0.0, 11775.0</StartVertexXML>
+    <OffsetVertexXML>3.0, -1.5, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>hastavvik.ac</FileNameXML>
+    <SpeedTextXML> 6</SpeedTextXML>
+  </NoHastXML>
+  <NoFSAc3dXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.49, 0.0, 10600.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>nofs.ac</FileNameXML>
+  </NoFSAc3dXML>
+  <TrackConnectedObjectXML>
+    <IdXML>1lstj</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.09, 0.0, 5900.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, -1.5, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>notogspsign.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>2nstj</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>5.26, 0.0, 5900.0</StartVertexXML>
+    <OffsetVertexXML>-2.3, -1.5, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>notogspsign.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <NoHastXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.1, 0.0, 6175.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>hastopp2.ac</FileNameXML>
+    <SpeedTextXML> 13</SpeedTextXML>
+  </NoHastXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.69, 0.0, 5620.0</StartVertexXML>
+    <OffsetVertexXML>5.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>platform_midt_150.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <StoppBukkXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-9.93, 0.0, 5566.5</StartVertexXML>
+    <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+  </StoppBukkXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-9.37, 0.0, 5619.0</StartVertexXML>
+    <OffsetVertexXML>-21.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>grunnmur_stor.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-10.4, 0.0, 5545.0</StartVertexXML>
+    <OffsetVertexXML>-12.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>grunnmur.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.11, 0.0, 5719.0</StartVertexXML>
+    <OffsetVertexXML>-21.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>grunnmur_stor.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <NoHSkiftXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>0.53, 0.0, 5348.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>hskiftesignal.ac</FileNameXML>
+  </NoHSkiftXML>
+  <NoPloSignAc3dXML>
+    <IdXML>w1stj</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.1, 0.0, 5942.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>noplosign.ac</FileNameXML>
+  </NoPloSignAc3dXML>
+  <NoPloSignAc3dXML>
+    <IdXML>w3stj</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>4.75, 0.0, 5942.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>noplosign.ac</FileNameXML>
+  </NoPloSignAc3dXML>
+  <NoPloSignAc3dXML>
+    <IdXML>w2stj</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.11, 0.0, 5958.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>noplosign.ac</FileNameXML>
+  </NoPloSignAc3dXML>
+  <NoPloSignAc3dXML>
+    <IdXML>w4stj</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>5.69, 0.0, 5958.0</StartVertexXML>
+    <OffsetVertexXML>3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>-1</DirectionXML>
+    <FileNameXML>noplosign.ac</FileNameXML>
+  </NoPloSignAc3dXML>
+  <NoPloSignAc3dXML>
+    <IdXML>wastj</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.44, 0.0, 5335.0</StartVertexXML>
+    <OffsetVertexXML>-3.0, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>noplosign.ac</FileNameXML>
+  </NoPloSignAc3dXML>
+  <PlanovergangXML>
+    <IdXML>plo_stj</IdXML>
+    <InfoXML>no content</InfoXML>
+    <StartVertexXML>0.0, 0.0, 5950.0</StartVertexXML>
+    <OffsetVertexXML>8.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>null</FileNameXML>
+    <BreddeXML>12.0</BreddeXML>
+    <ConnectedSignalsIdXML>w1stj, w2stj, w3stj, w4stj</ConnectedSignalsIdXML>
+    <ConnectedBlokkskilleIdXML>no content</ConnectedBlokkskilleIdXML>
+  </PlanovergangXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-1.31, 0.0, 5829.5</StartVertexXML>
+    <OffsetVertexXML>-4.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>platform_right_100.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-0.42, 0.0, 5625.0</StartVertexXML>
+    <OffsetVertexXML>-4.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>platform_right_310.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+  <TrackConnectedObjectXML>
+    <IdXML>defaultid</IdXML>
+    <InfoXML></InfoXML>
+    <StartVertexXML>-1.05, 0.0, 5819.0</StartVertexXML>
+    <OffsetVertexXML>-21.5, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <FileNameXML>grunnmur_stor.ac</FileNameXML>
+  </TrackConnectedObjectXML>
+</TrackConnectedObjectListXML>

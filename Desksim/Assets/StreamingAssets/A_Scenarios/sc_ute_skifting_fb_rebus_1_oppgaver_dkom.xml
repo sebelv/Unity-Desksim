@@ -1,0 +1,248 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,90,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.4</AmbientLightXML> <!-- 0 til 255 -->
+
+    <!--    
+    -->
+    <SectionXML>
+        <NameXML>hakafjell1</NameXML> 
+    </SectionXML>
+    <!--
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>t44</ModelXML>
+        <StartSeksjonXML>hakafjell1</StartSeksjonXML>
+        <StartposXML>1640</StartposXML>
+        <StartposSideveisXML>-10</StartposSideveisXML>
+        <StartModusXML>104</StartModusXML>        
+        <InfoXML>kobbelopphengmotkm=ja;kobbelopphengmedkm=ja;luftkobbelopphengmotkm=ja;luftkobbelopphengmedkm=ja;</InfoXML> 
+        <PersonOffsetVectorXML>-8.0, 0.0, 7.0</PersonOffsetVectorXML>
+        <PersonRotationXML>0</PersonRotationXML>           
+    </TogXML> 
+    
+    <TogXML>
+        <IdXML>201</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>hakafjell1</StartSeksjonXML>
+        <StartposXML>1660</StartposXML>
+        <StartposSideveisXML>-10</StartposSideveisXML>
+        <InfoXML>hl=5.0;kobbelopphengmotkm=ja;kobbelopphengmedkm=ja;luftkobbelopphengmotkm=ja;luftkobbelopphengmedkm=ja;handbrems=ja</InfoXML>  
+    </TogXML>  
+    
+    <TogXML>
+        <IdXML>202</IdXML>
+        <ModelXML>sdggmrs</ModelXML>
+        <StartSeksjonXML>hakafjell1</StartSeksjonXML>
+        <StartposXML>1750</StartposXML>
+        <StartposSideveisXML>-15</StartposSideveisXML>
+        <InfoXML>hl=5.0;kobbelopphengmotkm=ja;kobbelopphengmedkm=ja;luftkobbelopphengmotkm=ja;luftkobbelopphengmedkm=ja;handbrems=ja</InfoXML>  
+    </TogXML>          
+    -->
+    
+    <TogXML>
+        <IdXML>204</IdXML>
+        <ModelXML>sdggmrsny</ModelXML>
+        <StartSeksjonXML>hakafjell1</StartSeksjonXML>
+        <StartposXML>1860</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1080;luftkoblemedkm=ja;luftkranmedkm=ja;kobbelopphengmotkm=ja;luftkobbelopphengmotkm=ja;last=container_rema_front;nummer=2473;</InfoXML>  
+    </TogXML>   
+    
+    <TogXML>
+        <IdXML>203</IdXML>
+        <ModelXML>sdggmrsny</ModelXML>
+        <StartSeksjonXML>hakafjell1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1080;luftkoblemedkm=ja;luftkranmedkm=ja;kobbelopphengmotkm=ja;luftkranmotkm=ja;last=container_rema_rear;</InfoXML>  
+    </TogXML>   
+    
+    <TogXML>
+        <IdXML>202</IdXML>
+        <ModelXML>sdggmrsny</ModelXML>
+        <StartSeksjonXML>hakafjell1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1080;luftkoblemedkm=ja;luftkranmedkm=ja;kobbelopphengmotkm=ja;luftkranmotkm=ja;nummer=1129</InfoXML>  
+    </TogXML>                            
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>t44ny</ModelXML>
+        <StartSeksjonXML>hakafjell1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <StartModusXML>104</StartModusXML>        
+        <InfoXML>kobbelopphengmedkm=ja;luftkobbelopphengmedkm=ja;kobbelopphengmotkm=ja;luftkranmotkm=ja</InfoXML> 
+        <PersonOffsetVectorXML>-61, 0.0, -863.0</PersonOffsetVectorXML>
+        <PersonRotationXML>150</PersonRotationXML>          
+    </TogXML>  
+    
+    <TogXML>
+        <IdXML>205</IdXML>
+        <ModelXML>zacnsny</ModelXML>
+        <StartSeksjonXML>hakafjell1</StartSeksjonXML>
+        <StartposXML>1757</StartposXML>
+        <StartposSideveisXML>-20</StartposSideveisXML>
+        <InfoXML>kobbelopphengmotkm=ja;kobbelopphengmedkm=ja;luftkobbelopphengmotkm=ja;luftkobbelopphengmedkm=ja;handbrems=ja;nummer=1607;</InfoXML>
+    </TogXML>                                                                                          
+
+    <StartTimeXML>16:30</StartTimeXML> 
+    
+    <ScenarioInfo3dXML>
+        <SectionNameXML>hakafjell1</SectionNameXML>
+        <StartVertexXML>0.0, 0.0, 1080</StartVertexXML>
+        <OffsetVertexXML>-2, -1, 0</OffsetVertexXML>        
+        <FrameTypeXML>stativ</FrameTypeXML>        
+        <ImageXML>rebus_fb_1_spm/Lysbilde1.PNG</ImageXML>
+        <ImageSizeXML>2</ImageSizeXML>
+        <ImageOffsetXML>0,0,0</ImageOffsetXML>        
+        <ImageCorrectAnswersXML></ImageCorrectAnswersXML>      
+        <RotasjonYXML>-80</RotasjonYXML> 
+        <RebusIdNrXML>1</RebusIdNrXML>         
+        <IdXML></IdXML>
+        <DirectionXML>-1</DirectionXML>
+    </ScenarioInfo3dXML>      
+    
+    <ScenarioInfo3dXML>
+        <SectionNameXML>hakafjell1</SectionNameXML>
+        <StartVertexXML>0, 0.0, 1086</StartVertexXML>
+        <OffsetVertexXML>-5, -0.7, 0</OffsetVertexXML>        
+        <FrameTypeXML>stativ</FrameTypeXML>        
+        <ImageXML>rebus_fb_1_spm/Lysbilde2.PNG</ImageXML>
+        <ImageSizeXML>2</ImageSizeXML>
+        <ImageOffsetXML>0,0,0</ImageOffsetXML>        
+        <ImageCorrectAnswersXML>true, false,true,false</ImageCorrectAnswersXML>   
+        <RotasjonYXML>-20</RotasjonYXML> 
+        <RebusIdNrXML>2</RebusIdNrXML>                          
+        <IdXML></IdXML>
+        <DirectionXML>1</DirectionXML>
+    </ScenarioInfo3dXML>  
+    
+    <ScenarioInfo3dXML>
+        <SectionNameXML>hakafjell1</SectionNameXML>
+        <StartVertexXML>0, 0.0, 1110</StartVertexXML>
+        <OffsetVertexXML>4, -1, 0</OffsetVertexXML>        
+        <FrameTypeXML>stativ</FrameTypeXML>        
+        <ImageXML>rebus_fb_1_spm/Lysbilde3.PNG</ImageXML>
+        <ImageSizeXML>2</ImageSizeXML>
+        <ImageOffsetXML>0,0,0</ImageOffsetXML>        
+        <ImageCorrectAnswersXML>true,false</ImageCorrectAnswersXML>   
+        <RotasjonYXML>20</RotasjonYXML>   
+        <RebusIdNrXML>3</RebusIdNrXML>                        
+        <IdXML></IdXML>
+        <DirectionXML>1</DirectionXML>
+    </ScenarioInfo3dXML>  
+    
+    <ScenarioInfo3dXML>
+        <SectionNameXML>hakafjell1</SectionNameXML>
+        <StartVertexXML>0, 0.0, 1145</StartVertexXML>
+        <OffsetVertexXML>4, -1, 0</OffsetVertexXML>        
+        <FrameTypeXML>stativ</FrameTypeXML>        
+        <ImageXML>rebus_fb_1_spm/Lysbilde4.PNG</ImageXML>
+        <ImageSizeXML>2</ImageSizeXML>
+        <ImageOffsetXML>0,0,0</ImageOffsetXML>        
+        <ImageCorrectAnswersXML>true,false</ImageCorrectAnswersXML>   
+        <RotasjonYXML>20</RotasjonYXML>   
+        <RebusIdNrXML>4</RebusIdNrXML>                      
+        <IdXML></IdXML>
+        <DirectionXML>1</DirectionXML>
+    </ScenarioInfo3dXML>   
+    
+    <ScenarioInfo3dXML>
+        <SectionNameXML>hakafjell1</SectionNameXML>
+        <StartVertexXML>0, 0.0, 2250</StartVertexXML>
+        <OffsetVertexXML>-4, -1, 0</OffsetVertexXML>        
+        <FrameTypeXML>stativ</FrameTypeXML>        
+        <ImageXML>rebus_fb_1_spm/Lysbilde5.PNG</ImageXML>
+        <ImageSizeXML>2</ImageSizeXML>
+        <ImageOffsetXML>0,0,0</ImageOffsetXML>        
+        <ImageCorrectAnswersXML>false,true,true</ImageCorrectAnswersXML>   
+        <RotasjonYXML>-20</RotasjonYXML>   
+        <RebusIdNrXML>5</RebusIdNrXML>                      
+        <IdXML></IdXML>
+        <DirectionXML>1</DirectionXML>
+    </ScenarioInfo3dXML>           
+
+    <ScenarioInfo3dXML>
+        <SectionNameXML>hakafjell1</SectionNameXML>
+        <StartVertexXML>0, 0.0, 2064</StartVertexXML>
+        <OffsetVertexXML>-4, -1, 0</OffsetVertexXML>        
+        <FrameTypeXML>stativ</FrameTypeXML>        
+        <ImageXML>rebus_fb_1_spm/Lysbilde6.PNG</ImageXML>
+        <ImageSizeXML>2</ImageSizeXML>
+        <ImageOffsetXML>0,0,0</ImageOffsetXML>        
+        <ImageCorrectAnswersXML>true, true, true, true, true, false,false</ImageCorrectAnswersXML>   
+        <RotasjonYXML>20</RotasjonYXML>   
+        <RebusIdNrXML>6</RebusIdNrXML>                      
+        <IdXML></IdXML>
+        <DirectionXML>-1</DirectionXML>
+    </ScenarioInfo3dXML>    
+    
+    <ScenarioInfo3dXML>
+        <SectionNameXML>hakafjell1</SectionNameXML>
+        <StartVertexXML>0, 0.0, 1975</StartVertexXML>
+        <OffsetVertexXML>-4, -1, 0</OffsetVertexXML>        
+        <FrameTypeXML>stativ</FrameTypeXML>        
+        <ImageXML>rebus_fb_1_spm/Lysbilde7.PNG</ImageXML>
+        <ImageSizeXML>2</ImageSizeXML>
+        <ImageOffsetXML>0,0,0</ImageOffsetXML>        
+        <ImageCorrectAnswersXML>true, false, true, true</ImageCorrectAnswersXML>   
+        <RotasjonYXML>-20</RotasjonYXML>   
+        <RebusIdNrXML>7</RebusIdNrXML>                      
+        <IdXML></IdXML>
+        <DirectionXML>1</DirectionXML>
+    </ScenarioInfo3dXML>   
+    
+    <ScenarioInfo3dXML>
+        <SectionNameXML>hakafjell1</SectionNameXML>
+        <StartVertexXML>0, 0.0, 1640</StartVertexXML>
+        <OffsetVertexXML>-14, -1, 0</OffsetVertexXML>        
+        <FrameTypeXML>stativ</FrameTypeXML>        
+        <ImageXML>rebus_fb_1_spm/Lysbilde8.PNG</ImageXML>
+        <ImageSizeXML>2</ImageSizeXML>
+        <ImageOffsetXML>0,0,0</ImageOffsetXML>        
+        <ImageCorrectAnswersXML>true, true</ImageCorrectAnswersXML>   
+        <RotasjonYXML>20</RotasjonYXML>   
+        <RebusIdNrXML>8</RebusIdNrXML>                      
+        <IdXML></IdXML>
+        <DirectionXML>-1</DirectionXML>
+    </ScenarioInfo3dXML>    
+    
+    <ScenarioInfo3dXML>
+        <SectionNameXML>hakafjell1</SectionNameXML>
+        <StartVertexXML>0, 0.0, 1775</StartVertexXML>
+        <OffsetVertexXML>-15, -1, 0</OffsetVertexXML>        
+        <FrameTypeXML>stativ</FrameTypeXML>        
+        <ImageXML>rebus_fb_1_spm/Lysbilde9.PNG</ImageXML>
+        <ImageSizeXML>2</ImageSizeXML>
+        <ImageOffsetXML>0,0,0</ImageOffsetXML>        
+        <ImageCorrectAnswersXML>true,true</ImageCorrectAnswersXML>   
+        <RotasjonYXML>-20</RotasjonYXML>   
+        <RebusIdNrXML>9</RebusIdNrXML>                      
+        <IdXML></IdXML>
+        <DirectionXML>1</DirectionXML>
+    </ScenarioInfo3dXML>    
+    
+    <ScenarioInfo3dXML>
+        <SectionNameXML>hakafjell1</SectionNameXML>
+        <StartVertexXML>0, 0.0, 1704</StartVertexXML>
+        <OffsetVertexXML>-17, -1, 0</OffsetVertexXML>        
+        <FrameTypeXML>stativ</FrameTypeXML>        
+        <ImageXML>rebus_fb_1_spm/Lysbilde10.PNG</ImageXML>
+        <ImageSizeXML>2</ImageSizeXML>
+        <ImageOffsetXML>0,0,0</ImageOffsetXML>        
+        <ImageCorrectAnswersXML>true,true,false,true</ImageCorrectAnswersXML>   
+        <RotasjonYXML>20</RotasjonYXML>   
+        <RebusIdNrXML>10</RebusIdNrXML>                      
+        <IdXML></IdXML>
+        <DirectionXML>-1</DirectionXML>
+    </ScenarioInfo3dXML>                                                                                                                                              
+                                                                   
+	
+</ScenarioXML>

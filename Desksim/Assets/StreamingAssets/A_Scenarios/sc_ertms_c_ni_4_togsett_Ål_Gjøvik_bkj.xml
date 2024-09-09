@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,220,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+ 
+<!-- -->
+    <SectionXML>
+        <NameXML>ertms87sek1al</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>    
+    
+    <SectionXML>
+        <NameXML>ertms87sek2grindvoll</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>  
+      
+    <SectionXML>
+        <NameXML>ertms87sek3galleberg</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML>         
+
+    <SectionXML>
+        <NameXML>ertms87sek4holmestrand</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>   
+    
+    <SectionXML>
+        <NameXML>ertms87sek5tonsberg</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML>      
+    
+    <SectionXML>
+        <NameXML>ertms87sek6sokna</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML>   
+    
+    <SectionXML>
+        <NameXML>ertms87sek7gulsvik</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>                                  
+ <!--       -->                                   
+              
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>ertms87sek1al</StartSeksjonXML> <!-- ertms87sek1al -->
+        <StartposXML>2460</StartposXML><!-- 2460 -->
+        <StartposSideveisXML>10</StartposSideveisXML> <!-- 10  --> 
+        <StartModusXML>18</StartModusXML>  <!-- 18 -->      
+        <InfoXML>intet</InfoXML> 
+    </TogXML>   
+    
+    <TogXML>
+        <IdXML>300</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>ertms87sek5tonsberg</StartSeksjonXML>
+        <StartposXML>2860</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>      
+
+    <TogXML>
+        <IdXML>200</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>ertms87sek6sokna</StartSeksjonXML>
+        <StartposXML>11840</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>      
+    
+    <TogXML>
+        <IdXML>400</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>ertms87sek7gulsvik</StartSeksjonXML>
+        <StartposXML>2400</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>         
+
+    <StartTimeXML>16:30</StartTimeXML> 
+    
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML> 
+    
+    <!-- signaler ut fra Ål -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>       
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2643_sec:ertms87sek1al</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>    
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>                    	
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2538_sec:ertms87sek1al_type:ertmsstopp_x:10</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>     
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2539_sec:ertms87sek1al_type:dv_x:10</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek1al</SectionNameXML>	
+            <StartVertexXML>5,0,2600</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	        
+       
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2727_sec:ertms87sek1al_type:ertmsstopp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>  
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2728_sec:ertms87sek1al_type:dv</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3224_sec:ertms87sek1al_type:ertmsstopp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>                 
+        
+  
+
+        <!--
+        <ScenarioActionAutoTrainCommandXML> 	
+                <CommandXML>speed</CommandXML>	 
+                <IdXML>200</IdXML>				
+                <SpeedXML>-40</SpeedXML>	       
+        </ScenarioActionAutoTrainCommandXML>           
+        -->
+                                   
+    </ScenarioEventXML> 
+    
+    <!-- teleport mot sløvika bp -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek1al</SectionNameXML>	
+            <StartVertexXML>0,0,4050</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML> OBS: Øvelsen fortsetter nå noen km lengre/n framme/n Trykk fortsett for teleportering</MessageXML>
+            <TeleportStartXML>start</TeleportStartXML>
+        </ScenarioActionFreezeXML>
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek2grindvoll</SectionNameXML>	
+            <StartVertexXML>0,0,3200</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML> Øvelsen fortsetter/n Toget befinner seg nå ca 1000m/n før Sløvika blokkpost /n Trykk fortsett </MessageXML>
+            <TeleportSluttXML>70</TeleportSluttXML>
+        </ScenarioActionFreezeXML>	                                                        						
+    </ScenarioEventXML> 
+    
+    <!-- signal videre fra Sløvika Bp-->
+    <ScenarioEventXML> 
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek2grindvoll</SectionNameXML>	
+            <StartVertexXML>0,0,4250</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+                
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4319_sec:ertms87sek2grindvoll_type:ertmsstopp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>           
+    </ScenarioEventXML> 
+    
+    <!-- signal galleberg til og med inn i avvik holmestrand -->
+    <ScenarioEventXML>   
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:266_x:0_sec:ertms87sek3galleberg</IdXML>
+            <SerieSluttPosXML>855</SerieSluttPosXML> <!-- alle signaler (ertmsstopp) blir satt opp fram til og med et objekt som har denne pos -->               
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>        
+        
+        <!-- spv -->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1413_x:0_sec:ertms87sek4holmestrand</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>   
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>3</SecondsXML>					
+        </ScenarioTriggerTimeXML>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1410_x:0_sec:ertms87sek4holmestrand</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>   
+    
+    <!-- teleport galleberg til holmestrand -->     
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek3galleberg</SectionNameXML>	
+            <StartVertexXML>0,0,700</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML> OBS: Øvelsen fortsetter nå like før/n Holmestrand/n Trykk fortsett for teleportering</MessageXML>
+            <TeleportStartXML>start</TeleportStartXML>
+        </ScenarioActionFreezeXML>
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek3galleberg</SectionNameXML>	
+            <StartVertexXML>0,0,11000</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML> Øvelsen fortsetter/n Toget befinner seg nå ca 1km/n før A01 Holmestrand/n Trykk fortsett </MessageXML>
+            <TeleportSluttXML>160</TeleportSluttXML>
+        </ScenarioActionFreezeXML>	                                                        						
+    </ScenarioEventXML>                                                
+    
+    <!-- signal holmestrand til ytre indre tønsberg -->
+    <ScenarioEventXML>   
+      
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek4holmestrand</SectionNameXML>	
+            <StartVertexXML>-6,0,1500</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+             <!-- 
+        <ScenarioTriggerButtonXML> 
+            <NumberXML>1</NumberXML> 
+        </ScenarioTriggerButtonXML>             
+               -->     
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>
+        
+        <!-- spv -->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2279_x:0_sec:ertms87sek4holmestrand</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>         
+                
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>3</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+                        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2123_x:-6_sec:ertms87sek4holmestrand</IdXML>
+            <SerieSluttPosXML>2274</SerieSluttPosXML>               
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>        
+        
+                       
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1400_sec:ertms87sek5tonsberg_type:dv_x:0</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>
+         
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2275_sec:ertms87sek5tonsberg_type:dv_x:0</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>              
+    </ScenarioEventXML>   
+
+    <!-- kryssende tog tonsberg-->
+    <ScenarioEventXML>  
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>1</SecondsXML>					
+        </ScenarioTriggerTimeXML> 
+        
+        <!-- spv -->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2399_x:0_sec:ertms87sek5tonsberg</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>                              
+    </ScenarioEventXML>          
+    
+    <ScenarioEventXML>     
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek5tonsberg</SectionNameXML>	
+            <StartVertexXML>0,0,2200</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+                
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>6</SecondsXML>					
+        </ScenarioTriggerTimeXML>       
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2360_x:0_sec:ertms87sek5tonsberg</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>    
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>13</SecondsXML>					
+        </ScenarioTriggerTimeXML>                          
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>300</IdXML>		
+            <SpeedXML>-40</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>     
+  
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>300</IdXML>							
+            <SectionNameXML>ertms87sek5tonsberg</SectionNameXML>	
+            <StartVertexXML>5,0,2200</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>     
+       
+        <ScenarioActionAutoTrainCommandXML> 
+            <CommandXML>speed</CommandXML>	
+            <IdXML>300</IdXML>		
+            <SpeedXML>0</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>     
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>                   
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	
+            <IdXML>300</IdXML>		
+        </ScenarioActionAutoTrainCommandXML>                          
+    </ScenarioEventXML>      
+    
+    <!-- videre fra tønsberg-->
+    <ScenarioEventXML>  
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>300</IdXML>							
+            <SectionNameXML>ertms87sek5tonsberg</SectionNameXML>	
+            <StartVertexXML>5,0,2310</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>    
+       
+        
+        <!-- trigger for testing
+        <ScenarioTriggerButtonXML> 
+            <NumberXML>1</NumberXML> 
+        </ScenarioTriggerButtonXML> -->
+                
+        <!-- spv tønsberg -->        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2399_x:0_sec:ertms87sek5tonsberg</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>   
+        
+        <!-- spv sokna -->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10556_x:0_sec:ertms87sek6sokna</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>                                                           
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>3</SecondsXML>					
+        </ScenarioTriggerTimeXML>            
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2340_sec:ertms87sek5tonsberg_type:dv</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>1</SecondsXML>					
+        </ScenarioTriggerTimeXML>  
+   
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2339_x:0_sec:ertms87sek5tonsberg_type:ertmsstopp</IdXML>
+            <SerieSluttPosXML>11283</SerieSluttPosXML>        
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>                                                                                   
+    </ScenarioEventXML>                       
+    
+    <!-- teleport tonsberg mot sokna -->     
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek5tonsberg</SectionNameXML>	
+            <StartVertexXML>0,0,3000</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML> OBS: Øvelsen teleporteres nå til noen km før/n Sokna/n Trykk fortsett for teleportering</MessageXML>
+            <TeleportStartXML>start</TeleportStartXML>
+        </ScenarioActionFreezeXML>
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek6sokna</SectionNameXML>	
+            <StartVertexXML>0,0,7000</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML> Øvelsen fortsetter/n Toget passerer snart en planovergang/n Trykk fortsett </MessageXML>
+            <TeleportSluttXML>90</TeleportSluttXML>
+        </ScenarioActionFreezeXML>	                                                        						
+    </ScenarioEventXML>     
+    
+    <!-- kryssende tog sokna-->    
+    <ScenarioEventXML>   
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek6sokna</SectionNameXML>	
+            <StartVertexXML>-5,0,11000</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+                
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>6</SecondsXML>					
+        </ScenarioTriggerTimeXML>  
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>200</IdXML>		
+            <SpeedXML>-80</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>     
+  
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>200</IdXML>							
+            <SectionNameXML>ertms87sek6sokna</SectionNameXML>	
+            <StartVertexXML>0,0,10600</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>     
+       
+        <ScenarioActionAutoTrainCommandXML> 
+            <CommandXML>speed</CommandXML>	
+            <IdXML>200</IdXML>		
+            <SpeedXML>0</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>    
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>  
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	
+            <IdXML>200</IdXML>		
+        </ScenarioActionAutoTrainCommandXML>   
+    </ScenarioEventXML>    
+    
+    <!-- videre fra sokna -->
+    <ScenarioEventXML>  
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>200</IdXML>							
+            <SectionNameXML>ertms87sek6sokna</SectionNameXML>	
+            <StartVertexXML>0,0,11250</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>    
+        
+        <!-- trigger for testing 
+        <ScenarioTriggerButtonXML> 
+            <NumberXML>1</NumberXML> 
+        </ScenarioTriggerButtonXML> -->
+                
+        <!-- spv -->        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:11426_x:0_sec:ertms87sek6sokna</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>   
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:925_x:0_sec:ertms87sek7gulsvik</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>                                                           
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>3</SecondsXML>					
+        </ScenarioTriggerTimeXML>               
+   
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:11347_x:-5_sec:ertms87sek6sokna_type:ertmsstopp</IdXML>
+            <SerieSluttPosXML>100</SerieSluttPosXML>        
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>     
+    </ScenarioEventXML>      
+    
+    <!-- teleport rallerud mot gulsvik -->     
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek6sokna</SectionNameXML>	
+            <StartVertexXML>0,0,20500</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML> OBS: Øvelsen teleporteres til like før/n Gulsvik/n Trykk fortsett for teleportering</MessageXML>
+            <TeleportStartXML>start</TeleportStartXML>
+        </ScenarioActionFreezeXML>
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek6sokna</SectionNameXML>	
+            <StartVertexXML>0,0,27500</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML> Øvelsen fortsetter med kryssing/n på Gulsvik/n Trykk fortsett </MessageXML>
+            <TeleportSluttXML>70</TeleportSluttXML>
+        </ScenarioActionFreezeXML>	                                                        						
+    </ScenarioEventXML>         
+    
+    <!-- kryssende tog gulsvik-->    
+    <ScenarioEventXML>   
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek7gulsvik</SectionNameXML>	
+            <StartVertexXML>0,0,500</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>400</IdXML>		
+            <SpeedXML>-50</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML> 
+    </ScenarioEventXML>        
+                             
+    <!-- videre fra gulsvik -->
+    <ScenarioEventXML> 
+        <!--  -->
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>400</IdXML>							
+            <SectionNameXML>ertms87sek7gulsvik</SectionNameXML>	
+            <StartVertexXML>0,0,1770</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>   
+        
+        <!-- trigger for testing 
+        <ScenarioTriggerButtonXML> 
+            <NumberXML>1</NumberXML> 
+        </ScenarioTriggerButtonXML> -->
+                
+        <!-- spv -->        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1954_sec:ertms87sek7gulsvik</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>  
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:19337_sec:ertms87sek7gulsvik</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>  
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:19429.5_sec:ertms87sek7gulsvik_x:-7.5</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>                         
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>3</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1806_x:5_sec:ertms87sek7gulsvik_type:ertmsstopp</IdXML>
+            <SerieSluttPosXML>19645</SerieSluttPosXML>        
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>      
+                                    
+    </ScenarioEventXML>      
+    
+    <!--
+    <ScenarioEventXML> 
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>1</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:7327_sec:ertms87sek7gulsvik</IdXML>     
+            <StateXML>2</StateXML>
+        </ScenarioActionStateChangerXML>           
+    </ScenarioEventXML>                   
+    -->
+    
+</ScenarioXML>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+        
+    <SectionXML>
+        <NameXML>nitkatman1</NameXML>
+        <StartVertexXML>0, 0, 0</StartVertexXML>
+    </SectionXML>
+	
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>1660</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>102</StartModusXML>        
+        <InfoXML></InfoXML> 
+        <PersonOffsetVectorXML>15.0, 0.0, 70.0</PersonOffsetVectorXML>
+        <PersonRotationXML>10</PersonRotationXML>        
+    </TogXML>              
+        
+    <StartTimeXML>16:30</StartTimeXML> 
+    
+    <ScenarioEventXML>
+        <!-- signalbilder-->
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>1</SecondsXML> 
+        </ScenarioTriggerTimeXML>
+        
+        <!-- utkjør Nitteberg -->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1753_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <!-- innkjør Kattdorp-->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4130_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4330_sec:nitkatman1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <!-- utkjør Kattdorp-->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4758_sec:nitkatman1_type:hs2</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4830_sec:nitkatman1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>        
+        
+        <!-- innkjør Kattdorp 2-->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:5030_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML> 
+        
+        <!-- utkjør Kattdorp 2-->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4400_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>        
+        
+        <!-- innkjør Nitteberg 2-->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2170_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>  
+        
+        <!-- nullstill grupper -->
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>2</SecondsXML> 
+        </ScenarioTriggerTimeXML>
+        
+        <!-- gjøres ikke svar scenariet -->
+    </ScenarioEventXML>        
+			
+    <!-- ved endebytte-->                        
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>	
+            <StartVertexXML>0,0,5080</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4830_sec:nitkatman1_type:sw</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML> 
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4330_sec:nitkatman1_type:sw</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1870_sec:nitkatman1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>                                                    
+    </ScenarioEventXML> 	                                	
+	
+</ScenarioXML>

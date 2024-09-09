@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>40,250,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+    <!--     	 
+    <SectionXML>
+        <NameXML>nitkatman1</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML>
+        
+    <SectionXML>
+        <NameXML>spurvstad0ni</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>        
+ 
+    <SectionXML>
+        <NameXML>spurvstad1ni</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+ 
+    <SectionXML>
+        <NameXML>ospim1ni</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+  
+    <SectionXML>
+        <NameXML>gaffelberg1ni</NameXML>
+    </SectionXML>
+        
+    <SectionXML>
+        <NameXML>msj</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML>
+    -->
+ 
+    <SectionXML>
+        <NameXML>mo</NameXML>
+        <EndPointNextStartPointIndexXML>6</EndPointNextStartPointIndexXML>
+    </SectionXML>
+    
+     <!--  
+    <SectionXML>
+        <NameXML>øfj</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML> 
+    
+       -->    
+    
+    <StartTimeXML>16:30</StartTimeXML> 
+ 
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML>     	   
+
+    <TogXML>
+        <IdXML>101</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>mo</StartSeksjonXML>
+        <StartposXML>725</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1440;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkobbelopphengmotkm=ja;luftkranmedkm=ja;last=container_red_mid</InfoXML>  
+    </TogXML> 
+   
+    <TogXML>
+        <IdXML>102</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>mo</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1440;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja;last=container_red_mid</InfoXML>  
+    </TogXML>      
+   
+    <TogXML>
+        <IdXML>103</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>mo</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1440;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja;last=container_red_mid</InfoXML>  
+    </TogXML>  
+    
+    <TogXML>
+        <IdXML>104</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>mo</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1440;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja;last=container_red_mid</InfoXML>  
+    </TogXML>  
+    
+    <TogXML>
+        <IdXML>105</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>mo</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1440;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja;last=container_red_mid</InfoXML>  
+    </TogXML>     
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>di4</ModelXML> <!-- di4 -->
+        <StartSeksjonXML>mo</StartSeksjonXML>
+        <StartposXML>-1</StartposXML> <!-- -1 -->
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>10</StartModusXML>   <!-- 10 -->      
+        <InfoXML>kobbelopphengmedkm=ja;kobbelopphengmotkm=ja;luftkobbelopphengmedkm=ja;luftkranmotkm=ja</InfoXML> <!--ja -->
+    </TogXML>    
+    
+    <AltDefaultTogdataXML>
+        <AltTogdataSystemIndexXML>1</AltTogdataSystemIndexXML>
+        <AltDefaultBremseprosentXML>80</AltDefaultBremseprosentXML>
+        <AltDefaultSthXML>100</AltDefaultSthXML>
+        <AltDefaultLengdeXML>110</AltDefaultLengdeXML>
+    </AltDefaultTogdataXML>    
+    
+    <TogNrXML>13011</TogNrXML>    
+    
+    <TogXML>
+        <IdXML>200</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>mo</StartSeksjonXML>
+        <StartposXML>4500</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML> 
+    
+                  
+    
+    <!--
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>mo</StartSeksjonXML>
+        <StartposXML>770</StartposXML>
+        <StartposSideveisXML></StartposSideveisXML>
+        <StartModusXML>10</StartModusXML>      
+        <InfoXML></InfoXML> 
+    </TogXML>   
+    -->          
+    
+    <ScenarioEventXML>  
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>1</SecondsXML>				
+        </ScenarioTriggerTimeXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>A01MO</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>     
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1785_sec:mo_type:ertmsstopp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>  
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1786_sec:mo_type:dv</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>                 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2961_sec:mo_type:ertmsstopp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2962_sec:mo_type:dv</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>            
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3487_sec:mo_type:sw</IdXML>
+            <StateXML>1</StateXML>        
+        </ScenarioActionStateChangerXML> 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3560_sec:mo_type:sw</IdXML>
+            <StateXML>1</StateXML>        
+        </ScenarioActionStateChangerXML>                  
+
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>3</SecondsXML>				
+        </ScenarioTriggerTimeXML>        
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3174_sec:mo_type:ertmsstopp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML> 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3175_sec:mo_type:dv</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>    
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3604_sec:mo_x:17_type:sperre</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>         
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3447_sec:mo_type:dv</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>                                                 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4105_sec:mo_type:sw</IdXML>
+            <StateXML>1</StateXML>        
+        </ScenarioActionStateChangerXML>                                                                                                                                                                          
+    </ScenarioEventXML>     
+    
+    
+    <ScenarioEventXML> 
+        <!-- ertms start trykk ved scenariostart-->        
+        <ScenarioTriggerHandlingXML> 
+            <NumberXML>1</NumberXML> 
+        </ScenarioTriggerHandlingXML> 
+                
+        <!-- sikre at dette skjer etter innledende trykk start-->
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>mo</SectionNameXML>		
+            <StartVertexXML>0,0,1000</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>   
+                
+        <ScenarioTriggerHandlingXML> 
+            <NumberXML>1</NumberXML> <!-- ertms start trykk -->
+        </ScenarioTriggerHandlingXML> 	              
+        
+        <!-- møtende tog starter-->
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>200</IdXML>		
+            <SpeedXML>-50</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>                               
+    </ScenarioEventXML>   
+    
+    <!-- autotog trigger ma og egen remove update --> 					
+    <ScenarioEventXML> 
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>200</IdXML>							
+            <SectionNameXML>mo</SectionNameXML>		
+            <StartVertexXML>0,0,4300</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>       
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4376_sec:mo_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML> 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4257_sec:mo_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>         
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>				
+        </ScenarioTriggerTimeXML>                                           
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4195_sec:mo_type:ertmsstopp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>        
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4196_sec:mo_type:dv</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>                      
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>200</IdXML>							
+            <SectionNameXML>mo</SectionNameXML>		
+            <StartVertexXML>0,0,3500</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>                   
+                                		
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	
+            <IdXML>200</IdXML>		
+        </ScenarioActionAutoTrainCommandXML>
+    </ScenarioEventXML>             
+  
+</ScenarioXML>
+

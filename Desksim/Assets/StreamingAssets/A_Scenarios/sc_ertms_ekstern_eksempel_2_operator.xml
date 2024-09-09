@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements[ ]>
+
+<ScenarioXML> <!-- I dette scenariet kommenteres det som er nytt i forhold til sc_ertms_eksempel_1_bkj -->
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,220,0</SunPositionXML>
+    <AmbientLightXML>0.2</AmbientLightXML>
+    
+    <SectionXML>
+        <NameXML>ertms87sek1al</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>    
+    
+    <SectionXML>
+        <NameXML>ertms87sek2grindvoll</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>            
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>ertms87sek1al</StartSeksjonXML>
+        <StartposXML>2400</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <StartModusXML>18</StartModusXML>        
+        <InfoXML>intet</InfoXML> 
+    </TogXML>   
+	
+    <StartTimeXML>16:30</StartTimeXML> 
+    
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML> <!-- Her starter man i forerrom 2 -->
+
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>5</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2607_sec:ertms87sek1al</IdXML> <!-- Det som skjer her er omlegging av sporveksel  -->
+            <StateXML>1</StateXML> <!-- State 0 = rettspor, State 1 = avvik, alle sporveksler ligger til rettspor som default, skal den ligge i rettspor trengs ingen kode -->
+        </ScenarioActionStateChangerXML>         
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2643_sec:ertms87sek1al</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>         
+
+        <ScenarioActionStateChangerXML> <!-- Det som skjer her togvei forbi Ertms stoppskilt -->
+            <IdXML>pos:2473_sec:ertms87sek1al_type:ertmsstopp_x:5</IdXML>
+            <StateXML>1</StateXML> <!-- State 0 = stopp, State 1 = kjør -->
+        </ScenarioActionStateChangerXML> 	
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2538_sec:ertms87sek1al_type:ertmsstopp_x:5</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioTriggerTrackPosXML> <!-- Her er en annen type trigger, den trigger på posisjonen i angitt seksjon til angitt kjøretøy -->
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek1al</SectionNameXML>	
+            <StartVertexXML>5,0,2550</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	        
+        
+        <ScenarioActionStateChangerXML> <!-- Så dette vil skje når tog med id 100 passerer pos 2550 på spor som ligger sideveis 5 meter unna sentralaksen -->
+            <IdXML>pos:2727_sec:ertms87sek1al_type:ertmsstopp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>    
+        
+        <ScenarioActionStateChangerXML> <!-- og samtidig vil også dette stoppskiltet bli satt til kjør -->
+            <IdXML>pos:3224_sec:ertms87sek1al_type:ertmsstopp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>                    
+                
+    </ScenarioEventXML>
+        
+
+</ScenarioXML>
+

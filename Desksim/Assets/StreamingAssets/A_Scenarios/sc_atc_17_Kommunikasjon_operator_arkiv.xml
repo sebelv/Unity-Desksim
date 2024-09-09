@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,270,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+
+  <!--   
+
+	<SectionXML>
+		<NameXML>nitkatman</NameXML>
+	</SectionXML>
+     
+  <SectionXML>
+          <NameXML>storehammer1_ex</NameXML>
+  </SectionXML>
+  -->
+	<SectionXML>
+		<NameXML>storehammer1</NameXML>
+                <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+	</SectionXML>
+    
+	<SectionXML>
+		<NameXML>revestua1</NameXML>
+                <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+	</SectionXML>
+ 
+
+	<SectionXML>
+		<NameXML>hakafjell1</NameXML>
+                <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+	</SectionXML>
+  <!--      
+	<SectionXML>
+		<NameXML>GRS</NameXML>
+               <EndPointNextStartPointIndexXML>4</EndPointNextStartPointIndexXML> 
+	</SectionXML>
+  
+	<SectionXML>
+		<NameXML>UFJS1</NameXML>
+	</SectionXML>
+             
+	<SectionXML>
+		<NameXML>UFJS2</NameXML>
+	</SectionXML>
+ 
+    -->
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>hakafjell1</StartSeksjonXML>
+        <StartposXML>1680</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <StartModusXML>103</StartModusXML>        
+        <InfoXML></InfoXML> 
+    </TogXML>                   
+        
+    <TogXML>
+        <IdXML>200</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>revestua1</StartSeksjonXML>
+        <StartposXML>1820</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML> 
+        
+    <StartTimeXML>15:50</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+    <TogNrXML>1051</TogNrXML>
+    
+    <PersonStartPosisjonXML>forerrom1_sittende</PersonStartPosisjonXML>
+    
+    <SlideMappeXML>infoslides_scenario/infrastruktur1</SlideMappeXML>
+    <SlideOffsetInfoXML>426</SlideOffsetInfoXML>
+    <SlideOffsetOppgaverXML>426</SlideOffsetOppgaverXML>    
+    <NettbrettFilXML>nettbrettslides_scenario/tog 1051.png</NettbrettFilXML>   
+       	          
+        
+    <!-- HAKAFJELL -->  
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>hakafjell1</SectionNameXML>		
+            <StartVertexXML>5,0,1560</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+  
+        <ScenarioActionSendTogradioChatXML>
+            <MeldingXML>Passert utkjør Hakafjell</MeldingXML>
+        </ScenarioActionSendTogradioChatXML>        
+    </ScenarioEventXML>	    
+            
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>	<!--10-->				
+        </ScenarioTriggerTimeXML>			
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde1.PNG
+            </MessageXML> <!-- startinfo -->
+        </ScenarioActionFreezeXML>        
+
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>	<!--10-->				
+        </ScenarioTriggerTimeXML>        
+                        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1565_sec:hakafjell1_type:hs2</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1500_sec:hakafjell1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:170_sec:hakafjell1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:570_sec:hakafjell1</IdXML>
+            <StateXML>57</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+    
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>hakafjell1</SectionNameXML>		
+            <StartVertexXML>5,0,1590</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+  
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde2.PNG
+            </MessageXML> <!-- startinfo -->
+        </ScenarioActionFreezeXML>         
+    </ScenarioEventXML>	     
+                
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>hakafjell1</SectionNameXML>	
+            <StartVertexXML>0,0,620</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:570_sec:hakafjell1</IdXML>
+            <StateXML>56</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+  
+    <!-- REVESTUA -->
+     <ScenarioEventXML>	  
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>revestua1</SectionNameXML>		
+            <StartVertexXML>0,0,2850</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>              
+  
+        <ScenarioActionSendTogradioChatXML>
+            <MeldingXML>Stoppet foran B 802 RVU</MeldingXML>
+        </ScenarioActionSendTogradioChatXML>        
+    </ScenarioEventXML>	
+    
+    <ScenarioEventXML>	
+        <ScenarioTriggerButtonXML> 
+            <NumberXML>1</NumberXML> 
+        </ScenarioTriggerButtonXML> 
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2790_sec:revestua1_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>        
+    </ScenarioEventXML>	
+    
+     <ScenarioEventXML>	  
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>revestua1</SectionNameXML>		
+            <StartVertexXML>0,0,2750</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>             
+  
+        <ScenarioActionSendTogradioChatXML>
+            <MeldingXML>Passert B 802</MeldingXML>
+        </ScenarioActionSendTogradioChatXML>        
+    </ScenarioEventXML>	            
+    
+    <!-- start kryssende -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>revestua1</SectionNameXML>		
+            <StartVertexXML>5,0,2400</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>   
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>                  
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>200</IdXML>		
+            <SpeedXML>40</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>
+        
+        
+    </ScenarioEventXML>
+    
+    <!-- spv og plo inn -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>  
+                
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2590_sec:revestua1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>  
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2549.82_sec:revestua1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>  
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2429_sec:revestua1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>                      
+    </ScenarioEventXML>
+    
+    <!-- stopp kryss tog, spv og hs ut--> 				
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>200</IdXML>							
+            <SectionNameXML>revestua1</SectionNameXML>		
+            <StartVertexXML>0,0,2400</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	
+            <IdXML>200</IdXML>		
+        </ScenarioActionAutoTrainCommandXML>
+      
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2090_sec:revestua1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>  
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2130.17_sec:revestua1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>3</SecondsXML>					
+        </ScenarioTriggerTimeXML>        
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2203.1_sec:revestua1_type:hs2</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+
+    <!-- STOREHAMMER -->   
+     <ScenarioEventXML>	  
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>storehammer1</SectionNameXML>		
+            <StartVertexXML>5,0,1100</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>        
+  
+        <ScenarioActionSendTogradioChatXML>
+            <MeldingXML>Stoppet foran 724 SHR</MeldingXML>
+        </ScenarioActionSendTogradioChatXML>        
+    </ScenarioEventXML>	  
+    
+     <ScenarioEventXML>	  
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>storehammer1</SectionNameXML>		
+            <StartVertexXML>5,0,950</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>       
+  
+        <ScenarioActionSendTogradioChatXML>
+            <MeldingXML>Passert 724 SHR</MeldingXML>
+        </ScenarioActionSendTogradioChatXML>        
+    </ScenarioEventXML>	      
+              
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1500_sec:storehammer1_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1301_sec:storehammer1_type:dv</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1300_sec:storehammer1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:930_sec:storehammer1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>   
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:661_sec:storehammer1_type:dv</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>              
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:419_sec:storehammer1_type:dv</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>        
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:351_sec:storehammer1_type:dv</IdXML>
+            <StateXML>44</StateXML>
+        </ScenarioActionStateChangerXML>                        
+    </ScenarioEventXML>
+    
+    <ScenarioEventXML>
+        <ScenarioTriggerButtonXML> 
+            <NumberXML>2</NumberXML> 
+        </ScenarioTriggerButtonXML> 
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1025.2_sec:storehammer1_type:dv</IdXML>
+            <StateXML>44</StateXML>
+        </ScenarioActionStateChangerXML>        
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>				
+        </ScenarioTriggerTimeXML>        
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1025.2_sec:storehammer1_type:dv</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>          
+    </ScenarioEventXML>                
+    
+    <!-- FRYS OPPSUMMERING -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>storehammer1</SectionNameXML>	
+            <StartVertexXML>90,0,300</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+	
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>
+     
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde3.PNG
+            </MessageXML> 
+        </ScenarioActionFreezeXML> 	
+    </ScenarioEventXML>    
+</ScenarioXML>
+

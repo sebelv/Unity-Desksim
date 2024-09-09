@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>50,120,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+
+    <SlideMappeXML>infoslides_scenario/100</SlideMappeXML>
+    <NettbrettFilXML></NettbrettFilXML>  
+    <SlideOffsetInfoXML>2</SlideOffsetInfoXML>
+    <SlideOffsetOppgaverXML>2</SlideOffsetOppgaverXML>   
+    <TogNrXML>30001</TogNrXML>    
+    <StartTimeXML>16:28</StartTimeXML>                    
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML>      
+
+    <SectionXML>
+        <NameXML>demobane</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>    
+    
+    <TogXML>
+        <IdXML>tog1</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>demobane</StartSeksjonXML>
+        <StartposXML>1835</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>102</StartModusXML>        
+        <InfoXML></InfoXML> 
+    </TogXML>       
+    
+    <TogXML>
+        <IdXML>tog2</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>demobane</StartSeksjonXML>
+        <StartposXML>2500</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>  
+        <InfoXML>dekorativt=ja</InfoXML> 
+    </TogXML>       
+    
+    <TogXML>
+        <IdXML>201</IdXML>
+        <ModelXML>sdggmrs</ModelXML>
+        <StartSeksjonXML>demobane</StartSeksjonXML>
+        <StartposXML>4230</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <InfoXML>dekorativt=ja;last=container_blue_front;sluttsignalmed=ja</InfoXML>  
+    </TogXML>  
+    
+    <TogXML>
+        <IdXML>202</IdXML>
+        <ModelXML>sdggmrs</ModelXML>
+        <StartSeksjonXML>demobane</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <InfoXML>dekorativt=ja;last=container_blue_front, container_blue_rear</InfoXML>  
+    </TogXML>  
+    
+       
+    <TogXML>
+        <IdXML>200</IdXML>
+        <ModelXML>di4</ModelXML>
+        <StartSeksjonXML>demobane</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <PersonOffsetVectorXML>-5.5, 0.0, 0.0</PersonOffsetVectorXML>
+        <PersonRotationXML>-100</PersonRotationXML>                 
+        <InfoXML>dekorativt=ja</InfoXML> 
+    </TogXML>   
+    
+   
+    <!--tog2  krysser og gir togvei til kvl-->
+    <ScenarioEventXML> 
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>				
+        </ScenarioTriggerTimeXML>	              
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde1.PNG</MessageXML>
+        </ScenarioActionFreezeXML>	
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>				
+        </ScenarioTriggerTimeXML>
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde2.PNG</MessageXML>
+        </ScenarioActionFreezeXML>	  
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1990_sec:demobane_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>tog2</IdXML>		
+            <SpeedXML>-80</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>   
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>tog2</IdXML>							
+            <SectionNameXML>demobane</SectionNameXML>		
+            <StartVertexXML>0,0,2090</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>   
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>tog2</IdXML>		
+            <SpeedXML>-30</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>   
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>tog2</IdXML>							
+            <SectionNameXML>demobane</SectionNameXML>		
+            <StartVertexXML>5,0,1880</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>   
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1990_sec:demobane_type:sw</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>				
+        </ScenarioTriggerTimeXML> 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>l363vin</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>   
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>1</SecondsXML>				
+        </ScenarioTriggerTimeXML>
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde3.PNG</MessageXML>
+        </ScenarioActionFreezeXML>	
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>a541kvl</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>   
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>tog2</IdXML>							
+            <SectionNameXML>demobane</SectionNameXML>		
+            <StartVertexXML>5,0,1500</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>  
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>tog2</IdXML>		
+            <SpeedXML>0</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>   
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	
+            <IdXML>tog2</IdXML>	  
+        </ScenarioActionAutoTrainCommandXML> 
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>tog1</IdXML>							
+            <SectionNameXML>demobane</SectionNameXML>		
+            <StartVertexXML>0,0,2570</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>  
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde4.PNG</MessageXML>
+        </ScenarioActionFreezeXML>	 
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>tog1</IdXML>							
+            <SectionNameXML>demobane</SectionNameXML>		
+            <StartVertexXML>0,0,3505</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>  
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde5.PNG</MessageXML>
+        </ScenarioActionFreezeXML>	
+        
+        
+        
+                
+    </ScenarioEventXML> 
+    
+    
+    <!--    200 kjører til fok-->
+    <ScenarioEventXML> 
+                      
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>tog1</IdXML>							
+            <SectionNameXML>demobane</SectionNameXML>		
+            <StartVertexXML>0,0,4000</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>   
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>tog1</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>    
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>				
+        </ScenarioTriggerTimeXML> 
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde6.PNG</MessageXML>
+        </ScenarioActionFreezeXML>	
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4407_sec:demobane_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>				
+        </ScenarioTriggerTimeXML> 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>n543kvl</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>      
+                
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>201</IdXML>		
+            <SpeedXML>10</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>   
+        
+                
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>				
+        </ScenarioTriggerTimeXML> 
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>201</IdXML>		
+            <SpeedXML>30</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>   
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>				
+        </ScenarioTriggerTimeXML> 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>n543kvl</IdXML>
+            <StateXML>20</StateXML>
+        </ScenarioActionStateChangerXML>      
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>201</IdXML>							
+            <SectionNameXML>demobane</SectionNameXML>		
+            <StartVertexXML>0,0,4500</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>   
+        
+        <ScenarioActionAutoTrainCommandXML>   
+            <CommandXML>speed</CommandXML>	
+            <IdXML>201</IdXML>		
+            <SpeedXML>70</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>   
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>201</IdXML>							
+            <SectionNameXML>demobane</SectionNameXML>		
+            <StartVertexXML>0,0,7920</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>    
+        
+        <ScenarioActionAutoTrainCommandXML>   
+            <CommandXML>speed</CommandXML>	
+            <IdXML>201</IdXML>		
+            <SpeedXML>0</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>   
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	
+            <IdXML>201</IdXML>	  
+        </ScenarioActionAutoTrainCommandXML> 
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	
+            <IdXML>202</IdXML>	  
+        </ScenarioActionAutoTrainCommandXML> 
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	
+            <IdXML>200</IdXML>	  
+        </ScenarioActionAutoTrainCommandXML>      
+ 
+    </ScenarioEventXML> 
+    
+    <!--    tog2 kjører til fok-->
+    <ScenarioEventXML>
+            
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>201</IdXML>							
+            <SectionNameXML>demobane</SectionNameXML>		
+            <StartVertexXML>0,0,6000</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>   
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4407_sec:demobane_type:sw</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>
+                                
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>				
+        </ScenarioTriggerTimeXML> 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>l543kvl</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>      
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>201</IdXML>							
+            <SectionNameXML>demobane</SectionNameXML>		
+            <StartVertexXML>0,0,7500</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>   
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>a527gae</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>   
+                
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>201</IdXML>							
+            <SectionNameXML>demobane</SectionNameXML>		
+            <StartVertexXML>0,0,7900</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>   
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>30</SecondsXML>				
+        </ScenarioTriggerTimeXML> 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:7416_sec:demobane_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>a521fok</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>    
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>tog1</IdXML>							
+            <SectionNameXML>demobane</SectionNameXML>		
+            <StartVertexXML>0,0,7105</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>   
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde7.PNG</MessageXML>
+        </ScenarioActionFreezeXML>	
+	                                       
+    </ScenarioEventXML> 
+        
+    <ScenarioEventXML>    
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>tog1</IdXML>							
+            <SectionNameXML>demobane</SectionNameXML>		
+            <StartVertexXML>-5.43,0,7900</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>   
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>tog1</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>    
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>				
+        </ScenarioTriggerTimeXML> 
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde8.PNG</MessageXML>
+            <AvsluttScenarioXML>true</AvsluttScenarioXML> 
+        </ScenarioActionFreezeXML>
+        
+    </ScenarioEventXML> 
+        
+</ScenarioXML>
+

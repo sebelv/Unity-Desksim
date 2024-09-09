@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+        
+    <SectionXML>
+        <NameXML>nitkatman1</NameXML>
+        <StartVertexXML>0, 0, 0</StartVertexXML>
+    </SectionXML>
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>1660</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>102</StartModusXML>        
+        <InfoXML></InfoXML> 
+        <PersonOffsetVectorXML>15.0, 0.0, 70.0</PersonOffsetVectorXML>
+        <PersonRotationXML>10</PersonRotationXML>        
+    </TogXML>      
+	
+    <StartTimeXML>16:30</StartTimeXML> 
+    
+    <ScenarioEventXML>
+        <!-- signalbilder-->
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>1</SecondsXML> 
+        </ScenarioTriggerTimeXML>
+        
+        <!-- utkjør Nitteberg -->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1753_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <!-- innkjør Kattdorp-->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4130_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4330_sec:nitkatman1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <!-- utkjør Kattdorp-->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4758_sec:nitkatman1_type:hs2</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4830_sec:nitkatman1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>        
+        
+        <!-- innkjør Kattdorp 2-->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:5030_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML> 
+        
+        <!-- utkjør Kattdorp 2-->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4400_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>        
+        
+        <!-- innkjør Nitteberg 2-->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2170_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>  
+        
+        <!-- nullstill grupper -->
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>2</SecondsXML> 
+        </ScenarioTriggerTimeXML>
+        
+        <!-- UTKJ -->  
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:1749_sec:nitkatman1_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:1752_sec:nitkatman1_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML> 
+        
+        <!-- SH -->
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:1871_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:1874_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>
+
+        <!-- H110 -->
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:1891_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:1894_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+           
+        <!-- HV7 -->
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:2006_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:2009_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>      
+
+        <!-- INNKJ NIT MOTS -->
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:2171_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:2174_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML> 
+        
+        <!-- HM7 / 11 -->
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:2576_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:2579_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>   
+        
+        <!-- 10 / HM7 -->
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:2747_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:2750_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML> 
+        
+        <!-- Forsig innkj mots Nit -->
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:3177_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:3174_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML> 
+
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:3171_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>      
+        
+        <!-- Forsig innkj Kattd -->
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:3323_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:3326_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML> 
+
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:3329_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>     
+
+        <!-- HV7 mots -->
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:3360_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:3357_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>       
+        
+        <!-- innkj Katt -->
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:4126_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:4129_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML> 
+        
+        <!-- HV 90 -->
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:4206_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:4209_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <!-- 10 mots Katt -->
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:4309_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:4306_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>
+
+        <!-- utkj katt mots -->
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:4404_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:4401_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>    
+        
+        <!-- HV 9 / 10-->
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:4706_sec:nitkatman1_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:4709_sec:nitkatman1_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>     
+
+        <!-- utkj Kattd -->
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:4754_sec:nitkatman1_type:bal_x:5</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:4757_sec:nitkatman1_type:bal_x:5</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>    
+        
+        <!-- SH Kattd -->
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:4831_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:4834_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <!-- innkj Kattd mots -->
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:5034_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:5031_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <!-- GMD -->
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:5065_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:5068_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+    </ScenarioEventXML>        
+			
+    <!-- ved endebytte-->                        
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>	
+            <StartVertexXML>0,0,5080</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4830_sec:nitkatman1_type:sw</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML> 
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4330_sec:nitkatman1_type:sw</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1870_sec:nitkatman1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>                                                    
+    </ScenarioEventXML> 	                                	
+	
+</ScenarioXML>

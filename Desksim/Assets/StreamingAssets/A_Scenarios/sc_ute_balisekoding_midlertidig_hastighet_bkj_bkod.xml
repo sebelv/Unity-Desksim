@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+
+  <!--   
+ 
+	<SectionXML>
+		<NameXML>nitkatman1</NameXML>
+	</SectionXML>
+     
+  <SectionXML>
+          <NameXML>storehammer0</NameXML>
+  </SectionXML>
+ -->
+	<SectionXML>
+		<NameXML>storehammer1</NameXML>
+                <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+	</SectionXML>
+    
+	<SectionXML>
+		<NameXML>revestua1</NameXML>
+                <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+	</SectionXML>
+ 
+
+	<SectionXML>
+		<NameXML>hakafjell1</NameXML>
+                <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+	</SectionXML>
+    <!--   
+	<SectionXML>
+		<NameXML>GRS</NameXML>
+               <EndPointNextStartPointIndexXML>3</EndPointNextStartPointIndexXML> 
+	</SectionXML>
+   
+	<SectionXML>
+		<NameXML>UFJS1</NameXML>
+	</SectionXML>
+             
+	<SectionXML>
+		<NameXML>UFJS2</NameXML>
+	</SectionXML>
+ 
+    -->
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>storehammer1</StartSeksjonXML>
+        <StartposXML>1060</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>104</StartModusXML>        
+        <InfoXML></InfoXML> 
+        <PersonOffsetVectorXML>15.0, 0.0, 70.0</PersonOffsetVectorXML>
+        <PersonRotationXML>10</PersonRotationXML>        
+    </TogXML>          
+	
+    <StartTimeXML>17:37</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+
+    <!-- MANGEBERG-->
+    <!-- innkj utkj avvik-->
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:9490_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:9690_sec:nitkatman1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10030_sec:nitkatman1_type:hs2</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10100_sec:nitkatman1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>	
+  
+
+  
+    <!-- STOREHAMMER0 -->
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>a701</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+
+    <!-- STOREHAMMER1 -->
+    <!-- signaler gjennom storeh-->
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:595_sec:storehammer1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:595_sec:storehammer1_type:dv</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:880_sec:storehammer1_type:hs3_x:0</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:880_sec:storehammer1_type:dv_x:0</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1026_sec:storehammer1_type:dv_x:0</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1230_sec:storehammer1_type:hs3_x:0</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+		
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1230_sec:storehammer1_type:dv_x:0</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+  
+  
+    <!-- saktekjøring -->
+    <!-- varsel -->
+    <NoSpeedTempDownXML>
+        <SectionNameXML>storehammer1</SectionNameXML>
+        <StartVertexXML>0.0, 0.0, 2801</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>-2.0, 0.0, 0.0</OffsetVertexXML>
+        <DirectionXML>1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <SpeedTextXML>6</SpeedTextXML>
+    </NoSpeedTempDownXML>
+
+    <BaliseScenarioBasedXML>		
+        <SectionNameXML>storehammer1</SectionNameXML>    
+        <StartVertexXML>0.0, 0.0, 2801</StartVertexXML>
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <KodeXML>0, 0, 0</KodeXML>
+    </BaliseScenarioBasedXML>
+
+    <BaliseScenarioBasedXML>										
+        <SectionNameXML>storehammer1</SectionNameXML>
+        <StartVertexXML>0.0, 0.0, 2804</StartVertexXML>
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <KodeXML>0, 0, 0</KodeXML>
+    </BaliseScenarioBasedXML>
+  
+    <!-- låsing  --> 
+    <NoSpeedTempUpXML>
+        <SectionNameXML>revestua1</SectionNameXML>
+        <StartVertexXML>0.0, 0.0, 710</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>2.0, 0.0, 0.0</OffsetVertexXML>
+        <DirectionXML>-1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <SpeedTextXML>8</SpeedTextXML>
+    </NoSpeedTempUpXML>
+  
+    <BaliseScenarioBasedXML>
+        <SectionNameXML>revestua1</SectionNameXML>										
+        <StartVertexXML>0.0, 0.0, 710</StartVertexXML>
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <KodeXML>0, 0, 0</KodeXML>
+    </BaliseScenarioBasedXML>
+
+    <BaliseScenarioBasedXML>	
+        <SectionNameXML>revestua1</SectionNameXML>									
+        <StartVertexXML>0.0, 0.0, 713</StartVertexXML>
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <KodeXML>0, 0, 0</KodeXML>
+    </BaliseScenarioBasedXML>
+
+    <!-- låsing motsatt -->  
+    <NoSpeedTempUpXML>
+        <SectionNameXML>revestua1</SectionNameXML>
+        <StartVertexXML>0.0, 0.0, 840</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>-2.0, 0.0, 0.0</OffsetVertexXML>
+        <DirectionXML>1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <SpeedTextXML>7</SpeedTextXML>
+    </NoSpeedTempUpXML>
+  
+    <BaliseScenarioBasedXML>	
+        <SectionNameXML>revestua1</SectionNameXML>									
+        <StartVertexXML>0.0, 0.0, 837</StartVertexXML>
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <KodeXML>0, 0, 0</KodeXML>
+    </BaliseScenarioBasedXML>  
+
+    <BaliseScenarioBasedXML>										
+        <SectionNameXML>revestua1</SectionNameXML>
+        <StartVertexXML>0.0, 0.0, 840</StartVertexXML>
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <KodeXML>0, 0, 0</KodeXML>
+    </BaliseScenarioBasedXML>
+     
+    <!-- varsel motsatt -->
+    <NoSpeedTempDownXML>
+        <SectionNameXML>revestua1</SectionNameXML>
+        <StartVertexXML>0.0, 0.0, 1495</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>2.0, 0.0, 0.0</OffsetVertexXML>
+        <DirectionXML>-1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <SpeedTextXML>6</SpeedTextXML>
+    </NoSpeedTempDownXML>
+    
+    <BaliseScenarioBasedXML>										
+        <SectionNameXML>revestua1</SectionNameXML>
+        <StartVertexXML>0.0, 0.0, 1489</StartVertexXML>
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <KodeXML>0, 0, 0</KodeXML>
+    </BaliseScenarioBasedXML>    
+
+    <BaliseScenarioBasedXML>										
+        <SectionNameXML>revestua1</SectionNameXML>
+        <StartVertexXML>0.0, 0.0, 1492</StartVertexXML>
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <KodeXML>0, 0, 0</KodeXML>
+    </BaliseScenarioBasedXML>
+
+    <BaliseScenarioBasedXML>										
+        <SectionNameXML>revestua1</SectionNameXML>
+        <StartVertexXML>0.0, 0.0, 1495</StartVertexXML>
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <KodeXML>0, 0, 0</KodeXML>
+    </BaliseScenarioBasedXML>
+  
+  
+  
+    <!-- REVESTUA -->
+    <!-- inn og ut motsatt -->
+    <ScenarioEventXML>    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1890_sec:revestua1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2203.1_sec:revestua1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2427_sec:revestua1</IdXML>
+            <StateXML>55</StateXML>
+        </ScenarioActionStateChangerXML>           
+
+    </ScenarioEventXML>
+  
+    <!-- HAKAFJELL -->
+        
+
+</ScenarioXML>
+

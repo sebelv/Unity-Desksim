@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>15,130,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+
+
+    <SectionXML>
+        <NameXML>nitkatman1</NameXML>
+    </SectionXML>
+
+    <SectionXML>
+        <NameXML>storehammer0</NameXML>
+    </SectionXML>
+   
+    <SectionXML>
+        <NameXML>storehammer1</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+
+    <SectionXML>
+        <NameXML>revestua1</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+
+ 
+    <SectionXML>
+        <NameXML>hakafjell1</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+      
+    <SectionXML>
+        <NameXML>GRS</NameXML>
+        <EndPointNextStartPointIndexXML>3</EndPointNextStartPointIndexXML> 
+    </SectionXML>
+  
+    <SectionXML>
+        <NameXML>UFJS1</NameXML>
+    </SectionXML>
+              
+    <SectionXML>
+        <NameXML>UFJS2</NameXML>
+    </SectionXML> 
+	
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>1500</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <StartModusXML>104</StartModusXML>        
+        <InfoXML></InfoXML> 
+    </TogXML>     
+    
+    <TogXML>
+        <IdXML>200</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>2500</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>       
+    
+    <TogXML>
+        <IdXML>242</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>4900</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>   
+    
+    <TogXML>
+        <IdXML>203</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>10400</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>            
+     
+    <TogXML>
+        <IdXML>500</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>revestua1</StartSeksjonXML>
+        <StartposXML>3050</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>  
+    
+    <TogXML>
+        <IdXML>222</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>UFJS1</StartSeksjonXML>
+        <StartposXML>2200</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>      
+    
+    <TogXML>
+        <IdXML>555</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>UFJS1</StartSeksjonXML>
+        <StartposXML>6100</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>     
+                      
+        
+    <StartTimeXML>08:58</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+    
+    <TogNrXML>1001</TogNrXML>
+    
+    <SlideMappeXML>infoslides_scenario/100</SlideMappeXML>
+    <NettbrettFilXML>nettbrettslides_scenario/tog 1001.png</NettbrettFilXML>    
+    <SlideOffsetInfoXML>268</SlideOffsetInfoXML>
+    <SlideOffsetOppgaverXML>268</SlideOffsetOppgaverXML>
+    
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML>
+    <!-- Nitteberg -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>1</SecondsXML>			
+        </ScenarioTriggerTimeXML>    
+             
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde1.PNG</MessageXML> <!-- startinfo -->
+        </ScenarioActionFreezeXML> 
+           		
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>200</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>	
+            <StartVertexXML>0,0,1800</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>		 
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1829_sec:nitkatman1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>5</SecondsXML>			
+        </ScenarioTriggerTimeXML>    
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1753_sec:nitkatman1_type:hs2</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+    	
+    </ScenarioEventXML>		
+  
+    <!-- kryssende tog Nitteberg -->
+   	
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>200</IdXML>		
+            <SpeedXML>-130</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>
+
+
+    </ScenarioEventXML>
+    
+    <!-- fjern kryss tog--> 				
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>200</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>		
+            <StartVertexXML>0,0,800</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	
+            <IdXML>200</IdXML>		
+        </ScenarioActionAutoTrainCommandXML>
+    </ScenarioEventXML>
+       
+    <!-- KATTDORP -->
+
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>		
+            <StartVertexXML>0,0,3800</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>  
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>242</IdXML>		
+            <SpeedXML>-40</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>   
+         
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>242</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>		
+            <StartVertexXML>0,0,4600</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>   
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>242</IdXML>		
+            <SpeedXML>-20</SpeedXML>   
+        </ScenarioActionAutoTrainCommandXML> 	
+
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>242</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>		
+            <StartVertexXML>0,0,4530</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>  
+               
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	
+            <IdXML>242</IdXML>		
+        </ScenarioActionAutoTrainCommandXML>  
+            
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>5</SecondsXML>					
+        </ScenarioTriggerTimeXML>                                                                                                                                                                                                                                                                  		
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4130_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML> 
+             
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4330_sec:nitkatman1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>                
+     
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4758_sec:nitkatman1_type:hs2</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+    	
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4830_sec:nitkatman1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>     
+          
+    </ScenarioEventXML>	
+  
+  
+    <!-- VESTLI BP-->
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:7240_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+    
+    <!-- SVARTFJELL HP-->
+  
+    <!-- MANGEBERG -->
+    <ScenarioEventXML> 
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>		
+            <StartVertexXML>0,0,7950</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>  
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:9490_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+   
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10100_sec:nitkatman1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>   
+        
+
+        
+    </ScenarioEventXML>
+    <!-- kryssing MANGEBERG -->
+    <ScenarioEventXML> 
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>		
+            <StartVertexXML>0,0,9800</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>   
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>    
+     
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>1</SecondsXML>					
+        </ScenarioTriggerTimeXML>  
+                       
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>203</IdXML>		
+            <SpeedXML>-30</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>   
+
+    </ScenarioEventXML>
+    
+    <!-- togvei ut og fjern autotog mangeberg-->
+    <ScenarioEventXML> 
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>203</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>		
+            <StartVertexXML>-5,0,9950</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>      
+       
+        <ScenarioActionStateChangerXML> <!-- feil -->
+            <IdXML>pos:10100_sec:nitkatman1</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>   
+               
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML> 
+                           
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10030_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>      
+   
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>10</SecondsXML>					
+        </ScenarioTriggerTimeXML>    
+        
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	
+            <IdXML>203</IdXML>	        
+        </ScenarioActionAutoTrainCommandXML>
+    </ScenarioEventXML>                
+                           
+ 
+    <!-- saktekjøring -->
+    <!-- varsel -->
+    <!--
+    <NoSpeedTempDownXML>
+        <SectionNameXML>storehammer0</SectionNameXML>
+        <StartVertexXML>0.0, 0.0, 550</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>-2.0, 0.0, 0.0</OffsetVertexXML>
+        <DirectionXML>1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <SpeedTextXML>4</SpeedTextXML>
+    </NoSpeedTempDownXML>
+
+    <BaliseScenarioBasedXML>										
+        <SectionNameXML>storehammer0</SectionNameXML>
+        <StartVertexXML>0.0, 0.0, 550.0</StartVertexXML>
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <KodeXML>5, 8, 4</KodeXML>
+    </BaliseScenarioBasedXML>
+
+    <BaliseScenarioBasedXML>										
+        <SectionNameXML>storehammer0</SectionNameXML>
+        <StartVertexXML>0.0, 0.0, 553.0</StartVertexXML>
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <KodeXML>9, 3, 10</KodeXML>
+    </BaliseScenarioBasedXML>
+    -->
+  
+    <!-- låsing  --> 
+    <!--
+    <NoSpeedTempUpXML>
+        <SectionNameXML>storehammer1</SectionNameXML>        
+        <StartVertexXML>0.0, 0.0, 150</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>2.0, 0.0, 0.0</OffsetVertexXML>
+        <DirectionXML>-1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <SpeedTextXML>9</SpeedTextXML>
+    </NoSpeedTempUpXML>
+  
+    <BaliseScenarioBasedXML>										
+        <SectionNameXML>storehammer1</SectionNameXML>
+        <StartVertexXML>0.0, 0.0, 150</StartVertexXML>
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <KodeXML>5, 2, 4</KodeXML>
+    </BaliseScenarioBasedXML>
+
+    <BaliseScenarioBasedXML>										
+        <SectionNameXML>storehammer1</SectionNameXML>
+        <StartVertexXML>0.0, 0.0, 153.0</StartVertexXML>
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <KodeXML>5, 5, 10</KodeXML>
+    </BaliseScenarioBasedXML>
+    -->
+
+    <!-- låsing motsatt -->  
+    <!--
+    <NoSpeedTempUpXML>
+        <SectionNameXML>storehammer1</SectionNameXML>        
+        <StartVertexXML>0.0, 0.0, 249</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>-2.0, 0.0, 0.0</OffsetVertexXML>
+        <DirectionXML>1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <SpeedTextXML>6</SpeedTextXML>
+    </NoSpeedTempUpXML>
+  
+    <BaliseScenarioBasedXML>										
+        <SectionNameXML>storehammer1</SectionNameXML>
+        <StartVertexXML>0.0, 0.0, 247.0</StartVertexXML>
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <KodeXML>5, 5, 10</KodeXML>
+    </BaliseScenarioBasedXML>  
+
+    <BaliseScenarioBasedXML>										
+        <SectionNameXML>storehammer1</SectionNameXML>
+        <StartVertexXML>0.0, 0.0, 250.0</StartVertexXML>
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <KodeXML>5, 2, 4</KodeXML>
+    </BaliseScenarioBasedXML>
+    -->
+     
+    <!-- varsel motsatt -->
+    <!--
+    <NoSpeedTempDownXML>
+        <SectionNameXML>storehammer1</SectionNameXML>        
+        <StartVertexXML>0.0, 0.0, 560</StartVertexXML>
+        <IdXML></IdXML>
+        <OffsetVertexXML>2.0, 0.0, 0.0</OffsetVertexXML>
+        <DirectionXML>-1</DirectionXML>
+        <SignalFlashingXML>false</SignalFlashingXML>
+        <NetIdXML>0</NetIdXML>
+        <SpeedTextXML>4</SpeedTextXML>
+    </NoSpeedTempDownXML>
+
+    <BaliseScenarioBasedXML>										
+        <SectionNameXML>storehammer1</SectionNameXML>
+        <StartVertexXML>0.0, 0.0, 556.0</StartVertexXML>
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <KodeXML>9, 1, 11</KodeXML>
+    </BaliseScenarioBasedXML>
+
+    <BaliseScenarioBasedXML>										
+        <SectionNameXML>storehammer1</SectionNameXML>
+        <StartVertexXML>0.0, 0.0, 559.0</StartVertexXML>
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <KodeXML>5, 8, 4</KodeXML>
+    </BaliseScenarioBasedXML>
+    -->
+  
+    <!-- STOREHAMMER_EX -->
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>a701</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+
+    </ScenarioEventXML>
+
+    <!-- STOREHAMMER1 -->
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:595_sec:storehammer1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:595_sec:storehammer1_type:dv</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:880_sec:storehammer1_type:hs3_x:0</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:880_sec:storehammer1_type:dv_x:0</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1026_sec:storehammer1_type:dv_x:0</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1230_sec:storehammer1_type:hs3_x:0</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+		
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1230_sec:storehammer1_type:dv_x:0</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+	
+    <!-- rasvarsling -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>storehammer1</SectionNameXML>	
+            <StartVertexXML>0,0,1540</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>		
+
+    </ScenarioEventXML>  
+
+    <!-- REVESTUA -->
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1890_sec:revestua1_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2090_sec:revestua1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2130_sec:revestua1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2427_sec:revestua1</IdXML>
+            <StateXML>55</StateXML>
+        </ScenarioActionStateChangerXML>
+
+    </ScenarioEventXML>
+   
+
+
+    <!-- start kryss tog--> 
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>revestua1</SectionNameXML>	
+            <StartVertexXML>5,0,2200</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+	
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>	
+   	
+        <!--  OBS: TESTVERDI KRYSSINGSLÅSING -->
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>5</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2429_sec:revestua1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+		
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2427_sec:revestua1</IdXML>
+            <StateXML>56</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>500</IdXML>		
+            <SpeedXML>-60</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>
+        
+        
+
+
+    </ScenarioEventXML>
+	
+    <!-- veksel og ut --> 
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>500</IdXML>							
+            <SectionNameXML>revestua1</SectionNameXML>		
+            <StartVertexXML>0,0,2500</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2549.8_sec:revestua1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2590_sec:revestua1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+		
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>3</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2480_sec:revestua1_type:hs2_x:5.0</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+
+    <!-- stopp kryss tog--> 				
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>500</IdXML>							
+            <SectionNameXML>revestua1</SectionNameXML>		
+            <StartVertexXML>0,0,2200</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+		
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	
+            <IdXML>500</IdXML>		
+        </ScenarioActionAutoTrainCommandXML>
+    </ScenarioEventXML>
+
+
+    <!-- PLO -->
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:170_sec:hakafjell1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+  
+    <!-- HAKAFJELL -->
+    <!-- signaler--> 
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1150_sec:hakafjell1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1990_sec:hakafjell1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+	
+    <!-- LURBÅS -->
+    <!-- txp lbs -->
+    <WorkerAc3dXML>
+        <IdXML>txpLBS</IdXML>
+        <SectionNameXML>GRS</SectionNameXML>
+        <StartVertexXML>0, 0, 2360.0</StartVertexXML> 	
+        <OffsetVertexXML>-4.5, 0.0, 0.0</OffsetVertexXML>
+        <FileNameXML>TXPhilser.ac</FileNameXML>
+        <FileNameXML>TXP12a.ac</FileNameXML>    									
+        <DirectionXML>1</DirectionXML>						
+    </WorkerAc3dXML>
+  
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1801_sec:GRS_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2000_sec:GRS_type:dv</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2715_sec:GRS_type:dv_x:0</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2810_sec:GRS_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+
+    <!-- TANNSKOG -->
+    <WorkerAc3dXML>
+        <IdXML>txpTANNSKOG</IdXML>
+        <SectionNameXML>UFJS1</SectionNameXML>
+        <StartVertexXML>0, 0, 2100</StartVertexXML> 	
+        <OffsetVertexXML>-4.5, 0.0, 0.0</OffsetVertexXML>
+        <FileNameXML>TXPhilser.ac</FileNameXML>
+        <DirectionXML>1</DirectionXML>						
+    </WorkerAc3dXML>
+  
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1800_sec:UFJS1_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2000_sec:UFJS1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>  
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1995_sec:UFJS1_type:dv</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2300_sec:UFJS1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2420_sec:UFJS1_type:dv_x:5</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2500_sec:UFJS1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>  
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2510_sec:UFJS1_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+    </ScenarioEventXML>
+
+
+        
+    <ScenarioEventXML> <!-- autotoget -->
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>UFJS1</SectionNameXML>		
+            <StartVertexXML>0,0,2550</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+		
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	
+            <IdXML>222</IdXML>		
+        </ScenarioActionAutoTrainCommandXML>
+    </ScenarioEventXML>
+
+    <!-- FURU -->
+    <WorkerAc3dXML>
+        <IdXML>txpFURU</IdXML>
+        <SectionNameXML>UFJS1</SectionNameXML>
+        <StartVertexXML>0, 0, 5580.0</StartVertexXML> 	
+        <OffsetVertexXML>-4.5, 0.0, 0.0</OffsetVertexXML>
+        <FileNameXML>TXP1A.ac</FileNameXML>  
+        <FileNameXML>TXP12a.ac</FileNameXML>	 									
+        <DirectionXML>1</DirectionXML>						
+    </WorkerAc3dXML>
+  
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>UFJS1</SectionNameXML>		
+            <StartVertexXML>0,0,5150</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>5</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+         
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:5300_sec:UFJS1_type:hs2</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+  
+
+         
+    <ScenarioEventXML> <!-- start autotog-->
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>UFJS1</SectionNameXML>		
+            <StartVertexXML>0,0,5500</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+         
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:5800_sec:UFJS1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>    
+       
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>
+        </ScenarioTriggerSpeedXML>             
+                                   
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>555</IdXML>		
+            <SpeedXML>-40</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>  
+              
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>555</IdXML>							
+            <SectionNameXML>UFJS1</SectionNameXML>		
+            <StartVertexXML>0,0,5400</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>                                                                                                             				
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:5800_sec:UFJS1</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>   	
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>txpFURU</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+       
+		
+        <ScenarioActionFollowSimTrainXML>
+            <IdXML>txpFURU</IdXML>
+            <OffsetVertexXML>-3.5,0,10</OffsetVertexXML>
+        </ScenarioActionFollowSimTrainXML>      
+    </ScenarioEventXML>                   
+          
+            
+    <!-- Tannverk-->                
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:9300_sec:UFJS1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10010_sec:UFJS1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <!--PLO-->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:650_sec:UFJS2</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1300_sec:UFJS2</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+    
+    <!-- BJORFJELL -->		
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2800_sec:UFJS2_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2980_sec:UFJS2</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>		
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3034.792_sec:UFJS2</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>	
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3030_sec:UFJS2</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3410_sec:UFJS2_x:-5</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3500_sec:UFJS2</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>	
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3520_sec:UFJS2_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>	
+
+        <WorkerAc3dXML>	<!-- TXP BJO -->
+            <IdXML>txpBJO</IdXML>
+            <SectionNameXML>UFJS2</SectionNameXML>
+            <StartVertexXML>0, 0, 3340.0</StartVertexXML> 	
+            <OffsetVertexXML>-9.5, 0.0, 0.0</OffsetVertexXML>
+            <FileNameXML>TXPhilser.ac</FileNameXML>	    									
+            <DirectionXML>1</DirectionXML>						
+        </WorkerAc3dXML> 
+    
+                                                                                                                     					
+    </ScenarioEventXML>			
+
+    <!-- GJØNES-->
+    
+    
+    <ScenarioEventXML> <!-- TOGVEI -->
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>UFJS2</SectionNameXML>		
+            <StartVertexXML>0,0,4500</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>  
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:5300_sec:UFJS2</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>        
+       
+        <WorkerAc3dXML> <!-- TXP -->
+            <IdXML>txpGJS</IdXML>
+            <SectionNameXML>UFJS2</SectionNameXML>
+            <StartVertexXML>0, 0, 5800</StartVertexXML> 	
+            <OffsetVertexXML>-9.5, 0.0, 0.0</OffsetVertexXML>
+            <FileNameXML>TXP.ac</FileNameXML>							
+            <DirectionXML>0</DirectionXML>						
+        </WorkerAc3dXML>
+        	
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:5300_sec:UFJS2</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>
+     
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:5500_sec:UFJS2</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>UFJS2</SectionNameXML>		
+            <StartVertexXML>0,0,5800</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>  
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>5</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde2.PNG</MessageXML>
+            <AvsluttScenarioXML>true</AvsluttScenarioXML>
+        </ScenarioActionFreezeXML>
+    </ScenarioEventXML>
+</ScenarioXML>
+

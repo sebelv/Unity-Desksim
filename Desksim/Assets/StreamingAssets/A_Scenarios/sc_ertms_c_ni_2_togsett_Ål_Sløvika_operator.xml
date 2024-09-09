@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,220,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+    
+    <SectionXML>
+        <NameXML>ertms87sek1al</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>    
+    
+    <SectionXML>
+        <NameXML>ertms87sek2grindvoll</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>            
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>ertms87sek1al</StartSeksjonXML>
+        <StartposXML>2400</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <StartModusXML>18</StartModusXML>  <!-- 18 -->      
+        <InfoXML>intet</InfoXML> 
+    </TogXML>   
+    
+    <TogXML>
+        <IdXML>200</IdXML>
+        <ModelXML>185</ModelXML>
+        <StartSeksjonXML>ertms87sek1al</StartSeksjonXML>
+        <StartposXML>2500</StartposXML>
+        <StartposSideveisXML>15</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML> 
+	
+    <StartTimeXML>16:30</StartTimeXML> 
+    
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML> 
+
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>5</SecondsXML>					
+        </ScenarioTriggerTimeXML>        
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2607_sec:ertms87sek1al</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>         
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2643_sec:ertms87sek1al</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>         
+        
+        <ScenarioTriggerHandlingXML> 
+            <NumberXML>1</NumberXML> <!-- ertms start trykk -->
+        </ScenarioTriggerHandlingXML> 	
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>5</SecondsXML>					
+        </ScenarioTriggerTimeXML>      
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2474_sec:ertms87sek1al_type:dv_x:5</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2539_sec:ertms87sek1al_type:dv_x:5</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML> 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2728_sec:ertms87sek1al_type:dv</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>      
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>                   
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2473_sec:ertms87sek1al_type:ertmsstopp_x:5</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML> 	
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2538_sec:ertms87sek1al_type:ertmsstopp_x:5</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML> 
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek1al</SectionNameXML>	
+            <StartVertexXML>5,0,2550</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	        
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2727_sec:ertms87sek1al_type:ertmsstopp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>    
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3224_sec:ertms87sek1al_type:ertmsstopp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>                    
+                
+    </ScenarioEventXML>
+        
+
+</ScenarioXML>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<TrackElementListXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>0.0, 0.0, 0.1</StartVertexXML>
+    <EndVertexXML>0.0, 0.0, 1000.0</EndVertexXML>
+  </StraightTrackXML>
+
+</TrackElementListXML>

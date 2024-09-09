@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,220,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+    
+    <SectionXML>
+        <NameXML>ertms87sek1al</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>    
+    
+    <SectionXML>
+        <NameXML>ertms87sek2grindvoll</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>          
+    
+    <SectionXML>
+        <NameXML>ertms87sek3galleberg</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML>        
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>ertms87sek1al</StartSeksjonXML>
+        <StartposXML>2450</StartposXML>
+        <StartposSideveisXML>-15</StartposSideveisXML>
+        <StartModusXML>10</StartModusXML>  <!-- 18 -->      
+        <InfoXML>intet</InfoXML> 
+    </TogXML>   
+    
+    <!--
+<TogXML>
+    <IdXML>200</IdXML>
+    <ModelXML>185</ModelXML>
+    <StartSeksjonXML>ertms87sek1al</StartSeksjonXML>
+    <StartposXML>2500</StartposXML>
+    <StartposSideveisXML>15</StartposSideveisXML>
+    <InfoXML>dekorativt=ja</InfoXML>
+</TogXML> 
+    -->
+    <StartTimeXML>16:30</StartTimeXML> 
+    
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML> 
+
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>        
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2804_sec:ertms87sek1al</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>   
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>                     
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2727_sec:ertms87sek1al_type:ertmsstopp_x:-6</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>         
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2728_sec:ertms87sek1al_type:dv_x:-6</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>        
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2550_sec:ertms87sek1al_type:ertmsstopp_x:-24</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>          
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2551_sec:ertms87sek1al_type:dv_x:-24</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>15</SecondsXML>					
+        </ScenarioTriggerTimeXML>                
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3224_sec:ertms87sek1al_type:ertmsstopp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>     
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4319_sec:ertms87sek2grindvoll_type:ertmsstopp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>   
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek1al</SectionNameXML>	
+            <StartVertexXML>0,0,3300</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+
+        <!-- rbc brudd -->
+        <ScenarioActionSystemXML> 		
+            <IdXML>100</IdXML>			
+            <StateXML>15</StateXML>
+        </ScenarioActionSystemXML>
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML> 
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>         
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4319_sec:ertms87sek2grindvoll_type:ertmsstopp</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>   
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>20</SecondsXML>					
+        </ScenarioTriggerTimeXML> 
+        
+        <ScenarioActionSystemXML> 		
+            <IdXML>100</IdXML>			
+            <StateXML>16</StateXML>
+        </ScenarioActionSystemXML>             
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>      
+        
+        <ScenarioTriggerButtonXML> 
+            <NumberXML>1</NumberXML> 
+        </ScenarioTriggerButtonXML>                   
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4319_sec:ertms87sek2grindvoll_type:ertmsstopp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>          
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML> 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4319_sec:ertms87sek2grindvoll_type:ertmsstopp</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+    </ScenarioEventXML>
+    
+    <!-- teleport mot sløvika bp -->  
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek2grindvoll</SectionNameXML>	
+            <StartVertexXML>0,0,300</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	 			
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML> OBS: Øvelsen fortsetter nå noen km lengre/n framme/n Trykk fortsett for teleportering</MessageXML>
+            <TeleportStartXML>start</TeleportStartXML>
+        </ScenarioActionFreezeXML>
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek2grindvoll</SectionNameXML>	
+            <StartVertexXML>0,0,3200</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>				
+		
+        <ScenarioActionFreezeXML>						
+            <MessageXML> Øvelsen fortsetter/n Toget befinner seg nå ca 1000m/n før Sløvika blokkpost /n Trykk fortsett </MessageXML>
+            <TeleportSluttXML>35</TeleportSluttXML>
+        </ScenarioActionFreezeXML>	                                                                                                                                                                           						
+    </ScenarioEventXML>       
+    
+    <!-- innenfor trusted area, signal videre fra Sløvika-->
+    <ScenarioEventXML>        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek2grindvoll</SectionNameXML>	
+            <StartVertexXML>0,0,3760</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	        
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4319_sec:ertms87sek2grindvoll_type:ertmsstopp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML> 
+    </ScenarioEventXML>          
+    
+    
+        
+
+</ScenarioXML>

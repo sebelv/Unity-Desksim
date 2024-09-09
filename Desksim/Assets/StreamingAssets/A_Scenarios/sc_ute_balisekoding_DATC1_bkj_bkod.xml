@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+        
+    <SectionXML>
+        <NameXML>nitkatman1</NameXML>
+        <StartVertexXML>0, 0, 0</StartVertexXML>
+    </SectionXML>
+    
+    <SectionXML>
+        <NameXML>storehammer0</NameXML>
+    </SectionXML>
+
+    <SectionXML>
+        <NameXML>storehammer1</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>    
+
+<!--
+    <ErtmsTrain1XML>
+        <ModelXML>togsett</ModelXML>
+        <StartPosFlXML>7140</StartPosFlXML>         
+        <IdXML>100</IdXML>
+        <StartModeXML>102</StartModeXML>
+        <StartPosXML>7180</StartPosXML> 
+        <StartSectionXML>0</StartSectionXML>
+        <StartVertexXML>0.0, 0.0, 0.0</StartVertexXML>
+        <PersonOffsetVectorXML>15.0, 0.0, 70.0</PersonOffsetVectorXML>
+        <PersonRotationXML>10</PersonRotationXML>
+    </ErtmsTrain1XML>
+    -->
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>7140</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>102</StartModusXML>        
+        <InfoXML></InfoXML> 
+        <PersonOffsetVectorXML>15.0, 0.0, 70.0</PersonOffsetVectorXML>
+        <PersonRotationXML>10</PersonRotationXML>        
+    </TogXML>      
+	
+    <StartTimeXML>16:30</StartTimeXML> 
+    
+    <ScenarioEventXML>
+        <!-- signalbilder-->
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>1</SecondsXML> 
+        </ScenarioTriggerTimeXML>
+        
+        <!-- vli bp -->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:7240_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <!-- mge inn A-->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:9490_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>    
+        
+        <!-- mge inn M-->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:9760_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>                             
+        
+        <!-- mge inn B-->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10300_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <!-- shr ut M-->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:15_sec:storehammer1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>      
+        
+        <!-- shr inn A -->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:950_sec:storehammer0_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>              
+        
+        <!-- nullstill grupper og ta med fsig B til stopp-->
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>2</SecondsXML> 
+        </ScenarioTriggerTimeXML>
+        
+        <!-- fsig B sett til stopp-->
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:700_sec:storehammer0_type:fs</IdXML>
+            <StateXML>23</StateXML>
+        </ScenarioActionStateChangerXML>       
+        
+        <!-- A vli -->  
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:7234_sec:nitkatman1_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>   
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:7237_sec:nitkatman1_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>         
+        
+        <!-- fsig A mge  -->  
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:8486_sec:nitkatman1_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:8489_sec:nitkatman1_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML> 
+        
+        <!-- svg A mge -->
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:9473_sec:nitkatman1_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:9476_sec:nitkatman1_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>
+
+        <!-- A mge -->
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:9486_sec:nitkatman1_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:9489_sec:nitkatman1_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+           
+        <!-- M mge -->
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:9761_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:9764_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>      
+
+        <!-- L mge -->
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:10026_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:10029_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML> 
+        
+        <!-- b mge -->
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:10301_sec:nitkatman1_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:10304_sec:nitkatman1_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>   
+        
+        <!-- svg b mge -->
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:10321_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:10324_sec:nitkatman1_type:bal_x:0</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML> 
+        
+        <!-- fsig b mge -->
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:701_sec:storehammer0_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:698_sec:storehammer0_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML> 
+
+    </ScenarioEventXML>        
+			
+    <!-- ved endebytte-->          
+    <!-- ingenting her -->          
+    <!--    
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>	
+            <StartVertexXML>0,0,5080</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4830_sec:nitkatman1_type:sw</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML> 
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4330_sec:nitkatman1_type:sw</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1870_sec:nitkatman1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>                                                    
+    </ScenarioEventXML> 	
+    -->                                	
+	
+</ScenarioXML>

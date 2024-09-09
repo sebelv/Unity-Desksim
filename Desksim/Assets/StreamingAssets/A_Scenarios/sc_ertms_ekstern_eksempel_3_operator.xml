@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements[ ]>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,220,0</SunPositionXML>
+    <AmbientLightXML>0.2</AmbientLightXML>
+ 
+    <SectionXML>
+        <NameXML>eksempel_str_ekstern_1</NameXML>
+    </SectionXML>
+      
+
+    <SectionXML>
+        <NameXML>eksempel_str_ekstern_2</NameXML>
+    </SectionXML>  
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>eksempel_str_ekstern_1</StartSeksjonXML>
+        <StartposXML>1800</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <StartModusXML>8</StartModusXML>
+        <InfoXML>intet</InfoXML>
+    </TogXML>   
+	
+    <StartTimeXML>16:30</StartTimeXML> 
+    
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML>
+    
+    <ScenarioEventXML>
+    
+
+    </ScenarioEventXML>    
+
+</ScenarioXML>
+
+

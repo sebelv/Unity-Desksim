@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,270,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+
+  <!--   
+
+	<SectionXML>
+		<NameXML>nitkatman</NameXML>
+	</SectionXML>
+   -->    
+        <SectionXML>
+                <NameXML>storehammer0</NameXML>
+        </SectionXML>
+
+	<SectionXML>
+		<NameXML>storehammer1</NameXML>
+                <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+	</SectionXML>
+    
+	<SectionXML>
+		<NameXML>revestua1</NameXML>
+                <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+	</SectionXML>
+ 
+<!--
+	<SectionXML>
+		<NameXML>hakafjell1</NameXML>
+                <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+	</SectionXML>
+        
+	<SectionXML>
+		<NameXML>GRS</NameXML>
+               <EndPointNextStartPointIndexXML>4</EndPointNextStartPointIndexXML> 
+	</SectionXML>
+  
+	<SectionXML>
+		<NameXML>UFJS1</NameXML>
+	</SectionXML>
+             
+	<SectionXML>
+		<NameXML>UFJS2</NameXML>
+	</SectionXML>
+ 
+    -->
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>revestua1</StartSeksjonXML>
+        <StartposXML>2280</StartposXML>
+        <StartposSideveisXML>5</StartposSideveisXML>
+        <StartModusXML>103</StartModusXML>        
+        <InfoXML></InfoXML> 
+    </TogXML>                   
+        
+    <StartTimeXML>15:50</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+    <TogNrXML>1102</TogNrXML>
+    
+    <PersonStartPosisjonXML>forerrom1_sittende</PersonStartPosisjonXML> 	          
+    
+    <!-- ut revestua inn storehammer--> 				
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>	 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2090_sec:revestua1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>        
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2130.17_sec:revestua1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1300_sec:storehammer1_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>        
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:600_sec:storehammer1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>        
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>3</SecondsXML>					
+        </ScenarioTriggerTimeXML>        
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2203.1_sec:revestua1_type:hs2</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML> 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1500_sec:storehammer1_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML> 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1301_sec:storehammer1_type:dv</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>                 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1025.2_sec:storehammer1_type:dv</IdXML>
+            <StateXML>44</StateXML>
+        </ScenarioActionStateChangerXML>              
+    </ScenarioEventXML>
+    
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>storehammer1</SectionNameXML>		
+            <StartVertexXML>5,0,800</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>  
+
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>5</SecondsXML>					
+        </ScenarioTriggerTimeXML>     
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:668_sec:storehammer1_x:5_type:dv</IdXML>
+            <StateXML>44</StateXML>
+        </ScenarioActionStateChangerXML>                                              
+    </ScenarioEventXML>
+    
+    <!-- Øvrige chat meldinger --> 
+     <ScenarioEventXML>	  
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>revestua1</SectionNameXML>		
+            <StartVertexXML>5,0,2180</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioActionSendTogradioChatXML>
+            <MeldingXML>Har passert utkjørHS Revestua</MeldingXML> 
+        </ScenarioActionSendTogradioChatXML>        
+    </ScenarioEventXML>	  
+    
+     <ScenarioEventXML>	  
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>storehammer1</SectionNameXML>		
+            <StartVertexXML>5,0,1020</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioActionSendTogradioChatXML>
+            <MeldingXML>Har passert indreHS innkjørtogvei</MeldingXML> 
+        </ScenarioActionSendTogradioChatXML>        
+    </ScenarioEventXML>	            
+    
+     <ScenarioEventXML>	  
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>storehammer1</SectionNameXML>		
+            <StartVertexXML>5,0,800</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>   
+                   
+        <ScenarioActionSendTogradioChatXML>
+            <MeldingXML>Stoppet foran indreHS utkjørtogvei</MeldingXML> 
+        </ScenarioActionSendTogradioChatXML>        
+    </ScenarioEventXML>	    
+</ScenarioXML>
+

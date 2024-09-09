@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 --> 
+<!-- ET SCENARIE STARTER ALLTID SOM DETTE MED ScenarioXML taggen-->
+
+<!-- Deretter listes opp alle seksjoner som skal være med i scenariet  -->
+<!-- Normalt er det greit å ta med alle seksjoner slik som her -->
+<!-- Seksjonene skal få norske navn etterhvert -->
+
+<!--
+	<SectionXML>
+		<NameXML>nitkatman1</NameXML>
+                <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>                
+	</SectionXML>
+ 
+        <SectionXML>
+            <NameXML>spurvstad0</NameXML>
+            <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+        </SectionXML>      
+    -->       
+            
+    <SectionXML>
+        <NameXML>spurvstad1ni</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+  
+    <SectionXML>
+        <NameXML>ospim1ni</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+  
+    <SectionXML>
+        <NameXML>gaffelberg1ni</NameXML>
+    </SectionXML>
+        
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>spurvstad1ni</StartSeksjonXML>
+        <StartposXML>1100</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>12</StartModusXML>        
+        <InfoXML></InfoXML> 
+    </TogXML>  
+        
+    <TogXML>
+        <IdXML>200</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>gaffelberg1ni</StartSeksjonXML>
+        <StartposXML>1900</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>                                  
+	
+    <StartTimeXML>15:21</StartTimeXML> 
+        
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML>  
+    <TogNrXML>12004</TogNrXML>       
+	
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>25sst</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>05sst</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>l03sst</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>a01osp</IdXML>
+            <StateXML>1</StateXML>      	<!-- OS togvei flytta til indre-->
+        </ScenarioActionStateChangerXML>	
+                
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2084_sec:ospim1ni</IdXML>
+            <StateXML>2</StateXML><!-- OS togvei -->
+        </ScenarioActionStateChangerXML>                 
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>125osp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>l03osp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+
+    <ScenarioEventXML>									<!-- TOGET STOPPES FORAN 35 OSPIM, FSMA VIDERE ETTER 30SEK-->
+        <ScenarioTriggerTrackPosXML>
+            <IdXML>100</IdXML>
+            <!--<SectionIndexXML>2</SectionIndexXML>-->
+            <SectionNameXML>ospim1ni</SectionNameXML>
+            <StartVertexXML>0,0,2375</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+		
+        <ScenarioTriggerSpeedXML>
+            <IdXML>100</IdXML>
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				<!-- OG TOGET HAR STOPPET (HAR MINDRE ENN 1 KMH)-->
+        </ScenarioTriggerSpeedXML> 						
+		
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>30</SecondsXML>					<!-- OG DET HAR GÅTT 30 SEK-->
+        </ScenarioTriggerTimeXML>		
+		
+        <ScenarioActionStateChangerXML>
+            <IdXML>115osp</IdXML>
+            <StateXML>1</StateXML>     	 				<!-- FSMA FORBI 35 OSPIM -->
+        </ScenarioActionStateChangerXML>	
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>a01glb</IdXML>
+            <StateXML>1</StateXML>     	 				<!-- OS togvei flytta til indre -->
+        </ScenarioActionStateChangerXML>        
+    </ScenarioEventXML>
+
+	
+    <ScenarioEventXML>								<!-- TOGET STOPPER FORAN A01 GAFFELBERG. OS TOGVEI INN ETTER 30SEK-->
+        <ScenarioTriggerTrackPosXML>
+            <IdXML>100</IdXML>
+            <!--<SectionIndexXML>3</SectionIndexXML>-->
+            <SectionNameXML>gaffelberg1ni</SectionNameXML>
+            <StartVertexXML>0,0,1250</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+		
+        <ScenarioTriggerSpeedXML>
+            <IdXML>100</IdXML>
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				<!-- OG TOGET HAR STOPPET (HAR MINDRE ENN 1 KMH)-->
+        </ScenarioTriggerSpeedXML> 						
+		
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>30</SecondsXML>					<!-- OG DET HAR GÅTT 30 SEK-->
+        </ScenarioTriggerTimeXML>			
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1497_sec:gaffelberg1ni</IdXML>
+            <StateXML>2</StateXML> <!-- OS togvei -->
+        </ScenarioActionStateChangerXML>         
+    </ScenarioEventXML>
+	
+</ScenarioXML>

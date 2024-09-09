@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+    <!--  
+   <SectionXML>
+       <NameXML>atcbortflkrysbanen3</NameXML>
+       <StartVertexXML>0, 0, 0</StartVertexXML>
+   </SectionXML>
+    -->
+
+    <SectionXML>
+        <NameXML>heggeberg</NameXML>
+        <StartVertexXML>0, 0, 0</StartVertexXML>
+    </SectionXML>
+
+   
+    <SectionXML>
+        <NameXML>nitkatman1</NameXML>
+        <StartVertexXML>0, 0, 0</StartVertexXML>
+    </SectionXML> 
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>1370</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>101</StartModusXML>        
+        <InfoXML></InfoXML> 
+        <PersonOffsetVectorXML>-130.0, 0.0, -1400.0</PersonOffsetVectorXML>
+        <PersonRotationXML>180</PersonRotationXML>       
+    </TogXML>          
+	
+    <StartTimeXML>16:30</StartTimeXML> 
+    
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1297_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>                        
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2500_sec:heggeberg_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+       
+    </ScenarioEventXML>    
+    
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>heggeberg</SectionNameXML>	
+            <StartVertexXML>0,0, 2220</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2230_sec:heggeberg_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+       
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3692_sec:heggeberg</IdXML>
+            <StateXML>2</StateXML> <!-- sett feil på plo -->
+        </ScenarioActionStateChangerXML>  
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:979_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>                                                                
+    </ScenarioEventXML>    
+    
+    <ScenarioEventXML> 
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>1</SecondsXML> 
+        </ScenarioTriggerTimeXML>
+            
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:3080.9_sec:heggeberg_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:3084_sec:heggeberg_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:4294.1_sec:heggeberg_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:4291_sec:heggeberg_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>                 
+    </ScenarioEventXML>                         	
+	
+</ScenarioXML>

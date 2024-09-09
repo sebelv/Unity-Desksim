@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<TrackElementListXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>0.0, 0.0, 0.1</StartVertexXML>
+    <EndVertexXML>1.491727863995571E-16, 0.0, 1451.796371532218</EndVertexXML>
+  </StraightTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>5.0, 0.0, 0.1</StartVertexXML>
+    <EndVertexXML>5.0, 0.0, 1400.0</EndVertexXML>
+  </StraightTrackXML>
+
+  <SwitchTrackXML>
+    <IdXML></IdXML>
+    <StartVertexXML>5.0, 0.0, 1400.0</StartVertexXML>
+    <RadiusXML>500.0</RadiusXML>
+    <AvvikVenstreXML>false</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>0.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </SwitchTrackXML>
+
+  <SwitchTrackXML>
+    <IdXML></IdXML>
+    <StartVertexXML>-6.217248937900877E-15, 0.0, 1503.7821500336845</StartVertexXML>
+    <RadiusXML>500.0</RadiusXML>
+    <AvvikVenstreXML>false</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>180.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </SwitchTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>5.0, 0.0, 1451.986</StartVertexXML>
+    <EndVertexXML>5.000000000000001, 0.0, 1951.7688133439165</EndVertexXML>
+  </StraightTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>-0.0, 0.0, 1503.782</StartVertexXML>
+    <EndVertexXML>0.0, 0.0, 1900.0</EndVertexXML>
+  </StraightTrackXML>
+
+  <SwitchTrackXML>
+    <IdXML></IdXML>
+    <StartVertexXML>0.0, 0.0, 1900.0</StartVertexXML>
+    <RadiusXML>500.0</RadiusXML>
+    <AvvikVenstreXML>true</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>0.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </SwitchTrackXML>
+
+  <SwitchTrackXML>
+    <IdXML></IdXML>
+    <StartVertexXML>4.999999999999995, 0.0, 2003.754591845383</StartVertexXML>
+    <RadiusXML>500.0</RadiusXML>
+    <AvvikVenstreXML>true</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>180.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </SwitchTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>5.0, 0.0, 2003.755</StartVertexXML>
+    <EndVertexXML>5.0, 0.0, 5500.0</EndVertexXML>
+  </StraightTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>0.0, 0.0, 1951.986</StartVertexXML>
+    <EndVertexXML>1.491727863995571E-16, 0.0, 5551.7963715322185</EndVertexXML>
+  </StraightTrackXML>
+
+  <SwitchTrackXML>
+    <IdXML></IdXML>
+    <StartVertexXML>5.0, 0.0, 5500.0</StartVertexXML>
+    <RadiusXML>500.0</RadiusXML>
+    <AvvikVenstreXML>false</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>0.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </SwitchTrackXML>
+
+  <SwitchTrackXML>
+    <IdXML></IdXML>
+    <StartVertexXML>-6.217248937900877E-15, 0.0, 5603.782150033685</StartVertexXML>
+    <RadiusXML>500.0</RadiusXML>
+    <AvvikVenstreXML>false</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>180.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </SwitchTrackXML>
+
+  <SwitchTrackXML>
+    <IdXML>spv_1_eva</IdXML>
+    <StartVertexXML>-6.217248937900877E-15, 0.0, 5603.782150033685</StartVertexXML>
+    <RadiusXML>500.0</RadiusXML>
+    <AvvikVenstreXML>false</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>0.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </SwitchTrackXML>
+
+  <SwitchTrackXML>
+    <IdXML></IdXML>
+    <StartVertexXML>5.0, 0.0, 6100.0</StartVertexXML>
+    <RadiusXML>500.0</RadiusXML>
+    <AvvikVenstreXML>true</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>180.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </SwitchTrackXML>
+
+  <SwitchTrackXML>
+    <IdXML>spv_3_eva</IdXML>
+    <StartVertexXML>6.217248937900877E-15, 0.0, 5996.217849966315</StartVertexXML>
+    <RadiusXML>500.0</RadiusXML>
+    <AvvikVenstreXML>true</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>0.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </SwitchTrackXML>
+
+  <SwitchTrackXML>
+    <IdXML></IdXML>
+    <StartVertexXML>6.217248937900877E-15, 0.0, 5996.217849966315</StartVertexXML>
+    <RadiusXML>500.0</RadiusXML>
+    <AvvikVenstreXML>true</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>180.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </SwitchTrackXML>
+
+  <CurveTrackXML>
+    <StartVertexXML>-5.000000000000012, 0.0, 5707.56430006737</StartVertexXML>
+    <RadiusXML>500.0</RadiusXML>
+    <AvvikVenstreXML>false</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>180.0</RotasjonXML>
+  </CurveTrackXML>
+
+  <CurveTrackXML>
+    <StartVertexXML>-4.999999999999988, 0.0, 5892.43569993263</StartVertexXML>
+    <RadiusXML>500.0</RadiusXML>
+    <AvvikVenstreXML>true</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>0.0</RotasjonXML>
+  </CurveTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>-5.000000000000012, 0.0, 5707.56430006737</StartVertexXML>
+    <EndVertexXML>-4.999999999999988, 0.0, 5892.43569993263</EndVertexXML>
+  </StraightTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>-6.217248937900877E-15, 0.0, 5655.767928535151</StartVertexXML>
+    <EndVertexXML>1.258367066220131E-14, 0.0, 5944.232071464849</EndVertexXML>
+  </StraightTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>5.0, 0.0, 5551.9857785014665</StartVertexXML>
+    <EndVertexXML>5.000000000000006, 0.0, 6048.0142214985335</EndVertexXML>
+  </StraightTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>5.0, 0.0, 6100.0</StartVertexXML>
+    <EndVertexXML>5.0, 0.0, 7600.0</EndVertexXML>
+  </StraightTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>0.0, 0.0, 6048.204</StartVertexXML>
+    <EndVertexXML>0.0, 0.0, 7600.0</EndVertexXML>
+  </StraightTrackXML>
+
+</TrackElementListXML>

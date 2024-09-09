@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->    
+        
+    <!--
+    <SectionXML>
+        <NameXML>nitkatman1</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>                
+    </SectionXML>
+   
+        
+    <SectionXML>
+        <NameXML>spurvstad0</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>      
+    
+    <SectionXML>
+        <NameXML>spurvstad1</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+    -->  
+    <SectionXML>
+        <NameXML>ospim1ni</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+  
+    <SectionXML>
+        <NameXML>gaffelberg1ni</NameXML>
+    </SectionXML>        
+
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>gaffelberg1ni</StartSeksjonXML>
+        <StartposXML>1800</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>11</StartModusXML>    <!-- 11 -->    
+        <InfoXML></InfoXML> 
+    </TogXML>  
+	
+    <StartTimeXML>11:27</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+    <PersonStartPosisjonXML>forerrom1_sittende</PersonStartPosisjonXML>  
+    <TogNrXML>12003</TogNrXML>    
+
+    <!-- EN HENDELSE MED ET OBJEKT LANGS SPORET DEFINERES I EN ScenarioEvent -->
+    <!-- I EN ScenarioEvent DEFINERES ScenarioTriggers OG ScenarioActions-->
+    <!-- DERSOM BARE ScenarioActions ER DEFINERT UTFØRES DISSE MED EN GANG SCENARIET STARTER-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>5</SecondsXML>					
+        </ScenarioTriggerTimeXML>        
+        
+        <ScenarioActionStateChangerXML> <!-- DEN VANLIGESTE ScenarioAction ER ScenarioActionStateChanger-->
+            <IdXML>26glb</IdXML>		<!-- OPPGI NØYAKTIG ID TIL OBJEKTET SOM SKAL ENDRE STATE-->
+            <StateXML>1</StateXML>	    <!-- OPPGI NY STATE-->
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML> <!-- ID'ENE HER HENVISER TIL ERTMS STOPPSKILT -->
+            <IdXML>06glb</IdXML>	    
+            <StateXML>1</StateXML>		<!-- STATE 0 = STOPP, 1 = KJØR I FS, 2 = KJØR I OS -->
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>m04glb</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>sv2osp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>sv4osp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>        
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>3</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+                
+        <ScenarioActionStateChangerXML>
+            <IdXML>b02osp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2593_sec:ospim1ni</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>          
+        
+    </ScenarioEventXML>
+    
+    <!-- PLO --> 					
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>        
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:240_sec:gaffelberg1ni</IdXML>
+            <StateXML>2</StateXML>
+        </ScenarioActionStateChangerXML> 
+    </ScenarioEventXML>
+
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>gaffeberg1ni</SectionNameXML>	
+            <StartVertexXML>0,0,350</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>						
+		
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>6</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:250_sec:gaffelberg1ni</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>         
+    </ScenarioEventXML>    
+	
+
+</ScenarioXML>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+
+<!--    -->
+    <SectionXML>
+        <NameXML>heggeberg</NameXML>
+        <StartVertexXML>0, 0, 0</StartVertexXML>
+    </SectionXML>
+ 
+  <!--
+	<SectionXML>
+		<NameXML>nitkatman1</NameXML> 
+	</SectionXML>
+    
+  <SectionXML>
+          <NameXML>storehammer0</NameXML>
+  </SectionXML>
+
+
+	<SectionXML>
+		<NameXML>storehammer1</NameXML>
+                <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+	</SectionXML>    
+   -->
+
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>185</ModelXML>
+        <StartSeksjonXML>heggeberg</StartSeksjonXML>
+        <StartposXML>50</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>104</StartModusXML>        
+        <InfoXML></InfoXML> 
+    </TogXML>-->
+ <!--
+    <TogXML>
+        <IdXML>101</IdXML>
+        <ModelXML>zacns</ModelXML>
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>1150</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1800;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkobbelopphengmotkm=ja;luftkranmedkm=ja;last=vekt:40</InfoXML>  
+    </TogXML>               
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>185</ModelXML> 
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>104</StartModusXML>      
+        <InfoXML>kobbelopphengmedkm=ja;kobbelopphengmotkm=ja;luftkobbelopphengmedkm=ja;luftkranmotkm=ja</InfoXML>
+    </TogXML>      
+-->	
+    <StartTimeXML>16:30</StartTimeXML> 
+    
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML>    
+	
+
+</ScenarioXML>

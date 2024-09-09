@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->  
+        
+    <!--
+<SectionXML>
+   <NameXML>nitkatman1</NameXML>
+   <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>                
+</SectionXML>
+    -->
+         
+    <SectionXML>
+        <NameXML>spurvstad0</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>      
+         
+    
+    <SectionXML>
+        <NameXML>spurvstad1</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+  
+    <SectionXML>
+        <NameXML>ospim1</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+  
+    <SectionXML>
+        <NameXML>gaffelberg1</NameXML>
+    </SectionXML> 
+	
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>spurvstad1</StartSeksjonXML>
+        <StartposXML>1055</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>16</StartModusXML>        
+        <InfoXML></InfoXML> 
+    </TogXML>          
+        
+    <StartTimeXML>15:55</StartTimeXML> 
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML>  
+    <TogNrXML>12011</TogNrXML>  
+    <SettUkjentPosXML>true</SettUkjentPosXML> <!-- må til her fordi togets pos gjør at posbaliser blir lest under utsetting av toget--> 
+	
+	<ScenarioEventXML>
+		<ScenarioActionStateChangerXML>
+			<IdXML>25sst</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+		<ScenarioActionStateChangerXML>
+			<IdXML>05sst</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+		<ScenarioActionStateChangerXML>
+			<IdXML>l03sst</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+		<ScenarioActionStateChangerXML>
+			<IdXML>a01osp</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+		<ScenarioActionStateChangerXML>
+			<IdXML>35osp</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+    <ScenarioActionStateChangerXML>
+			<IdXML>05osp</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>    
+		<ScenarioActionStateChangerXML>
+			<IdXML>l03osp</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+    <ScenarioActionStateChangerXML>
+			<IdXML>l03osp</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+    <ScenarioActionStateChangerXML>
+			<IdXML>a01glb</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+	</ScenarioEventXML>
+	
+  
+  	<ScenarioEventXML>
+		<ScenarioTriggerTrackPosXML>  					
+			<IdXML>100</IdXML>		  					
+                        <SectionNameXML>ospim1</SectionNameXML>
+			<StartVertexXML>0,0,3800</StartVertexXML> 	<!-- PLO AKTIVERES I GOD TID FØR -->
+		</ScenarioTriggerTrackPosXML>
+		
+		<ScenarioActionStateChangerXML>
+			<IdXML>w01</IdXML>
+			<StateXML>3</StateXML>						<!-- DEFAULTVERDIEN TIL PLOSKILT ER 0 SOM BETYR TSR MED 0 KMH -->
+		</ScenarioActionStateChangerXML>				<!-- 0 = TSR MED 0 KMH, 1 = TSR MED 10 KMH, 2 = TSR MED FULL HASTIGHET (INGEN TSR), 3 = TSR MED 0 KMH BOMMER AKTIVERT -->
+														<!-- HER SKAL PLO AKTIVERES OG STATE SETTES TIL 3 -->
+	</ScenarioEventXML>
+  
+	<ScenarioEventXML>
+		<ScenarioTriggerTrackPosXML>
+			<IdXML>100</IdXML>
+			<SectionNameXML>ospim1</SectionNameXML>
+			<StartVertexXML>0,0,4400</StartVertexXML>
+		</ScenarioTriggerTrackPosXML>
+		
+		<ScenarioActionStateChangerXML>
+			<IdXML>w01</IdXML>
+			<StateXML>3</StateXML>
+		</ScenarioActionStateChangerXML>
+		
+		<ScenarioActionStateChangerXML>
+			<IdXML>plo1</IdXML>
+			<StateXML>1</StateXML>
+		</ScenarioActionStateChangerXML>
+	</ScenarioEventXML>
+
+<!-- PLANOVERGANG SOM IKKE FUNGERER -->
+	<ScenarioEventXML>
+		<ScenarioTriggerTrackPosXML> 					<!-- POSISJONEN TIL PLO ER 250 -->
+			<IdXML>100</IdXML>
+			<SectionIndexXML>3</SectionIndexXML>
+			<StartVertexXML>0,0,150</StartVertexXML>	<!-- PLO SKILTET TRIGGES TIL TSR 10 KMH NÅR TOGET HAR PASSERT POS 350 -->
+		</ScenarioTriggerTrackPosXML>
+		
+		<ScenarioTriggerSpeedXML>
+			<IdXML>100</IdXML>
+			<SpeedXML>1</SpeedXML>
+			<OperatorXML>-1</OperatorXML>				<!-- OG TOGET HAR STOPPET (HAR MINDRE ENN 1 KMH)-->
+		</ScenarioTriggerSpeedXML> 						
+		
+		<ScenarioTriggerTimeXML>
+			<SecondsXML>12</SecondsXML>					<!-- OG DET HAR GÅTT 12 SEK-->
+		</ScenarioTriggerTimeXML>
+		
+		<ScenarioActionStateChangerXML>
+			<IdXML>w01</IdXML>							<!-- PLO SKILTET MED ID w02 TRIGGES NÅR DE 3 DEFINERTE TRIGGERENE ER AKTIVERT -->
+			<StateXML>1</StateXML>						<!-- STATE 0 = TSR 0 KMH, STATE 1 = TSR 10 KMH, STATE 2 = TSR FULL HASTIGHET (INGEN TSR)-->
+		</ScenarioActionStateChangerXML>
+	</ScenarioEventXML>
+	
+</ScenarioXML>

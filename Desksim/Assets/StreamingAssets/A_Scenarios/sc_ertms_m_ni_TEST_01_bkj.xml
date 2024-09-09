@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->  
+        
+    <!--
+<SectionXML>
+   <NameXML>nitkatman1</NameXML>
+   <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>                
+</SectionXML>
+    -->
+         
+    <SectionXML>
+        <NameXML>spurvstad0ni</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>      
+         
+    
+    <SectionXML>
+        <NameXML>spurvstad1ni</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+  
+  <!--
+    <SectionXML>
+        <NameXML>ospim1ni</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+  
+    <SectionXML>
+        <NameXML>gaffelberg1ni</NameXML>
+    </SectionXML>        
+        -->
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>spurvstad0ni</StartSeksjonXML>
+        <StartposXML>1750</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>10</StartModusXML>   
+        <InfoXML></InfoXML> 
+    </TogXML>         
+	
+    <StartTimeXML>16:30</StartTimeXML> 
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML>    
+    <TogNrXML>12005</TogNrXML>      
+	
+    <ScenarioEventXML>
+        <!--
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:945_sec:spurvstad1ni_type:sw</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>     
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:942_sec:spurvstad1ni</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>                
+                -->
+        <ScenarioActionStateChangerXML>
+            <IdXML>a01sst</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>   
+        
+             <!--     
+        <ScenarioActionStateChangerXML>
+            <IdXML>25sst</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>05sst</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        -->
+        
+        <!--
+        <ScenarioActionStateChangerXML>
+            <IdXML>l03sst</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+-->
+    </ScenarioEventXML>
+        
+
+  	
+
+</ScenarioXML>

@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->  
+<!--
+    <SectionXML>
+        <NameXML>nitkatman1</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>                
+    </SectionXML>
+         
+         
+    <SectionXML>
+        <NameXML>spurvstad0</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>      
+         
+    
+      <SectionXML>
+          <NameXML>spurvstad1</NameXML>
+          <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+      </SectionXML>
+    -->
+    <SectionXML>
+        <NameXML>ospim1ni</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+  
+    <SectionXML>
+        <NameXML>gaffelberg1ni</NameXML>
+    </SectionXML>      
+    
+
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>ospim1ni</StartSeksjonXML>
+        <StartposXML>2391</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>14</StartModusXML>   
+        <InfoXML></InfoXML> 
+    </TogXML>  
+    
+    <StartTimeXML>10:32</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML>
+    <TogNrXML>12212</TogNrXML> 
+    
+    <!-- EN HENDELSE MED ET OBJEKT LANGS SPORET DEFINERES I EN ScenarioEvent -->
+    <!-- I EN ScenarioEvent DEFINERES ScenarioTriggers OG ScenarioActions-->
+    <!-- DERSOM BARE ScenarioActions ER DEFINERT UTFØRES DISSE MED EN GANG SCENARIET STARTER-->
+    <ScenarioEventXML>
+        <!-- Ospim -->
+        <ScenarioActionStateChangerXML>
+            <IdXML>115osp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>125osp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>l03osp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+		
+        <!-- Gaffelberg -->
+        <ScenarioActionStateChangerXML>
+            <IdXML>a01glb</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1497_sec:gaffelberg1ni</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>   
+        
+        <!-- MÅ FINNE LØSNING PÅ HVORDAN TOGLEDER KAN POSISJONERE TOGET - på trigger -->
+        <!-- NÅR POSISJONEN ER SATT, VISES TEKSTMELDING PÅ DMI- se video L2_Ukjpos_TLpos_SR_Stop-i-SR_2511-2014.-->
+
+    </ScenarioEventXML>
+
+    <!-- PLO som ikke fungerer legges inn her--> 					
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>        
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:240_sec:gaffelberg1ni</IdXML> <!-- settes til å ikke reagere på melding om å legges-->
+            <StateXML>2</StateXML>
+        </ScenarioActionStateChangerXML> 
+    </ScenarioEventXML>
+
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>gaffeberg1ni</SectionNameXML>	
+            <StartVertexXML>0,0,140</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>						
+		
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>6</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:230_sec:gaffelberg1ni</IdXML>
+            <StateXML>1</StateXML> <!-- kjøretillatelse forbi skiltet med hast 40kmt-->
+        </ScenarioActionStateChangerXML>         
+    </ScenarioEventXML>       	
+
+</ScenarioXML>

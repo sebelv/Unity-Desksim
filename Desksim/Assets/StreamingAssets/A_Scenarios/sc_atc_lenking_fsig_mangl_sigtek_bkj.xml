@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+
+    <SectionXML>
+        <NameXML>nitkatman1</NameXML>
+        <StartVertexXML>0, 0, 0</StartVertexXML>
+    </SectionXML>
+
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>nitkatman1</StartSeksjonXML>
+        <StartposXML>1640</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>104</StartModusXML>        
+        <InfoXML></InfoXML> 
+    </TogXML>
+	
+    <StartTimeXML>16:30</StartTimeXML> 
+    <TogNrXML>1002</TogNrXML>
+    
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML>    
+	
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>1</SecondsXML>					
+        </ScenarioTriggerTimeXML>            
+       
+        <ScenarioActionStateChangerXML>
+            <IdXML>l403</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionDisableXML>
+          <IdXML>pos:3323_sec:nitkatman1</IdXML>
+          <DisableXML>true</DisableXML>	
+        </ScenarioActionDisableXML>
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>1</SecondsXML>				
+        </ScenarioTriggerTimeXML>        
+        
+        <ScenarioActionDisableXML>
+          <IdXML>pos:3326_sec:nitkatman1</IdXML>
+          <DisableXML>true</DisableXML>	
+        </ScenarioActionDisableXML>
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>1</SecondsXML>				
+        </ScenarioTriggerTimeXML>        
+        	
+        <ScenarioActionDisableXML>
+          <IdXML>pos:3329_sec:nitkatman1</IdXML>
+          <DisableXML>true</DisableXML>	
+        </ScenarioActionDisableXML>	                                                                	          
+    </ScenarioEventXML>       
+    
+    <!-- BF2 -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>
+            <IdXML>100</IdXML>
+            <StartVertexXML>0,0,3636</StartVertexXML>
+            <SectionIndexXML>0</SectionIndexXML>
+        </ScenarioTriggerTrackPosXML>	
+
+        <ScenarioActionSystemXML> 		
+            <IdXML>100</IdXML>			
+            <StateXML>2</StateXML>
+            <KodeXML>7:10:10:15:12:18</KodeXML>
+        </ScenarioActionSystemXML>		
+    </ScenarioEventXML>	 
+    
+    <!-- signal videre -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>nitkatman1</SectionNameXML>	
+            <StartVertexXML>0,0,4030</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>		
+    
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>					
+
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>10</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4130_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>	
+
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>3</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:4758_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>             	
+    	
+    </ScenarioEventXML>       
+
+</ScenarioXML>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>ertms87sek5tonsberg.kml</name>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>trase</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>
+				10.40226343708818,59.29096139060591,20 10.40464643082758,59.28786254432556,20 10.40690048893023,59.28407516588754,20 10.40757111354447,59.2819175607038,20 10.4080675316905,59.27979237393084,20 10.40796637201194,59.27800606044784,20 10.40741628912946,59.27481118192004,20 10.40757596466803,59.27382907167486,20 10.40802644688046,59.27328047300948,20 10.40829454423942,59.27301082947039,20 10.40858027792071,59.272761602125,20 10.40963849998773,59.27198991070313,20 10.41028108104263,59.27151025403965,20 10.41090066349262,59.2710698267352,20 10.4117201446384,59.27056463188764,20 10.41295577021112,59.26985579071213,20 10.41451527360816,59.26922513649868,20 10.41649586887995,59.26887889318479,20 10.41921209506964,59.26910870720562,20 10.42050940140707,59.26953857199375,20 10.42143302162074,59.27003656333071,20 10.42209595850413,59.27077014764663,20 10.42228985588073,59.27156765748165,20 10.42219390930878,59.27205759635348,20 10.4218179136159,59.27268849693233,20 10.42065188913817,59.2735649116982,20 10.41946371049329,59.27400111556067,20 10.41629251322521,59.27521760166753,20 10.412679364303,59.27657612035527,20 10.40855942190306,59.27853956458519,20 10.39660019102784,59.28183341647704,20 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>

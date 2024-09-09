@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+    
+    <!--
+         <SectionXML>
+                 <NameXML>atcbortflkrysbanen1</NameXML>
+     <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>            
+         </SectionXML>
+    -->
+    <SectionXML>
+        <NameXML>atcbortflkrysbanen2</NameXML>
+        <EndPointNextStartPointIndexXML>3</EndPointNextStartPointIndexXML>
+    </SectionXML>
+  
+    <SectionXML>
+        <NameXML>atcbortflkrysbanen3</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+  
+    <!-- TOGET VI KJØRER MÅ DEFINERES -->
+
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>atcbortflkrysbanen2</StartSeksjonXML>
+        <StartposXML>2930</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>104</StartModusXML>        
+        <InfoXML></InfoXML> 
+    </TogXML>
+    
+    <TogXML>
+        <IdXML>200</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>atcbortflkrysbanen3</StartSeksjonXML>
+        <StartposXML>3540</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>       
+    
+    <TogXML>
+        <IdXML>202</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>aatcbortflkrysbanen3</StartSeksjonXML>
+        <StartposXML>7090</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>    
+    
+    <TogXML>
+        <IdXML>204</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>atcbortflkrysbanen3</StartSeksjonXML>
+        <StartposXML>11190</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>        
+        
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML>      
+    
+    <StartTimeXML>12:00</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+    <TogNrXML>3102</TogNrXML>
+    <SlideMappeXML>infoslides_scenario/atc</SlideMappeXML>
+    <NettbrettFilXML>nettbrettslides_scenario/tog 3102.png</NettbrettFilXML>    
+    <SlideOffsetInfoXML>60</SlideOffsetInfoXML>
+    <SlideOffsetOppgaverXML>70</SlideOffsetOppgaverXML>            
+  
+  
+    <!-- signal ut start -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>4</SecondsXML>
+        </ScenarioTriggerTimeXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3090.3_sec:atcbortflkrysbanen2_type:sw</IdXML>
+            <StateXML>1</StateXML>	
+        </ScenarioActionStateChangerXML>
+    
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>2</SecondsXML>
+        </ScenarioTriggerTimeXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3000_sec:atcbortflkrysbanen2_type:dv_x:0</IdXML>
+            <StateXML>44</StateXML>	
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>1</SecondsXML>
+        </ScenarioTriggerTimeXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3000_sec:atcbortflkrysbanen2_type:dv_x:0</IdXML>
+            <StateXML>45</StateXML>	
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>1</SecondsXML>
+        </ScenarioTriggerTimeXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3000_sec:atcbortflkrysbanen2_type:hs2</IdXML>
+            <StateXML>21</StateXML>	
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+  
+    <!-- innkjør JVT -->
+    <ScenarioEventXML>  
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2000_sec:atcbortflkrysbanen3_type:hs3</IdXML>
+            <StateXML>21</StateXML>	
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2200_sec:atcbortflkrysbanen3</IdXML>
+            <StateXML>1</StateXML>	
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+	
+    <!-- Middelkontroll JVT start -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>		
+            <StartVertexXML>-5,0,2270</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+		
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3000_sec:atcbortflkrysbanen3_type:mi</IdXML>
+            <StateXML>4</StateXML>	
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+	
+    <!-- Middelkontroll JVT stopp -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>		
+            <StartVertexXML>-5,0,2800</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+		
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3000_sec:atcbortflkrysbanen3_type:mi</IdXML>
+            <StateXML>3</StateXML>	
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+
+    <!-- START AUTOTOG 200 -->	
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>		
+            <StartVertexXML>-5,0,2300</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+		
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	 
+            <IdXML>200</IdXML>				
+            <SpeedXML>-40</SpeedXML>	       
+        </ScenarioActionAutoTrainCommandXML>
+    </ScenarioEventXML>
+	
+    <!-- LEGG OVER VEKSEL NÅR TOG AUTOTOG HAR KOMMT INN I RETTSPOR--> 
+    <!-- Signal ut fra JVT / Signal inn STS -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>200</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>		
+            <StartVertexXML>0,0,2850</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:3000_sec:atcbortflkrysbanen3_type:sw</IdXML>
+            <StateXML>1</StateXML>	
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioTriggerTimeXML>				
+            <SecondsXML>2</SecondsXML> 			
+        </ScenarioTriggerTimeXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2930_sec:atcbortflkrysbanen3_type:hs2</IdXML>
+            <StateXML>21</StateXML>	
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:6000_sec:atcbortflkrysbanen3_type:sw</IdXML>
+            <StateXML>1</StateXML>	
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:5800_sec:atcbortflkrysbanen3_type:hs3</IdXML>
+            <StateXML>21</StateXML>	
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:6280_sec:atcbortflkrysbanen3_x:5</IdXML>
+            <StateXML>44</StateXML>	
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>
+	
+    <!-- STOPP AUTOTOG --> 
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>				 <!-- TOGET SKAL STOPPES NÅR DET HAR KOMMET INN I RETTSPOR-->
+            <IdXML>200</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>		
+            <StartVertexXML>0,0,2350</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+		
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	 <!-- AUTOTOG KOMMANDO "removeupdate"-->
+            <IdXML>200</IdXML>						 <!-- DENNE KOMMANDOEN BETYR AT DETTE AUTOTOGET KOBLES BORT FRA POSISJONSOPPDATERINGSSYKLUSEN I PROGRAMMET-->
+        </ScenarioActionAutoTrainCommandXML>		 <!-- TOGET VIL STOPPE OG PROGRAMMET VIL SLUTTE Å BRUKE RESSURSER PÅ Å OPPDATERE TOGETS POSISJON-->
+    </ScenarioEventXML>
+	
+    <!-- STOPP AUTOTOG INNKJØR JVT --> 
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>				
+            <IdXML>200</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>		
+            <StartVertexXML>0,0,3310</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+		
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	 
+            <IdXML>200</IdXML>			
+            <SpeedXML>0</SpeedXML>			 
+        </ScenarioActionAutoTrainCommandXML>	
+    </ScenarioEventXML>
+
+    <!-- START AUTOTOG INNKJØR JVT -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>		
+            <StartVertexXML>-5,0,2800</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+
+        <ScenarioTriggerTimeXML>				
+            <SecondsXML>60</SecondsXML> <!-- Kryssingslåsingstid HUSK også i neste event -->					
+        </ScenarioTriggerTimeXML>
+		
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	 
+            <IdXML>200</IdXML>			
+            <SpeedXML>-30</SpeedXML>			 
+        </ScenarioActionAutoTrainCommandXML>
+    
+        <ScenarioTriggerTimeXML>				
+            <SecondsXML>10</SecondsXML> <!-- Kryssingslåsingstid + 10 -->					
+        </ScenarioTriggerTimeXML>
+      	
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	 
+            <IdXML>200</IdXML>			
+            <SpeedXML>-60</SpeedXML>			 
+        </ScenarioActionAutoTrainCommandXML>
+    </ScenarioEventXML>
+	
+    <!-- START AUTOTOG INNKJØR STS -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>		
+            <StartVertexXML>0,0,6000</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+		
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	 
+            <IdXML>202</IdXML>			
+            <SpeedXML>-50</SpeedXML>			 
+        </ScenarioActionAutoTrainCommandXML>	
+    </ScenarioEventXML>
+	
+    <!-- LEGG OVER VEKSEL / SETT OPP SIGNAL UT NÅR TOG AUTOTOG HAR KOMMT INN I RETTSPOR / SIGNAL INN PÅ NESTE / NESTE AUTOTOG--> 
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>202</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>		
+            <StartVertexXML>0,0,6500</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>								
+										
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:6700_sec:atcbortflkrysbanen3_type:sw</IdXML>
+            <StateXML>1</StateXML>	
+        </ScenarioActionStateChangerXML>
+                
+        <ScenarioTriggerTimeXML>				
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>                
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:6480_sec:atcbortflkrysbanen3_type:hs2</IdXML>
+            <StateXML>21</StateXML>	
+        </ScenarioActionStateChangerXML>
+		
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10000_sec:atcbortflkrysbanen3_type:sw</IdXML>
+            <StateXML>1</StateXML>	
+        </ScenarioActionStateChangerXML>
+		
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:9700_sec:atcbortflkrysbanen3_type:hs3</IdXML>
+            <StateXML>21</StateXML>	
+        </ScenarioActionStateChangerXML>
+	
+    </ScenarioEventXML>
+
+    <!-- STOPP AUTOTOG UTKJØR STS --> 
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>				
+            <IdXML>202</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>	
+            <StartVertexXML>0,0,6320</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+		
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	 
+            <IdXML>202</IdXML>			
+        </ScenarioActionAutoTrainCommandXML>	
+    </ScenarioEventXML>
+	
+    <!-- START AUTOTOG INNKJØR GRS -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>		
+            <StartVertexXML>-5,0,10400</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+		
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	 
+            <IdXML>204</IdXML>			
+            <SpeedXML>-50</SpeedXML>			 
+        </ScenarioActionAutoTrainCommandXML>	
+    </ScenarioEventXML>
+	
+    <!-- STOPP AUTOTOG UTKJØR GRS --> 
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>				
+            <IdXML>204</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>		
+            <StartVertexXML>0,0,10300</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+		
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	 
+            <IdXML>204</IdXML>			
+        </ScenarioActionAutoTrainCommandXML>	
+    </ScenarioEventXML>
+	
+    <!-- LEGG OVER VEKSEL / SETT OPP SIGNAL UT NÅR TOG AUTOTOG HAR KOMMT INN I RETTSPOR--> 
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>204</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>		
+            <StartVertexXML>0,0,10700</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+										
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10800_sec:atcbortflkrysbanen3_type:sw</IdXML>
+            <StateXML>1</StateXML>	
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10720_sec:atcbortflkrysbanen3_type:hs2</IdXML>
+            <StateXML>21</StateXML>	
+        </ScenarioActionStateChangerXML>		
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10580_sec:atcbortflkrysbanen3_x:-5</IdXML>
+            <StateXML>45</StateXML>	
+        </ScenarioActionStateChangerXML>
+
+    </ScenarioEventXML>
+	
+    <!-- KJØR / FRYS-->
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>				
+            <SecondsXML>1</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+    
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde1.PNG
+            </MessageXML>
+        </ScenarioActionFreezeXML>		
+    </ScenarioEventXML>
+  
+  
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>		
+            <StartVertexXML>0,0,980</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>			
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde2.PNG oppg1=true oppg2=false
+            </MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+	
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>		
+            <StartVertexXML>0,0,1970</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>			
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde3.PNG oppg1=true oppg2=true oppg3=false oppg4=true
+            </MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>		
+            <StartVertexXML>-5,0,2300</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>			
+    
+        <ScenarioTriggerSpeedXML>						
+            <IdXML>100</IdXML>							
+            <SpeedXML>1</SpeedXML>
+            <OperatorXML>-1</OperatorXML>				
+        </ScenarioTriggerSpeedXML>	
+	
+        <ScenarioTriggerTimeXML>				
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>  
+  
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde4.PNG oppg1=false oppg2=true oppg3=false oppg4=true oppg5=false oppg6=true
+            </MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>	
+            <StartVertexXML>5,0,6400</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>			
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde5.PNG oppg1=false oppg2=true oppg3=true oppg4=false
+            </MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+	
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>		
+            <StartVertexXML>0,0,8700</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>			
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde6.PNG oppg1=false oppg2=true oppg3=true
+            </MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+	
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>		
+            <StartVertexXML>0,0,9680</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>			
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde7.PNG oppg1=false oppg2=true oppg3=true oppg4=false
+            </MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+	
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>		
+            <StartVertexXML>-5,0,10320</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>			
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde8.PNG oppg1=false oppg2=false oppg3=true oppg4=true oppg5=true oppg6=true
+            </MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>		
+            <StartVertexXML>0,0,11300</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>			
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde9.PNG oppg1=false oppg2=true
+            </MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+  
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>		
+            <StartVertexXML>0,0,11320</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>			
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde10.PNG 
+            </MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+
+</ScenarioXML>
+

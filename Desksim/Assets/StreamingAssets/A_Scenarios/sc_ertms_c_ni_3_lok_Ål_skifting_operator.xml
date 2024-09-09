@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,220,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+     
+    <SectionXML>
+        <NameXML>ertms87sek1al</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>              
+
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>185</ModelXML>
+        <StartSeksjonXML>ertms87sek1al</StartSeksjonXML>
+        <StartposXML>2300</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>17</StartModusXML>   <!--17 -->
+        <PersonOffsetVectorXML>-5.5, 0.0, 0.0</PersonOffsetVectorXML>
+        <PersonRotationXML>-100</PersonRotationXML>                 
+        <InfoXML>intet</InfoXML> 
+    </TogXML>   
+    
+    <TogXML>
+        <IdXML>202</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>ertms87sek1al</StartSeksjonXML>
+        <StartposXML>2350</StartposXML>
+        <StartposSideveisXML>10</StartposSideveisXML>
+        <InfoXML>hl=3.0;koblemedkm=ja;skrumedkm=-1440;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkobbelopphengmotkm=ja;luftkranmedkm=ja;handbrems=ja;last=container_red_front,container_red_rear</InfoXML>  
+    </TogXML>  
+    
+    <TogXML>
+        <IdXML>203</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>ertms87sek1al</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>hl=3.0;koblemedkm=ja;skrumedkm=-1440;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja</InfoXML>  
+    </TogXML>     
+    
+    
+    <TogXML>
+        <IdXML>204</IdXML>
+        <ModelXML>lgns</ModelXML>
+        <StartSeksjonXML>ertms87sek1al</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>hl=3.0;kobbelopphengmedkm=ja;kobbelopphengmotkm=ja;luftkobbelopphengmedkm=ja;luftkranmotkm=ja;last=container_red_front,container_red_rear</InfoXML>  
+    </TogXML>     
+	
+    <StartTimeXML>16:30</StartTimeXML> 
+
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>5</SecondsXML>					
+        </ScenarioTriggerTimeXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1946_sec:ertms87sek1al_type:ertmsstopp_x:0</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>      
+                        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1945_sec:ertms87sek1al_type:dv_x:0</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>      
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek1al</SectionNameXML>	
+            <StartVertexXML>0,0,1842</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	 
+                
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1865_sec:ertms87sek1al</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>   
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2068_sec:ertms87sek1al</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>          
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>        
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1862_sec:ertms87sek1al_type:ertmsstopp_x:0</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1863_sec:ertms87sek1al_type:dv</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>     
+                
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2065_sec:ertms87sek1al_type:dv</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>  
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2242_sec:ertms87sek1al_type:ertmsstopp_x:10</IdXML>
+            <StateXML>2</StateXML>
+        </ScenarioActionStateChangerXML>    
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2243_sec:ertms87sek1al_type:dv_x:10</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML>  
+            
+        
+    </ScenarioEventXML>
+        
+
+</ScenarioXML>

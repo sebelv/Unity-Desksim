@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements[ ]>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML> <!-- alltid true -->
+    <SunPositionXML>45,220,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+ 
+    <SectionXML> <!-- Angi hvilke seksjoner som skal være med. Det kan være èn, det kan være flere -->
+        <NameXML>nitkatman1</NameXML>
+    </SectionXML>
+      
+    <SectionXML> <!-- En SectionXML tag for hver seksjon som skal være med. Seksjonene må settes i riktig rekkefølge og være laget for å passe sammen -->
+        <NameXML>storehammer0</NameXML>
+    </SectionXML>  
+      
+    <SectionXML>
+        <NameXML>storehammer1</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>        
+
+    <TogXML> <!-- Angi informasjon om alle kjøretoy som skal delta i scenariet. En TogXML tag for hvert kjøretøt som skal delta. I dette eksempelet er det bare ett kjøretoy med -->
+        <IdXML>100</IdXML> <!-- Alle kjøretøy har en id. Den brukes når noe skal trigges av kjøretoyet -->
+        <ModelXML>togsett</ModelXML> <!-- Angi hvilken type kjøretoy som legges inn. togsett, 185, t44, lgns, sdggmrs, zancs, b5 -->
+        <StartSeksjonXML>storehammer1</StartSeksjonXML>  <!-- Angi hvilken seksjon kjoretøyet skal starte i -->
+        <StartposXML>750</StartposXML> <!-- Angi hvilken posisjon i seksjonen kjøretøyet skal starte i -->
+        <StartposSideveisXML>5</StartposSideveisXML> <!-- Angi hvilken posisjon sideveis kjøretøyet skal starte i, i dette eksmpelet skal det starte i et avvikespor som ligger 5 meter til siden for hovedaksen -->
+        <StartModusXML>19</StartModusXML> <!-- Dette angir hvilken status eller modus kjøretøyet skal ha ved oppstart av øvelsen. Oversikt over disse finnes i DeskSim-håndboka under bygging av egne øvelser-->
+        <InfoXML>intet</InfoXML> <!-- Angi øvrig informasjon om kjøretoyet. Normalt intet. -->
+    </TogXML>   
+	
+    <StartTimeXML>16:30</StartTimeXML> <!-- Hvilken simulert tid starter scenariet -->
+    
+    <PersonStartPosisjonXML>forerrom1_sittende</PersonStartPosisjonXML> <!-- Hvor befinner fører seg når scenariet starter, forerrom1_sittende eller forerrom2_sittende -->
+    
+    <ScenarioEventXML> <!-- En ScenarioEventXML er en hendelse i scenariet feks at et signal endrer signalbilde fra stopp til kjør eller at en sporveksel legges over -->
+        <ScenarioTriggerTimeXML> <!-- En ScenarioEventXML består av triggere som denne ScenarioTriggerTimeXML, NÅR skal noe skje og.. -->
+            <SecondsXML>2</SecondsXML>
+        </ScenarioTriggerTimeXML>
+
+        <ScenarioActionStateChangerXML> <!-- .. aksjoner, HVA skal skje, som denne ScenarioActionStateChangerXML -->
+            <IdXML>pos:600_sec:storehammer1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML> 
+        
+        <ScenarioActionStateChangerXML>  <!-- Triggere og aksjoner i en event skjer den rekkefølge de står i XML koden -->
+            <IdXML>pos:10100_sec:nitkatman1</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>         
+        
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>        
+
+        <ScenarioActionStateChangerXML>  <!-- Her vil objektet i pos 668 i seksjon storehammer1 av type hs2 få state / tilstand 21  -->
+            <IdXML>pos:668_sec:storehammer1_type:hs2</IdXML> <!-- i klare ord betyr det at hovedsignalet i pos 668.. -->
+            <StateXML>21</StateXML> <!-- stilles til kjør med redusert hastighet -->
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:668_sec:storehammer1_type:dv_x:5</IdXML> <!-- i klare ord betyr det at dvergsignalet i pos 668.. -->
+            <StateXML>45</StateXML> <!-- stilles til kjøring tillat -->
+        </ScenarioActionStateChangerXML>   
+        
+        <ScenarioTriggerTimeXML> <!-- Her venter scenariet 5 sekunder fra forrige hendelse.. -->
+            <SecondsXML>5</SecondsXML>					
+        </ScenarioTriggerTimeXML>            
+        
+        <ScenarioActionStateChangerXML> <!-- .. før dette utføres.. -->
+            <IdXML>pos:15_sec:storehammer1_type:hs3</IdXML> <!-- ..objektet i pos 15 i storehammer1 seksjonen av type hs3.., altså 3 lys hovedsignal.. -->
+            <StateXML>22</StateXML> <!-- ..stilles til kjør  -->
+        </ScenarioActionStateChangerXML>       
+        
+        <ScenarioActionStateChangerXML> <!-- .. og samtidig utføres dette, 3 lys hovedsignalet i pos 10300 stilles til kjør med redusert hast -->
+            <IdXML>pos:10300_sec:nitkatman1_type:hs3</IdXML>
+            <StateXML>21</StateXML>
+        </ScenarioActionStateChangerXML>                                      
+    </ScenarioEventXML>    
+
+</ScenarioXML>
+
+
+

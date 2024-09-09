@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>       
+    <!-- LYSSETTING -->
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+
+    <!-- SEKSJON-->      
+    <SectionXML>
+        <NameXML>y_atc_hallgeir1</NameXML>
+    </SectionXML>
+ 	
+    <!-- TOGET VI KJØRER MÅ DEFINERES -->
+    <ErtmsTrain1XML>
+        <IdXML>100</IdXML> <!-- TOGETS ID: TRIGGER OG ACTIONS SOM SKAL KNYTTES TIL TOGET BENYTTER DENNE ID'EN -->
+        <StartModeXML>104</StartModeXML> <!-- STARTMODE: LISTE OVER STARTMODES I SIMULATORDOK -->
+        <StartPosXML>100</StartPosXML> <!-- STARTPOS: STARTPOS TIL TOGET INNENFOR SEKSJONEN -->
+        <StartSectionXML>0</StartSectionXML> <!-- STARTSEKSJON: FRA 0 OG I REKKEFØLGE I FORHOLD TIL SEKSJONENE OPPGITT ØVERST I SCENARIOFILA -->
+        <StartVertexXML>0.0, 0.0, 0.0</StartVertexXML> <!-- STARTVERTEX: X VERDI KAN BRUKES TIL Å STARTPOSISJONERE TOGET I AVVIK-->
+    </ErtmsTrain1XML>
+	
+    <StartTimeXML>12:00</StartTimeXML> <!-- STARTTIDSPUNKT FOR SCENARIET -->
+</ScenarioXML>
+

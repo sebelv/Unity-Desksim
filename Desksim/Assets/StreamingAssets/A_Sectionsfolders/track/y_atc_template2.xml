@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Track>
+
+<TrackElementListXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>0.0, 0.0, 0.1</StartVertexXML>
+    <EndVertexXML>0.0, 0.0, 1180.0</EndVertexXML>
+  </StraightTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>0.0, 0.0, 10160.292</StartVertexXML>
+    <EndVertexXML>0.0, 0.0, 10500</EndVertexXML>
+  </StraightTrackXML>
+
+  <SwitchTrackXML>
+    <IdXML></IdXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>0.0, 0.0, 9690.0</StartVertexXML>
+    <AvvikVenstreXML>false</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>0.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </SwitchTrackXML>
+
+  <SwitchTrackXML>
+    <IdXML></IdXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>0.0, 0.0, 10100.0</StartVertexXML>
+    <AvvikVenstreXML>true</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>180.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </SwitchTrackXML>
+
+  <CurveTrackXML>
+    <IdXML></IdXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>-5.0, 0.0, 9770.341</StartVertexXML>
+    <AvvikVenstreXML>false</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>180.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </CurveTrackXML>
+
+  <CurveTrackXML>
+    <IdXML></IdXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>-5.0, 0.0, 10019.659</StartVertexXML>
+    <AvvikVenstreXML>true</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>0.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </CurveTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>0.0, 0.0, 9730.292</StartVertexXML>
+    <EndVertexXML>4.9344036E-15, 0.0, 10059.708</EndVertexXML>
+  </StraightTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>-5.0, 0.0, 9770.341</StartVertexXML>
+    <EndVertexXML>-5.0, 0.0, 10019.659</EndVertexXML>
+  </StraightTrackXML>
+
+  <SwitchTrackXML>
+    <IdXML></IdXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>0.0, 0.0, 1180.0</StartVertexXML>
+    <AvvikVenstreXML>false</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>0.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </SwitchTrackXML>
+
+  <SwitchTrackXML>
+    <IdXML></IdXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>0.0, 0.0, 1220.2925</StartVertexXML>
+    <AvvikVenstreXML>true</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>0.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </SwitchTrackXML>
+
+  <SwitchTrackXML>
+    <IdXML></IdXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>0.0, 0.0, 1870.0</StartVertexXML>
+    <AvvikVenstreXML>false</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>180.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </SwitchTrackXML>
+
+  <SwitchTrackXML>
+    <IdXML></IdXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>4.9344036E-15, 0.0, 1829.7075</StartVertexXML>
+    <AvvikVenstreXML>true</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>180.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </SwitchTrackXML>
+
+  <CurveTrackXML>
+    <IdXML></IdXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>-5.0, 0.0, 1260.3405</StartVertexXML>
+    <AvvikVenstreXML>false</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>180.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </CurveTrackXML>
+
+  <CurveTrackXML>
+    <IdXML></IdXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>5.0, 0.0, 1300.6328</StartVertexXML>
+    <AvvikVenstreXML>true</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>180.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </CurveTrackXML>
+
+  <CurveTrackXML>
+    <IdXML></IdXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>-5.0, 0.0, 1749.3672</StartVertexXML>
+    <AvvikVenstreXML>true</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>0.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </CurveTrackXML>
+
+  <CurveTrackXML>
+    <IdXML></IdXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>5.0, 0.0, 1789.6595</StartVertexXML>
+    <AvvikVenstreXML>false</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>0.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </CurveTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>5.0, 0.0, 1300.6328</StartVertexXML>
+    <EndVertexXML>5.0, 0.0, 1789.6595</EndVertexXML>
+  </StraightTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>0.0, 0.0, 1260.585</StartVertexXML>
+    <EndVertexXML>9.868807E-15, 0.0, 1789.415</EndVertexXML>
+  </StraightTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>-5.0, 0.0, 1260.3405</StartVertexXML>
+    <EndVertexXML>-5.0, 0.0, 1749.3672</EndVertexXML>
+  </StraightTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>0.0, 0.0, 1870.0</StartVertexXML>
+    <EndVertexXML>0.0, 0.0, 4330.0</EndVertexXML>
+  </StraightTrackXML>
+
+  <SwitchTrackXML>
+    <IdXML></IdXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>0.0, 0.0, 4330.0</StartVertexXML>
+    <AvvikVenstreXML>true</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>0.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </SwitchTrackXML>
+
+  <CurveTrackXML>
+    <IdXML></IdXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>5.0, 0.0, 4410.3403</StartVertexXML>
+    <AvvikVenstreXML>true</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>180.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </CurveTrackXML>
+
+  <SwitchTrackXML>
+    <IdXML></IdXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>0.0, 0.0, 4830.0</StartVertexXML>
+    <AvvikVenstreXML>false</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>180.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </SwitchTrackXML>
+
+  <CurveTrackXML>
+    <IdXML></IdXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>5.0, 0.0, 4749.6597</StartVertexXML>
+    <AvvikVenstreXML>false</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>0.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </CurveTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>0.0, 0.0, 4370.2925</StartVertexXML>
+    <EndVertexXML>4.9344036E-15, 0.0, 4789.7075</EndVertexXML>
+  </StraightTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>5.0, 0.0, 4410.3403</StartVertexXML>
+    <EndVertexXML>5.0, 0.0, 4749.6597</EndVertexXML>
+  </StraightTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>0.0, 0.0, 4830.0</StartVertexXML>
+    <EndVertexXML>0.0, 0.0, 9690.0</EndVertexXML>
+  </StraightTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>0.0, 0.0, 10100.0</StartVertexXML>
+    <EndVertexXML>-0.0, 0.0, 10120.0</EndVertexXML>
+  </StraightTrackXML>
+
+  <SwitchTrackXML>
+    <IdXML></IdXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>0.0, 0.0, 10120.0</StartVertexXML>
+    <AvvikVenstreXML>true</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>0.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </SwitchTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>2.5, 0.0, 10160.17</StartVertexXML>
+    <EndVertexXML>17.5, 0.0, 10320.0</EndVertexXML>
+  </StraightTrackXML>
+
+  <CurveTrackXML>
+    <IdXML></IdXML>
+    <RadiusXML>300.0</RadiusXML>
+    <StartVertexXML>20.000004, 0.0, 10360.17</StartVertexXML>
+    <AvvikVenstreXML>true</AvvikVenstreXML>
+    <XDifferenceXML>2.5</XDifferenceXML>
+    <RotasjonXML>180.0</RotasjonXML>
+    <SwitchEngineXOffsetXML>-2.0</SwitchEngineXOffsetXML>
+  </CurveTrackXML>
+
+  <StraightTrackXML>
+    <StartVertexXML>20.000004, 0.0, 10360.17</StartVertexXML>
+    <EndVertexXML>20.0, 0.0, 10500</EndVertexXML>
+  </StraightTrackXML>
+
+</TrackElementListXML>

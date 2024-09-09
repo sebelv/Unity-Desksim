@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 --> 
+<!-- ET SCENARIE STARTER ALLTID SOM DETTE MED ScenarioXML taggen-->
+
+<!-- Deretter listes opp alle seksjoner som skal være med i scenariet  -->
+<!-- Normalt er det greit å ta med alle seksjoner slik som her -->
+<!-- Seksjonene skal få norske navn etterhvert -->
+
+<!--
+	<SectionXML>
+		<NameXML>nitkatman1</NameXML>
+                <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>                
+	</SectionXML>
+ 
+        <SectionXML>
+            <NameXML>spurvstad0</NameXML>
+            <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+        </SectionXML>      
+    -->       
+            
+    <SectionXML>
+        <NameXML>spurvstad1ni</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+  
+    <SectionXML>
+        <NameXML>ospim1ni</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>
+  
+    <SectionXML>
+        <NameXML>gaffelberg1ni</NameXML>
+    </SectionXML>
+        
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>spurvstad1ni</StartSeksjonXML>
+        <StartposXML>1100</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>10</StartModusXML>        
+        <InfoXML></InfoXML> 
+    </TogXML>  
+        
+    <TogXML>
+        <IdXML>200</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>ospim1ni</StartSeksjonXML>
+        <StartposXML>2850</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML>
+    </TogXML>                                  
+	
+    <StartTimeXML>15:21</StartTimeXML> 
+        
+    <PersonStartPosisjonXML>forerrom2_sittende</PersonStartPosisjonXML>  
+    <TogNrXML>12004</TogNrXML>   
+
+    <!-- EN DER TSR STARTER OG EN DER TSR SLUTTER-->
+    <ErtmsTempSpeedXML>
+        <SectionNameXML>spurvstad1ni</SectionNameXML>
+        <StartVertexXML>0.0, 0.0, 2400.0</StartVertexXML> 	<!-- POSISJON I SEKSJON DER TSR STARTER-->
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <LinePosXML>14710</LinePosXML>						<!-- LINJEPOS: DENNE MÅ MANUELT KALKULERES: POSISJON I SEKSJON + LINJEPOS I STARTEN AV SEKSJONEN-->
+        <DirectionXML>1</DirectionXML>						<!-- RETNING DET KJØRES I SCENARIET: 1 FOR SUMPVOLL MOT GAFFELBERG, -1 FOR MOTSATT-->
+        <TargetSpeedKmhXML>30.0</TargetSpeedKmhXML>			<!-- TSR HASTIGHET-->
+    </ErtmsTempSpeedXML>
+    
+    <ErtmsTempSpeedXML>										<!-- SAMME PARAMETERE SOM OVER MEN HAST SATT TIL 500 FOR Å OPPHEVE TSR -->
+        <SectionNameXML>spurvstad1ni</SectionNameXML>
+        <StartVertexXML>0.0, 0.0, 2500.0</StartVertexXML>	<!-- POSISJON I SEKSJON DER TSR SLUTTER-->
+        <OffsetVertexXML>0.0, 0.0, 0.0</OffsetVertexXML>
+        <LinePosXML>14810</LinePosXML>
+        <DirectionXML>1</DirectionXML>
+        <TargetSpeedKmhXML>250</TargetSpeedKmhXML>
+    </ErtmsTempSpeedXML>
+        
+    <!-- TSR MELDING -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>
+            <IdXML>100</IdXML>
+            <StartVertexXML>0,0,1500</StartVertexXML>
+            <SectionNameXML>spurvstad1ni</SectionNameXML>
+        </ScenarioTriggerTrackPosXML>	
+        
+        <ScenarioActionSystemXML>
+            <IdXML>100</IdXML>
+            <StateXML>12</StateXML>
+            <KodeXML>TSR 30 km/h/n14.710 to 14.810/nUstabilt spor</KodeXML>
+        </ScenarioActionSystemXML>
+    </ScenarioEventXML>
+    
+    <!-- TSR MELDING FJERN -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>
+            <IdXML>100</IdXML>
+            <StartVertexXML>0,0,2480</StartVertexXML>
+            <SectionNameXML>spurvstad1ni</SectionNameXML>
+        </ScenarioTriggerTrackPosXML>
+        	
+        <ScenarioActionSystemXML>
+            <IdXML>100</IdXML>
+            <StateXML>13</StateXML>
+            <KodeXML></KodeXML>
+        </ScenarioActionSystemXML>
+    </ScenarioEventXML>  
+
+<!-- signaler ut spurvstad og inn ospim og inn gaffelberg-->
+    <ScenarioEventXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>25sst</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>05sst</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>l03sst</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        <ScenarioActionStateChangerXML>
+            <IdXML>a01osp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+                
+        <ScenarioActionStateChangerXML>
+            <IdXML>sv1osp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>4</SecondsXML>					
+        </ScenarioTriggerTimeXML>                                        
+                
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2084_sec:ospim1ni</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>                 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>a01glb</IdXML>
+            <StateXML>1</StateXML>     	 				
+        </ScenarioActionStateChangerXML>  
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1497_sec:gaffelberg1ni</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>            
+    </ScenarioEventXML>
+
+    <!-- start kryss tog--> 
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ospim1ni</SectionNameXML>	
+            <StartVertexXML>10,0,2330</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+    
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	
+            <IdXML>200</IdXML>		
+            <SpeedXML>-60</SpeedXML>
+        </ScenarioActionAutoTrainCommandXML>
+    </ScenarioEventXML>
+	
+    <!-- veksel og ut --> 
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>200</IdXML>							
+            <SectionNameXML>ospim1ni</SectionNameXML>		
+            <StartVertexXML>0,0,2500</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+    
+        <ScenarioActionStateChangerXML>
+            <IdXML>sv2osp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>3</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+
+        <ScenarioActionStateChangerXML>
+            <IdXML>315osp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+		
+        <ScenarioActionStateChangerXML>
+            <IdXML>325osp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+		
+        <ScenarioActionStateChangerXML>
+            <IdXML>l03osp</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>4</SecondsXML>					
+        </ScenarioTriggerTimeXML>	
+
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	
+            <IdXML>200</IdXML>		
+        </ScenarioActionAutoTrainCommandXML>
+    </ScenarioEventXML>
+
+    <!-- KJØR FRYS OPPG -->
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>spurvstad1ni</SectionNameXML>		
+            <StartVertexXML>0,0,1220</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>			
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML>/n Du har fått utdelt et oppgaveark /n/n Se nå på oppgave 1</MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>spurvstad1ni</SectionNameXML>		
+            <StartVertexXML>0,0,1540</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>			
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML> Se nå på oppgave 2</MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>spurvstad1ni</SectionNameXML>	
+            <StartVertexXML>0,0,3150</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>			
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML> Se nå på oppgave 3</MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ospim1ni</SectionNameXML>		
+            <StartVertexXML>0,0,1800</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>			
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML> Se nå på oppgave 4</MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+             <SectionNameXML>ospim1ni</SectionNameXML>		
+            <StartVertexXML>10,0,2370</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>			
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML> Se nå på oppgave 5</MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>
+	
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+             <SectionNameXML>ospim1ni</SectionNameXML>		
+            <StartVertexXML>0,0,3770</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>			
+	
+        <ScenarioActionFreezeXML>						
+            <MessageXML> Se nå på oppgave 6</MessageXML>
+        </ScenarioActionFreezeXML>						
+    </ScenarioEventXML>    
+    
+</ScenarioXML>

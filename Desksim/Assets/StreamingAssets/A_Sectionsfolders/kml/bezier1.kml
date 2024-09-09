@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>heggeberg.kml</name>
+	<Style id="s_ylw-pushpin4">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl3">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>trase</name>
+		<styleUrl>#m_ylw-pushpin3</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				12.35070931055225,42.01210833797897,0 12.35199023262226,42.01485969306268,0 12.35342408233612,42.0189792101051,0 12.35347734132228,42.02224418599641,0 12.35141296045653,42.02618000517508,0 12.34911014827355,42.02869764471613,0 12.3475882305031,42.03233076307253,0 12.34781229960227,42.03610040690064,0 12.34796169972821,42.04053697518585,0 12.34669013203277,42.04393769722794,0 12.34534623780687,42.04638167285648,0 12.34407597343915,42.04863686834813,0 12.34188466097117,42.05228473073869,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>

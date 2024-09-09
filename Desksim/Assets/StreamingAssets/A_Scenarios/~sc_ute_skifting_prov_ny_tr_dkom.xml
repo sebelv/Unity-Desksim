@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements[ ]>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.4</AmbientLightXML> <!-- 0 til 255 -->
+
+    <!--    
+    -->
+    <SectionXML>
+        <NameXML>bekkerum1</NameXML> 
+    </SectionXML>
+ 
+    <TogXML>
+        <IdXML>201</IdXML>
+        <ModelXML>sdggmrsny</ModelXML>
+        <StartSeksjonXML>bekkerum1</StartSeksjonXML>
+        <StartposXML>2400</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1080;luftkoblemedkm=ja;kobbelopphengmotkm=ja;luftkranmedkm=ja</InfoXML>
+    </TogXML> 
+    
+    <TogXML>
+        <IdXML>202</IdXML>
+        <ModelXML>sdggmrsny</ModelXML>
+        <StartSeksjonXML>bekkerum1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1080;luftkoblemedkm=ja;luftkoblemotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja;kobbelopphengmotkm=ja;</InfoXML>
+    </TogXML>     
+    
+    <TogXML>
+        <IdXML>203</IdXML>
+        <ModelXML>sdggmrsny</ModelXML>
+        <StartSeksjonXML>bekkerum1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1080;luftkoblemedkm=ja;luftkoblemotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja;kobbelopphengmotkm=ja;</InfoXML>
+    </TogXML>  
+    
+    <TogXML>
+        <IdXML>204</IdXML>
+        <ModelXML>sdggmrsny</ModelXML>
+        <StartSeksjonXML>bekkerum1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1080;luftkoblemedkm=ja;luftkoblemotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja;kobbelopphengmotkm=ja;</InfoXML>
+    </TogXML>   
+   
+    <TogXML>
+        <IdXML>205</IdXML>
+        <ModelXML>sdggmrsny</ModelXML>
+        <StartSeksjonXML>bekkerum1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1080;luftkoblemedkm=ja;luftkoblemotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja;kobbelopphengmotkm=ja;</InfoXML>
+    </TogXML>  
+  
+    <TogXML>
+        <IdXML>206</IdXML>
+        <ModelXML>sdggmrsny</ModelXML>
+        <StartSeksjonXML>bekkerum1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1080;luftkoblemedkm=ja;luftkoblemotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja;kobbelopphengmotkm=ja;</InfoXML>
+    </TogXML>      
+       
+    <TogXML>
+        <IdXML>207</IdXML>
+        <ModelXML>sdggmrsny</ModelXML>
+        <StartSeksjonXML>bekkerum1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1080;luftkoblemedkm=ja;luftkoblemotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja;kobbelopphengmotkm=ja;</InfoXML>
+    </TogXML>     
+    
+    <TogXML>
+        <IdXML>208</IdXML>
+        <ModelXML>sdggmrsny</ModelXML>
+        <StartSeksjonXML>bekkerum1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1080;luftkoblemedkm=ja;luftkoblemotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja;kobbelopphengmotkm=ja;</InfoXML>
+    </TogXML>  
+ 
+    <TogXML>
+        <IdXML>209</IdXML>
+        <ModelXML>sdggmrsny</ModelXML>
+        <StartSeksjonXML>bekkerum1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1080;luftkoblemedkm=ja;luftkoblemotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja;kobbelopphengmotkm=ja;</InfoXML>
+    </TogXML>  
+    
+    <TogXML>
+        <IdXML>210</IdXML>
+        <ModelXML>sdggmrsny</ModelXML>
+        <StartSeksjonXML>bekkerum1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <InfoXML>hl=5.0;koblemedkm=ja;skrumedkm=-1080;luftkoblemedkm=ja;luftkoblemotkm=ja;luftkranmedkm=ja;luftkranmotkm=ja;kobbelopphengmotkm=ja;</InfoXML>
+    </TogXML>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>br187ny</ModelXML>
+        <StartSeksjonXML>bekkerum1</StartSeksjonXML>
+        <StartposXML>-1</StartposXML>
+        <StartposSideveisXML>-5</StartposSideveisXML>
+        <StartModusXML>7</StartModusXML>        
+        <InfoXML>kobbelopphengmotkm=ja;kobbelopphengmedkm=ja;luftkobbelopphengmedkm=ja;luftkoblemotkm=ja;luftkranmotkm=ja;</InfoXML> 
+        <PersonOffsetVectorXML>-6.5, 0.0, -14.0</PersonOffsetVectorXML> 
+        <PersonRotationXML>135</PersonRotationXML>
+    </TogXML>                                           
+    
+
+        
+    <StartTimeXML>16:30</StartTimeXML> 
+    
+  
+
+</ScenarioXML>
+

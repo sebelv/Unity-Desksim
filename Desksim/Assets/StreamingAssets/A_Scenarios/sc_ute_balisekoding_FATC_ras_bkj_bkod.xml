@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,180,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+           
+    <SectionXML>
+        <NameXML>atcbortflkrysbanen3</NameXML>
+        <StartVertexXML>0, 0, 0</StartVertexXML>
+    </SectionXML>
+ <!--    -->
+
+    <SectionXML>
+        <NameXML>heggeberg</NameXML>
+        <StartVertexXML>0, 0, 0</StartVertexXML>
+    </SectionXML>
+    
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>heggeberg</StartSeksjonXML>
+        <StartposXML>1640</StartposXML>
+        <StartposSideveisXML>0</StartposSideveisXML>
+        <StartModusXML>101</StartModusXML>        
+        <InfoXML></InfoXML> 
+        <PersonOffsetVectorXML>105.0, 0.0, -570.0</PersonOffsetVectorXML>
+        <PersonRotationXML>180</PersonRotationXML>   
+    </TogXML>     
+	
+    <StartTimeXML>16:30</StartTimeXML> 
+    <TogNrXML>1002</TogNrXML>
+    
+    <ScenarioEventXML>
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>2</SecondsXML>					
+        </ScenarioTriggerTimeXML>	        
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1570_sec:heggeberg_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:11100_sec:atcbortflkrysbanen3_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>        
+    </ScenarioEventXML> 
+    
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>	
+            <StartVertexXML>0,0,10710</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10720_sec:atcbortflkrysbanen3_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1300_sec:heggeberg_type:hs3</IdXML>
+            <StateXML>22</StateXML>
+        </ScenarioActionStateChangerXML>        
+    </ScenarioEventXML>         
+    
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>atcbortflkrysbanen3</SectionNameXML>	
+            <StartVertexXML>0,0,10570</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:10580_sec:atcbortflkrysbanen3_x:0</IdXML>
+            <StateXML>45</StateXML>
+        </ScenarioActionStateChangerXML>
+    </ScenarioEventXML>      
+        
+                          	          
+    
+    <ScenarioEventXML> 
+        <ScenarioTriggerTimeXML>
+            <SecondsXML>1</SecondsXML> 
+        </ScenarioTriggerTimeXML>
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:11299.9_sec:atcbortflytkrysbanen3_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>     
+
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:11303_sec:atcbortflytkrysbanen3_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>                           
+            
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:100_sec:heggeberg_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:103_sec:heggeberg_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>    
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:197_sec:heggeberg_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>          
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:200_sec:heggeberg_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>    
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:1000.1_sec:heggeberg_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>  
+        
+        <ScenarioActionBaliseErrorBitsXML>
+            <IdXML>pos:997_sec:heggeberg_type:bal</IdXML>
+            <MessageXML>0,0,0</MessageXML>	
+        </ScenarioActionBaliseErrorBitsXML>                                                          
+    </ScenarioEventXML>    
+    
+</ScenarioXML>

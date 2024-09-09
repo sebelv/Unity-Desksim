@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TrackElements>
+
+<ScenarioXML>
+
+    <NewLightingXML>true</NewLightingXML>
+    <SunPositionXML>45,220,0</SunPositionXML> <!-- x: 0 = i horisonten 90 = midt oppå himmelen y: rotasjon 0-360 0=nord 90=øst 180=sør 270=vest z: ikke i bruk -->
+    <AmbientLightXML>0.2</AmbientLightXML> <!-- 0 til 255 -->
+ 
+    <!-- 
+    <SectionXML>
+        <NameXML>ertms87sek1al</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>    
+  
+    <SectionXML>
+        <NameXML>ertms87sek2grindvoll</NameXML>
+        <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+    </SectionXML>  
+    
+    <SectionXML>
+        <NameXML>ertms87sek3galleberg</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML>         
+  -->  
+ <SectionXML>
+     <NameXML>ertms87sek4holmestrand</NameXML>
+     <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+ </SectionXML>   
+   
+   <SectionXML>
+       <NameXML>ertms87sek5tonsberg</NameXML>
+       <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+   </SectionXML>      
+     <!-- 
+    <SectionXML>
+        <NameXML>ertms87sek6sokna</NameXML>
+        <EndPointNextStartPointIndexXML>1</EndPointNextStartPointIndexXML>
+    </SectionXML>   
+  
+     <SectionXML>
+         <NameXML>ertms87sek7gulsvik</NameXML>
+         <EndPointNextStartPointIndexXML>0</EndPointNextStartPointIndexXML>
+     </SectionXML>                                  
+    --> 
+   
+    <SlideMappeXML>infoslides_scenario/ertms</SlideMappeXML>
+    <NettbrettFilXML>nettbrettslides_scenario/tog 1205.png</NettbrettFilXML>
+    <SlideOffsetInfoXML>24</SlideOffsetInfoXML>
+    <SlideOffsetOppgaverXML>29</SlideOffsetOppgaverXML>   
+    <TogNrXML>1205</TogNrXML>    
+    <StartTimeXML>14:10</StartTimeXML>
+     
+    <TogXML>
+        <IdXML>100</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>ertms87sek5tonsberg</StartSeksjonXML>
+        <StartposXML>2200</StartposXML>
+        <StartposSideveisXML></StartposSideveisXML>
+        <StartModusXML>11</StartModusXML>        
+        <InfoXML>intet</InfoXML> 
+    </TogXML>   
+    
+          
+    <TogXML>
+        <IdXML>200</IdXML>
+        <ModelXML>b5</ModelXML>
+        <StartSeksjonXML>ertms87sek4holmestrand</StartSeksjonXML>
+        <StartposXML>1760</StartposXML>    
+        <StartposSideveisXML>10</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML> 
+    </TogXML>   
+  
+            
+    <TogXML>
+        <IdXML>300</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>ertms87sek5tonsberg</StartSeksjonXML>
+        <StartposXML>4000</StartposXML>    
+        <StartposSideveisXML></StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML> 
+    </TogXML>   
+  
+              
+    <TogXML>
+        <IdXML>400</IdXML>
+        <ModelXML>togsett</ModelXML>
+        <StartSeksjonXML>ertms87sek4holmestrand</StartSeksjonXML>
+        <StartposXML>1800</StartposXML>    
+        <StartposSideveisXML>-10</StartposSideveisXML>
+        <InfoXML>dekorativt=ja</InfoXML> 
+    </TogXML>   
+  
+    <StartTimeXML>14:10</StartTimeXML> 
+    
+    <PersonStartPosisjonXML>forerrom1_sittende</PersonStartPosisjonXML> 
+       
+    
+    <ScenarioEventXML>
+          
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde1.PNG
+            </MessageXML>
+        </ScenarioActionFreezeXML>  
+        
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>1</SecondsXML>				
+        </ScenarioTriggerTimeXML>	
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde2.PNG oppg1=true oppg2=false oppg3=true
+            </MessageXML>
+        </ScenarioActionFreezeXML>	
+                         
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1523.06_sec:ertms87sek5tonsberg</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1448_sec:ertms87sek5tonsberg_x:5</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML>
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2279_sec:ertms87sek4holmestrand_x:5</IdXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML> 
+        
+        <ScenarioTriggerHandlingXML> 
+            <NumberXML>1</NumberXML> <!-- ertms start trykk -->
+        </ScenarioTriggerHandlingXML> 	
+             
+        <ScenarioTriggerTimeXML>						
+            <SecondsXML>4</SecondsXML>				
+        </ScenarioTriggerTimeXML>	
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1993_sec:ertms87sek5tonsberg_type:ertmsstopp</IdXML>
+            <SerieSluttPosXML>3011</SerieSluttPosXML>
+            <StateXML>1</StateXML>
+        </ScenarioActionStateChangerXML> 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1992_sec:ertms87sek5tonsberg_type:dv</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML> 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1904_sec:ertms87sek5tonsberg_type:dv</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML> 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:1399_sec:ertms87sek5tonsberg_type:dv_x:5</IdXML>
+            <StateXML>0</StateXML>
+        </ScenarioActionStateChangerXML> 
+        
+        <ScenarioActionStateChangerXML>
+            <IdXML>pos:2282_sec:ertms87sek4holmestrand_x:5_type:ertmsstopp</IdXML>
+            <StateXML>2</StateXML>
+        </ScenarioActionStateChangerXML>      
+                        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek5tonsberg</SectionNameXML>		
+            <StartVertexXML>0,0,2100</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde3.PNG oppg1=true oppg2=true oppg3=false oppg4=false
+            </MessageXML>
+        </ScenarioActionFreezeXML>	 
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek5tonsberg</SectionNameXML>		
+            <StartVertexXML>0,0,1850</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde4.PNG oppg1=true oppg2=true oppg3=true oppg4=false oppg5=true
+            </MessageXML>
+        </ScenarioActionFreezeXML>	 
+        
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek5tonsberg</SectionNameXML>		
+            <StartVertexXML>5,0,300</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+        
+        <ScenarioActionFreezeXML>						
+            <MessageXML>freeze_nifty:niftyinfo1 imagefil=Lysbilde5.PNG
+            </MessageXML>
+        </ScenarioActionFreezeXML>	  
+ 
+    </ScenarioEventXML>
+        
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>		
+            <IdXML>100</IdXML>							
+            <SectionNameXML>ertms87sek5tonsberg</SectionNameXML>		
+            <StartVertexXML>0,0,1800</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>	
+		
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>speed</CommandXML>	 
+            <IdXML>300</IdXML>			
+            <SpeedXML>100</SpeedXML>			 
+        </ScenarioActionAutoTrainCommandXML>	
+    </ScenarioEventXML>
+	
+    <!-- STOPP AUTOTOG  --> 
+    <ScenarioEventXML>
+        <ScenarioTriggerTrackPosXML>				
+            <IdXML>300</IdXML>							
+            <SectionNameXML>ertms87sek5tonsberg</SectionNameXML>		
+            <StartVertexXML>0,0,4850</StartVertexXML>
+        </ScenarioTriggerTrackPosXML>
+		
+        <ScenarioActionAutoTrainCommandXML> 	
+            <CommandXML>removeupdate</CommandXML>	 
+            <IdXML>300</IdXML>			
+        </ScenarioActionAutoTrainCommandXML>	
+    </ScenarioEventXML>
+        
+</ScenarioXML>

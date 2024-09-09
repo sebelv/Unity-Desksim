@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Tro>
+
+<TroListXML>
+
+  <TroAc3dXML>
+    <FileNameXML>kl_ak1.ac</FileNameXML>
+    <Point3dXML>-2961.4712, 100.0, 3266.3281</Point3dXML>
+    <TrasePointXML>0.0, 0.0, 5450.0</TrasePointXML>
+    <OffsetVertexXML>-0.8, 0.0, 0.0</OffsetVertexXML>
+    <DirectionXML>1</DirectionXML>
+    <KLPunktXML>true</KLPunktXML>
+  </TroAc3dXML>
+</TroListXML>

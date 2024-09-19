@@ -125,7 +125,10 @@ public class SomeSpline2D
         p.Set((1 - (float)alpha) * p.x + (float)alpha * vertexList[index].x, 
             (1 - (float)alpha) * p.y + (float)alpha * vertexList[index].y, 
             (1 - (float)alpha) * p.z + (float)alpha * vertexList[index].z);
-		
+		for(int i = 0; i < vertexList.Count; i++)
+		{
+			Debug.Log(vertexList[i] + " - Vertex spline " + i);
+		}
 		// tilpass
 //		double temp = p.z;
 //		p.z = p.y;
@@ -219,7 +222,6 @@ public class SomeSpline2D
 	private int finnIndex(double distance)
 	{
 		int index = System.Array.BinarySearch(vertexDistanceFromStartArray, distance);
-		
 		if (index >= 0)
 			return index;
 		

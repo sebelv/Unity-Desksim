@@ -24,7 +24,6 @@ public class Track : MonoBehaviour, TrackElement
 
   public void setStartVertex(Vector3 startVertex) 
   {
-    print("This happens!");
     print(this.startVertex + " - Start Vertex");
     this.startVertex = startVertex;
     print(this.startVertex + " - Start Vertex after");
@@ -174,7 +173,6 @@ public class Track : MonoBehaviour, TrackElement
       GameObject pivot1 = new GameObject();
       pivot1.name = "Left Track";
       
-      
       TrackPart track_top_v = new TrackPart(startVertex, endVertex, 3, TrackPart.to_top, TrackPart.txo_top, 
           TrackPart.indexSequenze_top, TrackPart.texFac_top, matBase);
       if (!stopWorldPos)
@@ -241,7 +239,7 @@ public class Track : MonoBehaviour, TrackElement
       .transform.parent = pivot_gravel.transform;
       pivot = new GameObject().transform;
       pivot.gameObject.name = "Track Object";
-      pivot.parent = GameObject.Find("Track").transform;
+      pivot.parent = transform;
       pivot1.transform.parent = pivot;
       pivot2.transform.parent = pivot;
       pivot_gravel.transform.parent = pivot;

@@ -1,8 +1,9 @@
-using System.Collections;
+ using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Runtime.InteropServices;
 using Unity.VisualScripting;
+using UnityEditor.ProjectWindowCallback;
 using UnityEngine;
 
 public class TrackBuilderManager : MonoBehaviour
@@ -22,16 +23,19 @@ public class TrackBuilderManager : MonoBehaviour
         xmlCreatorTRACK.createObjects(baseObject.getTopObject().getObjectList());
         for(int i = 0; i < xmlCreatorTRACK.trackCount; i++)
         {
-            Vector3 startPos = new Vector3(0,0,0);
+            /*Vector3 startPos = new Vector3(0,0,0);
             Quaternion startRot = new Quaternion();
             for(int x = 0; x < allTracks.Count; x++)
             {
               startPos = allTracks[x].getEndVertex();
               //startRot = allTracks[x].getPivot().rotation;
-            }
-            GameObject newObject = GameObject.Instantiate(new GameObject(), startPos, startRot, trackParent.transform);
+            }*/
+            GameObject newObject = new GameObject();
+            newObject.transform.parent = trackParent.transform;
             newObject.name = "Track Section";
             Track newTrack = newObject.AddComponent<Track>();
+            print(xmlCreatorTRACK.getStartVertex(i) + " - Start");
+            print(xmlCreatorTRACK.getEndVertex(i) + "- End");
             newTrack.setStartVertex(xmlCreatorTRACK.getStartVertex(i));
             newTrack.setEndVertex(xmlCreatorTRACK.getEndVertex(i));
             allTracks.Add(newTrack);
@@ -90,7 +94,7 @@ public class TrackBuilderManager : MonoBehaviour
           extractVector(sa2[1], endCorr);
         }
       }
-    }
+    } 
   }
 
     private KmlSplineTrase etablerKMLTrase(string sectionFile, Vector3 startWorldPoint,
@@ -106,7 +110,7 @@ public class TrackBuilderManager : MonoBehaviour
     if (elevationProfileList != null)
     {
       KmlSpline spline = kmlst.getSpline();
-      spline.etablerElevationProfile(elevationProfileList);
+      spline.etablerElevationProfile(elevationProfileList);  
     }
 
     return kmlst;

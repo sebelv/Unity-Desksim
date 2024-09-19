@@ -7,7 +7,7 @@ public class tb_Track : MonoBehaviour
     [SerializeField] private GameObject geomPrefab;
     protected GameObject geom1;
     protected GameObject b1;
-    protected Mesh mesh = new Mesh();
+    protected Mesh mesh;
     protected Vector3 sv = new Vector3();
     protected Vector3 ev = new Vector3(0,0,50);
     protected Vector3 v1 = new Vector3();

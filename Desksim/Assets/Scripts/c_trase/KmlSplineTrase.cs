@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using Unity.Burst.Intrinsics;
 using UnityEngine;
 
 public class KmlSplineTrase : GenerellTrase
@@ -105,19 +106,22 @@ public class KmlSplineTrase : GenerellTrase
   
 	public override Vector3 finn3DPunktIPos(float pos)
 	{
+    Debug.Log(pos);
 		Vector3 p = spline.finn3DPunkt(pos);
+    //Debug.Log(p + " - Find point");
 		
     p.x += startWorldPoint.x;
     p.y += startWorldPoint.y;
     p.z += startWorldPoint.z;
     
+    //Debug.Log(startWorldPoint + " - Start point point");
 //    if (includeSirkelTrase && pos > sirkelTraseStartPos /*&& pos < sirkelTraseSluttPos*/)
 //    {
 //      Vector3f vec1 = sirkelTrase.finn3dPointISeksjonPos((float)pos);
 //      p.x = vec1.x;
 //      p.z = vec1.z;
 //    }
-    
+    //Debug.Log(p + " - End point");
 		return p;
 	}
 
@@ -139,19 +143,20 @@ public class KmlSplineTrase : GenerellTrase
 		return v1;
 	}
 
+// DENNE MÅ SKRIVES HELT OM MED NY LOGIKK
   public override void finnVertexITraseVertex(Vector3 vecIn, Vector3 vecOut)
   {
     float ang = finnVinkelIPos(vecIn.z);
+    Debug.Log(ang + " - Angle");
     Vector3 v = finn3DPunktIPos(vecIn.z);
     
-    Vector3 v2 = new Vector3(vecIn.x, vecIn.y, 0);
+    GameObject obj = new GameObject("Object");
+    Vector3 v2 = new Vector3(vecIn.x, vecIn.y, 0); 
+    Quaternion roty = AnglesVectors.fromAngleAxis(new Quaternion(), ang, Vector3.up); 
     
-    Vector3 t1 = new Vector3(); 
-    Quaternion roty = new Quaternion(); 
-    roty = AnglesVectors.fromAngleAxis(new Quaternion(), ang, Vector3.up); 
     
     Vector3 v3 = new Vector3();
-    v3 = roty * v3;
+    v3 = obj.transform.position + v3;
 
     v3.x += v.x;
     v3.y += v.y;
@@ -160,6 +165,7 @@ public class KmlSplineTrase : GenerellTrase
     vecOut.x = v3.x;
     vecOut.y = v3.y;
     vecOut.z = v3.z;
+    GameObject.Destroy(obj);
   }
 	
 	public KmlSpline getSpline()

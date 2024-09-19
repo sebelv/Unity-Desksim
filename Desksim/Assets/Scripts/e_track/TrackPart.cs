@@ -239,6 +239,7 @@ public class TrackPart : MonoBehaviour
     //float vi1 = FastMath.DEG_TO_RAD * 6;
     Quaternion rotY = AnglesVectors.fromAngleAxis(new Quaternion(), vi1,   new Vector3(0,1,0));
     Transform t1 = new GameObject().transform;
+    t1.gameObject.name = "Aids";
     t1.rotation = rotY;
     
     foreach (Vector3 v in vertexArray)
@@ -249,13 +250,16 @@ public class TrackPart : MonoBehaviour
       v.Set(v.x+startVertex.x, v.y+startVertex.y, v.z+startVertex.z);
    
     // System.out.println("startv: " + startVertex);
+    GameObject.Destroy(t1.gameObject);
   }
   
   public void worldPositioning(KmlSplineTrase kmlSplineTrase)
   {
-    foreach (Vector3 v in  vertexArray)
+    for (int i = 0; i < 1; i++)
     {
-      kmlSplineTrase.finnVertexITraseVertex(v, v);
+      //print(v + " - Before");
+      kmlSplineTrase.finnVertexITraseVertex(vertexArray[i], vertexArray[i]);
+      //print(v + " - Results");
     }
   }
   

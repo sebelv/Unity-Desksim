@@ -1,16 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Splines;
 
 public class SomeSpline2D
 {
 	private int numParts = 25;
 	private List<Vector3> splineKontrollPunkt = new List<Vector3>();
-	private Spline someSpline;
-	private List<double> vertexDistanceFromStartList = new List<double>();
+	private double[] someSpline;
+	private List<Double> vertexDistanceFromStartList = new List<Double>();
 	private double[] vertexDistanceFromStartArray;
 	private List<Vector3> vertexList = new List<Vector3>();
 	private double totLengde;
@@ -47,8 +47,6 @@ public class SomeSpline2D
     
     float gjSnAvstMelKtrPkt = lengde / splineKontrollPunkt.Count;
     int numP = (int)(gjSnAvstMelKtrPkt / 5.0f);
-    
-    Debug.Log("Akkumulert lengde mellom kontrollpunkt: " + lengde + " CalcNumParts: " + numP);
 
     if (numP < 25)
       this.numParts = 25;
@@ -120,15 +118,9 @@ public class SomeSpline2D
 		double alpha = (distanseMeter - vertexDistanceFromStartArray[index - 1]) / 
 			(vertexDistanceFromStartArray[index] - vertexDistanceFromStartArray[index - 1]);
 		
-		Vector3 p = new Vector3(vertexList[index - 1].x, vertexList[index - 1].y, vertexList[index - 1].z);
-
-        p.Set((1 - (float)alpha) * p.x + (float)alpha * vertexList[index].x, 
-            (1 - (float)alpha) * p.y + (float)alpha * vertexList[index].y, 
-            (1 - (float)alpha) * p.z + (float)alpha * vertexList[index].z);
-		for(int i = 0; i < vertexList.Count; i++)
-		{
-			Debug.Log(vertexList[i] + " - Vertex spline " + i);
-		}
+		Vector3 p = vertexList[index - 1];
+		p = Vector3.Lerp(p, vertexList[index], (float)alpha);
+		
 		// tilpass
 //		double temp = p.z;
 //		p.z = p.y;
@@ -154,8 +146,7 @@ public class SomeSpline2D
 		
 		for (int i = 0; i < kontrollPunktIndex; i++)
 		{
-			akkDist += Vector3.Distance(splineKontrollPunkt[i + 1], forrigeP);
-			
+			akkDist += Vector3.Distance(splineKontrollPunkt[i+1], forrigeP);
 			forrigeP = splineKontrollPunkt[i + 1];
 		}
 		
@@ -179,7 +170,7 @@ public class SomeSpline2D
 
 	private float finnVinkelXZ(Vector3 p1, Vector3 p2)
 	{
-    Vector3 v =  p2-p1;
+    Vector3 v = p2 - p1;
 		
 		float mot = v.x;
 		float hos = v.z;
@@ -200,7 +191,7 @@ public class SomeSpline2D
   
 	private float finnVinkel(Vector3 p1, Vector3 p2)
 	{
-    Vector3 v = p2 -p1;
+    Vector3 v = p2 - p1;
 		
 		float mot = v.x;
 		float hos = v.y;
@@ -221,7 +212,8 @@ public class SomeSpline2D
 	
 	private int finnIndex(double distance)
 	{
-		int index = System.Array.BinarySearch(vertexDistanceFromStartArray, distance);
+		int index = Array.BinarySearch(vertexDistanceFromStartArray, distance);
+		
 		if (index >= 0)
 			return index;
 		
@@ -230,51 +222,52 @@ public class SomeSpline2D
 	
 	private void genererSpline()
 	{
-		Unity.Mathematics.float3[] c = new Unity.Mathematics.float3[splineKontrollPunkt.Count];
+		double[] c = new double[splineKontrollPunkt.Count * 3];
 		
-		for(int i = 0; i < splineKontrollPunkt.Count; i++)
+		int i = 0;
+		
+		foreach (Vector3 p in splineKontrollPunkt)
 		{
-			c[i].x = splineKontrollPunkt[i].x;
-			c[i].y = splineKontrollPunkt[i].y;
-			c[i].z = splineKontrollPunkt[i].z;
+			c[i] = p.x;
+			c[i + 1] = p.y;
+			c[i + 2] = p.z;
 			
+			i += 3;
 		}
-
-		Debug.Log(c.Length + " - Control points");
+		
 		if (splineType == SPLINE_TYPE_CUBIC)
-		{
-			someSpline = SplineFactory.CreateLinear(c);
-		}
+			someSpline = SplineFactory.createCubic(c, numParts);
 		else if (splineType == SPLINE_TYPE_CATMULL)
-			someSpline = SplineFactory.CreateCatmullRom(c);
+			someSpline = SplineFactory.createCatmullRom(c, numParts);
 		else // bezier
-			someSpline = SplineFactory.CreateLinear(c);
+			someSpline = SplineFactory.createBezier(c, numParts);
 	}
 	
 	private void genererVertexListe()
 	{
-		for (int i = 0; i < someSpline.Count; i++)
+		for (int i = 0; i < someSpline.Length; i += 3)
 		{
-			vertexList.Add(someSpline[i].Position);	
+			vertexList.Add(new Vector3((float)someSpline[i], (float)someSpline[i+1], (float)someSpline[i+2]));	
 		}
     
 	}
 	
 	private void genererDistanser()
 	{
+		double[] vertices = someSpline;
 		Vector3 forrigeP = new Vector3();
 		double total = 0;
 		
-		for (int i = 0; i < someSpline.Count; i++)
+		for (int i = 0; i < vertices.Length; i += 3)
 		{
-			Vector3 p = someSpline[i].Position;
+			Vector3 p = new Vector3((float)vertices[i], (float)vertices[i + 1], (float)vertices[i + 2]);
 			//vertexList.add(p);
 			
 			if (i == 0)
 				vertexDistanceFromStartList.Add(0.0);
 			else
 			{
-				total += Vector3.Distance(forrigeP, p);
+				total += Vector3.Distance(forrigeP,p);
 				vertexDistanceFromStartList.Add(total);
 			}
 					
@@ -306,5 +299,4 @@ public class SomeSpline2D
   {
     return vertexList;
   }
-	
 }

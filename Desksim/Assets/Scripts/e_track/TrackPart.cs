@@ -230,7 +230,9 @@ public class TrackPart : MonoBehaviour
     // flytt til posisjon internt i skinneobjektet
     foreach (Vector3 v in vertexArray)
     {
+        //print(v + " - Before");
         v.Set(v.x+x, v.y+y, v.z+z);
+        //print(v + " - After");
     }
     
     // rotasjon
@@ -239,7 +241,7 @@ public class TrackPart : MonoBehaviour
     //float vi1 = FastMath.DEG_TO_RAD * 6;
     Quaternion rotY = AnglesVectors.fromAngleAxis(new Quaternion(), vi1,   new Vector3(0,1,0));
     Transform t1 = new GameObject().transform;
-    t1.gameObject.name = "Aids";
+    t1.gameObject.name = "Rotate Object";
     t1.rotation = rotY;
     
     foreach (Vector3 v in vertexArray)
@@ -255,11 +257,11 @@ public class TrackPart : MonoBehaviour
   
   public void worldPositioning(KmlSplineTrase kmlSplineTrase)
   {
-    for (int i = 0; i < 1; i++)
+    for (int i = 0; i < vertexArray.Length; i++)
     {
-      //print(v + " - Before");
+      print(vertexArray[i] + " - Before asd sad asd ");
       kmlSplineTrase.finnVertexITraseVertex(vertexArray[i], vertexArray[i]);
-      //print(v + " - Results");
+      print(vertexArray[i] + " - Results asd asd asd ");
     }
   }
   
@@ -323,6 +325,7 @@ public class TrackPart : MonoBehaviour
     return geo;
   }
   
+  
     private void createNormals_new(Vector3[] normals, Vector3[] vertices, int[] indexes)
   {
     Vector3[] accumulatedNormalValues = new Vector3[vertices.Length];
@@ -341,7 +344,7 @@ public class TrackPart : MonoBehaviour
       Vector3 v1 = vertices[indexes[i + 1]];
       Vector3 v2 = vertices[indexes[i + 2]];
 
-      Vector3 edge0 = v1- v0;
+      Vector3 edge0 = v1 - v0;
       Vector3 edge1 = v2 - v1;
 
       Vector3 norm = Vector3.Cross(edge0,edge1);
@@ -361,9 +364,9 @@ public class TrackPart : MonoBehaviour
     }
 
     int k = 0;
-    foreach(Vector3 v in accumulatedNormalValues)
+    foreach (Vector3 v in accumulatedNormalValues)
     {
-      Vector3.Normalize(v);
+      v.Normalize();
       normals[k].x = v.x;
       normals[k].y = v.y;
       normals[k].z = v.z;
@@ -387,11 +390,11 @@ public class TrackPart : MonoBehaviour
     {
       for (int k = 0; k < to.Length; k++)
       {
-        Vector3 p = new Vector3(to[k].x, to[k].y, to[k].z);
+        Vector3 p = to[k];
         p.z = i;
         vl.Add(p);
         
-        Vector2 t = new Vector2(txo[k].x, txo[k].y);
+        Vector2 t = txo[k];
         t.y = (i / zDist) * texFac;//i/5;
         tl.Add(t);
              
@@ -423,11 +426,11 @@ public class TrackPart : MonoBehaviour
     {
       for (int k = 0; k < to.Length; k++)
       {
-        Vector3 p = new Vector3(to[k].x, to[k].y, to[k].z);
+        Vector3 p = to[k];
         p.z = f;
         vl.Add(p);
         
-        Vector2 t = new Vector2(txo[k].x, txo[k].y);
+        Vector2 t = txo[k];
         t.y = (f / zDist) * texFac;//i/5;
         tl.Add(t);
              

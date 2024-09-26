@@ -128,9 +128,10 @@ public class Track : MonoBehaviour, TrackElement
     // rotation
     TrackNode runner = first;
     float vi1 = AnglesVectors.finnVinkelOmY(startVertex, endVertex);
+    print(vi1 + " - Vi1 angle");
 
     Quaternion rotY = AnglesVectors.fromAngleAxis(new Quaternion(), vi1, new Vector3(0,1,0));
-    Transform t1 = transform;
+    Transform t1 =  new GameObject("Transform shit").transform;
     t1.rotation = rotY;
     
     while(runner != null)
@@ -151,7 +152,9 @@ public class Track : MonoBehaviour, TrackElement
     runner = first;
     while(runner != null)
     {
+      print(runner.getTempPoint() + " - Temp point");
       kmlSplineTrase.finnVertexITraseVertex(runner.getTempPoint(), runner.getPoint());
+      print(runner.getPoint() + " - Point");
       runner = runner.neste;
     }
     
@@ -166,6 +169,7 @@ public class Track : MonoBehaviour, TrackElement
     
     startTrackNodes.Add(allTrackNodes[0]);
     endTrackNodes.Add(allTrackNodes[allTrackNodes.Count - 1]);
+    GameObject.Destroy(t1.gameObject);
   }
 
   private void trackMesh(KmlSplineTrase kmlSplineTrase)
@@ -175,6 +179,7 @@ public class Track : MonoBehaviour, TrackElement
       
       TrackPart track_top_v = new TrackPart(startVertex, endVertex, 3, TrackPart.to_top, TrackPart.txo_top, 
           TrackPart.indexSequenze_top, TrackPart.texFac_top, matBase);
+      track_top_v.localPositioning(0.7175f,0,0);
       if (!stopWorldPos)
           track_top_v.worldPositioning(kmlSplineTrase);
       GameObject spatial0 = track_top_v.meshMaker();
@@ -183,6 +188,7 @@ public class Track : MonoBehaviour, TrackElement
 
       TrackPart track_side_v = new TrackPart(startVertex, endVertex, 4, TrackPart.to_sides, TrackPart.txo_sides, 
           TrackPart.indexSequenze_sides, TrackPart.texFac_sides, matBase);
+      track_side_v.localPositioning(0.7175f,0,0);
       if (!stopWorldPos)
           track_side_v.worldPositioning(kmlSplineTrase);
       GameObject spatial1 = track_side_v.meshMaker();
@@ -191,18 +197,20 @@ public class Track : MonoBehaviour, TrackElement
       
       TrackPart track_foot_side_v = new TrackPart(startVertex, endVertex, 5, TrackPart.to_foot_sides, TrackPart.txo_foot_sides, 
           TrackPart.indexSequenze_foot_sides, TrackPart.texFac_foot_sides, matBase);
+      track_foot_side_v.localPositioning(0.7175f,0,0);
       if (!stopWorldPos)
           track_foot_side_v.worldPositioning(kmlSplineTrase);
       GameObject spatial_foot_side = track_foot_side_v.meshMaker();
       spatial_foot_side.name = "Left Side Foot Piece";
       spatial_foot_side.transform.parent = pivot1.transform;
       
-      pivot1.transform.position += new Vector3(0.7175f,0,0);
+      // pivot1.transform.position += new Vector3(0.7175f,0,0);
       
       GameObject pivot2 = new GameObject();
       pivot2.name = "Right Track";
       TrackPart track_top_r = new TrackPart(startVertex, endVertex, 3, TrackPart.to_top, TrackPart.txo_top, 
           TrackPart.indexSequenze_top, TrackPart.texFac_top, matBase);
+      track_top_r.localPositioning(-0.7175f,0,0);
       if (!stopWorldPos)
           track_top_r.worldPositioning(kmlSplineTrase);
       GameObject spatial2 = track_top_r.meshMaker();
@@ -211,6 +219,7 @@ public class Track : MonoBehaviour, TrackElement
 
       TrackPart track_side_r = new TrackPart(startVertex, endVertex, 4, TrackPart.to_sides, TrackPart.txo_sides, 
           TrackPart.indexSequenze_sides, TrackPart.texFac_sides, matBase);
+          track_side_r.localPositioning(-0.7175f,0,0);
       if (!stopWorldPos)
           track_side_r.worldPositioning(kmlSplineTrase);
       GameObject spatial3 = track_side_r.meshMaker();
@@ -219,13 +228,14 @@ public class Track : MonoBehaviour, TrackElement
       
       TrackPart track_foot_side_r = new TrackPart(startVertex, endVertex, 5, TrackPart.to_foot_sides, 
           TrackPart.txo_foot_sides, TrackPart.indexSequenze_foot_sides, TrackPart.texFac_foot_sides, matBase);
+          track_foot_side_r.localPositioning(-0.7175f,0,0);
       if (!stopWorldPos)
           track_foot_side_r.worldPositioning(kmlSplineTrase);
       GameObject spatial_foot_side_right = track_foot_side_r.meshMaker();
       spatial_foot_side_right.name = "Right Side Foot Piece";
       spatial_foot_side_right.transform.parent = pivot2.transform;
       
-      pivot2.transform.position += new Vector3(-0.7175f,0,0);
+      //pivot2.transform.position += new Vector3(-0.7175f,0,0);
       
       GameObject pivot_gravel = new GameObject();
       pivot_gravel.name = "Track Terrain";

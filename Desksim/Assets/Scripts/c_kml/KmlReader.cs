@@ -498,14 +498,14 @@ public class KmlReader : MonoBehaviour
 	{
 		for(int i = 1; i < coords.Count; i++)
 		{
-			Debug.Log(coords[i]);
+			// Debug.Log(coords[i]);
 			
 			string[] sa = coords[i].Split(" ");
-
 			for(int k = 0; k < sa.Length-1; k++)
 			{
 				string[] sai = sa[k].Split(",");
-				if (sa.Length % 3 == 0)
+				// Debug.Log(sai.Length + " - Length");
+				if (sai.Length % 3 == 0)
 				{
 					liste.Add(extractPoint(sai));
 				}

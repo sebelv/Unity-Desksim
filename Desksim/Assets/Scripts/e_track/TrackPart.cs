@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -211,45 +212,50 @@ public class TrackPart : MonoBehaviour
   
   public void tilStartVertex()
   {
-    foreach (Vector3 v in vertexArray)
+    for(int i = 0; i < vertexArray.Length; i++)
     {
-      v.Set(v.x+startVertex.x, v.y+startVertex.y, v.z+startVertex.z);    
+      vertexArray[i].Set(vertexArray[i].x+startVertex.x, vertexArray[i].y+startVertex.y, vertexArray[i].z+startVertex.z);    
     }
   }
   
   public void tilVertex(float x, float y, float z)
   {
-    foreach (Vector3 v in vertexArray)
+    for(int i = 0; i < vertexArray.Length; i++)
     {
-        v.Set(v.x+x, v.y+y, v.z+z);
+        vertexArray[i].Set(vertexArray[i].x+x, vertexArray[i].y+y, vertexArray[i].z+z);
     }    
   }
   
   public void localPositioning(float x, float y, float z)
   {
     // flytt til posisjon internt i skinneobjektet
-    foreach (Vector3 v in vertexArray)
+    if(x != 0 || y != 0 || z != 0)
     {
+      for(int i = 0; i < vertexArray.Length; i++)
+      {
         //print(v + " - Before");
-        v.Set(v.x+x, v.y+y, v.z+z);
+        vertexArray[i].Set(vertexArray[i].x+x, vertexArray[i].y+y, vertexArray[i].z+z);
         //print(v + " - After");
+      }
     }
     
     // rotasjon
     float vi1 = AnglesVectors.finnVinkelOmY(startVertex, endVertex);
+    Debug.Log(vi1 + " - Angles");
 
-    //float vi1 = FastMath.DEG_TO_RAD * 6;
     Quaternion rotY = AnglesVectors.fromAngleAxis(new Quaternion(), vi1,   new Vector3(0,1,0));
     Transform t1 = new GameObject().transform;
     t1.gameObject.name = "Rotate Object";
     t1.rotation = rotY;
     
-    foreach (Vector3 v in vertexArray)
-      t1.position = v;
+    for(int i = 0; i < vertexArray.Length; i++)
+      t1.position = vertexArray[i];
     
     // flytt til posisjon langs traseèn 
-    foreach (Vector3 v in vertexArray)
-      v.Set(v.x+startVertex.x, v.y+startVertex.y, v.z+startVertex.z);
+    for(int i = 0; i < vertexArray.Length; i++)
+    {
+      vertexArray[i].Set(vertexArray[i].x+startVertex.x, vertexArray[i].y+startVertex.y, vertexArray[i].z+startVertex.z);
+    }
    
     // System.out.println("startv: " + startVertex);
     GameObject.Destroy(t1.gameObject);
@@ -259,9 +265,9 @@ public class TrackPart : MonoBehaviour
   {
     for (int i = 0; i < vertexArray.Length; i++)
     {
-      print(vertexArray[i] + " - Before asd sad asd ");
-      kmlSplineTrase.finnVertexITraseVertex(vertexArray[i], vertexArray[i]);
-      print(vertexArray[i] + " - Results asd asd asd ");
+      //print(vertexArray[i] + " - Before asd sad asd ");
+      vertexArray[i] = kmlSplineTrase.finnVertexITraseVertex(vertexArray[i]);
+      //print(vertexArray[i] + " - Results asd asd asd ");
     }
   }
   
@@ -273,11 +279,8 @@ public class TrackPart : MonoBehaviour
   public GameObject meshMaker()
   {
     Mesh mesh = new Mesh();
-
     mesh.vertices = vertexArray;
     mesh.triangles = indexArray;
-
-    mesh.RecalculateBounds();
       
     GameObject geo = new GameObject("Track");
     MeshFilter filter = geo.AddComponent<MeshFilter>();

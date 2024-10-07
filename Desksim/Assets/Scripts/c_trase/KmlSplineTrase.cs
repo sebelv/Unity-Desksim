@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using Unity.Burst.Intrinsics;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Video;
 
@@ -108,7 +109,7 @@ public class KmlSplineTrase : GenerellTrase
 	public override Vector3 finn3DPunktIPos(float pos)
 	{
 		Vector3 p = spline.finn3DPunkt(pos);
-    Debug.Log(p + " - Find point");
+    // Debug.Log(p + " - Find point");
 		p.z -= spline.finn3DPunkt(0).z; 
 
     p.x += startWorldPoint.x;
@@ -145,21 +146,23 @@ public class KmlSplineTrase : GenerellTrase
 	}
 
 // DENNE MÅ SKRIVES HELT OM MED NY LOGIKK
-  public override void finnVertexITraseVertex(Vector3 vecIn, Vector3 vecOut)
+  public Vector3 finnVertexITraseVertex(Vector3 vecIn)
   {
+    Debug.Log(vecIn + " - VecIn");
     float ang = finnVinkelIPos(vecIn.z);
     Debug.Log(ang + " - Angle");
     Vector3 v = finn3DPunktIPos(vecIn.z);
-    // Debug.Log(v + " - Punkt");
+    Debug.Log(v + " - Punkt");
 
     Vector3 v2 = new Vector3(vecIn.x, vecIn.y, 0);
-    
+    Debug.Log(v2);
     GameObject t1 = new GameObject();
     GameObject t2 = new GameObject(); 
+    t1.transform.position = v;
     t2.transform.name = "assdt";
-    t2.transform.position = v;
+    t2.transform.position = t1.transform.position;
     t2.transform.parent = t1.transform;
-    t2.transform.position = v2;
+    t2.transform.position += v2;
 
     Quaternion roty = new Quaternion();
     roty = Quaternion.AngleAxis(ang , Vector3.up); 
@@ -172,9 +175,17 @@ public class KmlSplineTrase : GenerellTrase
     v3.z += v.z;
 
     t2.transform.position = v3;
+    Vector3 vecOut = new Vector3();
     vecOut.x = v3.x;
     vecOut.y = v3.y;
     vecOut.z = v3.z;
+    GameObject.Destroy(t1);
+    GameObject.Destroy(t2);
+    return vecOut;
+  }
+
+    public override void finnVertexITraseVertex(Vector3 vecIn, Vector3 vecOut)
+  {
   }
 	
 	public KmlSpline getSpline()

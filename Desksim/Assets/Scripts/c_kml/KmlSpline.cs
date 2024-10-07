@@ -152,7 +152,7 @@ public class KmlSpline
 	public Vector3 finn3DPunkt(double distanseMeter)
 	{
 		Vector3 p = crs2DXZ.finn3DPunkt(distanseMeter);
-		Debug.Log(p + " - finn3DPunkt");
+		// Debug.Log(p + " - finn3DPunkt");
 		// tilpass
 		//double temp = p.z;
     float temp = p.z;
@@ -171,7 +171,7 @@ public class KmlSpline
         p.y = crs2DY.finn3DPunkt(maxDist-0.1f).y;
       }
     }
-		Debug.Log(p + " - return3DPunkt");
+		// Debug.Log(p + " - return3DPunkt");
 		return p;
 	}
 	

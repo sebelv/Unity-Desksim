@@ -128,7 +128,7 @@ public class Track : MonoBehaviour, TrackElement
     // rotation
     TrackNode runner = first;
     float vi1 = AnglesVectors.finnVinkelOmY(startVertex, endVertex);
-    print(vi1 + " - Vi1 angle");
+    // print(vi1 + " - Vi1 angle");
 
     Quaternion rotY = AnglesVectors.fromAngleAxis(new Quaternion(), vi1, new Vector3(0,1,0));
     Transform t1 =  new GameObject("Transform shit").transform;
@@ -152,9 +152,9 @@ public class Track : MonoBehaviour, TrackElement
     runner = first;
     while(runner != null)
     {
-      print(runner.getTempPoint() + " - Temp point");
+      // print(runner.getTempPoint() + " - Temp point");
       kmlSplineTrase.finnVertexITraseVertex(runner.getTempPoint(), runner.getPoint());
-      print(runner.getPoint() + " - Point");
+      // print(runner.getPoint() + " - Point");
       runner = runner.neste;
     }
     

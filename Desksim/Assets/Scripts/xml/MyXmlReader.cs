@@ -194,7 +194,6 @@ public class MyXmlReader
 	private static BaseObjectXML createObject(string className)
 	{
             BaseObjectXML o = new BaseObjectXML();
-            Debug.Log("ASKDH ASKDH ");
             return o;
 	}
 	

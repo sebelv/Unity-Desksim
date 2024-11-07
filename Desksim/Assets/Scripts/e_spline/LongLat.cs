@@ -29,17 +29,19 @@ public class LongLat
 	
 	public Vector3 finnKoordinatPunkt(Vector3 googleEarthPunkt)
 	{
-		double meterPrGrad1 = meterPrGrad(googleEarthPunkt.y);
+		float meterPrGrad1 = meterPrGrad(googleEarthPunkt.y);
 		
-		double x = (googleEarthPunkt.x - googleEarthNullPunkt.x) * meterPrGrad1;
-		double y = (googleEarthPunkt.y - googleEarthNullPunkt.y) * M_PR_GRAD_LAT;
+		float x = (googleEarthPunkt.x - googleEarthNullPunkt.x) * meterPrGrad1;
 		
-		return new Vector3((float)x, (float)y, googleEarthPunkt.z);
+		float y = (googleEarthPunkt.y - googleEarthNullPunkt.y) * M_PR_GRAD_LAT;
+		
+
+		return new Vector3(x, y, googleEarthPunkt.z);
 	}
 
-	private double meterPrGrad(float lengdeGrad)
+	private float meterPrGrad(float lengdeGrad)
 	{
-		return Mathf.Cos((Mathf.Deg2Rad * (lengdeGrad)) * M_PR_GRAD_EKVATOR);
+		return Mathf.Cos((Mathf.Deg2Rad * lengdeGrad)) * M_PR_GRAD_EKVATOR;
 	}
 	
 //	public static void main(String[] args)

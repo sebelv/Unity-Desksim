@@ -1,6 +1,5 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
+using UnityEngine;
 
 class CubicSpline : Spline
 {
@@ -21,8 +20,9 @@ class CubicSpline : Spline
   
   protected void initialize (double[] controlPoints, int nParts)
   {
+    Debug.Log(controlPoints.Length + " - point length");
     nParts_ = nParts;
-
+    Debug.Log(nParts_ + " - parts");
     // Endpoints are added three times to get them include in the
     // generated array    
     controlPoints_ = new double[controlPoints.Length + 12];

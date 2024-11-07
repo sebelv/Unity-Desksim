@@ -39,13 +39,17 @@ public class SomeSpline2D
   {
     float lengde = 0;
     Vector3 vf = splineKontrollPunkt[0];
-    foreach (Vector3 v in splineKontrollPunkt)
+    for(int i = 0; i < splineKontrollPunkt.Count; i++)
     {
-      lengde += Vector3.Distance(v,vf);
-      vf = v;
+	  Debug.Log("Length: " + lengde + ", " + i);
+      lengde += Vector3.Distance(splineKontrollPunkt[i],vf);
+      vf = splineKontrollPunkt[i];
     }
     
-    float gjSnAvstMelKtrPkt = lengde / splineKontrollPunkt.Count;
+	Debug.Log("Lengde / splinekontrollpunkt: " + lengde / splineKontrollPunkt.Count);
+	Debug.Log("Lengde: " + lengde);
+	Debug.Log("Splinekontrollpunkt: " + splineKontrollPunkt.Count);
+	float gjSnAvstMelKtrPkt = lengde / splineKontrollPunkt.Count;
     int numP = (int)(gjSnAvstMelKtrPkt / 5.0f);
 
     if (numP < 25)
@@ -91,8 +95,10 @@ public class SomeSpline2D
 	
 	public float finnVinkel(float distanseMeter)
 	{
+		
 		int index = finnIndex(distanseMeter);
-    
+    	Debug.Log(index + " - Index");
+
 		if (index == 0)
 			index = 1;
 		if (index >= vertexDistanceFromStartArray.Length)
@@ -100,6 +106,7 @@ public class SomeSpline2D
 		
 		Vector3 p1 = vertexList[index - 1];
 		Vector3 p2 = vertexList[index];
+		Debug.Log("P1, P2: " + p1 + ", " + p2);
 		
     sisteVinkelXZ = finnVinkelXZ(p1, p2);
     
@@ -213,7 +220,6 @@ public class SomeSpline2D
 	private int finnIndex(double distance)
 	{
 		int index = Array.BinarySearch(vertexDistanceFromStartArray, distance);
-		
 		if (index >= 0)
 			return index;
 		
@@ -241,6 +247,12 @@ public class SomeSpline2D
 			someSpline = SplineFactory.createCatmullRom(c, numParts);
 		else // bezier
 			someSpline = SplineFactory.createBezier(c, numParts);
+
+		Debug.Log("Spline Points:");
+		for(int o = 0; o < someSpline.Length; o++)
+		{
+			Debug.Log(someSpline[o] + " - SplinePoint [" + o + "]");
+		}
 	}
 	
 	private void genererVertexListe()

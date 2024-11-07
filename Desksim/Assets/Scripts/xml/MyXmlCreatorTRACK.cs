@@ -123,7 +123,6 @@ public Vector3 getEndVertex(int i)
         MethodInfo theMethod = thisType.GetMethod("c_" + bo.getTagName());
         object[] obj = new object[1];
         obj[0] = bo;
-        Debug.Log(theMethod.Name);
         theMethod.Invoke(this, obj);
     }
   }

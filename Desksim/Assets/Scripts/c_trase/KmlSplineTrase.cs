@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using Unity.Burst.Intrinsics;
+using Unity.Mathematics;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Video;
@@ -25,8 +26,7 @@ public class KmlSplineTrase : GenerellTrase
     }
 
     public void InitSplineTrase(string kmlFilnavn, Vector3 startWorldPoint, 
-      Vector3 startCorrOffs, Vector3 endCorrOffs, Vector3 startPunkt, Vector3 sluttPunkt,
-			double startPos)
+      Vector3 startCorrOffs, Vector3 endCorrOffs, Vector3 startPunkt)
     {
         this.startWorldPoint = startWorldPoint;
 		KmlReader kmlTr = new KmlReader(kmlFilnavn, new Vector3(startPunkt.x, startPunkt.y, startPunkt.z), 
@@ -35,10 +35,6 @@ public class KmlSplineTrase : GenerellTrase
 		spline = kmlTr.getTraseSpline();
 		
 		lengde = spline.getLengde();
-		
-		//System.exit(0);
-		startPos = 0.0;
-		sluttPos = lengde + startPos;
     }
 
     public void InitSplineTrase(double startPos, string kmlFilnavn, Vector3 startWorldPoint, 
@@ -58,11 +54,6 @@ public class KmlSplineTrase : GenerellTrase
 			Application.Quit();
 		}
 		
-		// lengde = spline.getLengde();
-		Debug.Log("Section kml spline length: " + lengde);
-		
-		startPos = 0.0;
-		sluttPos = lengde + startPos;
     }
 
 //  public void setIncludeSirkelTrase(boolean includeSirkelTrase)
@@ -152,22 +143,21 @@ public class KmlSplineTrase : GenerellTrase
     float ang = finnVinkelIPos(vecIn.z);
     Debug.Log(ang + " - Angle");
     Vector3 v = finn3DPunktIPos(vecIn.z);
-    Debug.Log(v + " - Punkt");
+    //Debug.Log(v + " - Punkt");
 
     Vector3 v2 = new Vector3(vecIn.x, vecIn.y, 0);
-    Debug.Log(v2);
+    //Debug.Log(v2);
     GameObject t1 = new GameObject();
     GameObject t2 = new GameObject(); 
+    t1.transform.rotation = AnglesVectors.fromAngleAxis(t1.transform.rotation, ang, Vector3.up);
+    Debug.Log(t1.transform.rotation.x + "," + t1.transform.rotation.y + "," + t1.transform.rotation.z + "," + t1.transform.rotation.w + " - Roty");
     t1.transform.position = v;
     t2.transform.name = "assdt";
     t2.transform.position = t1.transform.position;
     t2.transform.parent = t1.transform;
     t2.transform.position += v2;
 
-    Quaternion roty = new Quaternion();
-    roty = Quaternion.AngleAxis(ang , Vector3.up); 
-    t1.transform.rotation = roty;
-    
+
     Vector3 v3 = t2.transform.position;
 
     v3.x += v.x;
@@ -181,6 +171,7 @@ public class KmlSplineTrase : GenerellTrase
     vecOut.z = v3.z;
     GameObject.Destroy(t1);
     GameObject.Destroy(t2);
+    Debug.Log("VecOut: " + vecOut);
     return vecOut;
   }
 

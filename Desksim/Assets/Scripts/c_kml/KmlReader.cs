@@ -113,7 +113,6 @@ public class KmlReader : MonoBehaviour
 		do
 		{
 			innlinje = reader.ReadLine(); //leser en linje
-			Debug.Log(innlinje);
 			if ( innlinje != null ) //null betyr filslutt
 			{
 				lesLinje(innlinje);
@@ -224,9 +223,7 @@ public class KmlReader : MonoBehaviour
 	
 	private void lesLinje(string innLinje)
 	{
-		Debug.Log(innLinje + " - INNLINJE 1");
 		int st = finnSplineTag(innLinje);
-		print("Status: " + st);
 		if (st > 0)
 			status = st;
 		
@@ -251,10 +248,13 @@ public class KmlReader : MonoBehaviour
 			
 			if (status == 1)
 			{
-				if (googleEarthUtgPkt == null)
+				Debug.Log("Kommer den seg hit...");
+				if (googleEarthUtgPkt == new Vector3())
 					pNullPunkt = coordsListe[0];
 				else
 					pNullPunkt = googleEarthUtgPkt;
+
+				Debug.Log("Pnullpunkt: " + pNullPunkt + ", googleutgPkt: " + googleEarthUtgPkt + ", coordsListe[0]: " + coordsListe[0]);
 			}
 			
 

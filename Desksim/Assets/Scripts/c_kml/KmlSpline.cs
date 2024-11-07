@@ -31,9 +31,6 @@ public class KmlSpline
 	public KmlSpline(List<Vector3> googleEarthCoords, Vector3 googleEarthNullpunkt,
 			List<Vector3> distanceHeightList, Vector3 startKorr, Vector3 sluttKorr)
 	{
-
-		Debug.Log(googleEarthCoords[0] + " - Google earth coords");
-		Debug.Log(distanceHeightList + " - height list");
 		this.googleEarthCoords.AddRange(googleEarthCoords);
 		this.distanceHeightList = distanceHeightList;
 
@@ -65,13 +62,14 @@ public class KmlSpline
 //			s3dScpxzList.add(s);
 //			bg.addChild(s.getBranchGroup());
 //		}
-		Debug.Log(splineKontrollPunkt[0] + " - Punkt 0");
 		crs2DXZ = new SomeSpline2D(splineKontrollPunkt, numParts);
-		
 		totLengde = crs2DXZ.getLengde();
     
 		if (this.distanceHeightList != null)
+		{
+			Debug.Log("DETTE GJØRES HAHA");
 			crs2DY = new SomeSpline2D(distanceHeightList, numParts);
+		}
 		
 //		distanceHeightList = new ArrayList<Vector3f>();
 //		distanceHeightList.add(new Vector3f(0,0,0));
@@ -254,7 +252,8 @@ public class KmlSpline
 	{
 		for (int i = 0; i < googleEarthCoords.Count; i++)
 		{
-			Debug.Log("google point " + i + " - " + googleEarthCoords[i]);
+			Debug.Log("google coord " + i + " - " + googleEarthCoords[i]);
+			Debug.Log("google point " + i + " - " + longLat.finnKoordinatPunkt(googleEarthCoords[i]));
 			splineKontrollPunkt.Add(longLat.finnKoordinatPunkt(googleEarthCoords[i]));
 		}
 	}

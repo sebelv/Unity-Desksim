@@ -9,6 +9,8 @@ public class TrackBuilderManager : MonoBehaviour
 {
     [SerializeField] private Transform trackParent;
     [SerializeField] private List<Track> allTracks = new List<Track>();
+    [SerializeField] private List<Section> sectionList = new List<Section>();
+    [SerializeField] private List<SwitchTrack> trackList = new List<SwitchTrack>();
     [SerializeField] private Vector3 startPoint;
     [SerializeField] private Vector3 endPoint;
     [SerializeField] private string scenarioName = "";
@@ -33,8 +35,8 @@ public class TrackBuilderManager : MonoBehaviour
             newObject.transform.parent = trackParent.transform;
             newObject.name = "Track Section";
             Track newTrack = newObject.AddComponent<Track>();
-            print(xmlCreatorTRACK.getStartVertex(i) + " - Start");
-            print(xmlCreatorTRACK.getEndVertex(i) + "- End");
+            //print(xmlCreatorTRACK.getStartVertex(i) + " - Start");
+            //print(xmlCreatorTRACK.getEndVertex(i) + "- End");
             newTrack.setStartVertex(xmlCreatorTRACK.getStartVertex(i));
             newTrack.setEndVertex(xmlCreatorTRACK.getEndVertex(i));
             allTracks.Add(newTrack);
@@ -53,17 +55,83 @@ public class TrackBuilderManager : MonoBehaviour
             allTracks[i].init(kmlst);
         }
 
-        /*
-        // store section data
-        Section section = new Section();
-        sectionList.add(section);
-        section.setName(name);
-        section.setTrase(kmlst);
+    // store section data
+    Section section = new Section();
+    sectionList.Add(section);
+    section.setName(name);
+    section.setTrase(kmlst);
 
-        for (TrackElement t : trackList)
+    foreach (TrackElement t in trackList)
+    {
+      section.addTrackNodes(t.getAllTrackNodes());
+    }
+
+    // koble sporelementer
+    List<TrackNode> allStartTrackNodes = new List<TrackNode>();
+    foreach (TrackElement t in trackList)
+    {
+      foreach (TrackNode tn in t.getStartTrackNodes())
+      {
+        allStartTrackNodes.Add(tn);
+      }
+    }
+
+    float trackLength = 0;
+
+    List<TrackNode> allEndTrackNodes = new List<TrackNode>();
+    foreach (TrackElement t in trackList)
+    {
+      foreach (TrackNode tn in t.getEndTrackNodes())
+      {
+        allEndTrackNodes.Add(tn);
+
+        // finn sporlengde
+        if (tn.getTempPoint().z > trackLength)
         {
-          section.addTrackNodes(t.getAllTrackNodes());
-        }*/
+          trackLength = tn.getTempPoint().z;
+        }
+      }
+    }
+
+
+    if (trackLength > (kmlst.getLengde() + 50))
+    {
+      Application.Quit();
+    }
+
+    foreach (TrackNode ts in allStartTrackNodes)
+    {
+      foreach (TrackNode te in allEndTrackNodes)
+      {
+        if (Vector3.Distance(ts.getTempPoint(), te.getTempPoint())  < 0.5f)
+        {
+          ts.forrige = te;
+          te.neste = ts;
+        }
+      }
+    }
+
+    // generer endelige end og start node lister
+    section.generateAllStartTrackNodeList();
+    section.generateAllEndTrackNodeList();
+
+    // hent ut switch positioner
+    foreach (TrackElement t in trackList)
+    {
+      /*
+      if ((t is SwitchTrack) && !(t is CurveTrack))
+      {
+        switchPositionerList.add(((SwitchTrack) t).getSwitchPositioner());
+        section.addSwitchPositioner(((SwitchTrack) t).getSwitchPositioner());
+        section.addSoundTriggers(((SwitchTrack) t).getSoundTriggerList());
+        
+        if (t instanceof KryssTrack)
+        {
+          switchPositionerList.add(((KryssTrack) t).getSwitchPositioner2());
+          section.addSwitchPositioner(((KryssTrack) t).getSwitchPositioner2());          
+        }
+      }*/
+    }
     }
 
     private void lesFilStartEndCorrection(Vector3 startCorr, Vector3 endCorr, string name)
@@ -102,14 +170,13 @@ public class TrackBuilderManager : MonoBehaviour
         KmlSplineTrase kmlst = new KmlSplineTrase(new Vector3(),new Vector3(),0.0);
         kmlst.InitSplineTrase(0, Application.dataPath + "/StreamingAssets/A_Sectionsfolders/kml/" + sectionFile + ".kml",
             startWorldPoint, startCorrOffs, endCorrOffs);
-
     AltTextFileReader atr = new AltTextFileReader(Application.dataPath + "/StreamingAssets/A_Sectionsfolders/alt/" + sectionFile + ".alt");
     List<Vector3> elevationProfileList = atr.getPointListe();
     Debug.Log(atr.getPointListe().Count + " - " + atr.getPointListe()[0].x);
     if (elevationProfileList != null)
     {
       KmlSpline spline = kmlst.getSpline();
-      spline.etablerElevationProfile(elevationProfileList);  
+      //spline.etablerElevationProfile(elevationProfileList);  
     }
 
     return kmlst;

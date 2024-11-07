@@ -24,9 +24,9 @@ public class Track : MonoBehaviour, TrackElement
 
   public void setStartVertex(Vector3 startVertex) 
   {
-    print(this.startVertex + " - Start Vertex");
+    //print(this.startVertex + " - Start Vertex");
     this.startVertex = startVertex;
-    print(this.startVertex + " - Start Vertex after");
+    //print(this.startVertex + " - Start Vertex after");
     length = Vector3.Distance(startVertex, endVertex);
   }
 
@@ -254,6 +254,7 @@ public class Track : MonoBehaviour, TrackElement
       pivot2.transform.parent = pivot;
       pivot_gravel.transform.parent = pivot;
       pivot.position = startVertex;
+      MeshCombiner.Instance.CombineChildren(transform.gameObject);
   } 
 
 

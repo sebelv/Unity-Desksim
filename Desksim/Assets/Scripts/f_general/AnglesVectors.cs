@@ -264,33 +264,28 @@ public class AnglesVectors
     return ctn;
   }
 
-  public static Quaternion fromAngleAxis(Quaternion quat, float angle, Vector3 axis) {
-        Vector3 normAxis = axis.normalized;
-        fromAngleNormalAxis(quat, angle, normAxis);
-        return quat;
+  public static Quaternion fromAngleAxis(Quaternion quat, float angle, Vector3 axis) 
+  {
+    axis.Normalize();
+    Quaternion qoot = fromAngleNormalAxis(quat, angle, axis);
+    return qoot;
   }
-
-    /**
-     * Sets the quaternion from the specified rotation angle and normalized axis
-     * of rotation. If the axis might not be normalized, use
-     * {@link #fromAngleAxis(float, com.jme3.math.Vector3f)} instead.
-     *
-     * @param angle the desired rotation angle (in radians)
-     * @param axis the desired axis of rotation (not null, length=1, unaffected)
-     * @return the (modified) current instance (for chaining)
-     */
-    public static Quaternion fromAngleNormalAxis(Quaternion quat, float angle, Vector3 axis) {
-        if (axis.x == 0 && axis.y == 0 && axis.z == 0) {
-            quat.x=quat.y=quat.z=0;
-            quat.w = 1;
-        } else {
-            float halfAngle = 0.5f * angle;
-            float sin = Mathf.Sin(halfAngle);
-            quat.w = Mathf.Cos(halfAngle);
-            quat.x = sin * axis.x;
-            quat.y = sin * axis.y;
-            quat.z = sin * axis.z;
-        }
-        return quat;
+  public static Quaternion fromAngleNormalAxis(Quaternion quat, float angle, Vector3 axis) 
+  {
+    if (axis.x == 0 && axis.y == 0 && axis.z == 0) 
+    {
+        quat.x=quat.y=quat.z=0;
+        quat.w = 1;
+    } 
+    else 
+    {
+        float halfAngle = 0.5f * angle;
+        float sin = Mathf.Sin(halfAngle);
+        quat.w = Mathf.Cos(halfAngle);
+        quat.x = sin * axis.x;
+        quat.y = sin * axis.y;
+        quat.z = sin * axis.z;
     }
+    return quat;
+  }
 }

@@ -286,14 +286,10 @@ public class TrackPart : MonoBehaviour
     MeshFilter filter = geo.AddComponent<MeshFilter>();
     MeshRenderer renderer = geo.AddComponent<MeshRenderer>();
     filter.mesh = mesh; // using our custom mesh object
-
-//    Material mat = new Material(assetManager, 
-//           "Common/MatDefs/Light/Lighting.j3md");
-    Material mat = materialGravelTextureColor();
-    
+    string matString = "";
     if (materialChoice == 0)
     {
-      mat = materialTopTextureColor();
+      matString = materialTopTextureColor();
     }
     else if (materialChoice == 1)
     {
@@ -301,29 +297,25 @@ public class TrackPart : MonoBehaviour
     }
     else if (materialChoice == 2)
     {
-      mat = materialTopMaterialLight();
+      matString = materialTopMaterialLight();
     }
     else if (materialChoice == 3)
     {
-      mat = materialTopTextureColor2();
+      matString = materialTopTextureColor2();
     }
     else if (materialChoice == 4)
     {
-      mat = materialSideTextureColor();
+      matString = materialSideTextureColor();
     }
     else if (materialChoice == 5)
     {
-      mat = materialFootSideTextureColor();
+      matString = materialFootSideTextureColor();
     }
     else if (materialChoice == 6)
     {
-      mat = materialGravelTextureColor();
+      matString = materialGravelTextureColor();
     }
-
-    
-//    mat.setTexture("DiffuseMap", 
-//            assetManager.loadTexture("Textures/Terrain/BrickWall/BrickWall.jpg"));
-    renderer.material = mat;
+    renderer.sharedMaterial = MaterialManager.Instance.GetMaterial(matString);
     
     return geo;
   }
@@ -481,14 +473,14 @@ public class TrackPart : MonoBehaviour
       indexArray[i] = il[i];
   }
 
-  private Material materialTopTextureColor()
+  private string materialTopTextureColor()
   {
-        return MaterialManager.Instance.GetMaterial("TrackTop");
+        return "TrackTop";
   }
   
-  private Material materialTopTextureColor2()
+  private string materialTopTextureColor2()
   {
-        return MaterialManager.Instance.GetMaterial("TrackTop");
+        return "TrackTop";
      /*Material mat = new Material(assetManager, 
         "Common/MatDefs/Misc/Unshaded.j3md");
      
@@ -500,9 +492,9 @@ public class TrackPart : MonoBehaviour
       return mat;*/
   }
   
-  private Material materialSideTextureColor()
+  private string materialSideTextureColor()
   {
-        return MaterialManager.Instance.GetMaterial("Track");
+        return "Track";
     /*if (StartParameters.newLighting)
     {
       Material mat = new Material(assetManager, 
@@ -529,14 +521,14 @@ public class TrackPart : MonoBehaviour
     return mat;*/
   }
 
-  private Material materialTopMaterialLight()
+  private string materialTopMaterialLight()
   {
-    return MaterialManager.Instance.GetMaterial("TopMaterialLight");
+    return "TopMaterialLight";
   }
   
-  private Material materialFootSideTextureColor()
+  private string materialFootSideTextureColor()
   {
-            return MaterialManager.Instance.GetMaterial("Track");
+            return "Track";
     /*if (StartParameters.newLighting)
     {
       Material mat = new Material(assetManager, 
@@ -563,9 +555,9 @@ public class TrackPart : MonoBehaviour
     return mat;*/
   }
   
-  private Material materialGravelTextureColor()
+  private string materialGravelTextureColor()
   {
-            return MaterialManager.Instance.GetMaterial("Gravel");
+            return "Gravel";
     /*if (StartParameters.newLighting)
     {
       Material mat = new Material(assetManager, 

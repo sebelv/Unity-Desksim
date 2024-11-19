@@ -1,0 +1,40 @@
+{
+    "name": "Input",
+    "maps": [
+        {
+            "name": "Map",
+            "id": "bea38e67-72bf-40c0-b068-31600e9f0dc3",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Value",
+                    "id": "f0005fd8-eeb9-4e1d-8877-fced47e8e3c7",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7a6b840d-e33f-44c9-83bc-ee13bbb4bfb7",
+                    "path": "<Joystick>/stick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Saitek Controls",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Saitek Controls",
+            "bindingGroup": "Saitek Controls",
+            "devices": []
+        }
+    ]
+}

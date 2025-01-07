@@ -148,29 +148,16 @@ public class KmlSplineTrase : GenerellTrase
     Vector3 v2 = new Vector3(vecIn.x, vecIn.y, 0);
     //Debug.Log(v2);
     GameObject t1 = new GameObject();
-    GameObject t2 = new GameObject(); 
+    GameObject t2 = new GameObject();
+    t2.transform.parent = t1.transform;
+    t1.transform.position = v;
+    t2.transform.position = t1.transform.position;
+    t2.transform.position += v2;
     t1.transform.rotation = AnglesVectors.fromAngleAxis(t1.transform.rotation, ang, Vector3.up);
     Debug.Log(t1.transform.rotation.x + "," + t1.transform.rotation.y + "," + t1.transform.rotation.z + "," + t1.transform.rotation.w + " - Roty");
-    t1.transform.position = v;
-    t2.transform.name = "assdt";
-    t2.transform.position = t1.transform.position;
-    t2.transform.parent = t1.transform;
-    t2.transform.position += v2;
 
-
-    Vector3 v3 = t2.transform.position;
-
-    v3.x += v.x;
-    v3.y += v.y;
-    v3.z += v.z;
-
-    t2.transform.position = v3;
-    Vector3 vecOut = new Vector3();
-    vecOut.x = v3.x;
-    vecOut.y = v3.y;
-    vecOut.z = v3.z;
+    Vector3 vecOut = t2.transform.position;
     GameObject.Destroy(t1);
-    GameObject.Destroy(t2);
     Debug.Log("VecOut: " + vecOut);
     return vecOut;
   }

@@ -37,6 +37,10 @@ public class SomeSpline2D
 	
   private void findNumParts()
   {
+	for(int i = 0; i < splineKontrollPunkt.Count; i++)
+	{
+			Debug.Log(splineKontrollPunkt[i] + " - Splinekontrollpoint " + i);
+	}
     float lengde = 0;
     Vector3 vf = splineKontrollPunkt[0];
     for(int i = 0; i < splineKontrollPunkt.Count; i++)

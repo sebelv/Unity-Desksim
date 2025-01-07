@@ -39,20 +39,36 @@ public class KmlSpline
 		
     //
     int k = 0;
-    for (int i = 0; i < splineKontrollPunkt.Count; i++)
+		Debug.Log(startKorr + " - StartKorr");
+		Debug.Log(sluttKorr + " - SluttKorr");
+
+		float x, y, z;	
+	for (int i = 0; i < splineKontrollPunkt.Count; i++)
     {
-      if (k > 0)
-      {
-        splineKontrollPunkt[i].Set(splineKontrollPunkt[i].x -startKorr.x, splineKontrollPunkt[i].y - startKorr.z, splineKontrollPunkt[i].z);
-      }
+            Debug.Log(splineKontrollPunkt[i] + " - Vector in");
+		if (k > 0)
+		{
+			x = splineKontrollPunkt[i].x - startKorr.x;
+			y = splineKontrollPunkt[i].y - startKorr.z;
+			z = splineKontrollPunkt[i].z;
+			splineKontrollPunkt[i] = new Vector3(x,y,z);
+		}
       
-      if (k == (splineKontrollPunkt.Count-1))
-      {
-        splineKontrollPunkt[i].Set(splineKontrollPunkt[i].x -sluttKorr.x, splineKontrollPunkt[i].y - sluttKorr.z, splineKontrollPunkt[i].z);
-      }
-      k++;
-    }
-    
+		if (k == (splineKontrollPunkt.Count-1))
+		{
+			x = splineKontrollPunkt[i].x - sluttKorr.x;
+			y = splineKontrollPunkt[i].y - sluttKorr.z;
+			z = splineKontrollPunkt[i].z;
+			splineKontrollPunkt[i] = new Vector3(x, y, z);
+            }
+        k++;
+		Debug.Log(splineKontrollPunkt[i] + " - Vector out");
+	}
+
+    for(int i = 0; i < splineKontrollPunkt.Count; i++)
+	{
+			Debug.Log(splineKontrollPunkt[i] + " - Punkt nå " + i);
+	}
     
 		//
 //		for (Vector3f p: splineKontrollPunkt)

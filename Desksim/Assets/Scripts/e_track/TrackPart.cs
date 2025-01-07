@@ -265,9 +265,9 @@ public class TrackPart : MonoBehaviour
   {
     for (int i = 0; i < vertexArray.Length; i++)
     {
-      //print(vertexArray[i] + " - Before asd sad asd ");
+      print(vertexArray[i] + " - Before asd sad asd ");
       vertexArray[i] = kmlSplineTrase.finnVertexITraseVertex(vertexArray[i]);
-      //print(vertexArray[i] + " - Results asd asd asd ");
+      print(vertexArray[i] + " - Results asd asd asd ");
     }
   }
   

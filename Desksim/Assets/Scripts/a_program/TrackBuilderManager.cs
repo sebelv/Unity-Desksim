@@ -13,6 +13,8 @@ public class TrackBuilderManager : MonoBehaviour
     [SerializeField] private List<SwitchTrack> trackList = new List<SwitchTrack>();
     [SerializeField] private Vector3 startPoint;
     [SerializeField] private Vector3 endPoint;
+    [SerializeField] private Vector3 startCorrOffsVec = new Vector3();
+    [SerializeField] private Vector3 endCorrOffsVec = new Vector3();
     [SerializeField] private string scenarioName = "";
 
     // Start is called before the first frame update
@@ -44,8 +46,6 @@ public class TrackBuilderManager : MonoBehaviour
         }
 
         // sluttvinkel som brukes av neste seksjon til startkorrigering
-        Vector3 startCorrOffsVec = new Vector3();
-        Vector3 endCorrOffsVec = new Vector3();
         lesFilStartEndCorrection(startCorrOffsVec, endCorrOffsVec, scenarioName);
 
         // les kml trase
@@ -152,13 +152,13 @@ public class TrackBuilderManager : MonoBehaviour
 
       if (sa2[0] == "startcorrection")
       {
-        extractVector(sa2[1], startCorr);
+        startCorrOffsVec = extractVector(sa2[1], startCorr);
       }
       else
       {
         if (sa2[0] == "endcorrection")
         {
-          extractVector(sa2[1], endCorr);
+         endCorrOffsVec =  extractVector(sa2[1], endCorr);
         }
       }
     } 
@@ -182,17 +182,17 @@ public class TrackBuilderManager : MonoBehaviour
     return kmlst;
   }
 
-    private void extractVector(string s, Vector3 vec)
+    private Vector3 extractVector(string s, Vector3 vec)
   {
     print(s);
     string[] sa = s.Split(",");
     if (sa.Length != 3)
     {
-      return;
+      return new Vector3();
     }
         float x = float.Parse(sa[0], CultureInfo.InvariantCulture);
         float y = float.Parse(sa[1], CultureInfo.InvariantCulture);
         float z = float.Parse(sa[2], CultureInfo.InvariantCulture);
-        vec.Set(x,y,z);
+        return new Vector3(x,y,z);
   }
 }

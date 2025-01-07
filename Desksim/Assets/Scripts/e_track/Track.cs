@@ -17,11 +17,6 @@ public class Track : MonoBehaviour, TrackElement
   
   private bool stopWorldPos = false;
 
-  public Track()
-  {
-
-  }
-
   public void setStartVertex(Vector3 startVertex) 
   {
     //print(this.startVertex + " - Start Vertex");

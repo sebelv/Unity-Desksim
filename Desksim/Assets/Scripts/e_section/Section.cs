@@ -35,7 +35,7 @@ public class Section
   {
     float l = allEndTrackNodes[0].getPos();
     
-    foreach (TrackNode tn in allEndTrackNodes)
+    foreach (TrackNode tn in allEndTrackNodes)  
     {
       if (tn.getPos() > l)
       {

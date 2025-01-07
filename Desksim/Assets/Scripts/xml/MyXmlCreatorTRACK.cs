@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
+using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
 public class MyXmlCreatorTRACK : MyXmlCreatorABSTRACT
@@ -19,8 +20,8 @@ public class MyXmlCreatorTRACK : MyXmlCreatorABSTRACT
 public Vector3 getStartVertex(int i)
 {
   if(trackStartVertices.Count > i)
-  {
-  return trackStartVertices[i];
+      {
+      return trackStartVertices[i];
   }
   else
   {
@@ -43,7 +44,10 @@ public Vector3 getEndVertex(int i)
   public void c_StraightTrackXML(BaseObjectXML b)
   {
     trackStartVertices.Add(c_vector3f(b.getParameter("StartVertexXML")));
-    trackEndVertices.Add(c_vector3f(b.getParameter("EndVertexXML")));
+//        Debug.Log("Check these vertices");
+//        Debug.Log(c_vector3f(b.getParameter("StartVertexXML")));
+//        Debug.Log(c_vector3f(b.getParameter("EndVertexXML")));
+        trackEndVertices.Add(c_vector3f(b.getParameter("EndVertexXML")));
     trackCount++;
   }
   /*
